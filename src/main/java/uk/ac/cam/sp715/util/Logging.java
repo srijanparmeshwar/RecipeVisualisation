@@ -1,6 +1,5 @@
 package uk.ac.cam.sp715.util;
 
-import java.io.FileDescriptor;
 import java.io.IOException;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;

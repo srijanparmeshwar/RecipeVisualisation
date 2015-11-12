@@ -219,3 +219,6 @@ pip-log.txt
 *.iml
 log.txt*
 out/
+target/
+*experimental*
+*nlp/

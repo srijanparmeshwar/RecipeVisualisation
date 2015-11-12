@@ -21,9 +21,9 @@ public class HTMLParser {
     private static final Logger logger = Logging.getLogger(HTMLParser.class.getName());
 
     /**
-     * Utility function which takes a recipe query and returns the top search results from the
+     * Utility function which takes a recipe query and returns the top (15) search results from the
      * BBC website.
-     * @param query - Natural language recipe search query.
+     * @param query Natural language recipe search query.
      * @return {@link List}<{@link String}> - List of relative paths to recipes on BBC website.
      * @throws HTMLParseException
      */
@@ -52,7 +52,7 @@ public class HTMLParser {
 
     /**
      * Utility function to parse BBC recipe article into {@link Recipe} format.
-     * @param path - Relative (to 'http://www.bbc.co.uk/food/recipes/') path of recipe on BBC website.
+     * @param path Relative (to 'http://www.bbc.co.uk/food/recipes/') path of recipe on BBC website.
      * @return {@link Recipe} - Parsed recipe with ingredients and instructions separated.
      * @throws HTMLParseException
      */
@@ -65,17 +65,23 @@ public class HTMLParser {
             //Instruction class selection.
             Elements instructionElements = document.select(".instruction");
 
-            //Parse ingredients (remove internal 'a href' tags etc.)
+            //Parse ingredients (remove internal 'a href' tags etc. and remove Unicode fractions).
             List<Ingredient> ingredients = new LinkedList<>();
             for(Element ingredientElement : ingredientElements) {
                 String ingredient = ingredientElement.text();
+                for(String code : UnicodeFractions.fractions.keySet()) {
+                    ingredient = ingredient.replaceAll(code, UnicodeFractions.fractions.get(code));
+                }
                 ingredients.add(new Ingredient(ingredient));
             }
 
-            //Parse instructions (remove internal 'p' tags etc.)
+            //Parse instructions (remove internal 'p' tags etc. and remove Unicode fractions).
             List<String> instructions = new LinkedList<>();
             for(Element instructionElement : instructionElements) {
                 String instruction = instructionElement.text();
+                for(String code : UnicodeFractions.fractions.keySet()) {
+                    instruction = instruction.replaceAll(code, UnicodeFractions.fractions.get(code));
+                }
                 instructions.add(instruction);
             }
 
@@ -88,7 +94,7 @@ public class HTMLParser {
     public static void main(String[] args) {
         try {
             List<String> links = search("halloween");
-            Recipe recipe = getRecipe(links.get(0));
+            Recipe recipe = getRecipe(links.get(3));
             System.out.println(recipe);
         } catch (HTMLParseException e) {
             e.printStackTrace();

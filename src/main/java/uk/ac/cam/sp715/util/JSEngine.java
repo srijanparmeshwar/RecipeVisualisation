@@ -14,8 +14,8 @@ public class JSEngine {
 
     /**
      * Takes query as input and returns URI encoded version.
-     * @param input - Query.
-     * @return {@link String} URI encoded query.
+     * @param input Query.
+     * @return {@link String} - URI encoded query.
      */
     public static String encodeURI(String input) {
         try {

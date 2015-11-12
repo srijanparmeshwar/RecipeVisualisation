@@ -6,11 +6,12 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Created by Srijan on 30/10/2015.
+ * Recipe class, with a set of ingredients and a description (concatenated instructions).
  */
 public class Recipe {
     private final Set<Ingredient> ingredients;
     private final String description;
+
     public Recipe(List<Ingredient> ingredientsList, List<String> instructions) {
         ingredients = new HashSet<>();
         ingredients.addAll(ingredientsList.stream().collect(Collectors.toList()));
@@ -38,5 +39,23 @@ public class Recipe {
         }
         builder.append(description);
         return builder.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Recipe recipe = (Recipe) o;
+
+        if (ingredients != null ? !ingredients.equals(recipe.ingredients) : recipe.ingredients != null) return false;
+        return !(description != null ? !description.equals(recipe.description) : recipe.description != null);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = ingredients != null ? ingredients.hashCode() : 0;
+        result = 31 * result + (description != null ? description.hashCode() : 0);
+        return result;
     }
 }
