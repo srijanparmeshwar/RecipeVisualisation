@@ -14,7 +14,7 @@ public class Recipe {
 
     public Recipe(List<Ingredient> ingredientsList, List<String> instructions) {
         ingredients = new HashSet<>();
-        ingredients.addAll(ingredientsList.stream().collect(Collectors.toList()));
+        ingredients.addAll(ingredientsList);
 
         StringBuilder builder = new StringBuilder();
         boolean first = true;
