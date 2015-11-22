@@ -20,9 +20,8 @@ public class HTMLParserTest {
         List<String> paths = HTMLParser.search("halloween");
         String[] expected = new String[] {"halloween_punch_45819", "halloweenbiscuits_93840", "scary_halloween_cookies_86970",
                 "chocolatecobwebcupca_93842", "halloween_cake_10801", "halloween_ghost_cupcakes_04170", "skullpunch_92644",
-                "witchcraft_90056", "nuttytoffeeapples_68088", "bewitched_92643", "roastchestnuts_68084", "parkin_with_cider_and_65702",
-                "wicked_whisky_sour_85443", "sloeginfizz_88826", "roastpumpkinseeds_70660"};
-        for(int i = 0; i<paths.size(); i++) {
+                "witchcraft_90056", "nuttytoffeeapples_68088"};
+        for(int i = 0; i<expected.length; i++) {
             assertEquals(paths.get(i), expected[i]);
         }
     }
@@ -39,7 +38,7 @@ public class HTMLParserTest {
         expectedInstructions.add("Pour all of the ingredients into a large glass bowl and mix until well combined.");
         expectedInstructions.add("Drape the gummi worms over the edge of the bowl.");
 
-        Recipe expectedRecipe = new Recipe(expectedIngredients, expectedInstructions);
+        Recipe expectedRecipe = new Recipe("Halloween punch", "This blood-red punch is perfect for a Halloween party. Just add a slug of gin or vodka for a grown-up version.", expectedIngredients, expectedInstructions);
         assertEquals(expectedRecipe, HTMLParser.getRecipe("halloween_punch_45819"));
     }
 }

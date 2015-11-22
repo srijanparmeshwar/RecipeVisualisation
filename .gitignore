@@ -222,3 +222,5 @@ out/
 target/
 *experimental*
 *nlp/
+
+*/bower_components/

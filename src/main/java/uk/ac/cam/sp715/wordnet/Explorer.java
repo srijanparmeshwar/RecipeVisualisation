@@ -43,29 +43,6 @@ public class Explorer implements AutoCloseable {
         }
     }
 
-    public Map<IWordID, Set<ISynset>> explore(String seed, POS seedPOS) {
-        Map<IWordID, Set<ISynset>> synsets = new HashMap<>();
-        for(IWordID indexWordID : dictionary.getIndexWord(seed, seedPOS).getWordIDs()) {
-            Set<ISynset> partialSynsets = getSynsets(indexWordID);
-            synsets.put(indexWordID, new HashSet<>());
-            for(ISynset partialSynset : partialSynsets) {
-                synsets.get(indexWordID).addAll(exploreHyponyms(partialSynset));
-                synsets.get(indexWordID).add(partialSynset);
-            }
-        }
-        return synsets;
-    }
-
-    public Set<ISynset> exploreHyponyms(ISynset synset) {
-        Set<ISynset> synsets = new HashSet<>();
-        List<ISynsetID> hyponymSets = synset.getRelatedSynsets(Pointer.HYPONYM);
-        synsets.add(synset);
-        if(hyponymSets.size()>0) {
-            hyponymSets.stream().map(dictionary::getSynset).forEach(tsynset -> synsets.addAll(exploreHyponyms(tsynset)));
-        }
-        return synsets;
-    }
-
     public Taxonomy exploreHyponyms(Taxonomy graph, int depth) {
         Taxonomy result = new Taxonomy(graph);
         if(depth>0) {
@@ -85,27 +62,33 @@ public class Explorer implements AutoCloseable {
         return result;
     }
 
-    public Taxonomy exploreHyponyms(Taxonomy graph) {
-        return exploreHyponyms(graph, Integer.MAX_VALUE);
+    public IIndexWord getIndexNoun(String noun) {
+        return dictionary.getIndexWord(noun, POS.NOUN);
     }
 
-    public Set<ISynset> getSynsets(IWordID indexWordID) {
-        Set<ISynset> synsets = new HashSet<>();
-        IWord indexWord = dictionary.getWord(indexWordID);
-        List<IWordID> wordIDs = indexWord.getRelatedWords();
-        synsets.add(indexWord.getSynset());
-        for(IWordID wordID : wordIDs) {
-            IWord word = dictionary.getWord(wordID);
-            synsets.add(word.getSynset());
-        }
-        return synsets;
+    public IWord getWord(IWordID wordID) {
+        return dictionary.getWord(wordID);
+    }
+
+    public Taxonomy exploreHyponyms(Taxonomy graph) {
+        return exploreHyponyms(graph, Integer.MAX_VALUE);
     }
 
     public static void main(String[] args) {
         Explorer explorer = new Explorer();
         explorer.open();
         //Map<IWordID, Set<ISynset>> synsets = explorer.explore("milk", POS.NOUN);
-        System.out.println(explorer.exploreHyponyms(new Taxonomy(explorer.dictionary.getWord(explorer.dictionary.getIndexWord("kitchen appliance", POS.NOUN).getWordIDs().get(0)).getSynset())).edgeSet());
+        Taxonomy.getTaxonomy(Taxonomy.TaxonomyType.APPLIANCES)
+                .vertexSet()
+                .forEach(System.out::println);
+        System.out.println();
+        Taxonomy.getTaxonomy(Taxonomy.TaxonomyType.UTENSILS)
+                .vertexSet()
+                .forEach(System.out::println);
+        System.out.println();
+        Taxonomy.getTaxonomy(Taxonomy.TaxonomyType.INGREDIENTS)
+                .vertexSet()
+                .forEach(System.out::println);
         /*for(IWordID indexWordID : synsets.keySet()) {
             System.out.println();
             System.out.println(indexWordID);

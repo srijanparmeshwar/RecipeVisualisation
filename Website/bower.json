@@ -1,0 +1,40 @@
+{
+  "name": "Recipe Flow Visualisation",
+  "version": "1.0",
+  "authors": [
+    "Srijan Parmeshwar <sp715@cam.ac.uk>"
+  ],
+  "description": "Visualiser for recipes which uses natural language processing to extract information in the form of a flowchart (DAG).",
+  "main": "../java/ui/RecipeServer.java",
+  "moduleType": [
+    "java"
+  ],
+  "keywords": [
+    "natural",
+    "language",
+    "processing",
+    "nlp",
+    "recipes",
+    "food",
+    "baking",
+    "cooking",
+    "computer",
+    "science",
+    "web",
+    "development"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neon-animation": "PolymerElements/neon-animation#~1.0.8",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.6",
+    "polymer": "Polymer/polymer#~1.2.0"
+  },
+  "private": true
+}

@@ -1,20 +1,24 @@
 package uk.ac.cam.sp715.recipes;
 
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * Recipe class, with a set of ingredients and a description (concatenated instructions).
  */
 public class Recipe {
-    private final Set<Ingredient> ingredients;
+    private final String title;
+    private final String summary;
+    private final List<Ingredient> ingredients;
     private final String description;
 
-    public Recipe(List<Ingredient> ingredientsList, List<String> instructions) {
-        ingredients = new HashSet<>();
-        ingredients.addAll(ingredientsList);
+    public Recipe(String title, String summary, List<Ingredient> ingredientsList, List<String> instructions) {
+        this.title = title;
+        this.summary = summary;
+        this.ingredients = new LinkedList<>();
+        this.ingredients.addAll(ingredientsList);
 
         StringBuilder builder = new StringBuilder();
         boolean first = true;
@@ -27,9 +31,12 @@ public class Recipe {
                 builder.append(instruction);
             }
         }
-        description = builder.toString();
+
+        this.description = builder.toString();
     }
-    public Set<Ingredient> getIngredients() {return ingredients;}
+    public String getTitle() {return title;}
+    public String getSummary() {return summary;}
+    public List<Ingredient> getIngredients() {return ingredients;}
     public String getDescription() {return description;}
     public String toString() {
         StringBuilder builder = new StringBuilder();
@@ -48,13 +55,18 @@ public class Recipe {
 
         Recipe recipe = (Recipe) o;
 
+        if (title != null ? !title.equals(recipe.title) : recipe.title != null) return false;
+        if (summary != null ? !summary.equals(recipe.summary) : recipe.summary != null) return false;
         if (ingredients != null ? !ingredients.equals(recipe.ingredients) : recipe.ingredients != null) return false;
         return !(description != null ? !description.equals(recipe.description) : recipe.description != null);
+
     }
 
     @Override
     public int hashCode() {
-        int result = ingredients != null ? ingredients.hashCode() : 0;
+        int result = title != null ? title.hashCode() : 0;
+        result = 31 * result + (summary != null ? summary.hashCode() : 0);
+        result = 31 * result + (ingredients != null ? ingredients.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);
         return result;
     }

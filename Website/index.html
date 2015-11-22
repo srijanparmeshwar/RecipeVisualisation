@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="author" content="Srijan Parmeshwar">
+        <meta name="theme-color" content="#536DFE">
+        <title>Recipe Flows</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='styles/styles.css' rel='stylesheet' type='text/css'>
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+        <link rel="import" href="bower_components/paper-styles/paper-styles.html">
+        <link rel="import" href="bower_components/paper-progress/paper-progress.html">
+        <link rel="import" href="bower_components/paper-input/paper-input.html">
+        <link rel="import" href="bower_components/paper-menu/paper-menu.html">
+        <link rel="import" href="bower_components/paper-card/paper-card.html">
+        <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+        <link rel="import" href="bower_components/paper-drawer-panel/paper-drawer-panel.html">
+        <link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
+        <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+        <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+        <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+        <link rel="import" href="bower_components/paper-button/paper-button.html">
+        <link rel="import" href="bower_components/paper-dialog/paper-dialog.html">
+        <link rel="import" href="bower_components/neon-animation/neon-animations.html">
+
+        <style is="custom-style">
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+            body {
+                margin: 0;
+                /*background: #FFFFFF;*/
+                background-image: url("images/cupcakes.jpg");
+                background-size: cover;
+                transition: 0.2s;
+            }
+            .app-header {
+            @apply(--shadow-elevation-2dp);
+            }
+            .content {
+                margin: 1em 0;
+            }
+            #title {
+                display: block;
+                font-family: 'Lobster', cursive;
+                font-size: 2.2em;
+                margin-left: 0.6em;
+
+                text-decoration: none;
+                color: white;
+                pointer-events: visible;
+            }
+            @media screen and (max-width: 640px) {
+                #title {
+                    font-size: 1.6em;
+                }
+            }
+            paper-input {
+                /* Label and underline color when the input is focused */
+                width: 50%;
+
+                background: transparent;
+                --paper-input-container-color: rgba(255, 255, 255, 0.7);
+                --paper-input-container-focus-color: white;
+                --paper-input-container-input-color: white;
+
+                padding: 0.2em 0.8em;
+                border: none;
+                border-radius: 3px;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s;
+            }
+            paper-input[focused] {
+                background: #F77669;
+            }
+            paper-input-container {
+                padding: 0;
+            }
+            paper-toolbar {
+                --paper-toolbar-background: #F44336;
+            }
+            #go {
+                color: white;
+                padding: 0;
+                height: 24px;
+                width: 24px;
+            }
+            content {
+                margin: 0;
+            }
+            .central-text {
+                position: absolute;
+                left: 50%;
+                top: 40%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+
+                font-family: 'Lato', monospace;
+                font-size: 4em;
+                color: white;
+                text-align: center;
+                text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+                transition: 0.2s;
+            }
+            @media screen and (max-width: 640px) {
+                .central-text {
+                    font-size: 2.2em;
+                }
+            }
+            paper-card {
+                display: block;
+                margin: 0 4em 1.5em;
+                padding: 1.4em 1.4em;
+            }
+            paper-progress {
+                width: 100%;
+                --paper-progress-active-color: #03A9F4;
+            }
+            .emphasize {
+                color: #F44336;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body unresolved>
+        <paper-header-panel mode="waterfall">
+            <paper-toolbar>
+                <a href="../" class="flex title" id="title">Recipe Flows</a>
+                <paper-input id="query" label="Search recipes" no-label-float onkeypress="key(event);">
+                    <paper-icon-button suffix icon="search" id="go"></paper-icon-button>
+                </paper-input>
+            </paper-toolbar>
+            <div class="content fit" id="main">
+                <div class="central-text" id="hint"><span class="emphasize" onclick="document.getElementById('query').$.input.focus();">Search</span> for a recipe to try it out.</div>
+                <div class="list" id="cards"></div>
+                <div class="list" id="dialogs">
+                    <paper-dialog id="dialog" entry-animation="fade-in-animation" exit-animation="fade-out-animation" with-backdrop></paper-dialog>
+                </div>
+            </div>
+        </paper-header-panel>
+        <script src="scripts/colour.js"></script>
+        <script src="scripts/card.js"></script>
+        <script>
+            var cards = [];
+
+            function key(event) {
+                if (event.which == 13 || event.keyCode == 13) {
+                    document.getElementById("go").click();
+                }
+                return true;
+            }
+
+            function clear() {
+                for(var i = 0; i<cards.length; i++) {
+                    cards[i].remove();
+                }
+                cards = [];
+            }
+
+            function error() {
+                clear();
+                cards.push(textCard(":(", "No results found."));
+                cards[0].attachTo(document.getElementById("cards"));
+            }
+
+            function search(value) {
+                var main = document.getElementById("main");
+                var hint = document.getElementById("hint");
+                if(hint) {
+                    main.removeChild(document.getElementById("hint"));
+                    document.body.style.background = "#F44336";
+                }
+
+                clear();
+                cards.push(progressCard());
+                cards[0].attachTo(document.getElementById("cards"));
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "/search?q=" + value, true);
+                xhr.onreadystatechange = function() {
+                    if(xhr.readyState == 4) {
+                        if(xhr.status == 200) {
+                            update(xhr.response);
+                        } else {
+                            error();
+                        }
+                    }
+                };
+                xhr.send();
+            }
+
+            function update(response) {
+                var results = JSON.parse(response);
+                clear();
+                for(var i = 0; i<results.length; i++) {
+                    var result = JSON.parse(results[i]);
+                    cards.push(linkCard(result.title, result.link));
+                }
+                for(var i = 0; i<cards.length; i++) {
+                    cards[i].attachTo(document.getElementById("cards"));
+                }
+            }
+
+            function progressCard() {
+                var card = new Card(Colour.WHITE);
+                card.setProgress();
+                card.addRipple();
+                return card;
+            }
+
+            function linkCard(title, link) {
+                var card = textCard(title, "");
+                card.addLink(link);
+                return card;
+            }
+
+            function textCard(heading, content) {
+                var card = new Card(Colour.WHITE);
+                card.setHeading(heading);
+                if(content.length>0) card.setContent(content);
+                card.addRipple();
+                return card;
+            }
+
+            window.onload = function() {
+                document.getElementById("go").addEventListener("click", function() {
+                    search(encodeURIComponent(document.getElementById("query").value));
+                });
+            };
+        </script>
+    </body>
+</html>
