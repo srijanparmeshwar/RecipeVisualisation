@@ -85,6 +85,6 @@ app.get(/^(.+)$/, function (req, res) {
 
 var httpServer = http.createServer(app);
 
-httpServer.listen(80, function () {
-    console.log("Listening on port 80");
+httpServer.listen(8080, function () {
+    console.log("Listening on port 8080");
 });
