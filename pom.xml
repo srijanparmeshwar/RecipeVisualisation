@@ -93,7 +93,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>me.srijanparmeshwar.elementary.Main</mainClass>
+                            <mainClass>uk.ac.cam.sp715.ws.RecipeServer</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
