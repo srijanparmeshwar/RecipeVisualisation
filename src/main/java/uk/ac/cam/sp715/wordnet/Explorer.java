@@ -39,6 +39,12 @@ public class Explorer implements AutoCloseable {
     public void open() {
         try {
             dictionary.open();
+            if(dictionary.isOpen()) {
+                logger.log(Level.INFO, "Dictionary is open.");
+            } else {
+                logger.log(Level.SEVERE, "Error opening dictionary.");
+                throw new WordNetException();
+            }
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Error finding path to WordNet. Please check WNHOME environment variable and WordNet installation.", e);
             throw new WordNetException();
