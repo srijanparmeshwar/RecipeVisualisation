@@ -21,7 +21,7 @@ import java.util.*;
 
 /**
  * Dictionary based entity recognizer which uses WordNet taxonomies
- * to produce lemmatised dictionaries for the each {@link TaxonomyType}.
+ * to produce lemmatized dictionaries for the each {@link TaxonomyType}.
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class EntityRecognizer implements AutoCloseable {
@@ -84,8 +84,11 @@ public class EntityRecognizer implements AutoCloseable {
          */
         public List<String> possibleIngredientNames(Ingredient ingredient) {
             String ingredientString = ingredient.getName();
-            ingredientString = ingredientString.replaceAll("/", " ");
-            ingredientString = ingredientString.replaceAll("oz", "");
+            while(ingredientString.contains("/") && ingredientString.contains("oz")) {
+                int startIndex = ingredientString.indexOf("/");
+                int endIndex = ingredientString.indexOf("oz");
+                ingredientString = ingredientString.substring(0, startIndex - 1) + ingredientString.substring(endIndex, ingredientString.length());
+            }
             Annotation annotation = new Annotation(ingredientString);
             this.pipeline.annotate(annotation);
             List<CoreMap> sentences = annotation.get(
@@ -124,7 +127,7 @@ public class EntityRecognizer implements AutoCloseable {
     /**
      * Recognizing whether a given noun is a certain type of entity.
      * @param noun Noun to be recognized.
-     * @return {link TaxonomyType} - the type of this entity.
+     * @return {@link TaxonomyType} - the type of this entity.
      */
     public TaxonomyType getType(String noun) {
         IIndexWord indexWord = explorer.getIndexNoun(noun);
@@ -137,6 +140,40 @@ public class EntityRecognizer implements AutoCloseable {
         return TaxonomyType.OTHER;
     }
 
+    public String annotate(StanfordCoreNLP pipeline, Recipe recipe) {
+        Annotation annotation = new Annotation(recipe.getDescription());
+        pipeline.annotate(annotation);
+        augmentIngredientDictionary(pipeline, recipe);
+        StringBuilder textBuilder = new StringBuilder();
+        boolean firstSentence = true;
+
+        for(CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
+            if(firstSentence) firstSentence = false;
+            else textBuilder.append(" ");
+            StringBuilder sentenceBuilder = new StringBuilder();
+            boolean firstToken = true;
+            for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+                String word = token.get(CoreAnnotations.TextAnnotation.class);
+                String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
+
+                if(firstToken) firstToken = false;
+                else if(!word.equals(".") && !word.equals(","))sentenceBuilder.append(" ");
+                sentenceBuilder.append(word);
+
+                if(pos.startsWith("N")) {
+                    TaxonomyType type = getType(word);
+
+                    if(type != TaxonomyType.OTHER) {
+                        sentenceBuilder.append("_");
+                        sentenceBuilder.append(getType(word));
+                    }
+                }
+            }
+            textBuilder.append(sentenceBuilder.toString());
+        }
+        return textBuilder.toString();
+    }
+
     public static void experimental() throws HTMLParseException {
         Properties props = new Properties();
         props.setProperty("annotators",
@@ -146,9 +183,6 @@ public class EntityRecognizer implements AutoCloseable {
         Annotation annotation = new Annotation(
                 recipe.getDescription());
         pipeline.annotate(annotation);
-        Taxonomy appliances = Taxonomy.getTaxonomy(TaxonomyType.APPLIANCES);
-        Taxonomy utensils = Taxonomy.getTaxonomy(TaxonomyType.UTENSILS);
-        Taxonomy ingredients = Taxonomy.getTaxonomy(TaxonomyType.INGREDIENTS);
         EntityRecognizer recognizer = new EntityRecognizer();
         recognizer.open();
         recognizer.augmentIngredientDictionary(pipeline, recipe);

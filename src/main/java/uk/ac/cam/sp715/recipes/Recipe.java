@@ -7,6 +7,7 @@ import java.util.Set;
 
 /**
  * Recipe class, with a set of ingredients and a description (concatenated instructions).
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class Recipe {
     private final String title;

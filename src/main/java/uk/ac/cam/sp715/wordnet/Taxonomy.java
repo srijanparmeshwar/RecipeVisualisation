@@ -7,15 +7,16 @@ import org.jgrapht.graph.DefaultDirectedGraph;
 import org.jgrapht.graph.DefaultEdge;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Class to represent the hypernym/hyponym taxonomy from  WordNet. This allows simpler
  * exploration as compared to the JWI library. Vertices are WordNet synsets. Directed edges represent relations such that
- * iff there exists an edge {@code A -> B} then {@code A} is a hypernym of {@code B} and conversely {@code B} is a hyponym of {@code A}.
+ * iff there exists an edge {@code A -> B} then {@code A} is a hypernym of {@code B} and conversely {@code B} is a hyponym of {@code A},
+ * or there is a holonym or meronym of {@code B} with these properties.
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
-    private final Set<ISynset> roots;
 
     /**
      * Constructs a taxonomy with the inputs as roots for further exploration.
@@ -23,8 +24,7 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
      */
     public Taxonomy(Set<ISynset> roots) {
         super(DefaultEdge.class);
-        this.roots = new HashSet<>(roots);
-        this.roots.forEach(this::addVertex);
+        roots.forEach(this::addVertex);
     }
 
     /**
@@ -34,8 +34,6 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
      */
     public Taxonomy(ISynset root) {
         super(DefaultEdge.class);
-        this.roots = new HashSet<>();
-        this.roots.add(root);
         this.addVertex(root);
     }
 
@@ -45,7 +43,6 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
      */
     public Taxonomy(Taxonomy original) {
         super(DefaultEdge.class);
-        this.roots = original.getRoots();
         original.vertexSet().forEach(this::addVertex);
         for(DefaultEdge edge : original.edgeSet()) {
             ISynset source = original.getEdgeSource(edge);
@@ -58,7 +55,10 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
      * Accessor method to get root vertices.
      * @return {@link Set}<{@link ISynset}> - Root vertices.
      */
-    public Set<ISynset> getRoots() {return roots;}
+    public Set<ISynset> getRoots() {return vertexSet()
+            .parallelStream()
+            .filter((vertex) -> incomingEdgesOf(vertex).isEmpty())
+            .collect(Collectors.toCollection(HashSet::new));}
 
     /**
      * Returns the leaves of this taxonomy, the vertices which have no outgoing

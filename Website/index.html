@@ -6,7 +6,7 @@
         <meta name="theme-color" content="#F44336">
         <link rel="icon" href="images/favicon.png">
         <link rel="shortcut icon" href="images/favicon.png">
-        <title>Recipe Flows</title>
+        <title>Recipes</title>
 
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
@@ -99,8 +99,8 @@
                 height: 24px;
                 width: 24px;
             }
-            content {
-                margin: 0;
+            .content {
+                padding: 0.5em 0;
             }
             .central-text {
                 position: absolute;
@@ -152,12 +152,30 @@
             .emphasize:hover {
                 color: #F77669;
             }
+            .footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+
+                font-family: Lato, monospace;
+                text-align: center;
+                font-style: italic;
+
+                background: white;
+                color: #F44336;
+                padding: 0.5em 0;
+                box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.2);
+            }
+            .footer > a {
+                color: #F44336;
+                text-decoration: underline;
+            }
         </style>
     </head>
     <body unresolved>
         <paper-header-panel mode="waterfall">
             <paper-toolbar>
-                <div class="flex title" id="title"><a href="../"id="title-link">Recipe Flows</a></div>
+                <div class="flex title" id="title"><a href="../"id="title-link">Recipes</a></div>
                 <paper-input id="query" label="Search recipes" no-label-float onkeypress="key(event);">
                     <paper-icon-button suffix icon="search" id="go"></paper-icon-button>
                 </paper-input>
@@ -165,9 +183,10 @@
             <div class="content fit" id="main">
                 <div class="central-text" id="hint"><span class="emphasize" onclick="document.getElementById('query').$.input.focus();">Search</span> for a recipe to try it out.</div>
                 <div class="list" id="cards"></div>
-                <div class="list" id="dialogs">
+                <div id="dialogs">
                     <paper-dialog id="dialog" entry-animation="fade-in-animation" exit-animation="fade-out-animation" with-backdrop></paper-dialog>
                 </div>
+                <div class="footer">Recipes are retrieved from <a href="//www.bbc.co.uk/food/">BBC Food</a> and so are copyright of BBC.</div>
             </div>
         </paper-header-panel>
         <script src="scripts/colour.js"></script>

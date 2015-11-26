@@ -5,6 +5,7 @@ import java.util.Map;
 
 /**
  * Unicode fraction replacement map.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class UnicodeFractions {
     public static final Map<String, String> fractions = new HashMap<>();

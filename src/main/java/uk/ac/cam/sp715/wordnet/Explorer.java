@@ -51,7 +51,7 @@ public class Explorer implements AutoCloseable {
     }
 
     /**
-     * Explores WordNet hyponym relations for a given input graph.
+     * Explores WordNet hyponym (is-a/subtype) relations for a given input graph.
      * It will recursively find hyponym synsets up to the given depth limit for each source vertex
      * i.e. the leaves of the input taxonomy. This method makes a copy of the input and works with this
      * so the original graph is not modified.
@@ -77,6 +77,15 @@ public class Explorer implements AutoCloseable {
         return result;
     }
 
+    /**
+     * Explores WordNet meronym (part-of) relations for a given input graph.
+     * It will recursively find meronym synsets up to the given depth limit for each source vertex
+     * i.e. the whole vertex set. This method makes a copy of the input and works with this
+     * so the original graph is not modified.
+     * @param graph Taxonomy to be explored further via meronym relations.
+     * @param depth Maximum depth of meronymy relationships.
+     * @return {@link Taxonomy} - The expanded taxonomy, including meronym synsets up to the depth limit.
+     */
     public Taxonomy exploreMeronyms(Taxonomy graph, int depth) {
         Taxonomy result = new Taxonomy(graph);
         if(depth>0) {
@@ -121,34 +130,14 @@ public class Explorer implements AutoCloseable {
     public Taxonomy exploreHyponyms(Taxonomy graph) {
         return exploreHyponyms(graph, Integer.MAX_VALUE);
     }
+
+    /**
+     * This is the same as {@link #exploreMeronyms(Taxonomy, int)} however it essentially has no depth limit.
+     * It calls {@link #exploreHyponyms(Taxonomy, int)} with {@link Integer#MAX_VALUE} as the depth limit.
+     * @param graph Taxonomy to be explored further via meroynm relations.
+     * @return {@link Taxonomy} - The expanded taxonomy, including meronym synsets.
+     */
     public Taxonomy exploreMeronyms(Taxonomy graph) {
         return exploreMeronyms(graph, Integer.MAX_VALUE);
-    }
-
-    public static void main(String[] args) {
-        Explorer explorer = new Explorer();
-        explorer.open();
-        //Map<IWordID, Set<ISynset>> synsets = explorer.explore("milk", POS.NOUN);
-        Taxonomy.getTaxonomy(Taxonomy.TaxonomyType.APPLIANCES)
-                .vertexSet()
-                .forEach(System.out::println);
-        System.out.println();
-        Taxonomy.getTaxonomy(Taxonomy.TaxonomyType.UTENSILS)
-                .vertexSet()
-                .forEach(System.out::println);
-        System.out.println();
-        Taxonomy.getTaxonomy(Taxonomy.TaxonomyType.INGREDIENTS)
-                .vertexSet()
-                .forEach(System.out::println);
-        /*for(IWordID indexWordID : synsets.keySet()) {
-            System.out.println();
-            System.out.println(indexWordID);
-            System.out.println();
-            for(ISynset synset : synsets.get(indexWordID)) {
-                System.out.println(synset.getWords());
-
-            }
-        }*/
-        explorer.close();
     }
 }
