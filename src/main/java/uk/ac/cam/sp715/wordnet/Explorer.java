@@ -4,6 +4,7 @@ import edu.mit.jwi.Dictionary;
 import edu.mit.jwi.IDictionary;
 import edu.mit.jwi.item.*;
 import org.jgrapht.Graphs;
+import org.jgrapht.graph.DefaultEdge;
 import uk.ac.cam.sp715.util.Logging;
 
 import java.io.File;
@@ -15,7 +16,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Created by Srijan on 12/11/2015.
+ * Provides exploration algorithms for WordNet.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class Explorer implements AutoCloseable {
     private final IDictionary dictionary;
@@ -43,6 +45,20 @@ public class Explorer implements AutoCloseable {
         }
     }
 
+    @Override
+    public void close() {
+        dictionary.close();
+    }
+
+    /**
+     * Explores WordNet hyponym relations for a given input graph.
+     * It will recursively find hyponym synsets up to the given depth limit for each source vertex
+     * i.e. the leaves of the input taxonomy. This method makes a copy of the input and works with this
+     * so the original graph is not modified.
+     * @param graph Taxonomy to be explored further via hyponym relations.
+     * @param depth Maximum depth of taxonomy relative to the input leaves.
+     * @return {@link Taxonomy} - The expanded taxonomy, including hyponym synsets up to the depth limit.
+     */
     public Taxonomy exploreHyponyms(Taxonomy graph, int depth) {
         Taxonomy result = new Taxonomy(graph);
         if(depth>0) {
@@ -53,8 +69,34 @@ public class Explorer implements AutoCloseable {
                     ISynset newSynset = dictionary.getSynset(synsetID);
                     Taxonomy newTaxonomy = new Taxonomy(newSynset);
                     Taxonomy newGraph = exploreHyponyms(newTaxonomy, depth - 1);
+                    //If destination graph (result) is modified connect the synset vertices.
+                    if(Graphs.addGraph(result, newGraph)) result.addEdge(synset, newSynset);
+                }
+            }
+        }
+        return result;
+    }
+
+    public Taxonomy exploreMeronyms(Taxonomy graph, int depth) {
+        Taxonomy result = new Taxonomy(graph);
+        if(depth>0) {
+            for(ISynset synset : graph.vertexSet()) {
+                Set<ISynsetID> meronymSets = new HashSet<>();
+                meronymSets.addAll(synset.getRelatedSynsets(Pointer.MERONYM_MEMBER));
+                meronymSets.addAll(synset.getRelatedSynsets(Pointer.MERONYM_PART));
+                meronymSets.addAll(synset.getRelatedSynsets(Pointer.MERONYM_SUBSTANCE));
+
+                for(ISynsetID synsetID : meronymSets) {
+                    ISynset newSynset = dictionary.getSynset(synsetID);
+                    Taxonomy newTaxonomy = new Taxonomy(newSynset);
+                    Taxonomy newGraph = exploreMeronyms(newTaxonomy, depth - 1);
+                    //If destination graph (result) is modified connect the synset vertices.
                     if(Graphs.addGraph(result, newGraph)) {
-                        result.addEdge(synset, newSynset);
+                        for(DefaultEdge edge : result.incomingEdgesOf(synset)) {
+                            for(ISynset target : newGraph.vertexSet()) {
+                                result.addEdge(graph.getEdgeSource(edge), target);
+                            }
+                        }
                     }
                 }
             }
@@ -70,8 +112,17 @@ public class Explorer implements AutoCloseable {
         return dictionary.getWord(wordID);
     }
 
+    /**
+     * This is the same as {@link #exploreHyponyms(Taxonomy, int)} however it essentially has no depth limit.
+     * It calls {@link #exploreHyponyms(Taxonomy, int)} with {@link Integer#MAX_VALUE} as the depth limit.
+     * @param graph Taxonomy to be explored further via hyponym relations.
+     * @return {@link Taxonomy} - The expanded taxonomy, including hyponym synsets.
+     */
     public Taxonomy exploreHyponyms(Taxonomy graph) {
         return exploreHyponyms(graph, Integer.MAX_VALUE);
+    }
+    public Taxonomy exploreMeronyms(Taxonomy graph) {
+        return exploreMeronyms(graph, Integer.MAX_VALUE);
     }
 
     public static void main(String[] args) {
@@ -99,10 +150,5 @@ public class Explorer implements AutoCloseable {
             }
         }*/
         explorer.close();
-    }
-
-    @Override
-    public void close() {
-        dictionary.close();
     }
 }

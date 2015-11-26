@@ -3,7 +3,9 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta name="author" content="Srijan Parmeshwar">
-        <meta name="theme-color" content="#536DFE">
+        <meta name="theme-color" content="#F44336">
+        <link rel="icon" href="images/favicon.png">
+        <link rel="shortcut icon" href="images/favicon.png">
         <title>Recipe Flows</title>
 
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -53,10 +55,11 @@
                 font-family: 'Lobster', cursive;
                 font-size: 2.2em;
                 margin-left: 0.6em;
-
+                pointer-events: all;
+            }
+            #title-link {
                 text-decoration: none;
                 color: white;
-                pointer-events: visible;
             }
             @media screen and (max-width: 640px) {
                 #title {
@@ -110,11 +113,18 @@
                 transform: translate(-50%, -50%);
 
                 font-family: 'Lato', monospace;
-                font-size: 4em;
+                font-size: 3.6em;
                 color: white;
                 text-align: center;
-                text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+                text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
                 transition: 0.2s;
+
+                background: rgba(30, 30, 30, 0.3);
+                padding: 0.7em 1em;
+                border: solid transparent;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
             }
             @media screen and (max-width: 640px) {
                 .central-text {
@@ -123,7 +133,7 @@
             }
             paper-card {
                 display: block;
-                margin: 0 4em 1.5em;
+                margin: 3em 4em;
                 padding: 1.4em 1.4em;
             }
             paper-progress {
@@ -133,13 +143,21 @@
             .emphasize {
                 color: #F44336;
                 cursor: pointer;
+                -webkit-transition: all 0.25s;
+                -moz-transition: all 0.25s;
+                -ms-transition: all 0.25s;
+                -o-transition: all 0.25s;
+                transition: all 0.25s;
+            }
+            .emphasize:hover {
+                color: #F77669;
             }
         </style>
     </head>
     <body unresolved>
         <paper-header-panel mode="waterfall">
             <paper-toolbar>
-                <a href="../" class="flex title" id="title">Recipe Flows</a>
+                <div class="flex title" id="title"><a href="../"id="title-link">Recipe Flows</a></div>
                 <paper-input id="query" label="Search recipes" no-label-float onkeypress="key(event);">
                     <paper-icon-button suffix icon="search" id="go"></paper-icon-button>
                 </paper-input>

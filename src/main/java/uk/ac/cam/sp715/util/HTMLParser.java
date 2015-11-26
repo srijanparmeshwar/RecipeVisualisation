@@ -18,6 +18,7 @@ import java.util.logging.Logger;
 /**
  * Utility functions to parse BBC search and recipe pages. This is built as an alternative to using
  * recipe APIs, most of which are not free.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class HTMLParser {
     private static final Logger logger = Logging.getLogger(HTMLParser.class.getName());
@@ -26,40 +27,10 @@ public class HTMLParser {
      * Utility function which takes a recipe query and returns the top (15) search results from the
      * BBC website.
      * @param query Natural language recipe search query.
-     * @return {@link List}<{@link String}> - List of relative paths to recipes on BBC website.
+     * @return {@link List}<{@link Link}> - List of relative paths to recipes on BBC website.
      * @throws HTMLParseException
      */
-    public static List<String> search(String query) throws HTMLParseException {
-        try {
-            Document document = Jsoup.connect("http://www.bbc.co.uk/food/recipes/search?keywords=" + JSEngine.encodeURI(query)).get();
-            //Article class selection.
-            Elements articles = document.select(".article");
-            //Link selection.
-            Elements links = articles.select("a");
-            List<String> recipes = new LinkedList<>();
-            for(Element link : links) {
-                String href = link.attr("href");
-                //Filter for actual recipe articles.
-                if(href.startsWith("/food/recipes/")) {
-                    String name = href.replace("/food/recipes/", "");
-                    recipes.add(name);
-                }
-            }
-            return recipes;
-        } catch (IOException e) {
-            logger.log(Level.SEVERE, "Could not connect to BBC search service for: " + query, e);
-            throw new HTMLParseException(query);
-        }
-    }
-
-    /**
-     * Utility function which takes a recipe query and returns the top (15) search results from the
-     * BBC website.
-     * @param query Natural language recipe search query.
-     * @return {@link List}<{@link String}> - List of relative paths to recipes on BBC website.
-     * @throws HTMLParseException
-     */
-    public static List<Link> searchLinks(String query) throws HTMLParseException {
+    public static List<Link> search(String query) throws HTMLParseException {
         try {
             Document document = Jsoup.connect("http://www.bbc.co.uk/food/recipes/search?keywords=" + JSEngine.encodeURI(query)).get();
             //Article class selection.
@@ -68,14 +39,17 @@ public class HTMLParser {
             Elements links = articles.select("a");
             List<Link> recipes = new LinkedList<>();
             for(Element link : links) {
+                //Remove the thumbnail if it exists.
                 for(Element img : link.getElementsByTag("img")) {
                     img.remove();
                 }
+
                 String href = link.attr("href");
                 //Filter for actual recipe articles.
                 if(href.startsWith("/food/recipes/")) {
-                    String name = href.replace("/food/recipes/", "");
-                    recipes.add(new Link(name, link.text()));
+                    String path = href.replace("/food/recipes/", "");
+                    String name = link.text();
+                    recipes.add(new Link(path, name));
                 }
             }
             return recipes;
@@ -131,6 +105,7 @@ public class HTMLParser {
                 if(instruction.length()>0) instructions.add(instruction);
             }
 
+            //Parse title and summary of recipe.
             if(titleElements.size()>0) {
                 String title = titleElements.get(0).html();
                 if(summaryElements.size()>0) {
@@ -151,8 +126,8 @@ public class HTMLParser {
 
     public static void main(String[] args) {
         try {
-            List<String> links = search("halloween");
-            Recipe recipe = getRecipe(links.get(3));
+            List<Link> links = search("halloween");
+            Recipe recipe = getRecipe(links.get(3).getLink());
             System.out.println(new ObjectMapper().writeValueAsString(recipe));
         } catch (HTMLParseException e) {
             e.printStackTrace();

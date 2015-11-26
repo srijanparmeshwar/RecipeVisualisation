@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 
 /**
  * Utility class to encode URI format for HTTP requests.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class JSEngine {
     private static final Logger logger = Logging.getLogger(JSEngine.class.getName());

@@ -14,7 +14,8 @@ import java.util.List;
 import static spark.Spark.*;
 
 /**
- * Created by Srijan on 16/11/2015.
+ * Provides a web service interface to access BBC Recipes and
+ * in the future will provide the visualisation service.
  */
 public class RecipeServer {
 
@@ -28,7 +29,7 @@ public class RecipeServer {
         try {
             ObjectMapper mapper = new ObjectMapper();
             //List<String> paths = HTMLParser.search(request.queryParams("q"));
-            List<Link> recipes = HTMLParser.searchLinks(request.queryParams("q"));
+            List<Link> recipes = HTMLParser.search(request.queryParams("q"));
             List<String> jsonRecipes = new LinkedList<>();
             recipes.forEach((recipe) -> jsonRecipes.add(recipe.toJSON()));
             return mapper.writeValueAsString(jsonRecipes);

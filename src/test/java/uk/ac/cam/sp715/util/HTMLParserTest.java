@@ -17,12 +17,12 @@ public class HTMLParserTest {
 
     @Test
     public void testSearch() throws Exception {
-        List<String> paths = HTMLParser.search("halloween");
+        List<Link> paths = HTMLParser.search("halloween");
         String[] expected = new String[] {"halloween_punch_45819", "halloweenbiscuits_93840", "scary_halloween_cookies_86970",
                 "chocolatecobwebcupca_93842", "halloween_cake_10801", "halloween_ghost_cupcakes_04170", "skullpunch_92644",
                 "witchcraft_90056", "nuttytoffeeapples_68088"};
         for(int i = 0; i<expected.length; i++) {
-            assertEquals(paths.get(i), expected[i]);
+            assertEquals(paths.get(i).getLink(), expected[i]);
         }
     }
 
