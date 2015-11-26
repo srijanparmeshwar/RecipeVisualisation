@@ -24,16 +24,15 @@ import static spark.Spark.*;
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class RecipeServer {
-    private static final StanfordCoreNLP pipeline;
-    private static final EntityRecognizer recognizer;
-    static {
+    private static StanfordCoreNLP pipeline;
+    private static EntityRecognizer recognizer;
+
+    public static void main(String[] args) {
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize, ssplit, pos, lemma");
         pipeline = new StanfordCoreNLP(props);
         recognizer = new EntityRecognizer();
         recognizer.open();
-    }
-    public static void main(String[] args) {
         port(4567);
         get("/search", RecipeServer::search);
         get("/recipes/:id", RecipeServer::getRecipe);
