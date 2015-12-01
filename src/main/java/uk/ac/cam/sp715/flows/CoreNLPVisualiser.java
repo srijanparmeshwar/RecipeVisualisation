@@ -1,4 +1,4 @@
-package uk.ac.cam.sp715.recognition;
+package uk.ac.cam.sp715.flows;
 
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -6,7 +6,6 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
-import uk.ac.cam.sp715.flows.Flow;
 import uk.ac.cam.sp715.recipes.Recipe;
 import uk.ac.cam.sp715.util.HTMLParseException;
 import uk.ac.cam.sp715.util.HTMLParser;
@@ -40,9 +39,9 @@ public class CoreNLPVisualiser extends Visualiser {
     public static void main(String[] args) throws HTMLParseException {
         Properties props = new Properties();
         props.setProperty("annotators",
-                "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+                "tokenize, ssplit, pos, lemma, ner, depparse");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         CoreNLPVisualiser visualiser = new CoreNLPVisualiser(pipeline);
-        visualiser.parse(HTMLParser.getRecipe(HTMLParser.search("choc").get(0).getLink()));
+        visualiser.parse(HTMLParser.getRecipe(HTMLParser.search("chocolate").get(0).getLink()));
     }
 }

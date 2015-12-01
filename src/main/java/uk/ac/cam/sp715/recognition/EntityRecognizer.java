@@ -174,6 +174,54 @@ public class EntityRecognizer implements AutoCloseable {
         return textBuilder.toString();
     }
 
+    public static class Sentence extends LinkedList<TaggedToken> implements List<TaggedToken> {
+        public Sentence() {
+            super();
+        }
+        public Sentence(List<TaggedToken> original) {
+            super(original);
+        }
+    }
+
+    public List<Sentence> annotate2(StanfordCoreNLP pipeline, Recipe recipe) {
+        Annotation annotation = new Annotation(recipe.getDescription());
+        pipeline.annotate(annotation);
+        augmentIngredientDictionary(pipeline, recipe);
+
+        List<Sentence> sentences = new LinkedList<>();
+
+        for(CoreMap coreMap : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
+            List<CoreLabel> originalSentence = coreMap.get(CoreAnnotations.TokensAnnotation.class);
+            Stack<TaggedToken> modifiedTokens = new Stack<>();
+            Sentence newSentence = new Sentence();
+            for (CoreLabel token : originalSentence) {
+                String word = token.word();
+                String pos = token.tag();
+                TaxonomyType tag = pos.startsWith("N") ? getType(word) : TaxonomyType.OTHER;
+                TaggedToken taggedToken = new TaggedToken(token, tag);
+
+                if(!modifiedTokens.empty()) {
+                    TaggedToken top = modifiedTokens.peek();
+                    if(top.isTypedEntity() || taggedToken.isTypedEntity()) {
+                        if(top.isNoun() && taggedToken.isNoun()) {
+                            if(top.isTypedEntity()) top.addToken(token);
+                            else {
+                                modifiedTokens.pop();
+                                taggedToken.addAll(top.getTokens());
+                                modifiedTokens.push(taggedToken);
+                            }
+                        } else modifiedTokens.push(taggedToken);
+                    } else modifiedTokens.push(taggedToken);
+                } else modifiedTokens.push(taggedToken);
+            }
+
+            while(!modifiedTokens.empty()) newSentence.add(modifiedTokens.pop());
+            Collections.reverse(newSentence);
+            sentences.add(newSentence);
+        }
+        return sentences;
+    }
+
     public static void experimental() throws HTMLParseException {
         Properties props = new Properties();
         props.setProperty("annotators",
@@ -192,12 +240,8 @@ public class EntityRecognizer implements AutoCloseable {
         List<CoreMap> sentences = annotation.get(
                 CoreAnnotations.SentencesAnnotation.class);
         for(CoreMap sentence : sentences) {
-            // traversing the words in the current sentence
-            // a CoreLabel is a CoreMap with additional token-specific methods
             for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-                // this is the text of the token
                 String word = token.get(CoreAnnotations.TextAnnotation.class);
-                // this is the text of the token
                 String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
                 if(pos.startsWith("N")) {
                     System.out.println("NER: " + word + ", tags: " + recognizer.getType(word));
@@ -208,9 +252,18 @@ public class EntityRecognizer implements AutoCloseable {
     }
 
     public static void main(String[] args) throws HTMLParseException {
-        EntityRecognizer.initializeDictionaries();
-        dictionaries.get(TaxonomyType.UTENSILS).forEach(System.out::println);
-
-        experimental();
+        //dictionaries.get(TaxonomyType.UTENSILS).forEach(System.out::println);
+        Properties props = new Properties();
+        props.setProperty("annotators",
+                "tokenize, ssplit, pos, lemma");
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+        Recipe recipe = HTMLParser.getRecipe(HTMLParser.search("chocolate").get(0).getLink());
+        EntityRecognizer recognizer = new EntityRecognizer();
+        recognizer.open();
+        for(Sentence sentence : recognizer.annotate2(pipeline, recipe)) {
+            System.out.println(sentence);
+        }
+        recognizer.close();
+        //experimental();
     }
 }

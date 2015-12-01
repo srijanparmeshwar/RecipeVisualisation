@@ -1,4 +1,4 @@
-package uk.ac.cam.sp715.recognition;
+package uk.ac.cam.sp715.flows;
 
 import uk.ac.cam.sp715.flows.Flow;
 import uk.ac.cam.sp715.recipes.Recipe;

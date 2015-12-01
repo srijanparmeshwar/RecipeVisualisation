@@ -1,5 +1,6 @@
 package uk.ac.cam.sp715.recipes;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.Set;
  * Recipe class, with a set of ingredients and a description (concatenated instructions).
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
-public class Recipe {
+public class Recipe implements Serializable {
     private final String title;
     private final String summary;
     private final List<Ingredient> ingredients;
