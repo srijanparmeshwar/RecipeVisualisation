@@ -6,10 +6,14 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import uk.ac.cam.sp715.caching.CacheException;
+import uk.ac.cam.sp715.caching.PersistentCache;
 import uk.ac.cam.sp715.recipes.Ingredient;
 import uk.ac.cam.sp715.recipes.Recipe;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
@@ -22,6 +26,15 @@ import java.util.logging.Logger;
  */
 public class HTMLParser {
     private static final Logger logger = Logging.getLogger(HTMLParser.class.getName());
+    private static PersistentCache<Recipe> recipeCache;
+    static {
+        try {
+            if(!PersistentCache.exists("cache")) recipeCache = new PersistentCache<>(60);
+            else recipeCache = PersistentCache.read("cache");
+        } catch (IOToolsException iote) {
+            logger.log(Level.SEVERE, "Could not read recipe cache.", iote);
+        }
+    }
 
     /**
      * Utility function which takes a recipe query and returns the top (15) search results from the
@@ -54,29 +67,63 @@ public class HTMLParser {
             }
             return recipes;
         } catch (IOException e) {
-            logger.log(Level.SEVERE, "Could not connect to BBC search service for: " + query, e);
-            throw new HTMLParseException(query);
+            try {
+                return search(query);
+            } catch(HTMLParseException ioe) {
+                logger.log(Level.SEVERE, "Could not connect to BBC search service for: " + query, e);
+                throw ioe;
+            }
         }
     }
 
     /**
-     * Utility function to parse BBC recipe article into {@link Recipe} format.
+     * Utility function to retrieve BBC recipe.
+     * Recipe is either retrieved from the cache or from the BBC website.
      * @param path Relative (to 'http://www.bbc.co.uk/food/recipes/') path of recipe on BBC website.
      * @return {@link Recipe} - Parsed recipe with ingredients and instructions separated.
      * @throws HTMLParseException
      */
     public static Recipe getRecipe(String path) throws HTMLParseException {
+        PersistentCache.Key key = PersistentCache.Key.get(path);
+        try {
+            if (recipeCache != null && recipeCache.containsKey(key)) {
+                Recipe recipe = recipeCache.get(key);
+                return recipe;
+            } else {
+                Recipe recipe = retrieveRecipe(path);
+                if (recipeCache != null) {
+                    recipeCache.add(key, recipe);
+                }
+                return recipe;
+            }
+        } catch (CacheException cacheException) {
+            logger.log(Level.SEVERE, "Error occurred accessing cache for: " + path, cacheException);
+            throw new HTMLParseException(path);
+        }
+    }
+
+    /**
+     * Utility function to parse BBC recipe article into {@link Recipe} format.
+     * Recipes are retrieved from the BBC website.
+     * @param path Relative (to 'http://www.bbc.co.uk/food/recipes/') path of recipe on BBC website.
+     * @return {@link Recipe} - Parsed recipe with ingredients and instructions separated.
+     * @throws HTMLParseException
+     */
+    public static Recipe retrieveRecipe(String path) throws HTMLParseException {
         try {
             //Get webpage for this recipe.
             Document document = Jsoup.connect("http://www.bbc.co.uk/food/recipes/" + path).get();
             //Title selection.
             Elements titleElements = document.select("h1");
             //Summary selection.
-            Elements summaryElements = document.select("span.summary");
+            Elements summaryElements = document.getElementsByAttributeValue("itemprop", "description");
+            if(summaryElements.size() == 0) summaryElements = document.select(".summary");
             //Ingredient class selection.
-            Elements ingredientElements = document.select(".ingredient");
+            Elements ingredientElements = document.getElementsByAttributeValue("itemprop", "ingredients");
+            if(ingredientElements.size() == 0) ingredientElements = document.select(".ingredient");
             //Instruction class selection.
-            Elements instructionElements = document.select(".instruction");
+            Elements instructionElements = document.getElementsByAttributeValue("itemprop", "recipeInstructions");
+            if(instructionElements.size() == 0) instructionElements = document.select(".instruction");
 
             //Parse ingredients (remove internal 'a href' tags etc. and remove Unicode fractions).
             List<Ingredient> ingredients = new LinkedList<>();
@@ -107,32 +154,24 @@ public class HTMLParser {
 
             //Parse title and summary of recipe.
             if(titleElements.size()>0) {
-                String title = titleElements.get(0).html();
+                String title = titleElements.get(0).text();
                 if(summaryElements.size()>0) {
-                    String summary = summaryElements.get(0).html();
+                    String summary = summaryElements.get(0).text();
                     return new Recipe(title, summary, ingredients, instructions);
                 } else return new Recipe(title, "", ingredients, instructions);
             } else {
                 if(summaryElements.size()>0) {
-                    String summary = summaryElements.get(0).html();
+                    String summary = summaryElements.get(0).text();
                     return new Recipe("Recipe", summary, ingredients, instructions);
                 } else return new Recipe("Recipe", "", ingredients, instructions);
             }
         } catch (IOException e) {
-            logger.log(Level.SEVERE, "Could not get webpage for path: " + path, e);
-            throw new HTMLParseException(path);
-        }
-    }
-
-    public static void main(String[] args) {
-        try {
-            List<Link> links = search("halloween");
-            Recipe recipe = getRecipe(links.get(3).getLink());
-            System.out.println(new ObjectMapper().writeValueAsString(recipe));
-        } catch (HTMLParseException e) {
-            e.printStackTrace();
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            try {
+                return getRecipe(path);
+            } catch (HTMLParseException ioe) {
+                logger.log(Level.SEVERE, "Could not get webpage for path: " + path, e);
+                throw ioe;
+            }
         }
     }
 }

@@ -1,10 +1,12 @@
 package uk.ac.cam.sp715.recipes;
 
+import java.io.Serializable;
+
 /**
  * Ingredient class.
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
-public class Ingredient {
+public class Ingredient implements Serializable {
     private final String name;
     public Ingredient(String name) {
         this.name = name;

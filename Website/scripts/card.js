@@ -31,13 +31,19 @@ Card.prototype = {
             var xhr = new XMLHttpRequest();
             xhr.open("GET", "/recipes/" + link, true);
             xhr.onreadystatechange = function() {
-                var dialog = document.getElementById("dialog");
+                var canvasHolder = document.getElementById("canvas-holder");
                 if(xhr.readyState == 4) {
                     if(xhr.status == 200) {
-                        dialog.innerHTML = xhr.response;
+                        canvasHolder.innerHTML = xhr.response;
                     } else {
-                        dialog.innerHTML = "Oopsy...";
+                        canvasHolder.innerHTML = "Oopsy... something has gone wrong.";
                     }
+                    [].forEach.call([canvasHolder.firstElementChild], function(svg) {
+                        svg.width = 4*window.innerWidth/5 + "px";
+                        svg.height = 4*window.innerHeight/5 + "px";
+                        svg.style.width = 4*window.innerWidth/5 + "px";
+                        svg.style.height = 4*window.innerHeight/5 + "px";
+                    });
                     dialog.open();
                 }
             };

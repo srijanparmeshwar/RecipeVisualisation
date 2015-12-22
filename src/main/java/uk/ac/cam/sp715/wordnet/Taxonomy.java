@@ -91,6 +91,9 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
         return leaves;
     }
 
+    /**
+     * Types to identify entity types.
+     */
     public enum TaxonomyType {
         APPLIANCES, UTENSILS, INGREDIENTS, OTHER
     }
@@ -101,6 +104,16 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
         List<IWordID> wordIDs = explorer.getIndexNoun(noun).getWordIDs();
         if(wordIDs.size()>0) {
             ISynset synset = explorer.getWord(wordIDs.get(0)).getSynset();
+            return explorer.exploreMeronyms(explorer.exploreHyponyms(new Taxonomy(synset)));
+        } else {
+            throw new WordNetException();
+        }
+    }
+
+    private static Taxonomy getNounTaxonomy(Explorer explorer, String noun, int index) {
+        List<IWordID> wordIDs = explorer.getIndexNoun(noun).getWordIDs();
+        if(wordIDs.size()>0) {
+            ISynset synset = explorer.getWord(wordIDs.get(index)).getSynset();
             return explorer.exploreMeronyms(explorer.exploreHyponyms(new Taxonomy(synset)));
         } else {
             throw new WordNetException();
@@ -118,7 +131,7 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
         Taxonomy utensils = getNounTaxonomy(explorer, "kitchen utensil");
         Graphs.addGraph(utensils, getNounTaxonomy(explorer, "tableware"));
 
-        TAXONOMIES.put(TaxonomyType.APPLIANCES, getNounTaxonomy(explorer, "kitchen appliance"));
+        TAXONOMIES.put(TaxonomyType.APPLIANCES, getNounTaxonomy(explorer, "appliance", 1));
         TAXONOMIES.put(TaxonomyType.UTENSILS, utensils);
         TAXONOMIES.put(TaxonomyType.INGREDIENTS, ingredients);
         explorer.close();
