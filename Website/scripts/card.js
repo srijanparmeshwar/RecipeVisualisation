@@ -38,12 +38,6 @@ Card.prototype = {
                     } else {
                         canvasHolder.innerHTML = "Oopsy... something has gone wrong.";
                     }
-                    [].forEach.call([canvasHolder.firstElementChild], function(svg) {
-                        svg.width = 4*window.innerWidth/5 + "px";
-                        svg.height = 4*window.innerHeight/5 + "px";
-                        svg.style.width = 4*window.innerWidth/5 + "px";
-                        svg.style.height = 4*window.innerHeight/5 + "px";
-                    });
                     dialog.open();
                 }
             };
@@ -55,7 +49,7 @@ Card.prototype = {
     },
     attachTo: function(container) {
         this.container = container;
-        container.appendChild(this.element);
+        this.container.appendChild(this.element);
     },
     remove: function() {
         this.container.removeChild(this.element);

@@ -3,6 +3,7 @@ package uk.ac.cam.sp715.ws;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import spark.Filter;
 import spark.Request;
 import spark.Response;
 import uk.ac.cam.sp715.flows.CoreNLPVisualiser;
@@ -31,6 +32,7 @@ public class RecipeServer {
 
     public static void main(String[] args) {
         port(4567);
+        before((request, response) -> System.gc());
         get("/search", RecipeServer::search);
         get("/recipes/:id", RecipeServer::getRecipe);
     }
@@ -38,7 +40,7 @@ public class RecipeServer {
     private static String parse(Recipe recipe) throws IOException {
         Flow flow;
         synchronized (pipeline) {
-            EntityAnnotator.augmentIngredientDictionary(pipeline, recipe);
+            EntityAnnotator.augmentIngredientDictionary(recipe);
             flow = visualiser.parse(recipe);
         }
         return flow.toSVG();

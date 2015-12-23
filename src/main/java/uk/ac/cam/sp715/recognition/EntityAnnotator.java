@@ -136,15 +136,12 @@ public class EntityAnnotator implements Annotator {
     }
 
     private static class IngredientFinder {
-        private final StanfordCoreNLP pipeline;
+        private static final StanfordCoreNLP pipeline = Pipeline.getLemmaPipeline();
         /**
          * Constructs a simple finder to recognize candidate nouns using the
          * given pipeline. This should include tokenization, lemmatization and POS tagging.
-         * @param pipeline Pipeline which will be used to annotate ingredient descriptions and tag nouns.
          */
-        public IngredientFinder(StanfordCoreNLP pipeline) {
-            this.pipeline = pipeline;
-        }
+        public IngredientFinder() {}
         /**
          * Extracts all noun tokens from the ingredient description
          * @param ingredient Ingredient details, from which the candidate strings are extracted.
@@ -152,11 +149,6 @@ public class EntityAnnotator implements Annotator {
          */
         public List<String> possibleIngredientNames(Ingredient ingredient) {
             String ingredientString = ingredient.getName();
-            while(ingredientString.contains("/") && ingredientString.contains("oz")) {
-                int startIndex = ingredientString.indexOf("/");
-                int endIndex = ingredientString.indexOf("oz");
-                ingredientString = ingredientString.substring(0, startIndex - 1) + ingredientString.substring(endIndex, ingredientString.length());
-            }
             Annotation annotation = new Annotation(ingredientString);
             pipeline.annotate(annotation);
             List<CoreMap> sentences = annotation.get(
@@ -165,10 +157,10 @@ public class EntityAnnotator implements Annotator {
 
             for(CoreMap sentence : sentences) {
                 for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-                    String word = token.get(CoreAnnotations.TextAnnotation.class);
-                    String pos = token.get(CoreAnnotations.PartOfSpeechAnnotation.class);
+                    String word = token.word();
+                    String pos = token.tag();
                     //Add only nouns.
-                    if(pos.startsWith("N")) {
+                    if(pos.startsWith("N") && !word.equals("oz") && word.matches("[a-zA-Z]+")) {
                         possibleIngredientNames.add(word);
                     }
                 }
@@ -177,8 +169,8 @@ public class EntityAnnotator implements Annotator {
         }
     }
 
-    public static void augmentIngredientDictionary(StanfordCoreNLP pipeline, Recipe recipe) {
-        IngredientFinder finder = new IngredientFinder(pipeline);
+    public static void augmentIngredientDictionary(Recipe recipe) {
+        IngredientFinder finder = new IngredientFinder();
         for(Ingredient ingredient : recipe.getIngredients()) {
             for(String noun : finder.possibleIngredientNames(ingredient)) {
                 IIndexWord indexWord = explorer.getIndexNoun(noun);
@@ -216,7 +208,7 @@ public class EntityAnnotator implements Annotator {
         StanfordCoreNLP pipeline = Pipeline.getLemmaPipeline();
         StanfordCoreNLP mainPipeline = Pipeline.getMainPipeline();
         Recipe recipe = HTMLParser.getRecipe(HTMLParser.search("chocolate").get(1).getLink());
-        EntityAnnotator.augmentIngredientDictionary(pipeline, recipe);
+        EntityAnnotator.augmentIngredientDictionary(recipe);
         Annotation annotation = new Annotation(recipe.getDescription());
         mainPipeline.annotate(annotation);
         for(CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
