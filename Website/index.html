@@ -15,7 +15,7 @@
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
 
-        <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+        <script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
         <link rel="import" href="bower_components/paper-styles/paper-styles.html">
         <link rel="import" href="bower_components/paper-progress/paper-progress.html">
@@ -66,6 +66,19 @@
                     font-size: 1.6em;
                 }
             }
+
+            #dialog-title {
+                font-size: 2em;
+            }
+
+            .heading {
+                font-size: 1.5em;
+            }
+
+            paper-dialog {
+                padding: 2em;
+            }
+
             paper-input {
                 /* Label and underline color when the input is focused */
                 width: 50%;
@@ -158,12 +171,12 @@
                 width: 100%;
 
                 font-family: Lato, monospace;
-                text-align: center;
-                font-style: italic;
+                font-size: 0.7em;
 
                 background: white;
                 color: #F44336;
                 padding: 0.5em 0;
+                padding-left: 1em;
                 box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.2);
             }
             .footer > a {
@@ -184,9 +197,14 @@
                 <div class="central-text" id="hint"><span class="emphasize" onclick="document.getElementById('query').$.input.focus();">Search</span> for a recipe to try it out.</div>
                 <div class="list" id="cards"></div>
                 <div id="dialogs">
-                    <paper-dialog id="dialog" entry-animation="slide-from-right-animation" exit-animation="slide-right-animation" with-backdrop>
-                        <paper-dialog-scrollable id="canvas-holder">
-                        </paper-dialog-scrollable>
+                    <paper-dialog id="dialog" entry-animation="slide-from-right-animation" exit-animation="slide-right-animation" with-backdrop style="overflow-y: scroll">
+                        <div id="dialog-title"></div>
+                        <div id="dialog-summary"></div>
+                        <p class="heading">Ingredients</p>
+                        <ol id="dialog-ingredients"></ol>
+                        <p class="heading">Instructions</p>
+                        <ol id="dialog-instructions"></ol>
+                        <paper-dialog-scrollable id="canvas-holder"></paper-dialog-scrollable>
                     </paper-dialog>
                 </div>
                 <div class="footer">Recipes are retrieved from <a href="//www.bbc.co.uk/food/">BBC Food</a> and so are copyright of BBC.</div>

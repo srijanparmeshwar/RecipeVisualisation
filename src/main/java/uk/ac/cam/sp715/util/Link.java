@@ -26,4 +26,8 @@ public class Link {
         builder.append("\"}");
         return builder.toString();
     }
+    @Override
+    public String toString() {
+        return "[" + link + ", " + title + "]";
+    }
 }

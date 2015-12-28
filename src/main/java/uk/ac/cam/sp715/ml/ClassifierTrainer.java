@@ -1,9 +1,7 @@
 package uk.ac.cam.sp715.ml;
 
 
-import edu.stanford.nlp.classify.GeneralDataset;
-import edu.stanford.nlp.classify.LinearClassifier;
-import edu.stanford.nlp.classify.LinearClassifierFactory;
+import edu.stanford.nlp.classify.*;
 import uk.ac.cam.sp715.flows.Role;
 
 /**
@@ -11,7 +9,7 @@ import uk.ac.cam.sp715.flows.Role;
  */
 public class ClassifierTrainer {
 
-    public static LinearClassifier<Role, String> train(GeneralDataset<Role, String> dataset) {
+    public static Classifier<Role, String> train(GeneralDataset<Role, String> dataset) {
         LinearClassifierFactory<Role, String> lcFactory = new LinearClassifierFactory<>();
         return lcFactory.trainClassifier(dataset);
     }

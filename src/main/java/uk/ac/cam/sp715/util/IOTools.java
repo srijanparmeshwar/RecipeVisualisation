@@ -2,15 +2,29 @@ package uk.ac.cam.sp715.util;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Collection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 /**
  * Created by Srijan on 17/12/2015.
  */
 public class IOTools {
     private static final Logger logger = Logging.getLogger(IOTools.class.getName());
+
+    public static void save(Collection<? extends Object> data, Path path) throws IOToolsException {
+        try {
+            Files.write(path, data.stream()
+                    .map(Object::toString)
+                    .collect(Collectors.toList()));
+        } catch(IOException ioException) {
+            logger.log(Level.SEVERE, "Could not write collection to file.", ioException);
+            throw new IOToolsException();
+        }
+    }
 
     public static void save(Serializable serializable, String filename) throws IOToolsException {
         try(FileOutputStream file = new FileOutputStream(filename);

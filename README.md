@@ -11,4 +11,4 @@ To run the servers two environment variables must be set. The first is the WordN
 
 To then run the servers, you need to run the built JAR file with dependencies and app.js in the Website module.
 
-Navigate to http://localhost to view the user interface.
+Navigate to [localhost](http://localhost) to view the user interface.

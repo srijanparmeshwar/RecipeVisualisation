@@ -1,5 +1,6 @@
 package uk.ac.cam.sp715.ml;
 
+import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.Dataset;
 import edu.stanford.nlp.classify.GeneralDataset;
 import edu.stanford.nlp.classify.LinearClassifier;
@@ -9,6 +10,8 @@ import edu.stanford.nlp.ling.Datum;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import jsat.classifiers.ClassificationDataSet;
+import jsat.classifiers.DataPoint;
 import uk.ac.cam.sp715.flows.FeatureVectors;
 import uk.ac.cam.sp715.flows.Role;
 import uk.ac.cam.sp715.recipes.Recipe;
@@ -20,6 +23,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static uk.ac.cam.sp715.recognition.EntityAnnotator.*;
 
@@ -76,34 +80,28 @@ public class DataHandler {
 
     public static void prepareTrainingFile(List<Recipe> recipes) {
         StanfordCoreNLP pipeline = Pipeline.getMainPipeline();
-        List<String> lines = new LinkedList<>();
-
-        for(Recipe recipe : recipes) {
+        List<String> lines = recipes.stream().map(recipe -> {
             Annotation annotation = new Annotation(recipe.getDescription());
             pipeline.annotate(annotation);
-
-            for(CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
-                AugmentedSemanticGraph dependencies = sentence.get(EntityAnnotations.class);
-                StringBuilder builder = new StringBuilder();
-                boolean first = true;
-                for(TaggedWord token : dependencies.orderedTokens()) {
-                    if(!first) builder.append(";;");
-                    else first = false;
-                    builder.append(token);
-                    builder.append("::");
-                }
-                lines.add(builder.toString());
-            }
-        }
+            return annotation.get(CoreAnnotations.SentencesAnnotation.class)
+                    .stream()
+                    .map(sentence -> sentence.get(EntityAnnotations.class)
+                            .orderedTokens()
+                            .stream()
+                            .map(token -> token + "::")
+                            .collect(Collectors.joining(";;"))
+                    ).collect(Collectors.joining("\n"));
+        }).collect(Collectors.toList());
 
         try {
-            Files.write(getPath("srl-train2.txt"), lines);
+            Files.write(getPath("srl-train.txt"), lines);
         } catch (IOException e) {
+            e.printStackTrace();
             throw new RuntimeException();
         }
     }
 
-    public static LinearClassifier<Role, String> getClassifier(StanfordCoreNLP pipeline) throws IOToolsException {
+    public static Classifier<Role, String> getClassifier(StanfordCoreNLP pipeline) throws IOToolsException {
         LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
 
         Map<Integer, List<String>> featureMap = new HashMap<>();
@@ -126,7 +124,7 @@ public class DataHandler {
             }
         }
 
-        return ClassifierTrainer.train(constructDataset(loadLabels("srl-train2.txt"), featureMap));
+        return ClassifierTrainer.train(constructDataset(loadLabels("srl-train.txt"), featureMap));
     }
 
     private static void trainAndTest() throws IOToolsException {
@@ -134,7 +132,7 @@ public class DataHandler {
 
         StanfordCoreNLP pipeline = Pipeline.getMainPipeline();
 
-        LinearClassifier<Role, String> classifier = getClassifier(pipeline);
+        Classifier<Role, String> classifier = getClassifier(pipeline);
 
         for(Recipe recipe : recipes) {
             Annotation annotation = new Annotation(recipe.getDescription());
@@ -159,21 +157,23 @@ public class DataHandler {
 
     private static void runPreparation() throws HTMLParseException, IOToolsException {
         List<Link> links = new LinkedList<>();
-        //LinkedList<Recipe> recipes = new LinkedList<>();
-        LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
+        LinkedList<Recipe> recipes = new LinkedList<>();
+        //LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
 
-        for(String query : new String[] {"chocolate", "halloween", "pizza"}) links.addAll(HTMLParser.search(query));
+        for(String query : new String[] {"chocolate", "halloween", "pizza", "tea"}) links.addAll(HTMLParser.search(query));
         for(Link link : links) recipes.add(HTMLParser.getRecipe(link.getLink()));
 
+        IOTools.save(links, getPath("links.txt"));
+        IOTools.save(recipes, getPath("recipes.ser").toString());
+
         prepareTrainingFile(recipes);
-        //IOTools.save(recipes, getPath("recipes.ser").toString());
     }
 
     private static void testCurrentLabeling() throws HTMLParseException, IOToolsException {
-        System.out.println(loadLabels("srl-train2.txt"));
+        System.out.println(loadLabels("srl-train.txt"));
     }
 
     public static void main(String[] args) throws HTMLParseException, IOToolsException {
-        testCurrentLabeling();
+        runPreparation();
     }
 }

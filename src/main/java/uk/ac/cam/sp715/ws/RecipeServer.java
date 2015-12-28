@@ -8,6 +8,7 @@ import spark.Request;
 import spark.Response;
 import uk.ac.cam.sp715.flows.CoreNLPVisualiser;
 import uk.ac.cam.sp715.flows.Flow;
+import uk.ac.cam.sp715.recipes.Ingredient;
 import uk.ac.cam.sp715.recipes.Recipe;
 import uk.ac.cam.sp715.recognition.EntityAnnotator;
 import uk.ac.cam.sp715.util.*;
@@ -15,8 +16,10 @@ import uk.ac.cam.sp715.util.*;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.StringJoiner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 import static spark.Spark.*;
 
@@ -60,10 +63,44 @@ public class RecipeServer {
         return "[]";
     }
 
+    private static class RecipeResult {
+        private final String title;
+        private final String summary;
+        private final List<String> ingredients;
+        private final List<String> instructions;
+        private final String svg;
+        public RecipeResult(Recipe recipe, String svg) {
+            this.title = recipe.getTitle();
+            this.summary = recipe.getSummary();
+            this.ingredients = recipe.getIngredients()
+                    .stream()
+                    .map(Ingredient::getName)
+                    .collect(Collectors.toList());
+            this.instructions = recipe.getInstructions();
+            this.svg = svg;
+        }
+        private static String JSStringArray(List<String> list) {
+            return "[" + list
+                    .stream()
+                    .map(ingredient -> "\"" + ingredient + "\"")
+                    .collect(Collectors.joining(", ")) + "]";
+        }
+        public String toJSON() {
+            StringJoiner joiner = new StringJoiner(", ");
+            joiner.add("\"title\": \"" + title + "\"");
+            joiner.add("\"summary\": \"" + summary + "\"");
+            joiner.add("\"ingredients\": " + JSStringArray(ingredients));
+            joiner.add("\"instructions\": " + JSStringArray(instructions));
+
+            return "{" + joiner + "}" + ";;;" + svg;
+        }
+    }
+
     private static String getRecipe(Request request, Response response) {
         try {
             Recipe recipe = HTMLParser.getRecipe(request.params(":id"));
-            return parse(recipe);
+            RecipeResult result = new RecipeResult(recipe, parse(recipe));
+            return result.toJSON();
         } catch (HTMLParseException e) {
             logger.log(Level.SEVERE, "Error occurred searching for recipes.", e);
             response.status(400);

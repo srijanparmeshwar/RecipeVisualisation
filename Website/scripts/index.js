@@ -14,32 +14,35 @@ function clear() {
     cards = [];
 }
 
-function error() {
+function error(message) {
     clear();
-    cards.push(textCard(":(", "No results found."));
+    cards.push(textCard(":(", message));
     cards[0].attachTo(document.getElementById("cards"));
 }
 
-function search(value) {
-    var main = document.getElementById("main");
+function clearBackground() {
     var hint = document.getElementById("hint");
     if(hint) {
-        main.removeChild(document.getElementById("hint"));
+        document.getElementById("main").removeChild(document.getElementById("hint"));
         document.body.style.background = "#F44336";
     }
+}
+
+function search(value) {
+    clearBackground();
 
     clear();
     cards.push(progressCard());
     cards[0].attachTo(document.getElementById("cards"));
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/search?q=" + value, true);
+    xhr.open("GET", "../api/search?q=" + value, true);
     xhr.onreadystatechange = function() {
         if(xhr.readyState == 4) {
             if(xhr.status == 200) {
                 update(xhr.response);
             } else {
-                error();
+                error("No results found.");
             }
         }
     };
@@ -65,9 +68,63 @@ function progressCard() {
     return card;
 }
 
+function displayRecipe(link, xhrResponse) {
+    var canvasHolder = document.getElementById("canvas-holder");
+    var title = document.getElementById("dialog-title");
+    var ingredients = document.getElementById("dialog-ingredients");
+    var instructions = document.getElementById("dialog-instructions");
+
+    var parts = xhrResponse.split(";;;");
+    var response = JSON.parse(parts[0]);
+
+    title.innerHTML = "";
+    ingredients.innerHTML = "";
+    instructions.innerHTML = "";
+
+    canvasHolder.innerHTML = parts[1];
+    title.innerHTML = response.title;
+
+    for(var i = 0; i<response.ingredients.length; i++) {
+        var ingredientString = response.ingredients[i];
+        var ingredient = document.createElement("li");
+        ingredient.innerHTML = ingredientString;
+        ingredients.appendChild(ingredient);
+    }
+
+    for(var i = 0; i<response.instructions.length; i++) {
+        var instructionString = response.instructions[i];
+        var instruction = document.createElement("li");
+        instruction.innerHTML = instructionString;
+        instructions.appendChild(instruction);
+    }
+
+    var svg = canvasHolder.firstElementChild;
+    if(svg) {
+        svg.setAttribute("width", 3*window.innerWidth/5 + "px");
+    }
+}
+
+function getRecipe(link) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "../api/recipes/" + link, true);
+    xhr.onreadystatechange = function() {
+        if(xhr.readyState == 4) {
+            if(xhr.status == 200) {
+                displayRecipe(link, xhr.response);
+            } else {
+                error("Could not load recipe.")
+            }
+            dialog.open();
+        }
+    };
+    xhr.send();
+}
+
 function linkCard(title, link) {
     var card = textCard(title, "");
-    card.addLink(link);
+    card.addEventListener("click", function() {
+        getRecipe(link);
+    });
     return card;
 }
 

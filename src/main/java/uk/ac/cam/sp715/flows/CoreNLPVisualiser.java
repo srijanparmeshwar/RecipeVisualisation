@@ -1,6 +1,6 @@
 package uk.ac.cam.sp715.flows;
 
-import edu.stanford.nlp.classify.LinearClassifier;
+import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.ling.BasicDatum;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.IndexedWord;
@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
  */
 public class CoreNLPVisualiser extends Visualiser {
     private final StanfordCoreNLP pipeline;
-    private final LinearClassifier<Role, String> classifier;
+    private final Classifier<Role, String> classifier;
     private final Map<String, Action> frontiers;
 
     public CoreNLPVisualiser(StanfordCoreNLP pipeline) {

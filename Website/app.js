@@ -8,7 +8,7 @@ app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
-app.get("/search", function (req, res) {
+app.get("/api/search", function (req, res) {
     console.log('Query request: ' + req.query.q);
     var options = {
         host: 'localhost',
@@ -39,7 +39,7 @@ app.get("/search", function (req, res) {
     request.end();
 });
 
-app.get("/recipes/:id", function (req, res) {
+app.get("/api/recipes/:id", function (req, res) {
     console.log('Query request: ' + req.params.id);
     var options = {
         host: 'localhost',
@@ -77,8 +77,8 @@ app.get(/^(.+)$/, function (req, res) {
     res.sendFile(__dirname + req.params[0], options, function (err) {
         if (err) {
             console.log("Error: " + err.status);
-            res.status(404);
-            res.sendFile(__dirname + "/404.html");
+            res.status(err.status);
+            res.send("File not found");
         }
     });
 });

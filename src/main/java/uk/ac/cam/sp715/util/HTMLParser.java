@@ -87,8 +87,7 @@ public class HTMLParser {
         PersistentCache.Key key = PersistentCache.Key.get(path);
         try {
             if (recipeCache != null && recipeCache.containsKey(key)) {
-                Recipe recipe = recipeCache.get(key);
-                return recipe;
+                return recipeCache.get(key);
             } else {
                 Recipe recipe = retrieveRecipe(path);
                 if (recipeCache != null) {

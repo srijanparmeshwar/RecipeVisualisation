@@ -26,23 +26,8 @@ Card.prototype = {
         this.progress.setAttribute("indeterminate", "true");
         this.content.appendChild(this.progress);
     },
-    addLink: function(link) {
-        this.element.addEventListener("click", function() {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "/recipes/" + link, true);
-            xhr.onreadystatechange = function() {
-                var canvasHolder = document.getElementById("canvas-holder");
-                if(xhr.readyState == 4) {
-                    if(xhr.status == 200) {
-                        canvasHolder.innerHTML = xhr.response;
-                    } else {
-                        canvasHolder.innerHTML = "Oopsy... something has gone wrong.";
-                    }
-                    dialog.open();
-                }
-            };
-            xhr.send();
-        });
+    addEventListener: function(type, onEvent) {
+        this.element.addEventListener(type, onEvent);
     },
     addRipple: function() {
         this.element.appendChild(document.createElement("paper-ripple"));
