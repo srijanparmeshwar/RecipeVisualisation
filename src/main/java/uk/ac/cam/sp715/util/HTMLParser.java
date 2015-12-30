@@ -1,19 +1,14 @@
 package uk.ac.cam.sp715.util;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import uk.ac.cam.sp715.caching.CacheException;
-import uk.ac.cam.sp715.caching.PersistentCache;
+import uk.ac.cam.sp715.caching.*;
 import uk.ac.cam.sp715.recipes.Ingredient;
 import uk.ac.cam.sp715.recipes.Recipe;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
@@ -25,14 +20,16 @@ import java.util.logging.Logger;
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class HTMLParser {
-    private static final Logger logger = Logging.getLogger(HTMLParser.class.getName());
-    private static PersistentCache<Recipe> recipeCache;
-    static {
+    private static final Logger logger = Logging.getLogger(HTMLParser.class);
+    private static final Cache<RecipeKey, Recipe> recipeCache = initializeCache();
+
+    private static Cache<RecipeKey, Recipe> initializeCache() {
         try {
-            if(!PersistentCache.exists("cache")) recipeCache = new PersistentCache<>(60);
-            else recipeCache = PersistentCache.read("cache");
+            if(!PersistentCache.exists("cache")) return new PersistentCache<>(50);
+            else return PersistentCache.read("cache");
         } catch (IOToolsException iote) {
-            logger.log(Level.SEVERE, "Could not read recipe cache.", iote);
+            logger.log(Level.SEVERE, "Could not read recipe cache. Creating in memory cache instead.", iote);
+            return new MemoryCache<>(50);
         }
     }
 
@@ -45,7 +42,7 @@ public class HTMLParser {
      */
     public static List<Link> search(String query) throws HTMLParseException {
         try {
-            Document document = Jsoup.connect("http://www.bbc.co.uk/food/recipes/search?keywords=" + JSEngine.encodeURI(query)).get();
+            Document document = Jsoup.connect("http://www.bbc.co.uk/food/recipes/search?keywords=" + JSEngine.encodeURIComponent(query)).get();
             //Article class selection.
             Elements articles = document.select(".article");
             //Link selection.
@@ -77,22 +74,20 @@ public class HTMLParser {
     }
 
     /**
-     * Utility function to retrieve BBC recipe.
+     * Utility function to get BBC recipe.
      * Recipe is either retrieved from the cache or from the BBC website.
      * @param path Relative (to 'http://www.bbc.co.uk/food/recipes/') path of recipe on BBC website.
      * @return {@link Recipe} - Parsed recipe with ingredients and instructions separated.
      * @throws HTMLParseException
      */
     public static Recipe getRecipe(String path) throws HTMLParseException {
-        PersistentCache.Key key = PersistentCache.Key.get(path);
+        RecipeKey key = RecipeKey.get(path);
         try {
-            if (recipeCache != null && recipeCache.containsKey(key)) {
+            if (recipeCache.containsKey(key)) {
                 return recipeCache.get(key);
             } else {
                 Recipe recipe = retrieveRecipe(path);
-                if (recipeCache != null) {
-                    recipeCache.add(key, recipe);
-                }
+                recipeCache.add(key, recipe);
                 return recipe;
             }
         } catch (CacheException cacheException) {

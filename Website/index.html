@@ -15,7 +15,7 @@
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
 
-        <script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+        <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
         <link rel="import" href="bower_components/paper-styles/paper-styles.html">
         <link rel="import" href="bower_components/paper-progress/paper-progress.html">
@@ -39,16 +39,15 @@
             }
             body {
                 margin: 0;
-                /*background: #FFFFFF;*/
-                background-image: url("images/cupcakes.jpg");
+                background: url(images/muffins.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
                 background-size: cover;
                 transition: 0.2s;
             }
             .app-header {
-            @apply(--shadow-elevation-2dp);
-            }
-            .content {
-                margin: 1em 0;
+                @apply(--shadow-elevation-2dp);
             }
             #title {
                 display: block;
@@ -116,9 +115,9 @@
                 padding: 0.5em 0;
             }
             .central-text {
-                position: absolute;
+                position: fixed;
                 left: 50%;
-                top: 40%;
+                top: 50%;
                 -webkit-transform: translate(-50%, -50%);
                 -moz-transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
@@ -132,16 +131,17 @@
                 text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
                 transition: 0.2s;
 
+                /*
                 background: rgba(30, 30, 30, 0.3);
                 padding: 0.7em 1em;
                 border: solid transparent;
                 -webkit-border-radius: 10px;
                 -moz-border-radius: 10px;
-                border-radius: 10px;
+                border-radius: 10px;*/
             }
             @media screen and (max-width: 640px) {
                 .central-text {
-                    font-size: 2.2em;
+                    font-size: 2em;
                 }
             }
             paper-card {
@@ -154,7 +154,7 @@
                 --paper-progress-active-color: #03A9F4;
             }
             .emphasize {
-                color: #F44336;
+                color: lightgrey;
                 cursor: pointer;
                 -webkit-transition: all 0.25s;
                 -moz-transition: all 0.25s;
@@ -163,7 +163,7 @@
                 transition: all 0.25s;
             }
             .emphasize:hover {
-                color: #F77669;
+                color: #F44336;
             }
             .footer {
                 position: fixed;
@@ -194,7 +194,7 @@
                 </paper-input>
             </paper-toolbar>
             <div class="content fit" id="main">
-                <div class="central-text" id="hint"><span class="emphasize" onclick="document.getElementById('query').$.input.focus();">Search</span> for a recipe to try it out.</div>
+                <div class="central-text" id="hint"><span class="emphasize" onclick="document.getElementById('query').$.input.focus();">Search</span> for a recipe to try.</div>
                 <div class="list" id="cards"></div>
                 <div id="dialogs">
                     <paper-dialog id="dialog" entry-animation="slide-from-right-animation" exit-animation="slide-right-animation" with-backdrop style="overflow-y: scroll">

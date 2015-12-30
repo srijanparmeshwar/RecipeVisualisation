@@ -1,7 +1,7 @@
 package uk.ac.cam.sp715.caching;
 
 /**
- * Exceptions caused by LFU cache errors.
+ * Exceptions caused by cache access errors.
  */
 public class CacheException extends Exception {
 }

@@ -31,12 +31,15 @@ import java.util.stream.Collectors;
 
 /**
  * Dictionary based entity recognizer which uses WordNet taxonomies
- * to produce lemmatized dictionaries for the each {@link TaxonomyType}.
+ * to produce lemmatized dictionaries for each {@link TaxonomyType}.
+ * The class implements the CoreNLP {@link Annotator} and so can be added to a pipeline
+ * using {@link EntityAnnotations} as the annotation key, and {@link AugmentedSemanticGraph}
+ * as the value type.
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class EntityAnnotator implements Annotator {
-    private static Explorer explorer;
-    private static Map<TaxonomyType, Set<String>> dictionaries;
+    private static final Explorer explorer = new Explorer();
+    private static final Map<TaxonomyType, Set<String>> dictionaries = initializeDictionaries(Taxonomy.getTaxonomies());
     public static final String NAME = "entities";
     public static final class EntityAnnotations implements CoreAnnotation<AugmentedSemanticGraph> {
         @Override
@@ -46,16 +49,11 @@ public class EntityAnnotator implements Annotator {
     }
 
     public EntityAnnotator(String string, Properties props) {
-        if(explorer == null) {
-            explorer = new Explorer();
-            explorer.open();
-        }
-        if(dictionaries == null) initializeDictionaries();
+        explorer.open();
     }
 
-    private static void initializeDictionaries() {
-        Map<TaxonomyType, Taxonomy> taxonomies = Taxonomy.getTaxonomies();
-        dictionaries = new HashMap<>();
+    private static Map<TaxonomyType, Set<String>> initializeDictionaries(Map<TaxonomyType, Taxonomy> taxonomies) {
+        Map<TaxonomyType, Set<String>> dictionaries = new HashMap<>();
         for(TaxonomyType type : taxonomies.keySet()) dictionaries.put(type, new HashSet<>());
 
         for(TaxonomyType type : taxonomies.keySet()) {
@@ -65,8 +63,13 @@ public class EntityAnnotator implements Annotator {
                 }
             }
         }
+        return dictionaries;
     }
 
+    /**
+     * Represents a directed graph holding dependency relations given by the CoreNLP dependency parser, however
+     * the tokens ({@link TaggedWord}) have been annotated as to whether they are recognized entities or not.
+     */
     public static class AugmentedSemanticGraph extends DefaultDirectedGraph<TaggedWord, GrammaticalRelation> {
         public AugmentedSemanticGraph() {
             super(GrammaticalRelation.class);
@@ -138,7 +141,7 @@ public class EntityAnnotator implements Annotator {
     private static class IngredientFinder {
         private static final StanfordCoreNLP pipeline = Pipeline.getLemmaPipeline();
         /**
-         * Constructs a simple finder to recognize candidate nouns using the
+         * Constructs a simple parser to recognize candidate nouns using the
          * given pipeline. This should include tokenization, lemmatization and POS tagging.
          */
         public IngredientFinder() {}
@@ -201,27 +204,5 @@ public class EntityAnnotator implements Annotator {
         if(noun.endsWith("s")) {
             return getType(noun.substring(0, noun.length() - 1));
         } else return TaxonomyType.OTHER;
-    }
-
-    public static void main(String[] args) throws HTMLParseException {
-        //dictionaries.get(TaxonomyType.UTENSILS).forEach(System.out::println);
-        StanfordCoreNLP pipeline = Pipeline.getLemmaPipeline();
-        StanfordCoreNLP mainPipeline = Pipeline.getMainPipeline();
-        Recipe recipe = HTMLParser.getRecipe(HTMLParser.search("chocolate").get(1).getLink());
-        EntityAnnotator.augmentIngredientDictionary(recipe);
-        Annotation annotation = new Annotation(recipe.getDescription());
-        mainPipeline.annotate(annotation);
-        for(CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
-            System.out.println();
-            AugmentedSemanticGraph dependencies = sentence.get(EntityAnnotations.class);
-            /*dependencies.edgeSet().forEach((relation) -> {
-                    System.out.println("Rel: " + relation.getShortName() + ", Gov: " + dependencies.getEdgeSource(relation) + ", Dep: " + dependencies.getEdgeTarget(relation));
-            });*/
-            dependencies.orderedTokens().forEach(System.out::println);
-        }
-
-
-
-        //experimental();
     }
 }

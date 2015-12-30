@@ -11,18 +11,18 @@ import java.util.logging.Logger;
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class JSEngine {
-    private static final Logger logger = Logging.getLogger(JSEngine.class.getName());
+    private static final Logger logger = Logging.getLogger(JSEngine.class);
 
     /**
      * Takes query as input and returns URI encoded version.
      * @param input Query.
      * @return {@link String} - URI encoded query.
      */
-    public static String encodeURI(String input) {
+    public static String encodeURIComponent(String input) {
         try {
             ScriptEngineManager factory = new ScriptEngineManager();
             ScriptEngine engine = factory.getEngineByName("nashorn");
-            return (String) engine.eval("encodeURI('" + input + "');");
+            return (String) engine.eval("encodeURIComponent('" + input + "');");
         } catch (ScriptException e) {
             logger.log(Level.SEVERE, "Error encoding query via JavaScript engine.", e);
         }

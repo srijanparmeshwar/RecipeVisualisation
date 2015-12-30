@@ -20,7 +20,10 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
- * Created by Srijan on 26/11/2015.
+ * Visualiser which uses CoreNLP annotators to provide information to
+ * determine dependencies. Actions are recognized using a linear classifier.
+ * It is used to produce flow graphs from recipe texts.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class CoreNLPVisualiser extends Visualiser {
     private final StanfordCoreNLP pipeline;

@@ -1,7 +1,8 @@
 package uk.ac.cam.sp715.util;
 
 /**
- * Created by Srijan on 17/12/2015.
+ * Exceptions which are thrown from {@link IOTools} static methods.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class IOToolsException extends Exception {
 }

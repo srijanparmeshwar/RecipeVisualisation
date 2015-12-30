@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 public class Explorer implements AutoCloseable {
     private final IDictionary dictionary;
 
-    private static final Logger logger = Logging.getLogger(Explorer.class.getName());
+    private static final Logger logger = Logging.getLogger(Explorer.class);
 
     public Explorer() {
         try {

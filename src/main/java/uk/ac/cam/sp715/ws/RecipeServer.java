@@ -31,7 +31,7 @@ import static spark.Spark.*;
 public class RecipeServer {
     private static final StanfordCoreNLP pipeline = Pipeline.getMainPipeline();
     private static final CoreNLPVisualiser visualiser = new CoreNLPVisualiser(pipeline);
-    private static final Logger logger = Logging.getLogger(RecipeServer.class.getName());
+    private static final Logger logger = Logging.getLogger(RecipeServer.class);
 
     public static void main(String[] args) {
         port(4567);

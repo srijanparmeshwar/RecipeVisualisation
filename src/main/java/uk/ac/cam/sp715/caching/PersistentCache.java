@@ -1,26 +1,25 @@
 package uk.ac.cam.sp715.caching;
 
-import uk.ac.cam.sp715.recipes.Recipe;
 import uk.ac.cam.sp715.util.*;
 
 import java.io.File;
 import java.io.Serializable;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Created by Srijan on 17/12/2015.
+ * Persistent least frequently used cache for recipes.
+ * @param <V> The value type.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
-public class PersistentCache<V extends Serializable> implements Serializable, LFUCache<PersistentCache.Key, V> {
+public class PersistentCache<V extends Serializable> implements Serializable, Cache<RecipeKey, V> {
     private final String location;
-    private final PriorityQueue<Key> keys;
+    private final PriorityQueue<RecipeKey> keys;
     private int maxSize;
     private static final String name = "cache.ser";
-    private static final Logger logger = Logging.getLogger(PersistentCache.class.getName());
+    private static final Logger logger = Logging.getLogger(PersistentCache.class);
 
     /* Constructors. */
     public PersistentCache(int maxSize) {
@@ -49,7 +48,8 @@ public class PersistentCache<V extends Serializable> implements Serializable, LF
     }
 
     /* Public methods. */
-    public synchronized boolean containsKey(Key key) throws CacheException {
+    @Override
+    public synchronized boolean containsKey(RecipeKey key) throws CacheException {
         try {
             boolean result = keys.contains(key);
             save();
@@ -59,9 +59,10 @@ public class PersistentCache<V extends Serializable> implements Serializable, LF
             throw new CacheException();
         }
     }
-    public synchronized V get(Key key) throws CacheException {
+    @Override
+    public synchronized V get(RecipeKey key) throws CacheException {
         try {
-            V result = IOTools.read(getLocation(key.filename()));
+            V result = IOTools.read(getLocation(key.name()));
             save();
             return result;
         } catch(IOToolsException iote) {
@@ -69,16 +70,17 @@ public class PersistentCache<V extends Serializable> implements Serializable, LF
             throw new CacheException();
         }
     }
-    public synchronized void add(Key key, V value) throws CacheException {
+    @Override
+    public synchronized void add(RecipeKey key, V value) throws CacheException {
         try {
             if (keys.size() < maxSize) {
                 keys.add(key);
-                IOTools.save(value, getLocation(key.filename()));
+                IOTools.save(value, getLocation(key.name()));
             } else {
                 update();
-                IOTools.delete(getLocation(keys.poll().filename()));
+                IOTools.delete(getLocation(keys.poll().name()));
                 keys.add(key);
-                IOTools.save(value, getLocation(key.filename()));
+                IOTools.save(value, getLocation(key.name()));
             }
             save();
         } catch(IOToolsException iote) {
@@ -86,57 +88,12 @@ public class PersistentCache<V extends Serializable> implements Serializable, LF
             throw new CacheException();
         }
     }
+    @Override
     public synchronized int size() {
         return keys.size();
     }
 
-    public static class Key implements Serializable, Comparable<Key> {
-        private final String filename;
-        private int count;
-        private static final Map<String, Key> map = new HashMap<>();
-
-        private Key(String filename) {
-            this.filename = filename;
-            this.count = 0;
-        }
-
-        public static Key get(String key) {
-            if (!map.containsKey(key)) map.put(key, new Key(key));
-            Key value = map.get(key);
-            value.count++;
-            return value;
-        }
-
-        @Override
-        public int compareTo(Key o) {
-            return Integer.compare(this.count, o.count);
-        }
-
-        public int count() {
-            return count;
-        }
-
-        public String filename() {
-            return filename;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-
-            Key key = (Key) o;
-
-            return !(filename != null ? !filename.equals(key.filename) : key.filename != null);
-        }
-
-        @Override
-        public int hashCode() {
-            return filename != null ? filename.hashCode() : 0;
-        }
-    }
-
-    /* Public static methods. */
+    /* Public static utility methods. */
     public static boolean exists(String location) {
         return IOTools.exists(Paths.get(location, name).toString());
     }

@@ -1,7 +1,9 @@
 package uk.ac.cam.sp715.util;
 
 /**
- * Created by Srijan on 21/11/2015.
+ * BBC link which is passed to the web application as JSON,
+ * and is used by the program to retrieve the recipes.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class Link {
     private final String link;

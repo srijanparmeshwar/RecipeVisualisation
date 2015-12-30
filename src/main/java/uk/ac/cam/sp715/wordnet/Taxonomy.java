@@ -98,7 +98,7 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
         APPLIANCES, UTENSILS, INGREDIENTS, OTHER
     }
 
-    private static Map<TaxonomyType, Taxonomy> TAXONOMIES;
+    private static Map<TaxonomyType, Taxonomy> TAXONOMIES = initializeTaxonomies();
 
     private static Taxonomy getNounTaxonomy(Explorer explorer, String noun) {
         List<IWordID> wordIDs = explorer.getIndexNoun(noun).getWordIDs();
@@ -120,10 +120,16 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
         }
     }
 
-    private static void initializeTaxonomies() {
+    /**
+     * Loads the collections for each type from the seeds.
+     * Ingredients - food, solid food, fat.
+     * Utensils - kitchen utensil, tableware.
+     * Appliances - appliance.
+     */
+    private static Map<TaxonomyType, Taxonomy> initializeTaxonomies() {
         Explorer explorer = new Explorer();
         explorer.open();
-        TAXONOMIES = new HashMap<>();
+        Map<TaxonomyType, Taxonomy> TAXONOMIES = new HashMap<>();
         Taxonomy ingredients = getNounTaxonomy(explorer, "food");
         Graphs.addGraph(ingredients, getNounTaxonomy(explorer, "solid food"));
         Graphs.addGraph(ingredients, getNounTaxonomy(explorer, "fat"));
@@ -135,15 +141,14 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
         TAXONOMIES.put(TaxonomyType.UTENSILS, utensils);
         TAXONOMIES.put(TaxonomyType.INGREDIENTS, ingredients);
         explorer.close();
+        return TAXONOMIES;
     }
 
-    public static Taxonomy getTaxonomy(TaxonomyType type) {
-        if(TAXONOMIES == null) initializeTaxonomies();
-        return TAXONOMIES.get(type);
-    }
-
+    /**
+     * Retrieves the entity type collections.
+     * @return Collections for each entity type enumerated by {@link TaxonomyType}.
+     */
     public static Map<TaxonomyType, Taxonomy> getTaxonomies() {
-        if(TAXONOMIES == null) initializeTaxonomies();
         return TAXONOMIES;
     }
 }

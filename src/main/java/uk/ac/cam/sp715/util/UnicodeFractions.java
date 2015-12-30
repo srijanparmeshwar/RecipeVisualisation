@@ -8,8 +8,9 @@ import java.util.Map;
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class UnicodeFractions {
-    public static final Map<String, String> fractions = new HashMap<>();
-    static {
+    public static final Map<String, String> fractions = initializeRules();
+    private static Map<String, String> initializeRules() {
+        Map<String, String> fractions = new HashMap<>();
         fractions.put("\u00BC", ".25");
         fractions.put("\u00BD", ".5");
         fractions.put("\u00BE", ".75");
@@ -25,5 +26,6 @@ public class UnicodeFractions {
         fractions.put("\u215C", ".375");
         fractions.put("\u215D", ".625");
         fractions.put("\u215E", ".875");
+        return fractions;
     }
 }
