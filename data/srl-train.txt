@@ -1,24 +1,24 @@
-Grease::A;;four::O;;ramekins::D;;with::O;;butter::I;;.::O
-Set::A;;aside::O;;.::O
-For::O;;the::O;;chocolate crumb puddings::I;;,::O;;bring::A;;a::O;;little::O;;water::D;;to::O;;the::O;;boil::O;;in::O;;a::O;;pan::I;;,::O;;then::O;;reduce::A;;the::;;heat::D;;until::O;;the::O;;water::I;;is::;;simmering::;;.::
-Suspend::A;;a::O;;heatproof::O;;bowl::D;;over::O;;the::O;;water::I;;.::O
-Do::O;;not::O;;allow::A;;the::O;;base::O;;of::O;;the::O;;bowl::D;;to::O;;touch::O;;the::O;;water::I;;.::O
-Add::A;;the::O;;50g/2oz::O;;of::O;;chocolate::D;;and::O;;stir::A;;until::O;;melted::O;;.::O
+Grease::A;;four::;;ramekins::D;;with::O;;butter::I;;.::O
+Set::A;;aside::;;.::
+For::;;the::;;chocolate crumb puddings::I;;,::O;;bring::A;;a::O;;little::O;;water::D;;to::O;;the::O;;boil::O;;in::;;a::;;pan::I;;,::;;then::O;;reduce::A;;the::;;heat::D;;until::;;the::;;water::;;is::;;simmering::;;.::
+Suspend::A;;a::;;heatproof::;;bowl::D;;over::;;the::;;water::I;;.::
+Do::;;not::;;allow::;;the::;;base::;;of::;;the::;;bowl::;;to::;;touch::;;the::;;water::;;.::
+Add::A;;the::O;;50g/2oz::O;;of::O;;chocolate::D;;and::;;stir::A;;until::;;melted::;;.::
 Remove::;;from::;;the::;;heat::;;and::;;set::;;aside::;;to::;;cool::;;slightly::;;.::
 In::;;a::;;separate::;;bowl::;;,::;;cream::;;together::;;the::;;butter::;;-LRB-::;;or::;;margarine::;;-RRB-::;;and::;;the::;;sugar::;;until::;;pale::;;and::;;fluffy::;;.::
-Beat::;;the::;;cooled::;;melted::;;chocolate::;;,::;;egg yolk::;;and::;;vanilla::;;into::;;the::;;creamed::;;butter::;;and::;;sugar::;;until::;;well::;;combined::;;.::
-Mix::;;the::;;breadcrumbs::;;and::;;flour::;;together::;;.::
+Beat::A;;the::O;;cooled::O;;melted::O;;chocolate::D;;,::O;;egg yolk::D;;and::O;;vanilla::D;;into::O;;the::O;;creamed::O;;butter::I;;and::O;;sugar::I;;until::O;;well::O;;combined::O;;.::O
+Mix::A;;the::O;;breadcrumbs::D;;and::O;;flour::D;;together::O;;.::O
 Fold::;;half::;;of::;;the::;;mixture breadcrumb::;;into::;;the::;;chocolate mixture::;;,::;;then::;;carefully::;;stir::;;in::;;1-2::;;tablespoons::;;of::;;milk::;;.::
 Fold::;;the::;;remaining::;;mixture breadcrumb::;;into::;;the::;;chocolate mixture::;;,::;;then::;;fold::;;in::;;the::;;remaining::;;milk::;;,::;;as::;;necessary::;;,::;;to::;;loosen::;;the::;;mixture::;;.::
 -LRB-::;;The::;;mixture::;;should::;;be::;;of::;;dropping::;;consistency::;;.::;;-RRB-::
-Whisk::;;the::;;egg whites::;;until::;;stiff::;;peaks::;;form::;;when::;;the::;;whisk::;;is::;;removed::;;.::
+Whisk::A;;the::O;;egg whites::D;;until::;;stiff::;;peaks::;;form::;;when::;;the::;;whisk::;;is::;;removed::;;.::
 Carefully::;;fold::;;the::;;whisked::;;egg whites::;;into::;;the::;;chocolate mixture::;;until::;;just::;;combined::;;.::
 Divide::;;half::;;of::;;the::;;pudding mixture::;;among::;;the::;;prepared::;;ramekins::;;.::
 Put::;;two::;;squares::;;of::;;dark::;;chocolate::;;on::;;top::;;of::;;each::;;portion::;;,::;;then::;;cover::;;each::;;with::;;the::;;remaining::;;chocolate pudding mixture::;;.::
-Cover::;;each::;;ramekin::;;with::;;aluminium::;;foil::;;.::
-Prepare::;;a::;;steamer::;;with::;;2.5::;;cm/1in::;;of::;;boiling::;;water::;;.::
+Cover::A;;each::O;;ramekin::D;;with::O;;aluminium::O;;foil::I;;.::O
+Prepare::A;;a::O;;steamer::D;;with::O;;2.5::O;;cm/1in::O;;of::O;;boiling::O;;water::I;;.::O
 Add::;;the::;;covered::;;ramekins::;;and::;;steam::;;for::;;20-25::;;minutes::;;,::;;or::;;until::;;cooked::;;through::;;.::
-Meanwhile::;;,::;;for::;;the::;;white::;;chocolate sauce::;;,::;;bring::;;a::;;little::;;water::;;to::;;the::;;boil::;;in::;;a::;;pan::;;,::;;then::;;reduce::;;the::;;heat::;;until::;;the::;;water::;;is::;;simmering::;;.::
+Meanwhile::;;,::;;for::;;the::;;white::;;chocolate sauce::I;;,::;;bring::A;;a::;;little::;;water::D;;to::;;the::;;boil::;;in::;;a::;;pan::I;;,::;;then::O;;reduce::A;;the::;;heat::D;;until::;;the::;;water::;;is::;;simmering::;;.::
 Suspend::;;a::;;heatproof::;;bowl::;;over::;;the::;;water::;;-LRB-::;;do::;;not::;;allow::;;the::;;base::;;of::;;the::;;bowl::;;to::;;touch::;;the::;;water::;;-RRB-::;;.::
 Add::;;the::;;white::;;chocolate::;;and::;;cream::;;and::;;stir::;;until::;;smooth::;;,::;;melted::;;and::;;well::;;combined::;;.::
 -LRB-::;;Do::;;not::;;allow::;;the::;;mixture::;;to::;;boil::;;-RRB-::;;.::
@@ -28,25 +28,25 @@ To::;;serve::;;,::;;turn::;;out::;;the::;;chocolate crumb puddings::;;onto::;;se
 Drizzle::;;over::;;the::;;white::;;chocolate sauce::;;.::
 Line::;;eight::;;baking::;;trays::;;with::;;greaseproof::;;paper::;;.::
 Preheat::;;the::;;oven::;;to::;;170C/325F/Gas::;;3::;;.::
-To::;;make::;;the::;;shells::;;,::;;place::;;the::;;sugar icing::;;,::;;ground::;;almonds::;;and::;;cocoa powder::;;in::;;a::;;food processor::;;and::;;pulse::;;for::;;about::;;30::;;seconds::;;to::;;make::;;a::;;fine::;;powder::;;.::
+To::;;make::;;the::;;shells::;;,::;;place::;;the::;;icing sugar::;;,::;;ground almonds::;;and::;;cocoa powder::;;in::;;a::;;food processor::;;and::;;pulse::;;for::;;about::;;30::;;seconds::;;to::;;make::;;a::;;fine::;;powder::;;.::
 Sift::;;the::;;powder::;;into::;;a::;;clean::;;bowl::;;,::;;discarding::;;any::;;lumps::;;left::;;in::;;the::;;sieve::;;.::
 Weigh::;;the::;;egg whites::;;-::;;you::;;should::;;have::;;about::;;300g/10::;;.5::;;oz::;;in::;;total::;;.::
-Stir::;;half::;;the::;;egg whites::;;into::;;the::;;sugar icing::;;and::;;mixture almond::;;to::;;make::;;a::;;smooth::;;paste::;;.::
+Stir::;;half::;;the::;;egg whites::;;into::;;the::;;icing sugar::;;and::;;mixture almond::;;to::;;make::;;a::;;smooth::;;paste::;;.::
 Place::;;the::;;remaining::;;egg whites::;;into::;;the::;;bowl::;;of::;;a::;;mixer::;;with::;;a::;;whisk attachment::;;.::
 Whisk::;;the::;;egg whites::;;in::;;the::;;mixer::;;until::;;they::;;form::;;soft::;;peaks::;;.::
-Place::;;the::;;sugar caster::;;and::;;water::;;in::;;a::;;small::;;pan::;;,::;;heat::;;gently::;;until::;;the::;;sugar::;;has::;;dissolved::;;then::;;turn::;;the::;;heat::;;up::;;until::;;the::;;syrup::;;reaches::;;115C/235F::;;-LRB-::;;use::;;a::;;sugar thermometer::;;to::;;check::;;this::;;-RRB-::;;.::
+Place::;;the::;;caster sugar::;;and::;;water::;;in::;;a::;;small::;;pan::;;,::;;heat::;;gently::;;until::;;the::;;sugar::;;has::;;dissolved::;;then::;;turn::;;the::;;heat::;;up::;;until::;;the::;;syrup::;;reaches::;;115C/235F::;;-LRB-::;;use::;;a::;;sugar thermometer::;;to::;;check::;;this::;;-RRB-::;;.::
 Turn::;;on::;;the::;;mixer::;;and::;;continue::;;whisking::;;the::;;egg whites::;;on::;;a::;;low::;;speed::;;,::;;pouring::;;in::;;the::;;syrup::;;in::;;a::;;steady::;;stream::;;.::
 Increase::;;the::;;mixer::;;to::;;a::;;medium::;;speed::;;for::;;two::;;minutes::;;then::;;turn::;;it::;;down::;;again::;;and::;;continue::;;whisking::;;for::;;five::;;minutes::;;,::;;or::;;until::;;stiff::;;peaks::;;form::;;when::;;the::;;whisk::;;is::;;removed::;;.::
-Fold::;;the::;;sugar icing::;;,::;;almond::;;and::;;egg::;;white::;;paste::;;into::;;the::;;whisked::;;egg whites::;;.::
+Fold::;;the::;;icing sugar::;;,::;;almond::;;and::;;egg::;;white::;;paste::;;into::;;the::;;whisked::;;egg whites::;;.::
 Spoon::;;the::;;mixture::;;into::;;a::;;large::;;piping::;;bag::;;fitted::;;with::;;a::;;5mm::;;/::;;.25::;;in::;;plain::;;nozzle::;;.::
-Pipe::;;4cm/1::;;.5::;;in::;;circles::;;onto::;;the::;;baking::;;trays::;;.::
+Pipe::A;;4cm/1::O;;.5::O;;in::O;;circles::D;;onto::O;;the::O;;baking::O;;trays::I;;.::O
 Using::;;a::;;toothpick::;;,::;;burst::;;any::;;air::;;bubbles::;;that::;;appear::;;on::;;the::;;surface::;;of::;;the::;;shells::;;.::
 The::;;macaroons::;;must::;;stand::;;for::;;at::;;least::;;20::;;minutes::;;before::;;going::;;into::;;the::;;oven::;;as::;;it::;;helps::;;to::;;form::;;a::;;skin::;;.::
 Bake::;;the::;;shells::;;for::;;12::;;minutes::;;or::;;until::;;they::;;no::;;longer::;;wobble::;;when::;;you::;;shake::;;the::;;baking::;;tray::;;.::
 -LRB-::;;You::;;may::;;need::;;to::;;do::;;this::;;in::;;batches::;;,::;;but::;;the::;;macaroons::;;can::;;rest::;;for::;;1-2::;;hours::;;.::;;-RRB-::
 Remove::;;from::;;the::;;oven::;;and::;;set::;;aside::;;to::;;cool::;;.::
 Carefully::;;peel::;;the::;;macaroons::;;off::;;the::;;greaseproof::;;paper::;;.::
-To::;;make::;;the::;;milk chocolate centres::;;,::;;heat::;;the::;;cream::;;in::;;a::;;small::;;saucepan::;;until::;;just::;;boiling::;;then::;;take::;;the::;;pan::;;off::;;the::;;heat::;;and::;;whisk::;;in::;;the::;;chocolate pieces::;;.::
+To::;;make::A;;the::;;milk chocolate centres::I;;,::;;heat::A;;the::;;cream::D;;in::;;a::;;small::;;saucepan::I;;until::;;just::;;boiling::;;then::;;take::;;the::;;pan::;;off::;;the::;;heat::;;and::;;whisk::;;in::;;the::;;chocolate pieces::;;.::
 Transfer::;;to::;;a::;;small::;;bowl::;;and::;;place::;;it::;;in::;;the::;;fridge::;;.::
 To::;;make::;;the::;;chocolate orange filling::;;,::;;heat::;;the::;;cream::;;in::;;a::;;small::;;saucepan::;;until::;;just::;;boiling::;;then::;;take::;;the::;;pan::;;off::;;the::;;heat::;;and::;;whisk::;;in::;;the::;;chocolate pieces::;;,::;;orange::;;colouring::;;and::;;flavouring::;;.::
 Transfer::;;to::;;a::;;small::;;bowl::;;and::;;place::;;it::;;in::;;the::;;fridge::;;.::
@@ -56,9 +56,9 @@ Transfer::;;to::;;a::;;bowl::;;and::;;place::;;it::;;in::;;the::;;fridge::;;To::
 Heat::;;the::;;sugar::;;in::;;a::;;clean::;;pan::;;,::;;stirring::;;with::;;a::;;wooden::;;spoon::;;,::;;until::;;it::;;turns::;;dark::;;brown::;;.::
 Pour::;;onto::;;the::;;cream::;;,::;;taking::;;care::;;as::;;it::;;will::;;be::;;very::;;hot::;;,::;;and::;;whisk::;;until::;;smooth::;;.::
 Add::;;the::;;butter::;;,::;;whisk::;;thoroughly::;;then::;;transfer::;;to::;;a::;;bowl::;;and::;;set::;;aside::;;.::
-To::;;assemble::;;the::;;macaroons::;;,::;;pair::;;up::;;the::;;macaroon shells::;;with::;;the::;;flat::;;sides uppermost::;;and::;;place::;;them::D;;on::;;baking::;;trays::;;lined::;;with::;;greaseproof::;;paper::;;.::
+To::;;assemble::A;;the::;;macaroons::I;;,::;;pair::A;;up::;;the::;;macaroon shells::D;;with::;;the::;;flat::;;sides uppermost::;;and::;;place::A;;them::D;;on::;;baking::;;trays::I;;lined::;;with::;;greaseproof::;;paper::;;.::
 -LRB-::;;You::;;should::;;have::;;about::;;120::;;macaroon shells::;;.::;;-RRB-::
-Spoon::;;the::;;chocolate orange::;;filling::;;into::;;a::;;piping::;;bag::;;fitted::;;with::;;a::;;5mm/1::;;.25::;;in::;;plain::;;nozzle::;;and::;;pipe::;;a::;;circle::;;around::;;the::;;edge::;;of::;;20::;;of::;;the::;;macaroon shells::;;.::
+Spoon::A;;the::;;chocolate orange::;;filling::D;;into::;;a::;;piping::;;bag::I;;fitted::;;with::;;a::;;5mm/1::;;.25::;;in::;;plain::;;nozzle::;;and::;;pipe::;;a::;;circle::;;around::;;the::;;edge::;;of::;;20::;;of::;;the::;;macaroon shells::;;.::
 Repeat::;;with::;;the::;;mint chocolate::;;and::;;caramel fillings::;;.::
 Spoon::;;the::;;mixture::;;for::;;the::;;milk chocolate centres::;;into::;;into::;;a::;;piping::;;bag::;;fitted::;;with::;;a::;;5mm/1::;;.25::;;in::;;plain::;;nozzle::;;and::;;pipe::;;small::;;dots::;;into::;;the::;;middle::;;of::;;the::;;circles::;;of::;;filling::;;,::;;then::;;carefully::;;sandwich::;;together::;;with::;;the::;;remaining::;;shells::;;.::
 For::;;each::;;of::;;the::;;dips::;;,::;;melt::;;the::;;chocolate::;;in::;;a::;;microwave::;;,::;;or::;;in::;;a::;;bowl::;;suspended::;;over::;;a::;;pan::;;of::;;barely::;;simmering::;;water::;;,::;;stirring::;;in::;;the::;;colouring::;;if::;;using::;;.::
@@ -81,7 +81,7 @@ Spoon::;;this::;;mixture::;;on::;;top::;;of::;;the::;;raspberries::;;,::;;then::
 Heat::;;the::;;outside::;;of::;;the::;;chefs::;;'::;;ring::;;with::;;a::;;mini-blowtorch::;;to::;;loosen::;;it::;;,::;;then::;;carefully::;;slide::;;it::;;off::;;.::
 Place::;;the::;;remaining::;;raspberries::;;on::;;top::;;of::;;the::;;cheesecake::;;and::;;garnish::;;with::;;a::;;sprig::;;of::;;mint::;;.::
 For::;;the::;;chocolate sauce::;;,::;;place::;;all::;;the::;;chocolate sauce ingredients::;;into::;;a::;;small::;;saucepan::;;and::;;heat::;;gently::;;,::;;stirring::;;until::;;the::;;chocolate::;;has::;;melted::;;and::;;the::;;sauce::;;has::;;thickened::;;.::
-To::;;serve::;;,::;;drizzle::;;the::;;chocolate sauce::;;over::;;the::;;cheesecake::;;.::
+To::;;serve::;;,::;;drizzle::A;;the::O;;chocolate sauce::D;;over::;;the::;;cheesecake::I;;.::
 Preheat::;;the::;;oven::;;to::;;180C/350F/Gas::;;4::;;.::
 Line::;;a::;;baking::;;tray::;;with::;;greaseproof::;;paper::;;.::
 For::;;the::;;mousse::;;,::;;melt::;;the::;;chocolate::;;in::;;a::;;glass bowl::;;set::;;over::;;simmering::;;water::;;.::
@@ -119,12 +119,12 @@ Bake::;;in::;;the::;;oven::;;for::;;20-25::;;minutes::;;,::;;or::;;until::;;the:
 Set::;;aside::;;to::;;cool::;;in::;;the::;;tin::;;.::
 For::;;the::;;chocolate sauce::;;,::;;heat::;;the::;;cream::;;gently::;;in::;;a::;;pan::;;.::
 Place::;;the::;;milk chocolate::;;in::;;a::;;large::;;bowl::;;and::;;pour::;;the::;;hot::;;cream::;;over::;;,::;;whisking::;;to::;;combine::;;.::
-For::;;the::;;mint cream::;;,::;;whip::;;the::;;double::;;cream::;;and::;;sugar icing::;;together::;;in::;;a::;;large::;;bowl::;;until::;;soft::;;peaks::;;form::;;when::;;the::;;whisk::;;is::;;removed::;;.::
+For::;;the::;;mint cream::;;,::;;whip::;;the::;;double::;;cream::;;and::;;icing sugar::;;together::;;in::;;a::;;large::;;bowl::;;until::;;soft::;;peaks::;;form::;;when::;;the::;;whisk::;;is::;;removed::;;.::
 Fold::;;in::;;the::;;shredded::;;mint::;;.::
 When::;;the::;;brownie::;;is::;;completely::;;cool::;;,::;;cut::;;into::;;squares::;;and::;;place::;;in::;;serving::;;bowls::;;.::
 Drizzle::;;with::;;the::;;chocolate sauce::;;and::;;top::;;with::;;a::;;spoonful::;;of::;;whipped::;;mint cream::;;.::
 Sprinkle::;;over::;;the::;;crushed::;;honeycomb::;;to::;;serve::;;.::
-For::;;the::;;chocolate::;;and::;;tropical::;;ice fruit cream bombe::;;,::;;lightly::;;oil::;;a::;;small::;;glass bowl::;;and::;;line::;;with::;;cling::;;film::;;.::
+For::;;the::;;chocolate::;;and::;;tropical::;;fruit ice cream bombe::;;,::;;lightly::;;oil::;;a::;;small::;;glass bowl::;;and::;;line::;;with::;;cling::;;film::;;.::
 Line::;;the::;;bowl::;;with::;;the::;;slices::;;of::;;chocolate cake::;;.::
 Half-fill::;;the::;;bowl::;;with::;;ice cream::;;,::;;then::;;top::;;with::;;the::;;fruit::;;.::
 Cover::;;with::;;the::;;rest::;;of::;;the::;;chocolate cake::;;to::;;seal::;;in::;;the::;;fruit::;;and::;;ice cream::;;.::
@@ -141,16 +141,16 @@ Preheat::;;the::;;oven::;;to::;;200C/400F/Gas::;;6::;;.::
 Mix::;;together::;;the::;;cake ingredients::;;in::;;a::;;food processor::;;and::;;spoon::;;even::;;portions::;;into::;;a::;;six-hole::;;,::;;non-stick::;;muffin tin::;;.::
 Place::;;in::;;the::;;oven::;;and::;;bake::;;for::;;10::;;minutes::;;.::
 For::;;the::;;chocolate sauce::;;,::;;melt::;;the::;;chocolate::;;and::;;chilli flakes::;;in::;;a::;;heat-proof::;;bowl::;;set::;;over::;;boiling::;;water::;;.::
-To::;;serve::;;,::;;turn::;;out::;;the::;;cakes::;;onto::;;plates::;;and::;;dust::;;with::;;sugar icing::;;.::
-Pour::;;the::;;chocolate sauce::;;over::;;each::;;muffin::;;and::;;drizzle::;;with::;;cream::;;.::
+To::;;serve::;;,::;;turn::;;out::;;the::;;cakes::;;onto::;;plates::;;and::;;dust::;;with::;;icing sugar::;;.::
+Pour::A;;the::O;;chocolate sauce::D;;over::O;;each::O;;muffin::I;;and::O;;drizzle::A;;with::O;;cream::I;;.::O
 To::;;make::;;the::;;pudding sponge::;;put::;;the::;;butter::;;and::;;sugar::;;in::;;a::;;food processor::;;and::;;blend::;;.::
 Add::;;the::;;eggs::;;,::;;flour::;;and::;;vanilla essence::;;and::;;blend::;;again::;;.::
-Butter::A;;a::O;;small::O;;pudding dish::D;;and::O;;add::A;;the::O;;crumbled::O;;chocolate::D;;,::O;;cookies::D;;and::O;;then::O;;top::A;;with::O;;the::O;;pudding mixture::I;;.::O
-Cover::A;;with::O;;cling::O;;film::D;;and::O;;cook::A;;on::O;;high::O;;in::O;;the::O;;microwave::I;;for::O;;four::O;;minutes::O;;.::O
+Butter::;;a::;;small::;;pudding dish::;;and::;;add::;;the::;;crumbled::;;chocolate::;;,::;;cookies::;;and::;;then::;;top::;;with::;;the::;;pudding mixture::;;.::
+Cover::;;with::;;cling::;;film::;;and::;;cook::;;on::;;high::;;in::;;the::;;microwave::;;for::;;four::;;minutes::;;.::
 To::;;make::;;the::;;chocolate sauce::;;,::;;put::;;the::;;water::;;in::;;a::;;small::;;pan::;;,::;;add::;;the::;;cocoa powder::;;and::;;sugar::;;and::;;reduce::;;to::;;thicken::;;it::;;.::
 To::;;serve::;;,::;;place::;;the::;;pudding upside::;;and::;;turn::;;out::;;.::
-Drizzle::A;;the::O;;sauce::D;;over::O;;and::O;;serve::A;;with::O;;ice cream::I;;.::O
-Preheat::A;;the::O;;oven::D;;to::O;;200C/400F/Gas::O;;6::O;;.::O
+Drizzle::;;the::;;sauce::;;over::;;and::;;serve::;;with::;;ice cream::;;.::
+Preheat::;;the::;;oven::;;to::;;200C/400F/Gas::;;6::;;.::
 For::;;the::;;cake::;;,::;;place::;;the::;;butter::;;and::;;sugar::;;into::;;a::;;food processor::;;and::;;blend::;;until::;;light::;;and::;;fluffy::;;.::
 Add::;;the::;;flour::;;,::;;eggs::;;and::;;chillies::;;and::;;blend::;;again::;;to::;;make::;;a::;;thick::;;,::;;smooth::;;batter::;;.::
 Lightly::;;grease::;;a::;;20cm/8in::;;cake tin::;;and::;;pour::;;the::;;batter::;;into::;;the::;;tin::;;.::
@@ -159,7 +159,7 @@ Meanwhile::;;,::;;for::;;the::;;chocolate drizzle::;;,::;;place::;;the::;;cream:
 Add::;;the::;;chocolate::;;and::;;stir::;;until::;;melted::;;to::;;make::;;a::;;smooth::;;sauce::;;.::
 To::;;serve::;;,::;;carefully::;;turn::;;the::;;cake::;;out::;;onto::;;a::;;serving::;;plate::;;and::;;pour::;;over::;;the::;;sauce::;;.::
 For::;;chocolate bar ice cream::;;,::;;warm::;;the::;;milk::;;in::;;a::;;saucepan::;;until::;;it::;;reaches::;;80C/175F::;;on::;;a::;;cook::;;'s::;;thermometer::;;.::
-Put::;;the::;;sugar caster::;;and::;;egg yolks::;;into::;;a::;;bowl::;;and::;;whisk::;;together::;;,::;;then::;;pour::;;the::;;warm::;;milk::;;onto::;;them::I;;,::;;whisking::;;all::;;the::;;time::;;.::
+Put::;;the::;;caster sugar::;;and::;;egg yolks::;;into::;;a::;;bowl::;;and::;;whisk::;;together::;;,::;;then::;;pour::A;;the::;;warm::;;milk::D;;onto::;;them::I;;,::;;whisking::;;all::;;the::;;time::;;.::
 Return::;;the::;;mixture::;;to::;;the::;;saucepan::;;and::;;cook::;;until::;;it::;;reaches::;;83C/180F::;;and::;;thickens::;;slightly::;;.::
 Remove::;;from::;;the::;;heat::;;and::;;whisk::;;in::;;the::;;double::;;cream::;;.::
 Set::;;aside::;;to::;;cool::;;to::;;60C/140F::;;,::;;then::;;stir::;;in::;;the::;;chocolate bars::;;and::;;allow::;;to::;;melt::;;.::
@@ -172,7 +172,7 @@ Melt::;;the::;;butter::;;and::;;chocolate::;;together::;;in::;;a::;;heatproof::;
 In::;;a::;;separate::;;bowl::;;,::;;beat::;;the::;;eggs::;;and::;;sugar::;;for::;;2::;;minutes::;;,::;;or::;;until::;;they::;;reach::;;the::;;ribbon::;;stage::;;-LRB-::;;this::;;is::;;when::;;the::;;mixture::;;leaves::;;a::;;trail::;;on::;;the::;;surface::;;the::;;whisk::;;is::;;removed::;;-RRB-::;;.::
 Fold::;;the::;;chocolate mixture::;;into::;;the::;;egg mixture::;;then::;;fold::;;in::;;the::;;flour::;;,::;;divide::;;the::;;mixture::;;between::;;the::;;prepared::;;moulds::;;.::
 Place::;;on::;;a::;;baking::;;sheet::;;and::;;cook::;;for::;;8::;;minutes::;;.::
-To::;;garnish::;;,::;;paint::;;a::;;line::;;of::;;melted::;;white::;;chocolate::;;across::;;the::;;centre::;;of::;;each::;;serving::;;plate::;;and::;;dust::;;with::;;sugar icing::;;.::
+To::;;garnish::;;,::;;paint::;;a::;;line::;;of::;;melted::;;white::;;chocolate::;;across::;;the::;;centre::;;of::;;each::;;serving::;;plate::;;and::;;dust::;;with::;;icing sugar::;;.::
 Turn::;;out::;;the::;;hot::;;fondants::;;into::;;the::;;centre::;;of::;;each::;;plate::;;-LRB-::;;on::;;top::;;of::;;the::;;white::;;chocolate::;;-RRB-::;;and::;;add::;;some::;;poached::;;cherries::;;.::
 Place::;;a::;;quenelle::;;of::;;ice cream::;;on::;;the::;;side::;;and::;;garnish::;;with::;;the::;;chopped::;;hazelnuts::;;and::;;chocolate mint::;;.::
 For::;;the::;;cheesecake::;;,::;;place::;;the::;;crushed::;;biscuits::;;into::;;a::;;large::;;bowl::;;with::;;the::;;melted::;;butter::;;and::;;mix::;;well::;;.::
@@ -184,27 +184,27 @@ Heat::;;the::;;sides::;;of::;;the::;;chefs::;;'::;;ring::;;with::;;a::;;mini-blo
 To::;;serve::;;,::;;place::;;the::;;cherries::;;and::;;pistachios::;;on::;;top::;;of::;;the::;;cheesecake::;;and::;;pour::;;over::;;the::;;chocolate sauce::;;.::
 Preheat::;;the::;;oven::;;to::;;180C/350F/Gas::;;4::;;.::
 Grease::;;the::;;insides::;;of::;;two::;;ramekin::;;dishes::;;.::
-For::;;the::;;soufflé::I;;,::;;melt::A;;the::;;butter::D;;in::;;a::;;small::;;pan::I;;and::;;stir::A;;in::;;the::;;flour::D;;to::;;make::;;a::;;roux::;;.::
+For::;;the::;;soufflé::;;,::;;melt::;;the::;;butter::;;in::;;a::;;small::;;pan::;;and::;;stir::;;in::;;the::;;flour::;;to::;;make::;;a::;;roux::;;.::
 Place::;;the::;;chocolate::;;into::;;a::;;bowl::;;set::;;over::;;a::;;pan::;;of::;;simmering::;;water::;;-LRB-::;;make::;;sure::;;the::;;bottom::;;of::;;the::;;bowl::;;does::;;n't::;;touch::;;the::;;water surface::;;-RRB-::;;and::;;leave::;;to::;;melt::;;,::;;about::;;4-5::;;minutes::;;,::;;stirring::;;occasionally::;;.::
 Remove::;;from::;;the::;;heat::;;and::;;allow::;;to::;;cool::;;slightly::;;.::
-Whip::A;;the::;;egg whites::D;;in::;;a::;;bowl::I;;until::;;soft::;;peaks::;;form::;;when::;;the::;;whisk::;;is::;;removed::;;.::
+Whip::;;the::;;egg whites::;;in::;;a::;;bowl::;;until::;;soft::;;peaks::;;form::;;when::;;the::;;whisk::;;is::;;removed::;;.::
 Gently::;;fold::;;the::;;chocolate::;;into::;;the::;;egg whites::;;,::;;followed::;;by::;;the::;;roux::;;.::
-Spoon::A;;the::;;mixture soufflé::D;;into::;;the::;;buttered::;;ramekins::I;;and::;;place::A;;onto::;;a::;;baking::;;sheet::I;;.::
+Spoon::;;the::;;mixture soufflé::;;into::;;the::;;buttered::;;ramekins::;;and::;;place::;;onto::;;a::;;baking::;;sheet::;;.::
 Bake::;;in::;;the::;;oven::;;for::;;6-8::;;minutes::;;,::;;or::;;until::;;well-risen::;;.::
-Dust::;;the::;;soufflé::;;with::;;sugar icing::;;and::;;drizzle::;;over::;;the::;;melted::;;chocolate::;;.::
+Dust::;;the::;;soufflé::;;with::;;icing sugar::;;and::;;drizzle::;;over::;;the::;;melted::;;chocolate::;;.::
 Serve::;;immediately::;;.::
 Pour::;;all::;;of::;;the::;;ingredients::;;into::;;a::;;large::;;glass bowl::;;and::;;mix::;;until::;;well::;;combined::;;.::
-Drape::A;;the::;;gummi::;;worms::D;;over::;;the::;;edge::;;of::;;the::;;bowl::I;;.::
-Preheat::A;;the::;;oven::;;to::;;190C/375F/Gas::;;5::;;.::
-Line::A;;a::;;baking::;;tray::;;with::;;greaseproof::;;paper::;;.::
-Beat::A;;the::;;butter::;;and::;;sugar::;;together::;;in::;;a::;;bowl::;;until::;;combined::;;.::
+Drape::;;the::;;gummi worms::;;over::;;the::;;edge::;;of::;;the::;;bowl::;;.::
+Preheat::;;the::;;oven::;;to::;;190C/375F/Gas::;;5::;;.::
+Line::;;a::;;baking::;;tray::;;with::;;greaseproof::;;paper::;;.::
+Beat::;;the::;;butter::;;and::;;sugar::;;together::;;in::;;a::;;bowl::;;until::;;combined::;;.::
 Beat::;;in::;;the::;;egg::;;and::;;vanilla extract::;;,::;;a::;;little::;;at::;;a::;;time::;;,::;;until::;;well::;;combined::;;.::
 Stir::;;in::;;the::;;flour::;;until::;;the::;;mixture::;;comes::;;together::;;as::;;a::;;dough::;;.::
 Roll::;;the::;;dough::;;out::;;on::;;a::;;lightly::;;floured::;;work::;;surface::;;to::;;a::;;thickness::;;of::;;1cm::;;/::;;.5::;;in::;;.::
 Using::;;Halloween-style::;;biscuit cutters::;;,::;;cut::;;biscuits::;;out::;;of::;;the::;;dough::;;and::;;carefully::;;place::;;onto::;;the::;;baking::;;tray::;;.::
 Bake::;;the::;;biscuits::;;for::;;8-10::;;minutes::;;,::;;or::;;until::;;pale::;;golden-brown::;;.::
 Set::;;aside::;;to::;;harden::;;for::;;5::;;minutes::;;,::;;then::;;cool::;;on::;;a::;;rack wire::;;.::
-For::;;the::;;icing::;;,::;;sift::;;the::;;sugar icing::;;into::;;a::;;large::;;mixing::;;bowl::;;and::;;stir::;;in::;;enough::;;water::;;to::;;create::;;a::;;smooth::;;mixture::;;.::
+For::;;the::;;icing::;;,::;;sift::;;the::;;icing sugar::;;into::;;a::;;large::;;mixing::;;bowl::;;and::;;stir::;;in::;;enough::;;water::;;to::;;create::;;a::;;smooth::;;mixture::;;.::
 Stir::;;in::;;the::;;food colouring::;;.::
 Carefully::;;spread::;;the::;;icing::;;onto::;;the::;;biscuits::;;using::;;a::;;knife::;;and::;;set::;;aside::;;until::;;the::;;icing::;;hardens::;;.::
 Beat::;;together::;;the::;;butter::;;and::;;sugar::;;in::;;a::;;large::;;bowl::;;,::;;preferably::;;using::;;an::;;electric::;;mixer::;;,::;;until::;;the::;;mixture::;;is::;;light::;;and::;;fluffy::;;.::
@@ -219,13 +219,13 @@ Preheat::;;the::;;oven::;;to::;;170C/325F/Gas::;;3::;;.::
 Line::;;two::;;baking::;;trays::;;with::;;greaseproof::;;paper::;;.::
 Roll::;;the::;;dough::;;out::;;to::;;a::;;0.5::;;cm::;;/::;;.25::;;in::;;thickness::;;on::;;lightly::;;floured::;;work::;;surface::;;.::
 -LRB-::;;It::;;'s::;;best::;;to::;;roll::;;out::;;one::;;portion::;;of::;;the::;;dough::;;at::;;a::;;time::;;,::;;leaving::;;the::;;remainder::;;in::;;the::;;fridge::;;.::;;-RRB-::
-Cut::;;shapes::;;out::;;with::;;the::;;Halloween::;;cutters::;;.::
+Cut::;;shapes::;;out::;;with::;;the::;;cutters Halloween::;;.::
 Take::;;a::;;few::;;limbs::;;and::;;heads::;;off::;;the::;;gingerbread::;;man::;;for::;;added::;;gore::;;.::
 Place::;;the::;;cookies::;;onto::;;the::;;baking::;;tray::;;,::;;leaving::;;a::;;gap::;;between::;;them::;;in::;;case::;;they::;;spread::;;a::;;little::;;.::
 Bake::;;for::;;12-15::;;minutes::;;,::;;leave::;;on::;;the::;;tray::;;for::;;10::;;minutes::;;and::;;then::;;move::;;to::;;a::;;rack wire::;;to::;;finish::;;cooling::;;.::
 Once::;;cool::;;,::;;let::;;your::;;imagination::;;run::;;wild::;;.::
-Use::;;the::;;red::;;writing::;;icing::;;along::;;the::;;edges::;;of::;;the::;;missing::;;limbs::;;and::;;heads::;;as::;;blood::;;.::
-For::;;the::;;skeletons::;;and::;;mummies::;;,::;;roll::;;the::;;fondant::;;icing::;;out::;;to::;;a::;;0.5::;;cm::;;/::;;.25::;;in::;;thickness::;;on::;;a::;;work::;;surface::;;dusted::;;with::;;sugar icing::;;and::;;cut::;;out::;;shapes::;;using::;;the::;;same::;;cutters::;;as::;;the::;;cookies::;;.::
+Use::;;the::;;red::;;icing writing::;;along::;;the::;;edges::;;of::;;the::;;missing::;;limbs::;;and::;;heads::;;as::;;blood::;;.::
+For::;;the::;;skeletons::;;and::;;mummies::;;,::;;roll::;;the::;;fondant::;;icing::;;out::;;to::;;a::;;0.5::;;cm::;;/::;;.25::;;in::;;thickness::;;on::;;a::;;work::;;surface::;;dusted::;;with::;;icing sugar::;;and::;;cut::;;out::;;shapes::;;using::;;the::;;same::;;cutters::;;as::;;the::;;cookies::;;.::
 Brush::;;the::;;cookies::;;with::;;the::;;warmed::;;apricot jam::;;and::;;stick::;;the::;;icing::;;onto::;;the::;;cookies::;;.::
 Decorate::;;with::;;the::;;white::;;and::;;black::;;writing::;;icing::;;.::
 Preheat::;;the::;;oven::;;to::;;180C/350F/Gas::;;4::;;.::
@@ -242,10 +242,10 @@ Rub::;;the::;;butter::;;in::;;with::;;your::;;fingertips::;;until::;;the::;;mixt
 Add::;;the::;;sugar::;;,::;;syrup::;;and::;;egg::;;and::;;mix::;;together::;;until::;;it::;;forms::;;a::;;soft::;;dough::;;.::
 Wrap::;;in::;;cling::;;film::;;and::;;chill::;;in::;;the::;;fridge::;;for::;;30::;;minutes::;;.::
 Pre-heat::;;the::;;oven::;;to::;;180C/350F/gas::;;4::;;.::
-Roll::;;out::;;the::;;dough::;;on::;;a::;;lightly::;;floured::;;surface::;;and::;;cut::;;out::;;your::;;shapes::;;--::;;you::;;will::;;only::;;need::;;a::;;few::;;for::;;the::;;cake::;;so::;;cut::;;out::;;some::;;other::;;Halloween::;;shapes::;;for::;;extra::;;biscuits::;;.::
+Roll::;;out::;;the::;;dough::;;on::;;a::;;lightly::;;floured::;;surface::;;and::;;cut::;;out::;;your::;;shapes::;;--::;;you::;;will::;;only::;;need::;;a::;;few::;;for::;;the::;;cake::;;so::;;cut::;;out::;;some::;;other::;;Halloween shapes::;;for::;;extra::;;biscuits::;;.::
 Place::;;the::;;shapes::;;on::;;to::;;greased::;;baking::;;sheets::;;and::;;bake::;;in::;;the::;;oven::;;for::;;10-12::;;minutes::;;.::
 Remove::;;from::;;the::;;sheets::;;with::;;a::;;palette::;;knife::;;and::;;place::;;onto::;;a::;;rack wire::;;to::;;cool::;;completely::;;before::;;decorating::;;with::;;white::;;icing::;;.::
-For::;;the::;;buttercream::;;,::;;beat::;;the::;;butter::;;in::;;a::;;large::;;bowl::;;with::;;a::;;hand::;;held::;;mixer::;;until::;;creamy::;;then::;;add::;;the::;;sugar icing::;;a::;;spoonful::;;at::;;a::;;time::;;beating::;;well::;;between::;;each::;;addition::;;.::
+For::;;the::;;buttercream::;;,::;;beat::;;the::;;butter::;;in::;;a::;;large::;;bowl::;;with::;;a::;;hand::;;held::;;mixer::;;until::;;creamy::;;then::;;add::;;the::;;icing sugar::;;a::;;spoonful::;;at::;;a::;;time::;;beating::;;well::;;between::;;each::;;addition::;;.::
 Add::;;the::;;cocoa powder::;;and::;;milk::;;and::;;beat::;;again::;;for::;;a::;;further::;;five::;;minutes::;;until::;;light::;;and::;;fluffy::;;.::
 Blend::;;the::;;Oreo::;;or::;;bourbon biscuits::;;to::;;fine::;;crumbs::;;in::;;a::;;food processor::;;.::
 Spread::;;the::;;buttercream::;;over::;;the::;;cooled::;;cake::;;,::;;covering::;;the::;;top::;;and::;;sides::;;--::;;do::;;n't::;;worry::;;if::;;it::;;'s::;;not::;;smooth::;;-::;;a::;;few::;;lumps::;;and::;;bumps::;;will::;;make::;;it::;;more::;;mud-like::;;.::
@@ -259,9 +259,9 @@ Whisk::;;in::;;the::;;egg::;;and::;;milk::;;until::;;the::;;mixture::;;is::;;thi
 Divide::;;the::;;mixture::;;between::;;the::;;paper::;;case::;;and::;;bake::;;in::;;the::;;oven oven::;;for::;;20-25::;;minutes::;;,::;;or::;;until::;;springy::;;to::;;the::;;touch::;;and::;;skewer::;;inserted::;;into::;;the::;;middle::;;of::;;one::;;of::;;the::;;cakes::;;comes::;;out::;;clean::;;.::
 Set::;;aside::;;to::;;cool::;;on::;;a::;;rack wire::;;.::
 For::;;the::;;cream cheese icing::;;,::;;beat::;;the::;;cream cheese::;;and::;;butter::;;together::;;in::;;a::;;bowl::;;until::;;well::;;combined::;;.::
-Beat::;;in::;;the::;;sugar icing::;;and::;;vanilla::;;.::
+Beat::;;in::;;the::;;icing sugar::;;and::;;vanilla::;;.::
 Spoon::;;the::;;icing::;;onto::;;the::;;cupcakes::;;,::;;leaving::;;a::;;small::;;border::;;around::;;the::;;edge::;;.::
-For::;;the::;;chocolate icing::;;,::;;sift::;;the::;;sugar icing::;;and::;;cocoa powder::;;into::;;a::;;bowl::;;.::
+For::;;the::;;chocolate icing::;;,::;;sift::;;the::;;icing sugar::;;and::;;cocoa powder::;;into::;;a::;;bowl::;;.::
 Stir::;;in::;;2::;;tablespoons::;;of::;;water::;;to::;;form::;;a::;;smooth::;;,::;;thick::;;icing::;;.::
 Transfer::;;the::;;mixture::;;to::;;a::;;piping::;;bag::;;with::;;a::;;fine::;;nozzle::;;.::
 -LRB-::;;Alternatively::;;,::;;spoon::;;the::;;mixture::;;into::;;the::;;corner::;;of::;;a::;;sandwich bag::;;and::;;snip::;;off::;;the::;;corner::;;,::;;to::;;form::;;a::;;small::;;hole::;;.::;;-RRB-::
@@ -302,7 +302,7 @@ To::;;serve::;;,::;;pour::;;the::;;mixture::;;into::;;a::;;large::;;bowl::;;-LRB
 The::;;mixture::;;should::;;half-fill::;;the::;;bowl::;;.::
 Top::;;up::;;with::;;the::;;lemonade::;;.::
 Mix::;;well::;;.::
-Ladle::;;into::;;cups::;;and::;;garnish::;;with::;;Halloween::;;jellies::;;.::
+Ladle::;;into::;;cups::;;and::;;garnish::;;with::;;Halloween jellies::;;.::
 Place::;;the::;;vodka::;;,::;;lemon::;;juice::;;,::;;vanilla syrup::;;,::;;blackberry liqueur::;;and::;;apple juice::;;into::;;a::;;cocktail shaker::;;filled::;;with::;;ice::;;and::;;shake::;;well::;;.::
 Pour::;;into::;;a::;;cocktail glass::;;.::
 To::;;garnish::;;,::;;cut::;;a::;;small::;;hole::;;into::;;the::;;lychee::;;.::
@@ -349,7 +349,7 @@ Garnish::;;with::;;a::;;blackberry::;;and::;;a::;;sprig::;;of::;;mint::;;.::
 Serve::;;.::
 Brush::;;a::;;frying::;;pan::;;with::;;a::;;very::;;small::;;amount::;;of::;;oil::;;and::;;place::;;over::;;a::;;medium::;;heat::;;.::
 Add::;;the::;;pumpkin seeds::;;,::;;stirring::;;frequently::;;.::
-They::;;will::;;expand::;;and::;;brown::;;fairly::;;quickly::;;,::;;and::;;when::;;this::;;is::;;done::;;,::;;place::;;them::D;;in::;;a::;;bowl::;;and::;;add::;;the::;;salt::;;,::;;celery salt::;;,::;;freshly::;;ground::;;black::;;pepper::;;and::;;paprika::;;.::
+They::;;will::;;expand::;;and::;;brown::;;fairly::;;quickly::;;,::;;and::;;when::;;this::;;is::;;done::;;,::;;place::A;;them::D;;in::O;;a::;;bowl::I;;and::;;add::A;;the::;;salt::D;;,::;;celery salt::D;;,::;;freshly::;;ground::;;black::;;pepper::D;;and::;;paprika::D;;.::
 This::;;is::;;delicious::;;if::;;the::;;pumpkin seeds::;;are::;;reasonably::;;fresh::;;.::
 Heat::;;the::;;sugar::;;and::;;water::;;in::;;a::;;saucepan::;;until::;;the::;;sugar::;;melts::;;and::;;the::;;mixture::;;resembles::;;a::;;syrup::;;.::
 Melt::;;the::;;chocolate::;;in::;;a::;;heatproof::;;bowl::;;set::;;over::;;a::;;pan::;;of::;;simmering::;;water::;;.::
@@ -432,7 +432,7 @@ Meanwhile::;;,::;;for::;;the::;;topping::;;,::;;combine::;;the::;;gruyère::;;an
 Set::;;aside::;;.::
 Once::;;the::;;dough::;;has::;;risen::;;,::;;sprinkle::;;some::;;flour::;;on::;;a::;;clean::;;work::;;surface::;;and::;;spread::;;one::;;dough ball::;;into::;;a::;;circle::;;about::;;30cm/12in::;;in::;;diameter::;;,::;;making::;;it::;;as::;;thin::;;as::;;possible::;;-LRB-::;;without::;;tearing::;;it::;;-RRB-::;;,::;;with::;;the::;;border::;;slightly::;;thicker::;;.::
 Repeat::;;with::;;the::;;other::;;dough ball::;;.::
-Sprinkle::;;two::;;flat::;;baking::;;trays::;;with::;;breadcrumbs::;;or::;;semolina::;;and::;;place::;;the::;;pizza bases::D;;on::;;them::I;;.::
+Sprinkle::;;two::;;flat::;;baking::;;trays::;;with::;;breadcrumbs::;;or::;;semolina::;;and::;;place::;;the::;;pizza bases::;;on::;;them::;;.::
 Spread::;;the::;;crème::;;mixture fraîche::;;over::;;each::;;base::;;.::
 Top::;;with::;;the::;;onions::;;and::;;salami::;;.::
 Bake::;;in::;;the::;;hot::;;oven::;;for::;;10::;;minutes::;;.::
@@ -455,7 +455,7 @@ When::;;ready::;;to::;;bake::;;,::;;slide::;;the::;;pizza::;;directly::;;onto::;
 Serve::;;with::;;rocket::;;leaves::;;on::;;top::;;.::
 Preheat::;;the::;;oven::;;to::;;220C/200C::;;Fan/Gas::;;7::;;and::;;put::;;two::;;baking::;;trays::;;in::;;to::;;heat::;;.::
 To::;;make::;;the::;;sauce::;;,::;;put::;;the::;;tomatoes::;;,::;;mixed::;;herbs::;;and::;;sugar::;;in::;;a::;;saucepan::;;.::
-Peel::;;and::;;finely::;;grate::;;the::;;garlic::;;,::;;add::;;it::;;to::;;the::;;pan::;;and::;;set::;;over::;;a::;;medium::;;heat::;;.::
+Peel::;;and::;;finely::;;grate::;;the::;;garlic::;;,::;;add::;;it::;;to::;;the::;;pan::;;and::;;set::;;over::;;a::;;medium heat::;;.::
 Simmer::;;gently::;;for::;;10::;;minutes::;;until::;;thickened::;;then::;;remove::;;from::;;the::;;heat::;;and::;;season::;;with::;;salt::;;and::;;pepper::;;.::
 Leave::;;to::;;cool::;;.::
 To::;;make::;;the::;;dough::;;,::;;combine::;;the::;;flour::;;,::;;baking::;;powder::;;and::;;salt::;;in::;;a::;;bowl::;;and::;;make::;;a::;;well::;;in::;;the::;;middle::;;.::
@@ -477,7 +477,7 @@ Preheat::;;the::;;oven::;;to::;;its::;;highest::;;setting::;;.::
 Divide::;;the::;;dough::;;into::;;six::;;balls::;;and::;;roll::;;each::;;out::;;onto::;;a::;;lightly::;;floured::;;work::;;surface::;;until::;;20cm/8in::;;in::;;diameter::;;.::
 Spread::;;a::;;little::;;passata::;;-LRB-::;;or::;;homemade::;;tomato sauce::;;-RRB-::;;over::;;each::;;pizza base::;;and::;;top::;;with::;;your::;;favourite::;;toppings::;;.::
 Bake::;;the::;;pizzas::;;in::;;the::;;oven::;;until::;;the::;;bases::;;are::;;crisp::;;and::;;golden-brown::;;around::;;the::;;edges::;;and::;;any::;;cheese::;;on::;;the::;;topping::;;has::;;melted::;;.::
-For::;;the::;;pizza dough::;;,::;;place::;;the::;;flour::;;,::;;salt::;;and::;;yeast::;;into::;;a::;;large::;;bowl::;;,::;;add::;;300ml/10::;;.5::;;fl::;;oz::;;warm::;;water::;;and::;;the::;;olive::;;oil::;;and::;;mix::;;together::;;to::;;form::;;a::;;dough::;;.::
+For::;;the::;;pizza dough::;;,::;;place::;;the::;;flour::;;,::;;salt::;;and::;;yeast::;;into::;;a::;;large::;;bowl::;;,::;;add::;;300ml/10::;;.5::;;fl oz::;;warm::;;water::;;and::;;the::;;olive::;;oil::;;and::;;mix::;;together::;;to::;;form::;;a::;;dough::;;.::
 Knead::;;the::;;dough::;;for::;;at::;;least::;;five::;;minutes::;;,::;;until::;;elastic::;;.::
 Cover::;;the::;;dough::;;with::;;cling::;;film::;;,::;;then::;;set::;;aside::;;and::;;allow::;;to::;;prove::;;for::;;one::;;hour::;;.::
 Divide::;;the::;;dough::;;into::;;four::;;equal::;;pieces::;;and::;;roll::;;each::;;piece::;;into::;;a::;;ball::;;,::;;then::;;roll::;;out::;;onto::;;a::;;floured::;;work::;;surface::;;until::;;about::;;5mm::;;/::;;.25::;;in::;;thick::;;.::
@@ -489,12 +489,12 @@ Season::;;to::;;taste::;;with::;;salt::;;and::;;freshly::;;ground::;;black::;;pe
 Preheat::;;the::;;oven::;;to::;;220C/425F/Gas::;;7::;;.::
 Place::;;a::;;heavy::;;baking::;;tray::;;or::;;a::;;pizza stone::;;into::;;the::;;oven::;;to::;;preheat::;;.::
 Spoon::;;the::;;cooled::;;tomato sauce::;;thinly::;;over::;;the::;;pizza::;;.::
-Scatter::;;the::;;mozzarella::;;and::;;peppers piquillo::;;over::;;the::;;top::;;.::
+Scatter::;;the::;;mozzarella::;;and::;;piquillo peppers::;;over::;;the::;;top::;;.::
 Carefully::;;transfer::;;the::;;pizza::;;into::;;the::;;oven::;;,::;;pushing::;;the::;;pizzs::;;from::;;the::;;floured::;;tray::;;onto::;;the::;;hot::;;tray::;;or::;;pizza stone::;;.::
 Cook::;;for::;;8-10::;;minutes::;;,::;;or::;;until::;;the::;;base::;;is::;;crisp::;;and::;;the::;;topping::;;is::;;cooked::;;through::;;.::
-Remove::;;the::;;pizza::;;from::;;the::;;oven::;;and::;;arrange::;;the::;;pata::;;negra::;;on::;;top::;;.::
+Remove::;;the::;;pizza::;;from::;;the::;;oven::;;and::;;arrange::;;the::;;negra pata::;;on::;;top::;;.::
 Scatter::;;over::;;the::;;rocket::;;and::;;basil::;;leaves::;;.::
-For::;;the::;;salad::;;,::;;heat::;;a::;;frying::;;pan::;;until::;;hot::;;,::;;add::;;one::;;tablespoon::;;of::;;the::;;olive::;;oil::;;,::;;the::;;salt malden::;;and::;;peppers padron::;;and::;;fry::;;for::;;2-3::;;minutes::;;until::;;golden-brown::;;.::
+For::;;the::;;salad::;;,::;;heat::;;a::;;frying::;;pan::;;until::;;hot::;;,::;;add::;;one::O;;tablespoon::O;;of::O;;the::O;;olive::O;;oil::D;;,::;;the::;;malden salt::;;and::;;padron peppers::;;and::;;fry::;;for::;;2-3::;;minutes::;;until::;;golden-brown::;;.::
 Remove::;;the::;;peppers::;;from::;;the::;;pan::;;and::;;set::;;aside::;;to::;;drain::;;on::;;kitchen::;;paper::;;.::
 Serve::;;the::;;pizza::;;with::;;the::;;peppers::;;alongside::;;.::
 For::;;the::;;dough::;;,::;;dissolve::;;the::;;yeast::;;in::;;125ml/4fl::;;water oz::;;along::;;with::;;the::;;sugar::;;.::
@@ -511,7 +511,7 @@ Spread::;;with::;;the::;;cooked::;;spinach::;;,::;;anchovies::;;,::;;taleggio::;
 Finally::;;crack::;;an::;;egg::;;in::;;the::;;centre::;;.::
 Place::;;on::;;the::;;hot::;;baking::;;trays::;;and::;;bake::;;in::;;the::;;oven::;;for::;;5-10::;;minutes::;;.::
 Finish::;;with::;;another::;;optional::;;drizzle::;;of::;;garlic::;;oil::;;and::;;chilli::;;oil::;;.::
-For::;;the::;;salad::;;,::;;combine::;;the::;;olive::;;oil::;;,::;;mustard Dijon::;;,::;;vinegar::;;,::;;salt::;;and::;;pepper::;;for::;;the::;;dressing::;;.::
+For::;;the::;;salad::;;,::;;combine::;;the::;;olive::;;oil::;;,::;;Dijon mustard::;;,::;;vinegar::;;,::;;salt::;;and::;;pepper::;;for::;;the::;;dressing::;;.::
 Place::;;the::;;chicory::;;leaves::;;on::;;a::;;serving::;;plate::;;,::;;scatter::;;over::;;the::;;lemon::;;zest::;;and::;;toss::;;with::;;the::;;dressing::;;just::;;before::;;serving::;;.::
 Serve::;;with::;;slices::;;of::;;pizza::;;.::
 Mix::;;the::;;flour::;;,::;;salt::;;and::;;yeast::;;together::;;in::;;a::;;large::;;bowl::;;and::;;make::;;a::;;well::;;in::;;the::;;middle::;;.::
@@ -539,9 +539,9 @@ Allow::;;to::;;rest::;;for::;;five::;;minutes::;;,::;;then::;;stretch::;;each::;
 Place::;;the::;;circles::;;of::;;dough::;;onto::;;upturned::;;floured::;;baking::;;trays::;;or::;;a::;;pizza::;;peel::;;if::;;you::;;have::;;one::;;.::
 Place::;;the::;;tinned::;;tomatoes::;;into::;;a::;;food processor::;;and::;;blend::;;to::;;a::;;purée::;;.::
 Spoon::;;the::;;tomato purée::;;thinly::;;over::;;the::;;pizzas::;;,::;;scatter::;;over::;;the::;;grated::;;mozzarella::;;,::;;then::;;drizzle::;;over::;;the::;;oils::;;.::
-Season::;;with::;;salt sea::;;and::;;freshly::;;ground::;;black::;;pepper::;;.::
+Season::;;with::;;sea salt::;;and::;;freshly::;;ground::;;black::;;pepper::;;.::
 Slide::;;each::;;pizza::;;off::;;the::;;baking::;;tray::;;directly::;;onto::;;the::;;heated::;;baking::;;tray::;;or::;;pizza stone::;;in::;;the::;;oven::;;and::;;cook::;;for::;;5::;;-10::;;minutes::;;,::;;or::;;until::;;golden-brown::;;and::;;crisp::;;.::
-To::;;serve::;;,::;;scatter::;;the::;;basil::;;leaves::;;,::;;rocket::;;and::;;prosciuto::;;-LRB-::;;if::;;using::;;-RRB-::;;over::;;the::;;pizza::;;and::;;drizzle::;;with::;;a::;;little::;;more::;;oil peanut::;;.::
+To::;;serve::;;,::;;scatter::;;the::;;basil::;;leaves::;;,::;;rocket::;;and::;;prosciuto::;;-LRB-::;;if::;;using::;;-RRB-::;;over::;;the::;;pizza::;;and::;;drizzle::;;with::;;a::;;little::;;more::;;peanut oil::;;.::
 Sift::;;the::;;flour::;;into::;;a::;;large::;;bowl::;;with::;;the::;;salt::;;,::;;then::;;stir::;;in::;;the::;;yeast::;;.::
 Make::;;a::;;well::;;in::;;the::;;centre::;;of::;;the::;;flour::;;.::
 Stir::;;together::;;the::;;warm::;;water::;;and::;;olive::;;oil::;;,::;;then::;;stir::;;the::;;liquid::;;in::;;to::;;the::;;flour::;;and::;;mix::;;to::;;make::;;a::;;soft::;;,::;;moist::;;dough::;;-LRB-::;;you::;;may::;;need::;;to::;;add::;;a::;;bit::;;more::;;water::;;or::;;olive::;;oil::;;-RRB-::;;.::
@@ -553,11 +553,11 @@ When::;;the::;;dough::;;has::;;risen::;;,::;;place::;;it::;;onto::;;a::;;clean::
 Gradually::;;incorporate::;;the::;;chopped::;;garlic::;;.::
 Roll::;;the::;;dough::;;out::;;into::;;a::;;large::;;circle::;;.::
 Place::;;it::;;onto::;;a::;;lightly::;;floured::;;baking::;;sheet::;;or::;;pizza stone::;;and::;;use::;;your::;;hands::;;to::;;push::;;it::;;out::;;towards::;;the::;;edges::;;of::;;the::;;stone::;;or::;;sheet::;;.::
-Slice::;;the::;;tomatoes::;;and::;;arrange::;;them::D;;on::;;top::;;of::;;the::;;pizza::;;and::;;sprinkle::;;over::;;the::;;sugar::;;.::
-Season::;;with::;;salt::;;and::;;freshly::;;ground::;;black::;;pepper::;;and::;;finish::;;with::;;a::;;generous::;;drizzle::;;of::;;extra::;;virgin::;;olive oil::;;.::
-Bake::;;for::;;about::;;15-20::;;minutes::;;,::;;or::;;until::;;the::;;pizza::;;is::;;crisp::;;and::;;the::;;tomatoes::;;have::;;begun::;;to::;;brown::;;.::
+Slice::A;;the::;;tomatoes::D;;and::;;arrange::A;;them::D;;on::;;top::;;of::;;the::;;pizza::I;;and::;;sprinkle::A;;over::;;the::;;sugar::I;;.::
+Season::A;;with::;;salt::I;;and::;;freshly::;;ground::;;black::;;pepper::I;;and::;;finish::A;;with::;;a::;;generous::;;drizzle::;;of::;;extra::;;virgin::;;olive oil::I;;.::
+Bake::A;;for::;;about::;;15-20::;;minutes::;;,::;;or::;;until::;;the::;;pizza::D;;is::;;crisp::;;and::;;the::;;tomatoes::;;have::;;begun::;;to::;;brown::;;.::
 When::;;the::;;pizza::;;is::;;cooked::;;,::;;remove::;;it::;;from::;;the::;;oven::;;,::;;place::;;onto::;;a::;;large::;;plate::;;or::;;chopping::;;board::;;and::;;add::;;the::;;toppings::;;.::
-Tear::;;the::;;ham Parma slices::;;and::;;the::;;mozzarella balls::;;and::;;scatter::;;over::;;the::;;pizza::;;with::;;the::;;rocket::;;and::;;capers::;;.::
+Tear::A;;the::;;Parma ham slices::D;;and::;;the::;;mozzarella balls::D;;and::;;scatter::A;;over::;;the::;;pizza::D;;with::;;the::;;rocket::I;;and::;;capers::I;;.::
 Drizzle::;;over::;;some::;;extra::;;olive::;;oil::;;and::;;serve::;;.::
 For::;;the::;;pizza dough::;;,::;;place::;;the::;;flours::;;,::;;salt::;;,::;;sugar::;;and::;;yeast::;;into::;;a::;;large::;;bowl::;;and::;;stir::;;.::
 Make::;;a::;;well::;;in::;;the::;;centre::;;of::;;the::;;flour::;;and::;;gradually::;;pour::;;in::;;650ml/22fl::;;water oz::;;,::;;gradually::;;mixing::;;in::;;the::;;flour::;;to::;;form::;;a::;;soft::;;dough::;;.::
@@ -567,13 +567,13 @@ When::;;you::;;'re::;;ready::;;to::;;cook::;;the::;;pizzas::;;,::;;preheat::;;th
 Place::;;a::;;heavy::;;baking::;;tray::;;or::;;pizza stone::;;in::;;the::;;oven::;;to::;;heat::;;.::
 Roll::;;out::;;the::;;dough pieces::;;until::;;about::;;5mm::;;thick::;;then::;;place::;;onto::;;an::;;upturned::;;,::;;floured::;;tray::;;.::
 Place::;;the::;;tinned::;;tomatoes::;;into::;;a::;;food processor::;;and::;;blend::;;to::;;a::;;purée::;;.::
-Spoon::;;the::;;tomato purée::;;thinly::;;over::;;two::;;of::;;the::;;pizzas::;;,::;;just::;;to::;;the::;;edges::;;.::
+Spoon::A;;the::O;;tomato purée::D;;thinly::O;;over::O;;two::O;;of::O;;the::O;;pizzas::I;;,::O;;just::;;to::;;the::;;edges::;;.::
 Scatter::;;over::;;half::;;the::;;mozzarella::;;and::;;pecorino::;;.::
-Scatter::;;over::;;the::;;chilli::;;,::;;then::;;drizzle::;;over::;;half::;;the::;;oil peanut::;;.::
+Scatter::;;over::;;the::;;chilli::;;,::;;then::;;drizzle::;;over::;;half::;;the::;;peanut oil::;;.::
 Finish::;;with::;;a::;;few::;;basil::;;leaves::;;and::;;season::;;with::;;salt::;;and::;;black::;;pepper::;;.::
 Transfer::;;to::;;the::;;oven::;;,::;;pushing::;;the::;;pizza::;;onto::;;the::;;heated::;;pizza tray::;;or::;;stone::;;and::;;cook::;;for::;;5-8::;;minutes::;;,::;;or::;;until::;;cooked::;;through::;;and::;;bubbling::;;.::
 For::;;the::;;calzone::;;,::;;cover::;;half::;;of::;;each::;;of::;;the::;;other::;;two::;;pizza bases::;;with::;;the::;;tomato sauce::;;,::;;then::;;top::;;with::;;the::;;pieces::;;of::;;lobster::;;and::;;the::;;rest::;;of::;;the::;;mozzarella::;;and::;;pecorino::;;.::
-Drizzle::;;over::;;the::;;mango chilli sauce::;;and::;;the::;;rest::;;of::;;the::;;oil peanut::;;along::;;with::;;a::;;scattering::;;of::;;basil::;;and::;;season::;;with::;;salt::;;and::;;black::;;pepper::;;.::
+Drizzle::;;over::;;the::;;mango chilli sauce::;;and::;;the::;;rest::;;of::;;the::;;peanut oil::;;along::;;with::;;a::;;scattering::;;of::;;basil::;;and::;;season::;;with::;;salt::;;and::;;black::;;pepper::;;.::
 Fold::;;the::;;other::;;half::;;of::;;the::;;pizza::;;over::;;the::;;top::;;then::;;crimp::;;the::;;edges::;;and::;;place::;;on::;;the::;;heated::;;pizza stone::;;or::;;tray::;;.::
 Cook::;;for::;;5-10::;;minutes::;;until::;;golden-brown::;;and::;;crisp::;;.::
 Serve::;;immediately::;;.::
@@ -593,7 +593,7 @@ Dip::;;the::;;teabag::;;in::;;for::;;about::;;20::;;seconds::;;to::;;infuse::;;,
 Stir::;;until::;;well::;;combined::;;,::;;then::;;strain::;;the::;;cocktail::;;into::;;a::;;tumbler::;;filled::;;with::;;ice::;;.::
 Garnish::;;with::;;the::;;lemon::;;twist::;;.::
 Place::;;the::;;sugar::;;and::;;lime juice::;;into::;;a::;;highball::;;glass::;;and::;;stir::;;until::;;dissolved::;;.::
-Wipe::;;the::;;mint::;;leaves::;;around::;;the::;;rim::;;of::;;the::;;glass::;;,::;;then::;;tear::;;them::D;;in::;;two::;;and::;;drop::;;them::D;;into::;;the::;;glass::;;.::
+Wipe::;;the::;;mint::;;leaves::;;around::;;the::;;rim::;;of::;;the::;;glass::;;,::;;then::;;tear::;;them::;;in::;;two::;;and::;;drop::;;them::;;into::;;the::;;glass::;;.::
 Crush::;;the::;;mint::;;leaves::;;lightly::;;with::;;the::;;back::;;of::;;a::;;teaspoon::;;.::
 Fill::;;the::;;glass::;;with::;;crushed::;;ice::;;.::
 Add::;;the::;;gin::;;and::;;chilled::;;green::;;tea::;;and::;;stir::;;well::;;.::
@@ -612,7 +612,7 @@ Remove::;;from::;;the::;;oven::;;and::;;leave::;;in::;;the::;;tin::;;for::;;10::
 Turn::;;out::;;and::;;cool::;;on::;;rack wire::;;.::
 To::;;decorate::;;the::;;cake::;;,::;;brush::;;the::;;cake::;;with::;;marmalade::;;.::
 Cut::;;the::;;marzipan fruits::;;in::;;half::;;and::;;place::;;on::;;top::;;of::;;the::;;cake::;;.::
-Use::;;the::;;gold::;;leaf::;;to::;;gilt::;;the::;;marzipan fruits::;;.::
+Use::;;the::;;gold leaf::;;to::;;gilt::;;the::;;marzipan fruits::;;.::
 For::;;the::;;prawns::;;,::;;in::;;a::;;bowl::;;,::;;mix::;;together::;;the::;;egg::;;white::;;,::;;cornflour::;;,::;;sherry::;;and::;;salt::;;and::;;freshly::;;ground::;;white::;;pepper::;;.::
 Add::;;the::;;prawns::;;,::;;stir::;;to::;;coat::;;and::;;set::;;aside::;;for::;;30::;;minutes::;;to::;;marinade::;;.::
 Suspend::;;a::;;steaming::;;basket::;;over::;;a::;;pan::;;of::;;simmering::;;water::;;.::
@@ -624,7 +624,7 @@ To::;;serve::;;,::;;mix::;;together::;;the::;;cooked::;;rice::;;and::;;peas::;;a
 Place::;;a::;;few::;;prawns::;;on::;;top::;;of::;;each::;;portion::;;.::
 Spoon::;;over::;;the::;;oolong tea sauce::;;and::;;garnish::;;with::;;the::;;chopped::;;mint::;;leaves::;;.::
 Heat::;;the::;;water::;;and::;;milk::;;in::;;a::;;pan::;;with::;;the::;;spices::;;and::;;ginger::;;until::;;it::;;comes::;;to::;;the::;;boil::;;.::
-Turn::;;the::;;heat::;;down::;;and::;;cook::;;over::;;a::;;low::;;to::;;medium::;;heat::;;for::;;15::;;minutes::;;.::
+Turn::;;the::;;heat::;;down::;;and::;;cook::;;over::;;a::;;low::;;to::;;medium heat::;;for::;;15::;;minutes::;;.::
 Be::;;careful::;;as::;;the::;;milk::;;can::;;easily::;;rise::;;and::;;boil::;;over::;;.::
 Once::;;the::;;volume::;;is::;;reduced::;;to::;;a::;;large::;;cupful::;;,::;;add::;;the::;;teabag::;;and::;;let::;;it::;;brew::;;for::;;one::;;minute::;;,::;;or::;;longer::;;if::;;you::;;like::;;strong::;;tea::;;.::
 To::;;serve::;;,::;;strain::;;into::;;a::;;cup::;;and::;;add::;;sugar::;;or::;;salt::;;if::;;using::;;,::;;to::;;taste::;;.::
@@ -634,38 +634,38 @@ Return::;;the::;;dough::;;to::;;the::;;bowl::;;,::;;cover::;;with::;;cling::;;fi
 Add::;;the::;;sultanas::;;,::;;cherries::;;,::;;cinnamon::;;and::;;orange::;;zest::;;to::;;the::;;dough::;;and::;;,::;;using::;;an::;;electric::;;mixer::;;or::;;your::;;hands::;;,::;;work::;;it::;;in::;;well::;;.::
 Shape::;;the::;;dough::;;into::;;a::;;sausage shape::;;by::;;flattening::;;out::;;the::;;dough::;;and::;;rolling::;;it::;;up::;;.::
 Put::;;the::;;dough::;;on::;;a::;;greased::;;baking::;;tray::;;.::
-Slide::;;the::;;baking::;;tray::;;inside::;;a::;;plastic::;;bag::;;,::;;to::;;protect::;;the::;;dough::;;from::;;drafts::;;,::;;taking::;;care::;;not::;;to::;;allow::;;the::;;plastic::;;bag::;;to::;;touch::;;the::;;top::;;of::;;the::;;loaf::;;.::
+Slide::;;the::;;baking::;;tray::;;inside::;;a::;;plastic::;;bag::;;,::;;to::;;protect::;;the::;;dough::;;from::;;drafts::;;,::;;taking::;;care::;;not::;;to::;;allow::;;the::;;bag plastic::;;to::;;touch::;;the::;;top::;;of::;;the::;;loaf::;;.::
 Leave::;;to::;;rise::;;for::;;an::;;hour::;;.::
 Preheat::;;the::;;oven::;;to::;;220C/425F/Gas::;;7::;;.::
 Bake::;;the::;;dough::;;for::;;25-30::;;minutes::;;,::;;then::;;transfer::;;to::;;a::;;rack wire::;;to::;;cool::;;.::
 While::;;the::;;loaf::;;is::;;cooling::;;,::;;make::;;the::;;water icing::;;.::
-Tip::;;the::;;sugar icing::;;into::;;a::;;bowl::;;,::;;add::;;a::;;little::;;water::;;and::;;mix::;;well::;;to::;;form::;;a::;;paste::;;.::
+Tip::;;the::;;icing sugar::;;into::;;a::;;bowl::;;,::;;add::;;a::;;little::;;water::;;and::;;mix::;;well::;;to::;;form::;;a::;;paste::;;.::
 Gradually::;;add::;;more::;;water::;;until::;;the::;;icing::;;is::;;just::;;thick::;;enough::;;to::;;coat::;;the::;;back::;;of::;;a::;;spoon::;;.::
 Drizzle::;;or::;;spread::;;the::;;icing::;;over::;;the::;;top::;;of::;;the::;;tea loaf::;;.::
 Cut::;;into::;;slices::;;and::;;eat::;;with::;;lashings::;;of::;;butter::;;.::
 Preheat::;;the::;;oven::;;to::;;190C/375F/Gas::;;5::;;.::
 In::;;a::;;mixing::;;bowl::;;,::;;cream::;;the::;;butter::;;with::;;a::;;handheld::;;electric::;;mixer::;;until::;;soft::;;and::;;creamy::;;.::
 Add::;;the::;;sugar::;;in::;;a::;;bit::;;at::;;a::;;time::;;until::;;well::;;mixed::;;.::
-Sift::;;the::;;flour::;;,::;;rice ground::;;and::;;salt::;;into::;;another::;;bowl::;;.::
-Stir::;;the::;;lavender::;;and::;;Lady::;;tea Grey::;;leaves::;;into::;;the::;;flour mixture::;;.::
-Lightly::;;work::;;the::;;flour lavender::;;into::;;the::;;creamed::;;butter::;;with::;;fingers::;;until::;;the::;;dough::;;just::;;comes::;;together::;;.::
+Sift::;;the::;;flour::;;,::;;ground rice::;;and::;;salt::;;into::;;another::;;bowl::;;.::
+Stir::;;the::;;lavender::;;and::;;Lady Grey tea::;;leaves::;;into::;;the::;;flour mixture::;;.::
+Lightly::;;work::;;the::;;lavender flour::;;into::;;the::;;creamed::;;butter::;;with::;;fingers::;;until::;;the::;;dough::;;just::;;comes::;;together::;;.::
 Shape::;;the::;;dough::;;into::;;a::;;ball::;;and::;;cover::;;with::;;clingfilm::;;.::
 Set::;;aside::;;in::;;the::;;fridge::;;for::;;15::;;minutes::;;.::
 When::;;the::;;dough::;;is::;;chilled::;;,::;;remove::;;the::;;clingfilm::;;and::;;and::;;roll::;;out::;;onto::;;a::;;floured::;;surface::;;to::;;a::;;thickness::;;of::;;approximately::;;.75::;;cm::;;/::;;.25::;;in::;;.::
 Cut::;;out::;;heart-shaped::;;biscuits::;;with::;;a::;;cutter::;;.::
 Place::;;the::;;biscuits::;;onto::;;a::;;baking::;;tray::;;and::;;place::;;in::;;the::;;fridge::;;for::;;30::;;minutes::;;.::
-Bake::;;the::;;biscuits::;;in::;;the::;;oven::;;for::;;20::;;minutes::;;or::;;until::;;a::;;very::;;pale::;;gold::;;colour::;;.::
+Bake::;;the::;;biscuits::;;in::;;the::;;oven::;;for::;;20::;;minutes::;;or::;;until::;;a::;;very::;;pale::;;gold colour::;;.::
 Allow::;;to::;;cool::;;on::;;the::;;tray::;;for::;;ten::;;minutes::;;before::;;transferring::;;to::;;a::;;rack wire::;;to::;;cool::;;completely::;;.::
 Heat::;;a::;;large::;;frying::;;pan::;;or::;;wok::;;lined::;;with::;;foil::;;.::
 Pour::;;the::;;tea::;;leaves::;;in::;;with::;;the::;;sugar::;;.::
 Season::;;the::;;duck fillet::;;with::;;salt::;;and::;;pepper::;;.::
 Place::;;the::;;duck::;;on::;;a::;;rack::;;and::;;then::;;into::;;the::;;pan::;;.::
 Place::;;the::;;lid::;;on::;;and::;;smoke::;;for::;;20-25::;;minutes::;;.::
-Bring::;;a::;;pan::;;of::;;water::;;to::;;the::;;boil::;;and::;;blanch::;;the::;;carrots baby::;;and::;;leeks::;;for::;;2-3::;;minutes::;;.::
+Bring::;;a::;;pan::;;of::;;water::;;to::;;the::;;boil::;;and::;;blanch::;;the::;;baby carrots::;;and::;;leeks::;;for::;;2-3::;;minutes::;;.::
 Drain::;;.::
 Heat::;;a::;;little::;;oil::;;in::;;a::;;non-stick::;;pan::;;and::;;sauté::;;the::;;vegetables::;;with::;;the::;;seasoning::;;for::;;a::;;few::;;minutes::;;to::;;braise::;;.::
 Remove::;;the::;;duck::;;from::;;the::;;heat::;;and::;;allow::;;to::;;rest::;;.::
-Slice::;;on::;;the::;;diagonal::;;and::;;serve::;;the::;;vegetables baby::;;alongside::;;.::
+Slice::;;on::;;the::;;diagonal::;;and::;;serve::;;the::;;baby vegetables::;;alongside::;;.::
 For::;;the::;;haddock::;;,::;;mix::;;together::;;the::;;tea::;;,::;;sugar::;;and::;;rice::;;in::;;a::;;bowl::;;.::
 Line::;;a::;;large::;;,::;;wide::;;,::;;deep::;;saucepan::;;with::;;foil::;;and::;;add::;;the::;;rice mixture::;;.::
 Place::;;another::;;sheet::;;of::;;foil::;;over::;;the::;;tea mixture::;;and::;;place::;;the::;;fish::;;on::;;top::;;.::
@@ -675,7 +675,7 @@ NB::;;:::;;Tea-smoking::;;gnerates::;;a::;;lot::;;of::;;smoke::;;.::
 Be::;;sure::;;that::;;you::;;open::;;the::;;windows::;;and::;;get::;;as::;;much::;;ventilation::;;as::;;you::;;can::;;.::
 For::;;the::;;gnocchi::;;,::;;place::;;the::;;butter::;;and::;;water::;;into::;;a::;;saucepan::;;and::;;bring::;;to::;;the::;;boil::;;,::;;then::;;add::;;the::;;flour::;;,::;;beating::;;with::;;a::;;wooden::;;spoon::;;until::;;smooth::;;,::;;then::;;remove::;;from::;;the::;;heat::;;.::
 Transfer::;;the::;;gnocchi mixture::;;to::;;a::;;clean::;;bowl::;;and::;;add::;;the::;;eggs::;;,::;;herbs::;;and::;;beans::;;,::;;stiring::;;throughly::;;to::;;combine::;;.::
-Spoon::;;the::;;gnocchi mixture::;;into::;;a::;;piping::;;bag::;;and::;;pipe::;;out::;;onto::;;a::;;clean::;;,::;;floured::;;surface::;;into::;;a::;;long::;;sausage::;;.::
+Spoon::;;the::;;gnocchi mixture::;;into::;;a::;;bag piping::;;and::;;pipe::;;out::;;onto::;;a::;;clean::;;,::;;floured::;;surface::;;into::;;a::;;long::;;sausage::;;.::
 Then::;;cut::;;into::;;5cm/2in::;;pieces::;;.::
 .::
 Fill::;;a::;;saucepan::;;with::;;boiling::;;water::;;and::;;add::;;some::;;salt::;;.::
@@ -708,16 +708,16 @@ On::;;a::;;floured::;;work::;;surface::;;,::;;roll::;;out::;;the::;;dough::;;to:
 Transfer::;;to::;;greased::;;and::;;lined::;;baking::;;trays::;;and::;;bake::;;for::;;about::;;12::;;minutes::;;,::;;or::;;until::;;visibly::;;evenly::;;baked::;;and::;;starting::;;to::;;tinge::;;golden-brown::;;at::;;the::;;edges::;;.::
 Slide::;;the::;;sheets::;;of::;;baking::;;parchment::;;-LRB-::;;with::;;biscuits::;;on::;;top::;;-RRB-::;;from::;;the::;;trays::;;to::;;wire::;;racks::;;.::
 Allow::;;the::;;biscuits::;;to::;;cool::;;before::;;attempting::;;to::;;remove::;;them::;;from::;;the::;;baking::;;parchment::;;.::
-For::;;the::;;Earl::;;biscuits Grey::;;,::;;follow::;;the::;;same::;;method::;;as::;;for::;;the::;;lapsang::;;souchong::;;biscuits::;;,::;;but::;;cream::;;the::;;butter::;;and::;;sugar::;;with::;;bergamot::;;zest::;;or::;;Earl::;;tea Grey::;;.::
+For::;;the::;;Earl Grey biscuits::;;,::;;follow::;;the::;;same::;;method::;;as::;;for::;;the::;;lapsang::;;souchong::;;biscuits::;;,::;;but::;;cream::;;the::;;butter::;;and::;;sugar::;;with::;;bergamot zest::;;or::;;Earl Grey tea::;;.::
 Cut::;;into::;;8::;;x::;;7.5::;;cm/3in::;;biscuits square::;;-LRB-::;;you::;;can::;;cut::;;more::;;than::;;eight::;;if::;;you::;;have::;;enough::;;dough::;;-RRB-::;;.::
 Bake::;;for::;;about::;;10::;;minutes::;;and::;;cool::;;on::;;racks wire::;;.::
 For::;;the::;;rose pouchong biscuits::;;,::;;follow::;;the::;;same::;;method::;;as::;;before::;;,::;;but::;;cream::;;the::;;butter::;;and::;;sugar::;;with::;;a::;;few::;;drops::;;of::;;rosewater::;;.::
 Cut::;;into::;;6cm/2::;;.5::;;in::;;square::;;biscuits::;;.::
 Bake::;;for::;;about::;;eight::;;minutes::;;.::
 For::;;the::;;green::;;tea biscuits::;;,::;;follow::;;the::;;same::;;method::;;as::;;before::;;,::;;but::;;cream::;;the::;;butter::;;and::;;sugar::;;with::;;the::;;green::;;tea powder::;;.::
-Cut::;;out::;;the::;;following::;;:::;;1::;;x::;;15cm/6in::;;square::;;,::;;1::;;x::;;13cm/5in::;;square::;;,::;;1::;;x::;;11cm/4::;;.25::;;in::;;square::;;,::;;2::;;x::;;7cm/2::;;.75::;;in::;;squares::;;,::;;2::;;x::;;5cm/2in::;;squares::;;;::;;2::;;x::;;3cm/1::;;.25::;;in::;;squares::;;,::;;4::;;x::;;curlicues::;;made::;;with::;;4cm/1::;;.5::;;in::;;and::;;2cm::;;/::;;.75::;;in::;;circle::;;cutters::;;,::;;5::;;x::;;2cm::;;/::;;.75::;;in::;;circles::;;,::;;4::;;x::;;1.5::;;cm::;;/::;;.625::;;in::;;circles::;;.::
+Cut::;;out::;;the::;;following::;;:::;;1::;;x::;;15cm/6in::;;square::;;,::;;1::;;x::;;13cm/5in::;;square::;;,::;;1::;;x::;;11cm/4::;;.25::;;in::;;square::;;,::;;2::;;x::;;7cm/2::;;.75::;;in::;;squares::;;,::;;2::;;x::;;5cm/2in::;;squares::;;;::;;2::;;x::;;3cm/1::;;.25::;;in::;;squares::;;,::;;4::;;x::;;curlicues::;;made::;;with::;;4cm/1::;;.5::;;in::;;and::;;2cm::;;/::;;.75::;;in::;;cutters circle::;;,::;;5::;;x::;;2cm::;;/::;;.75::;;in::;;circles::;;,::;;4::;;x::;;1.5::;;cm::;;/::;;.625::;;in::;;circles::;;.::
 Take::;;the::;;three::;;largest::;;squares::;;of::;;dough::;;-LRB-::;;these::;;are::;;the::;;curled::;;sections roof::;;-RRB-::;;.::
-Cut::;;similar::;;size::;;squares::;;of::;;baking::;;parchment::;;and::;;attach::;;each::;;one::;;to::;;the::;;underside::;;of::;;a::;;corresponding::;;round cake tin::;;with::;;a::;;smidge::;;of::;;butter::;;-LRB-::;;so::;;the::;;15cm/6in::;;square::;;goes::;;over::;;the::;;base::;;of::;;a::;;round 15cm/6in cake tin::;;,::;;and::;;so::;;on::;;-RRB-::;;.::
+Cut::;;similar::;;squares size::;;of::;;baking::;;parchment::;;and::;;attach::;;each::;;one::;;to::;;the::;;underside::;;of::;;a::;;corresponding::;;round cake tin::;;with::;;a::;;smidge::;;of::;;butter::;;-LRB-::;;so::;;the::;;15cm/6in::;;square::;;goes::;;over::;;the::;;base::;;of::;;a::;;round 15cm/6in cake tin::;;,::;;and::;;so::;;on::;;-RRB-::;;.::
 Place::;;the::;;dough::;;on::;;top::;;so::;;that::;;its::;;four::;;corners::;;hang::;;over::;;the::;;sides::;;.::
 Bake::;;for::;;10-15::;;minutes::;;depending::;;on::;;size::;;.::
 Leave::;;the::;;biscuits::;;to::;;cool::;;on::;;the::;;tins::;;before::;;attempting::;;to::;;remove::;;.::
@@ -725,16 +725,16 @@ Bake::;;the::;;rest::;;of::;;the::;;shapes::;;of::;;dough::;;on::;;flat::;;bakin
 Slide::;;the::;;sheets::;;of::;;baking::;;parchment::;;-LRB-::;;with::;;biscuits::;;on::;;top::;;-RRB-::;;from::;;the::;;trays::;;to::;;the::;;wire::;;racks cooling::;;.::
 Allow::;;the::;;biscuits::;;to::;;cool::;;before::;;attempting::;;to::;;remove::;;them::;;from::;;the::;;baking::;;parchment::;;.::
 For::;;the::;;royal::;;icing::;;,::;;put::;;the::;;egg whites::;;in::;;a::;;large::;;mixing::;;bowl::;;and::;;whisk::;;them::;;for::;;about::;;30::;;seconds::;;using::;;an::;;electric::;;whisk hand::;;.::
-Gradually::;;add::;;the::;;sugar icing::;;,::;;a::;;bit::;;at::;;a::;;time::;;,::;;beating::;;continuously::;;.::
+Gradually::;;add::;;the::;;icing sugar::;;,::;;a::;;bit::;;at::;;a::;;time::;;,::;;beating::;;continuously::;;.::
 Add::;;the::;;lemon::;;juice::;;and::;;scrape::;;down::;;the::;;sides::;;of::;;the::;;bowl::;;with::;;a::;;spatula::;;.::
 Keep::;;beating::;;for::;;about::;;five::;;minutes::;;,::;;or::;;until::;;the::;;icing::;;holds::;;its::;;shape::;;.::
 Mix::;;in::;;the::;;blue::;;and::;;green::;;food colours::;;to::;;make::;;a::;;light::;;turquoise::;;coloured::;;icing::;;.::
 Cover::;;with::;;cling::;;film::;;until::;;needed::;;.::
-To::;;assemble::;;,::;;put::;;the::;;icing::;;into::;;a::;;piping::;;bag::;;fitted::;;with::;;a::;;small::;;plain::;;nozzle::;;.::
+To::;;assemble::;;,::;;put::;;the::;;icing::;;into::;;a::;;bag piping::;;fitted::;;with::;;a::;;small::;;plain::;;nozzle::;;.::
 Working::;;on::;;the::;;board::;;you::;;'re::;;using::;;to::;;serve::;;the::;;cake::;;or::;;a::;;plate::;;,::;;stack::;;the::;;eight::;;lapsang::;;souchong::;;biscuits::;;,::;;sandwiching::;;each::;;layer::;;with::;;royal::;;icing::;;.::
 Stack::;;each::;;biscuit::;;at::;;a::;;45-degree::;;angle::;;to::;;the::;;last::;;,::;;so::;;the::;;first::;;biscuit::;;has::;;a::;;flat::;;side::;;towards::;;you::;;,::;;the::;;second::;;has::;;a::;;point::;;towards::;;you::;;,::;;and::;;so::;;on::;;.::
 Take::;;the::;;largest::;;green::;;tea roof::;;and::;;stick::;;this::;;on::;;top::;;with::;;more::;;icing::;;.::
-Stack::;;the::;;eight::;;Earl::;;biscuits Grey::;;as::;;before::;;,::;;sandwiching::;;each::;;layer::;;with::;;royal::;;icing::;;and::;;checking::;;the::;;levels::;;throughout::;;.::
+Stack::;;the::;;eight::;;Earl Grey biscuits::;;as::;;before::;;,::;;sandwiching::;;each::;;layer::;;with::;;royal::;;icing::;;and::;;checking::;;the::;;levels::;;throughout::;;.::
 Stick::;;the::;;medium-sized::;;green::;;tea roof::;;on::;;top::;;.::
 Stack::;;the::;;eight::;;rose::;;pouchong::;;biscuits::;;as::;;before::;;.::
 Stick::;;the::;;small::;;green::;;tea roof::;;on::;;top::;;.::
@@ -757,19 +757,19 @@ Turn::;;off::;;the::;;heat::;;and::;;let::;;the::;;mackerel cook::;;slowly::;;as
 When::;;cooked::;;,::;;place::;;the::;;mackerel fillets::;;onto::;;serving::;;plates::;;and::;;serve::;;with::;;the::;;crab apple jelly::;;.::
 For::;;the::;;tea-smoked::;;trout::;;,::;;place::;;a::;;piece::;;of::;;foil::;;in::;;the::;;bottom::;;of::;;a::;;wok::;;.::
 Place::;;the::;;rice::;;,::;;tea::;;and::;;sugar::;;onto::;;the::;;foil::;;and::;;cover::;;with::;;a::;;lid::;;.::
-Place::;;over::;;a::;;medium::;;heat::;;for::;;3-4::;;minutes::;;,::;;or::;;until::;;the::;;tea::;;starts::;;to::;;smoke::;;-LRB-::;;CAUTION::;;:::;;tea-smoking::;;generates::;;a::;;lot::;;of::;;smoke::;;.::
+Place::;;over::;;a::;;medium heat::;;for::;;3-4::;;minutes::;;,::;;or::;;until::;;the::;;tea::;;starts::;;to::;;smoke::;;-LRB-::;;CAUTION::;;:::;;tea-smoking::;;generates::;;a::;;lot::;;of::;;smoke::;;.::
 Cook::;;in::;;a::;;well::;;ventilated::;;area::;;.::;;-RRB-::
 Place::;;the::;;trout fillets::;;onto::;;an::;;oiled::;;piece::;;of::;;foil::;;in::;;a::;;steamer::;;and::;;set::;;in::;;the::;;wok::;;.::
 Place::;;a::;;lid::;;on::;;the::;;steamer::;;and::;;cook::;;for::;;4-5::;;minutes::;;,::;;or::;;until::;;the::;;trout::;;is::;;just::;;cooked::;;through::;;and::;;smoked::;;.::
-Meanwhile::;;,::;;for::;;the::;;bashed::;;chive::;;potatoes::;;,::;;place::;;the::;;potatoes::;;into::;;a::;;pan::;;,::;;cover::;;with::;;water::;;and::;;bring::;;to::;;the::;;boil::;;.::
+Meanwhile::;;,::;;for::;;the::;;bashed::;;potatoes chive::;;,::;;place::;;the::;;potatoes::;;into::;;a::;;pan::;;,::;;cover::;;with::;;water::;;and::;;bring::;;to::;;the::;;boil::;;.::
 Simmer::;;for::;;ten::;;minutes::;;,::;;or::;;until::;;just::;;tender::;;.::
 Drain::;;and::;;return::;;to::;;the::;;pan::;;with::;;the::;;butter::;;.::
 Crush::;;lightly::;;with::;;the::;;back::;;of::;;a::;;fork::;;,::;;season::;;with::;;salt::;;and::;;freshly::;;ground::;;black::;;pepper::;;and::;;stir::;;in::;;the::;;chives::;;.::
 For::;;the::;;tomato salsa::;;,::;;gently::;;heat::;;half::;;the::;;olive::;;oil::;;,::;;the::;;shallot::;;,::;;garlic::;;and::;;tomatoes::;;in::;;a::;;pan::;;for::;;1-2::;;minutes::;;,::;;or::;;until::;;just::;;warmed::;;through::;;.::
 Remove::;;from::;;the::;;heat::;;and::;;add::;;the::;;remaining::;;olive::;;oil::;;,::;;the::;;lemon::;;juice::;;,::;;chives::;;and::;;tarragon::;;.::
-For::;;the::;;salad rocket::;;,::;;place::;;the::;;rocket::;;and::;;parsley::;;into::;;a::;;bowl::;;.::
+For::;;the::;;rocket salad::;;,::;;place::;;the::;;rocket::;;and::;;parsley::;;into::;;a::;;bowl::;;.::
 Drizzle::;;over::;;the::;;olive::;;oil::;;,::;;season::;;with::;;salt::;;and::;;freshly::;;ground::;;black::;;pepper::;;and::;;mix::;;well::;;.::
-To::;;serve::;;,::;;place::;;two::;;trout fillets::;;onto::;;each::;;of::;;two::;;serving::;;plates::;;with::;;the::;;bashed::;;chive::;;potatoes::;;and::;;salad rocket::;;.::
+To::;;serve::;;,::;;place::;;two::;;trout fillets::;;onto::;;each::;;of::;;two::;;serving::;;plates::;;with::;;the::;;bashed::;;potatoes chive::;;and::;;rocket salad::;;.::
 Drizzle::;;over::;;the::;;tomato salsa::;;.::
 For::;;the::;;tea-smoked::;;salmon::;;,::;;place::;;a::;;large::;;double::;;piece::;;of::;;aluminium::;;foil::;;into::;;the::;;base::;;of::;;a::;;wok::;;.::
 Tear::;;open::;;the::;;tea bag::;;and::;;pour::;;the::;;leaves::;;onto::;;the::;;foil::;;,::;;along::;;with::;;the::;;oregano::;;,::;;rice::;;,::;;cumin::;;,::;;cardamom::;;,::;;coriander seeds::;;and::;;garlic::;;.::

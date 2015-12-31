@@ -39,7 +39,11 @@ import java.util.stream.Collectors;
  */
 public class EntityAnnotator implements Annotator {
     private static final Explorer explorer = new Explorer();
+    private static final StanfordCoreNLP pipeline = Pipeline.getLemmaPipeline();
     private static final Map<TaxonomyType, Set<String>> dictionaries = initializeDictionaries(Taxonomy.getTaxonomies());
+    /**
+     * Pipeline annotator name.
+     */
     public static final String NAME = "entities";
     public static final class EntityAnnotations implements CoreAnnotation<AugmentedSemanticGraph> {
         @Override
@@ -87,7 +91,11 @@ public class EntityAnnotator implements Annotator {
         }
     }
 
-    @Override
+    /**
+     * Annotates a given text with entities using a
+     * dictionary based method. The WordNet taxonomy is used to
+     * check whether lemmatised inputs are members of the different classes.
+     */
     public void annotate(Annotation annotation) {
         for(CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
             SemanticGraph dependencies = sentence.get(SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation.class);
@@ -138,51 +146,41 @@ public class EntityAnnotator implements Annotator {
         return Collections.singleton(Annotator.DEPENDENCY_REQUIREMENT);
     }
 
-    private static class IngredientFinder {
-        private static final StanfordCoreNLP pipeline = Pipeline.getLemmaPipeline();
-        /**
-         * Constructs a simple parser to recognize candidate nouns using the
-         * given pipeline. This should include tokenization, lemmatization and POS tagging.
-         */
-        public IngredientFinder() {}
-        /**
-         * Extracts all noun tokens from the ingredient description
-         * @param ingredient Ingredient details, from which the candidate strings are extracted.
-         * @return {@link List}<{@link String}> - The candidate strings which have been tagged as nouns.
-         */
-        public List<String> possibleIngredientNames(Ingredient ingredient) {
-            String ingredientString = ingredient.getName();
-            Annotation annotation = new Annotation(ingredientString);
-            pipeline.annotate(annotation);
-            List<CoreMap> sentences = annotation.get(
-                    CoreAnnotations.SentencesAnnotation.class);
-            List<String> possibleIngredientNames = new LinkedList<>();
+    /**
+     * @param ingredient Ingredient details, from which the candidate strings are extracted.
+     * @return {@link List}<{@link String}> - The candidate strings which have been tagged as nouns.
+     */
+    private static List<String> possibleIngredientNames(Ingredient ingredient) {
+        String ingredientString = ingredient.getName();
+        Annotation annotation = new Annotation(ingredientString);
+        pipeline.annotate(annotation);
+        List<CoreMap> sentences = annotation.get(
+                CoreAnnotations.SentencesAnnotation.class);
+        List<String> possibleIngredientNames = new LinkedList<>();
 
-            for(CoreMap sentence : sentences) {
-                for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
-                    String word = token.word();
-                    String pos = token.tag();
-                    //Add only nouns.
-                    if(pos.startsWith("N") && !word.equals("oz") && word.matches("[a-zA-Z]+")) {
-                        possibleIngredientNames.add(word);
-                    }
+        for(CoreMap sentence : sentences) {
+            for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+                String word = token.word();
+                String pos = token.tag();
+                //Add only nouns.
+                if(pos.startsWith("N") && !word.equals("oz") && word.matches("[a-zA-Z]+")) {
+                    possibleIngredientNames.add(word);
                 }
             }
-            return possibleIngredientNames;
         }
+        return possibleIngredientNames;
     }
 
     public static void augmentIngredientDictionary(Recipe recipe) {
-        IngredientFinder finder = new IngredientFinder();
         for(Ingredient ingredient : recipe.getIngredients()) {
-            for(String noun : finder.possibleIngredientNames(ingredient)) {
+            for(String noun : possibleIngredientNames(ingredient)) {
                 IIndexWord indexWord = explorer.getIndexNoun(noun);
                 if(indexWord != null) {
                     for (IWordID wordID : indexWord.getWordIDs()) {
                         String lemma = explorer.getWord(wordID).getLemma();
                         dictionaries.get(TaxonomyType.INGREDIENTS).add(lemma);
                     }
-                }
+                } else dictionaries.get(TaxonomyType.INGREDIENTS).add(noun);
             }
         }
     }

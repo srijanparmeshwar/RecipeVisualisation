@@ -11,10 +11,11 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Created by Srijan on 21/12/2015.
+ * Class to obtain features to feed into classifer.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class FeatureVectors {
-    public static List<String> intermediateFeatures(String partOfSpeech, int position, Set<GrammaticalRelation> inRelations, Set<GrammaticalRelation> outRelations, Taxonomy.TaxonomyType type) {
+    private static List<String> intermediateFeatures(String partOfSpeech, int position, Set<GrammaticalRelation> inRelations, Set<GrammaticalRelation> outRelations, Taxonomy.TaxonomyType type) {
         List<String> features = new LinkedList<>();
         features.add("posTag=" + partOfSpeech);
         if(position == 0) features.add("atStart");
@@ -36,6 +37,14 @@ public class FeatureVectors {
         return features;
     }
 
+    /**
+     * Retrieves and converts required features to strings.
+     * @param token Current token.
+     * @param position Position in sentence.
+     * @param dependencies Dependencies in the whole text.
+     * @param tokens Sentence containing the current token.
+     * @return List of features as strings.
+     */
     public static List<String> getFeatures(TaggedWord token, int position, EntityAnnotator.AugmentedSemanticGraph dependencies, List<TaggedWord> tokens) {
         String pos = token.tag();
         Taxonomy.TaxonomyType type = token.entity();

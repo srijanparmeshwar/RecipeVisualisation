@@ -3,14 +3,12 @@ package uk.ac.cam.sp715.ws;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import spark.Filter;
 import spark.Request;
 import spark.Response;
 import uk.ac.cam.sp715.flows.CoreNLPVisualiser;
 import uk.ac.cam.sp715.flows.Flow;
 import uk.ac.cam.sp715.recipes.Ingredient;
 import uk.ac.cam.sp715.recipes.Recipe;
-import uk.ac.cam.sp715.recognition.EntityAnnotator;
 import uk.ac.cam.sp715.util.*;
 
 import java.io.IOException;
@@ -29,7 +27,7 @@ import static spark.Spark.*;
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class RecipeServer {
-    private static final StanfordCoreNLP pipeline = Pipeline.getMainPipeline();
+    private static final Pipeline pipeline = Pipeline.getMainPipeline();
     private static final CoreNLPVisualiser visualiser = new CoreNLPVisualiser(pipeline);
     private static final Logger logger = Logging.getLogger(RecipeServer.class);
 
@@ -43,7 +41,6 @@ public class RecipeServer {
     private static String parse(Recipe recipe) throws IOException {
         Flow flow;
         synchronized (pipeline) {
-            EntityAnnotator.augmentIngredientDictionary(recipe);
             flow = visualiser.parse(recipe);
         }
         return flow.toSVG();

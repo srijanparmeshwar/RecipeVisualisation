@@ -39,9 +39,7 @@ public class Explorer implements AutoCloseable {
     public void open() {
         try {
             dictionary.open();
-            if(dictionary.isOpen()) {
-                logger.log(Level.INFO, "Dictionary is open.");
-            } else {
+            if(!dictionary.isOpen()) {
                 logger.log(Level.SEVERE, "Error opening dictionary.");
                 throw new WordNetException();
             }

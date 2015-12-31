@@ -5,7 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Srijan on 30/12/2015.
+ * Keys for priority queue caches. It implements {@link Comparable} such
+ * that caches which use these are LFU caches.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class RecipeKey implements Serializable, Comparable<RecipeKey> {
     private final String name;
@@ -17,6 +19,11 @@ public class RecipeKey implements Serializable, Comparable<RecipeKey> {
         this.count = 0;
     }
 
+    /**
+     * Requests the key wrapper, and increments the number of requests for this key.
+     * @param key The recipe query.
+     * @return The wrapped key.
+     */
     public static RecipeKey get(String key) {
         if (!map.containsKey(key)) map.put(key, new RecipeKey(key));
         RecipeKey value = map.get(key);

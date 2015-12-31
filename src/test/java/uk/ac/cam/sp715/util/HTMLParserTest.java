@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 /**
- * Tests for HTMLParser: simple search test and simple recipe retrieval test.
+ * Tests for {@link HTMLParser} simple search test and simple recipe retrieval test.
  * Checks that results are not null, and that certain strings are non-empty.
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */

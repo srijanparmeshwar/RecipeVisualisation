@@ -3,15 +3,11 @@ package uk.ac.cam.sp715.ml;
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.Dataset;
 import edu.stanford.nlp.classify.GeneralDataset;
-import edu.stanford.nlp.classify.LinearClassifier;
 import edu.stanford.nlp.ling.BasicDatum;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.Datum;
 import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
-import jsat.classifiers.ClassificationDataSet;
-import jsat.classifiers.DataPoint;
 import uk.ac.cam.sp715.flows.FeatureVectors;
 import uk.ac.cam.sp715.flows.Role;
 import uk.ac.cam.sp715.recipes.Recipe;
@@ -79,10 +75,9 @@ public class DataHandler {
     }
 
     public static void prepareTrainingFile(List<Recipe> recipes) {
-        StanfordCoreNLP pipeline = Pipeline.getMainPipeline();
+        Pipeline pipeline = Pipeline.getMainPipeline();
         List<String> lines = recipes.stream().map(recipe -> {
-            Annotation annotation = new Annotation(recipe.getDescription());
-            pipeline.annotate(annotation);
+            Annotation annotation = pipeline.annotate(recipe);
             return annotation.get(CoreAnnotations.SentencesAnnotation.class)
                     .stream()
                     .map(sentence -> sentence.get(EntityAnnotations.class)
@@ -101,15 +96,14 @@ public class DataHandler {
         }
     }
 
-    public static Classifier<Role, String> getClassifier(StanfordCoreNLP pipeline) throws IOToolsException {
+    public static Classifier<Role, String> getClassifier(Pipeline pipeline) throws IOToolsException {
         LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
 
         Map<Integer, List<String>> featureMap = new HashMap<>();
         index = 0;
 
         for (Recipe recipe : recipes) {
-            Annotation annotation = new Annotation(recipe.getDescription());
-            pipeline.annotate(annotation);
+            Annotation annotation = pipeline.annotate(recipe);
 
             for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
                 AugmentedSemanticGraph dependencies = sentence.get(EntityAnnotations.class);
@@ -130,13 +124,12 @@ public class DataHandler {
     private static void trainAndTest() throws IOToolsException {
         LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
 
-        StanfordCoreNLP pipeline = Pipeline.getMainPipeline();
+        Pipeline pipeline = Pipeline.getMainPipeline();
 
         Classifier<Role, String> classifier = getClassifier(pipeline);
 
         for(Recipe recipe : recipes) {
-            Annotation annotation = new Annotation(recipe.getDescription());
-            pipeline.annotate(annotation);
+            Annotation annotation = pipeline.annotate(recipe);
 
             for(CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
                 AugmentedSemanticGraph dependencies = sentence.get(EntityAnnotations.class);
@@ -156,15 +149,15 @@ public class DataHandler {
     }
 
     private static void runPreparation() throws HTMLParseException, IOToolsException {
-        List<Link> links = new LinkedList<>();
-        LinkedList<Recipe> recipes = new LinkedList<>();
-        //LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
+        //List<Link> links = new LinkedList<>();
+        //LinkedList<Recipe> recipes = new LinkedList<>();
+        LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
 
-        for(String query : new String[] {"chocolate", "halloween", "pizza", "tea"}) links.addAll(HTMLParser.search(query));
-        for(Link link : links) recipes.add(HTMLParser.getRecipe(link.getLink()));
+        //for(String query : new String[] {"chocolate", "halloween", "pizza", "tea"}) links.addAll(HTMLParser.search(query));
+        //for(Link link : links) recipes.add(HTMLParser.getRecipe(link.getLink()));
 
-        IOTools.save(links, getPath("links.txt"));
-        IOTools.save(recipes, getPath("recipes.ser").toString());
+        //IOTools.save(links, getPath("links.txt"));
+        //IOTools.save(recipes, getPath("recipes.ser").toString());
 
         prepareTrainingFile(recipes);
     }

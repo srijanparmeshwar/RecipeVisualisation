@@ -6,7 +6,7 @@
 
     <groupId>groupId</groupId>
     <artifactId>RecipeVisualisation</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <repositories>
         <repository>
@@ -91,10 +91,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.10.3</version>
-                <configuration>
-                    <excludePackageNames>uk.ac.cam.sp715.experimental</excludePackageNames>
-                    <excludePackageNames>uk.ac.cam.sp715.nlp</excludePackageNames>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -5,9 +5,12 @@ import uk.ac.cam.sp715.recognition.TaggedWord;
 import java.util.List;
 
 /**
- * Created by Srijan on 19/11/2015.
+ * Class to represent an action with a set of dependent objects.
+ * It is also used to represent nodes in the {@link Flow} outputs
+ * from the visualiser.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
-public class Action implements Node {
+public class Action {
     private final int id;
     private final TaggedWord description;
     private final List<TaggedWord> objects;
@@ -15,10 +18,6 @@ public class Action implements Node {
         this.id = id;
         this.description = description;
         this.objects = objects;
-    }
-    public void print() {
-        System.out.println(description);
-        System.out.println(objects);
     }
     public int start() {
         int min = description.start();

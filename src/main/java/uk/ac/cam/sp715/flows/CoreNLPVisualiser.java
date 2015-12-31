@@ -5,7 +5,6 @@ import edu.stanford.nlp.ling.BasicDatum;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 import uk.ac.cam.sp715.ml.DataHandler;
 import uk.ac.cam.sp715.recipes.Recipe;
@@ -26,11 +25,15 @@ import java.util.stream.Collectors;
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class CoreNLPVisualiser extends Visualiser {
-    private final StanfordCoreNLP pipeline;
+    private final Pipeline pipeline;
     private final Classifier<Role, String> classifier;
     private final Map<String, Action> frontiers;
 
-    public CoreNLPVisualiser(StanfordCoreNLP pipeline) {
+    /**
+     * Constructs a visualiser.
+     * @param pipeline CoreNLP pipeline used to tag and parse text.
+     */
+    public CoreNLPVisualiser(Pipeline pipeline) {
         try {
             this.pipeline = pipeline;
             this.classifier = DataHandler.getClassifier(pipeline);
@@ -85,9 +88,15 @@ public class CoreNLPVisualiser extends Visualiser {
     private int id = 0;
 
     @Override
+    /**
+     * Parses the recipe description and produces a directed graph of actions and their dependencies.
+     * The algorithm used parses the text for dependencies, and part of speech tags and then
+     * uses a linear classifier to identify actions and objects.
+     * This information is then used to identify dependencies using different heuristics.
+     * @param recipe The recipe to be visualised as a graph.
+     */
     public Flow parse(Recipe recipe) {
-        Annotation annotation = new Annotation(recipe.getDescription());
-        pipeline.annotate(annotation);
+        Annotation annotation = pipeline.annotate(recipe);
 
         Flow flow = new Flow();
         frontiers.clear();
@@ -155,12 +164,5 @@ public class CoreNLPVisualiser extends Visualiser {
                 .forEach(action -> flow.addEdge(action, lastAction));
 
         return flow;
-    }
-
-    public static void main(String[] args) throws HTMLParseException, IOToolsException {
-        StanfordCoreNLP pipeline = Pipeline.getMainPipeline();
-        CoreNLPVisualiser visualiser = new CoreNLPVisualiser(pipeline);
-        Recipe recipe = HTMLParser.getRecipe(HTMLParser.search("chocolate").get(0).getLink());
-        visualiser.parse(recipe);
     }
 }

@@ -15,6 +15,11 @@ public class MemoryCache<K extends Comparable<K>, V>  implements Cache<K, V>, It
     private final PriorityQueue<K> keys;
     private final Map<K, V> entries;
     private final int maxSize;
+
+    /**
+     * Constructs an in memory cache.
+     * @param maxSize The maximum number of entries allowed in the cache.
+     */
     public MemoryCache(int maxSize) {
         this.keys = new PriorityQueue<>();
         this.entries = new HashMap<>();
