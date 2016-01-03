@@ -77,7 +77,7 @@ app.get(/^(.+)$/, function (req, res) {
     res.sendFile(__dirname + req.params[0], options, function (err) {
         if (err) {
             console.log("Error: " + err.status);
-            res.status(err.statusCode);
+            res.status(404);
             res.send("File not found");
         }
     });
