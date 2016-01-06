@@ -42,7 +42,7 @@ public class DataHandler {
      */
     public static Map<Integer, Role> loadLabels(String name) {
         index = 0;
-        Map<Integer, Role> labels = new HashMap<>();
+        Map<Integer, Role> labels = new TreeMap<>();
         try {
             Files.lines(getPath(name)).forEach(line -> {
                 String[] tokens = line.split(";;");
@@ -167,6 +167,6 @@ public class DataHandler {
     }
 
     public static void main(String[] args) throws HTMLParseException, IOToolsException {
-        runPreparation();
+        testCurrentLabeling();
     }
 }

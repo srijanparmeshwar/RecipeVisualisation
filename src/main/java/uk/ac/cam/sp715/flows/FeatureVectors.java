@@ -53,11 +53,15 @@ public class FeatureVectors {
 
         List<String> features = intermediateFeatures(pos, position, irelations, orelations, type);
         features.add("word=" + token.toString());
-        if(dependencies.orderedTokens().size()>position + 2) features.add("posTagRight2=" + tokens.get(position + 2).tag());
-        if(position>1) features.add("posTagLeft2=" + tokens.get(position - 2).tag());
 
         if(dependencies.orderedTokens().size()>position + 1) features.add("posTagRight=" + tokens.get(position + 1).tag());
         if(position>0) features.add("posTagLeft=" + tokens.get(position - 1).tag());
+
+        if(dependencies.orderedTokens().size()>position + 2) features.add("posTagRight2=" + tokens.get(position + 2).tag());
+        if(position>1) features.add("posTagLeft2=" + tokens.get(position - 2).tag());
+
+        if(dependencies.orderedTokens().size()>position + 3) features.add("posTagRight3=" + tokens.get(position + 3).tag());
+        if(position>2) features.add("posTagLeft3=" + tokens.get(position - 3).tag());
 
         return features;
     }
