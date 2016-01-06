@@ -1,8 +1,10 @@
 package uk.ac.cam.sp715.flows;
 
+import java.io.Serializable;
+
 /**
- * Created by Srijan on 21/12/2015.
+ * Roles for semantic role labelling.
  */
-public enum Role {
+public enum Role implements Serializable {
     ACTION, DOBJECT, IOBJECT, OTHER
 }

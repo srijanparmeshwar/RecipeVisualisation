@@ -97,8 +97,16 @@ public class DataHandler {
     }
 
     public static Classifier<Role, String> getClassifier(Pipeline pipeline) throws IOToolsException {
-        LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
+        serializeTrainingData(pipeline);
+        return ClassifierTrainer.train(loadTrainingData());
+    }
 
+    public static GeneralDataset<Role, String> loadTrainingData() throws IOToolsException {
+        return IOTools.read(getPath("srltrain-en.ser").toString());
+    }
+
+    private static void serializeTrainingData(Pipeline pipeline) throws IOToolsException {
+        LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
         Map<Integer, List<String>> featureMap = new HashMap<>();
         index = 0;
 
@@ -118,34 +126,8 @@ public class DataHandler {
             }
         }
 
-        return ClassifierTrainer.train(constructDataset(loadLabels("srl-train.txt"), featureMap));
-    }
-
-    private static void trainAndTest() throws IOToolsException {
-        LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
-
-        Pipeline pipeline = Pipeline.getMainPipeline();
-
-        Classifier<Role, String> classifier = getClassifier(pipeline);
-
-        for(Recipe recipe : recipes) {
-            Annotation annotation = pipeline.annotate(recipe);
-
-            for(CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
-                AugmentedSemanticGraph dependencies = sentence.get(EntityAnnotations.class);
-                List<TaggedWord> tokens = dependencies.orderedTokens();
-                int position = 0;
-                for(TaggedWord token : tokens) {
-                    List<String> features = FeatureVectors.getFeatures(token, position, dependencies, tokens);
-
-                    System.out.print(token);
-                    System.out.print("_" + classifier.classOf(new BasicDatum<>(features)) + " ");
-
-                    position++;
-                }
-                System.out.println();
-            }
-        }
+        GeneralDataset<Role, String> dataset = constructDataset(loadLabels("srl-train.txt"), featureMap);
+        IOTools.save(dataset, getPath("srltrain-en.ser").toString());
     }
 
     private static void runPreparation() throws HTMLParseException, IOToolsException {
@@ -167,6 +149,6 @@ public class DataHandler {
     }
 
     public static void main(String[] args) throws HTMLParseException, IOToolsException {
-        testCurrentLabeling();
+        loadTrainingData().summaryStatistics();
     }
 }

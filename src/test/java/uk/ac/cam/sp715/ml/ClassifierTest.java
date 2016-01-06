@@ -27,8 +27,6 @@ import java.util.Map;
  * Statistical evaluation of the Semantic Role Labelling classifier.
  */
 public class ClassifierTest {
-    private static final Pipeline pipeline = Pipeline.getMainPipeline();
-
     private static GeneralDataset<Role, String> trainSet;
     private static GeneralDataset<Role, String> testSet;
     private static Classifier<Role, String> classifier;
@@ -36,27 +34,7 @@ public class ClassifierTest {
     @BeforeClass
     public static void setup() {
         try {
-            LinkedList<Recipe> recipes = IOTools.read(Paths.get("data", "recipes.ser").toString());
-            Map<Integer, List<String>> featureMap = new HashMap<>();
-            int index = 0;
-
-            for (Recipe recipe : recipes) {
-                Annotation annotation = pipeline.annotate(recipe);
-
-                for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
-                    EntityAnnotator.AugmentedSemanticGraph dependencies = sentence.get(EntityAnnotator.EntityAnnotations.class);
-                    List<TaggedWord> tokens = dependencies.orderedTokens();
-                    int position = 0;
-                    for (TaggedWord token : tokens) {
-                        List<String> features = FeatureVectors.getFeatures(token, position, dependencies, tokens);
-                        featureMap.put(index, features);
-                        position++;
-                        index++;
-                    }
-                }
-            }
-
-            GeneralDataset<Role, String> dataset = DataHandler.constructDataset(DataHandler.loadLabels("srl-train.txt"), featureMap);
+            GeneralDataset<Role, String> dataset = DataHandler.loadTrainingData();
             Pair<GeneralDataset<Role, String>, GeneralDataset<Role, String>> pair = dataset.split(0.2);
 
             trainSet = pair.first();
