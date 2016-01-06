@@ -97,7 +97,6 @@ public class DataHandler {
     }
 
     public static Classifier<Role, String> getClassifier(Pipeline pipeline) throws IOToolsException {
-        serializeTrainingData(pipeline);
         return ClassifierTrainer.train(loadTrainingData());
     }
 
