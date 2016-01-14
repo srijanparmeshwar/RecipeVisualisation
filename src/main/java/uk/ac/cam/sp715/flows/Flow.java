@@ -87,4 +87,30 @@ public class Flow extends DefaultDirectedGraph<Action, DefaultEdge> {
             throw new IOException();
         }
     }
+
+    private boolean pathExists(Action source, Action target) {
+        if(this.containsEdge(source, target)) return true;
+        else {
+            for (Action action : this.outgoingEdgesOf(source)
+                    .stream()
+                    .map(this::getEdgeTarget)
+                    .collect(Collectors.toSet())) {
+                if(pathExists(action, target)) return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public DefaultEdge addEdge(Action source, Action target) {
+        this.incomingEdgesOf(target)
+                .stream()
+                .map(this::getEdgeSource)
+                .collect(Collectors.toSet())
+                .stream()
+                .filter(action -> pathExists(action, source))
+                .forEach(action -> this.removeEdge(action, target));
+        if(!pathExists(source, target)) return super.addEdge(source, target);
+        else return null;
+    }
 }

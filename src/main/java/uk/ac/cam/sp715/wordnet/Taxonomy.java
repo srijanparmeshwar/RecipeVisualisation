@@ -6,6 +6,7 @@ import org.jgrapht.Graphs;
 import org.jgrapht.graph.DefaultDirectedGraph;
 import org.jgrapht.graph.DefaultEdge;
 
+import java.io.Serializable;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -94,20 +95,14 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
     /**
      * Types to identify entity types.
      */
-    public enum TaxonomyType {
+    public enum TaxonomyType implements Serializable {
         APPLIANCES, UTENSILS, INGREDIENTS, OTHER
     }
 
     private static Map<TaxonomyType, Taxonomy> TAXONOMIES = initializeTaxonomies();
 
     private static Taxonomy getNounTaxonomy(Explorer explorer, String noun) {
-        List<IWordID> wordIDs = explorer.getIndexNoun(noun).getWordIDs();
-        if(wordIDs.size()>0) {
-            ISynset synset = explorer.getWord(wordIDs.get(0)).getSynset();
-            return explorer.exploreMeronyms(explorer.exploreHyponyms(new Taxonomy(synset)));
-        } else {
-            throw new WordNetException();
-        }
+        return getNounTaxonomy(explorer, noun, 0);
     }
 
     private static Taxonomy getNounTaxonomy(Explorer explorer, String noun, int index) {
@@ -136,6 +131,8 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
 
         Taxonomy utensils = getNounTaxonomy(explorer, "kitchen utensil");
         Graphs.addGraph(utensils, getNounTaxonomy(explorer, "tableware"));
+        /*Graphs.addGraph(utensils, getNounTaxonomy(explorer, "container"));
+        Graphs.addGraph(utensils, getNounTaxonomy(explorer, "paper"));*/
 
         TAXONOMIES.put(TaxonomyType.APPLIANCES, getNounTaxonomy(explorer, "appliance", 1));
         TAXONOMIES.put(TaxonomyType.UTENSILS, utensils);

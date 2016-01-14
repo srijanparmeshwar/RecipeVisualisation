@@ -1,6 +1,6 @@
 #!/bin/bash
 git pull
-mvn -DskipTests install
+mvn install
 cd Website
 bower install
 cd ..

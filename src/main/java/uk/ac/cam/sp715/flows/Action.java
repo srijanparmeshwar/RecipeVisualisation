@@ -2,6 +2,7 @@ package uk.ac.cam.sp715.flows;
 
 import uk.ac.cam.sp715.recognition.TaggedWord;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -13,11 +14,13 @@ import java.util.List;
 public class Action {
     private final int id;
     private final TaggedWord description;
-    private final List<TaggedWord> objects;
-    public Action(int id, TaggedWord description, List<TaggedWord> objects) {
+    private final List<TaggedWord> dObjects;
+    private final List<TaggedWord> iObjects;
+    public Action(int id, TaggedWord description, List<TaggedWord> iObjects, List<TaggedWord> dObjects) {
         this.id = id;
         this.description = description;
-        this.objects = objects;
+        this.dObjects = dObjects;
+        this.iObjects = iObjects;
     }
     public int start() {
         int min = description.start();
@@ -45,18 +48,34 @@ public class Action {
     public String description() {
         return description.toString();
     }
-    public void addObject(TaggedWord word) {
-        objects.add(word);
+    public void addObject(TaggedWord word, Role role) {
+        if(role == Role.IOBJECT) iObjects.add(word);
+        else dObjects.add(word);
     }
     public List<TaggedWord> getObjects() {
-        return objects;
+        List<TaggedWord> all = new LinkedList<>();
+        all.addAll(dObjects);
+        all.addAll(iObjects);
+        return all;
+    }
+    public List<TaggedWord> getDObjects() {
+        return dObjects;
+    }
+    public List<TaggedWord> getIObjects() {
+        return iObjects;
+    }
+    public void remove(TaggedWord word, Role role) {
+        if(role == Role.IOBJECT) iObjects.remove(word);
+        else dObjects.remove(word);
     }
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append(description);
-        builder.append(" ");
-        builder.append(objects);
+        builder.append(", ");
+        builder.append(dObjects);
+        builder.append(", ");
+        builder.append(iObjects);
         return builder.toString();
     }
 }

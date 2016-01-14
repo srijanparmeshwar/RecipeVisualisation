@@ -11,7 +11,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Class to obtain features to feed into classifer.
+ * Class to obtain features to feed into classifier.
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class FeatureVectors {
@@ -52,7 +52,7 @@ public class FeatureVectors {
         Set<GrammaticalRelation> irelations = dependencies.incomingEdgesOf(token);
 
         List<String> features = intermediateFeatures(pos, position, irelations, orelations, type);
-        features.add("word=" + token.toString());
+        features.add("word=" + token.toString().toLowerCase());
 
         if(dependencies.orderedTokens().size()>position + 1) features.add("posTagRight=" + tokens.get(position + 1).tag());
         if(position>0) features.add("posTagLeft=" + tokens.get(position - 1).tag());

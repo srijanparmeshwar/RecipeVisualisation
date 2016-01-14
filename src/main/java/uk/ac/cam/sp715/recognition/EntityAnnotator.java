@@ -19,13 +19,12 @@ import edu.stanford.nlp.util.CoreMap;
 import org.jgrapht.graph.DefaultDirectedGraph;
 import uk.ac.cam.sp715.recipes.Ingredient;
 import uk.ac.cam.sp715.recipes.Recipe;
-import uk.ac.cam.sp715.util.HTMLParseException;
-import uk.ac.cam.sp715.util.HTMLParser;
 import uk.ac.cam.sp715.util.Pipeline;
 import uk.ac.cam.sp715.wordnet.Explorer;
 import uk.ac.cam.sp715.wordnet.Taxonomy;
 import uk.ac.cam.sp715.wordnet.Taxonomy.TaxonomyType;
 
+import java.io.Serializable;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -74,7 +73,7 @@ public class EntityAnnotator implements Annotator {
      * Represents a directed graph holding dependency relations given by the CoreNLP dependency parser, however
      * the tokens ({@link TaggedWord}) have been annotated as to whether they are recognized entities or not.
      */
-    public static class AugmentedSemanticGraph extends DefaultDirectedGraph<TaggedWord, GrammaticalRelation> {
+    public static class AugmentedSemanticGraph extends DefaultDirectedGraph<TaggedWord, GrammaticalRelation> implements Serializable {
         public AugmentedSemanticGraph() {
             super(GrammaticalRelation.class);
         }

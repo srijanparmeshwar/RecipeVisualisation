@@ -89,29 +89,40 @@ public class DataHandler {
         }).collect(Collectors.toList());
 
         try {
-            Files.write(getPath("srl-train.txt"), lines);
+            Files.write(getPath("srl-train2.txt"), lines);
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException();
         }
     }
 
-    public static Classifier<Role, String> getClassifier(Pipeline pipeline) throws IOToolsException {
+    public static Classifier<Role, String> getClassifier() throws IOToolsException {
         return ClassifierTrainer.train(loadTrainingData());
     }
 
     public static GeneralDataset<Role, String> loadTrainingData() throws IOToolsException {
-        return IOTools.read(getPath("srltrain-en.ser").toString());
+        return IOTools.read(getPath("srl-train-en.ser").toString());
     }
 
-    private static void serializeTrainingData(Pipeline pipeline) throws IOToolsException {
-        LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
-        Map<Integer, List<String>> featureMap = new HashMap<>();
-        index = 0;
+    private static void serializeAnnotations() throws IOToolsException {
+        Pipeline pipeline = Pipeline.getMainPipeline();
+        List<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
+        LinkedList<Annotation> annotations = new LinkedList<>();
 
         for (Recipe recipe : recipes) {
-            Annotation annotation = pipeline.annotate(recipe);
+            annotations.add(pipeline.annotate(recipe));
+        }
 
+        IOTools.save(annotations, getPath("annotations.ser").toString());
+    }
+
+    private static void serializeTrainingData() throws IOToolsException {
+        //LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
+        Map<Integer, List<String>> featureMap = new HashMap<>();
+        List<Annotation> annotations = IOTools.read(getPath("annotations.ser").toString());
+        index = 0;
+
+        for (Annotation annotation : annotations) {
             for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
                 AugmentedSemanticGraph dependencies = sentence.get(EntityAnnotations.class);
                 List<TaggedWord> tokens = dependencies.orderedTokens();
@@ -126,7 +137,7 @@ public class DataHandler {
         }
 
         GeneralDataset<Role, String> dataset = constructDataset(loadLabels("srl-train.txt"), featureMap);
-        IOTools.save(dataset, getPath("srltrain-en.ser").toString());
+        IOTools.save(dataset, getPath("srl-train-en.ser").toString());
     }
 
     private static void runPreparation() throws HTMLParseException, IOToolsException {
@@ -147,7 +158,7 @@ public class DataHandler {
         System.out.println(loadLabels("srl-train.txt"));
     }
 
-    public static void main(String[] args) throws HTMLParseException, IOToolsException {
-        loadTrainingData().summaryStatistics();
+    public static void main(String[] args) throws HTMLParseException, IOToolsException, IOException {
+        serializeTrainingData();
     }
 }

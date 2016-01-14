@@ -3,7 +3,10 @@ apt-get install python-software-properties
 add-apt-repository ppa:webupd8team/java
 apt-get update
 apt-get install oracle-java8-installer
-apt-get install wordnet maven node npm graphviz screen
+apt-get install wordnet maven graphviz screen
+apt-get install nodejs
+ln -s /usr/bin/nodejs /usr/bin/node
+apt-get install npm
 npm install -g bower
 mvn install
 wget http://wordnetcode.princeton.edu/wn3.1.dict.tar.gz

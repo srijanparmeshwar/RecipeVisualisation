@@ -2,7 +2,6 @@ package uk.ac.cam.sp715.ws;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import spark.Request;
 import spark.Response;
 import uk.ac.cam.sp715.flows.CoreNLPVisualiser;

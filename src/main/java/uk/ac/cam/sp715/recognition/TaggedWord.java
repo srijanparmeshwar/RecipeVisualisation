@@ -3,10 +3,12 @@ package uk.ac.cam.sp715.recognition;
 import edu.stanford.nlp.ling.IndexedWord;
 import uk.ac.cam.sp715.wordnet.Taxonomy.TaxonomyType;
 
+import java.io.Serializable;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TaggedWord extends IndexedWord {
+public class TaggedWord extends IndexedWord implements Serializable {
     private final List<IndexedWord> tokens;
     private final TaxonomyType tag;
     public TaggedWord(TaxonomyType tag) {
@@ -39,6 +41,7 @@ public class TaggedWord extends IndexedWord {
     public String toString() {
         StringBuilder builder = new StringBuilder();
         boolean firstToken = true;
+        Collections.sort(tokens);
         for (IndexedWord token : tokens) {
             if (firstToken) firstToken = false;
             else {

@@ -2,31 +2,18 @@ package uk.ac.cam.sp715.ml;
 
 import edu.stanford.nlp.classify.Classifier;
 import edu.stanford.nlp.classify.GeneralDataset;
-import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Pair;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import uk.ac.cam.sp715.flows.FeatureVectors;
 import uk.ac.cam.sp715.flows.Role;
-import uk.ac.cam.sp715.recipes.Recipe;
-import uk.ac.cam.sp715.recognition.EntityAnnotator;
-import uk.ac.cam.sp715.recognition.TaggedWord;
-import uk.ac.cam.sp715.util.IOTools;
 import uk.ac.cam.sp715.util.IOToolsException;
-import uk.ac.cam.sp715.util.Pipeline;
-
-import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Statistical evaluation of the Semantic Role Labelling classifier.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class ClassifierTest {
+    private static GeneralDataset<Role, String> dataSet;
     private static GeneralDataset<Role, String> trainSet;
     private static GeneralDataset<Role, String> testSet;
     private static Classifier<Role, String> classifier;
@@ -34,11 +21,14 @@ public class ClassifierTest {
     @BeforeClass
     public static void setup() {
         try {
-            GeneralDataset<Role, String> dataset = DataHandler.loadTrainingData();
-            Pair<GeneralDataset<Role, String>, GeneralDataset<Role, String>> pair = dataset.split(0.2);
+            dataSet = DataHandler.loadTrainingData();
+            dataSet.randomize(10);
+            Pair<GeneralDataset<Role, String>, GeneralDataset<Role, String>> pair = dataSet.split(0.5);
 
             trainSet = pair.first();
+            trainSet.summaryStatistics();
             testSet = pair.second();
+            testSet.summaryStatistics();
             classifier = ClassifierTrainer.train(trainSet);
         } catch (IOToolsException e) {
             e.printStackTrace();

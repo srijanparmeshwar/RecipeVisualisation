@@ -36,7 +36,7 @@ public class CoreNLPVisualiser extends Visualiser {
     public CoreNLPVisualiser(Pipeline pipeline) {
         try {
             this.pipeline = pipeline;
-            this.classifier = DataHandler.getClassifier(pipeline);
+            this.classifier = DataHandler.getClassifier();
             this.frontiers = new HashMap<>();
         } catch(IOToolsException iote) {
             throw new RuntimeException();
@@ -56,13 +56,15 @@ public class CoreNLPVisualiser extends Visualiser {
 
         for (TaggedWord word : newAction.getObjects()) {
             for(IndexedWord iword : word.getTokens()) {
-                if(frontiers.containsKey(iword.lemma()) && word.entity() != TaxonomyType.APPLIANCES) previousActions.add(frontiers.get(iword.lemma()));
+                if(frontiers.containsKey(iword.lemma())) previousActions.add(frontiers.get(iword.lemma()));
             }
             /*if(frontiers.containsKey(word.getLemma()) && word.entity() == TaxonomyType.INGREDIENTS) previousActions.add(frontiers.get(word.getLemma()));
             frontiers.put(word.getLemma(), newAction);*/
-            if(previousActions.size()>0) {
+            //int num = 0;
+            while(previousActions.size()>0) {
                 Action lastAction = previousActions.poll();
                 flow.addEdge(lastAction, newAction);
+                //num++;
             }
         }
 
@@ -72,6 +74,7 @@ public class CoreNLPVisualiser extends Visualiser {
             }
         }
 
+        /*
         if(flow.inDegreeOf(newAction) == 0) {
             flow.vertexSet()
                     .stream()
@@ -81,11 +84,10 @@ public class CoreNLPVisualiser extends Visualiser {
                     .ifPresent(action -> {
                         flow.addEdge(action, newAction);
                     });
-        }
+        }*/
     }
 
     private Action lastAction;
-    private int id = 0;
 
     @Override
     /**
@@ -103,14 +105,15 @@ public class CoreNLPVisualiser extends Visualiser {
 
         List<CoreMap> sentences = annotation.get(CoreAnnotations.SentencesAnnotation.class);
 
-        id = 0;
+        int id = 0;
+        SortedMap<Integer, Action> indices = new TreeMap<>();
 
         for (CoreMap sentence : sentences) {
             AugmentedSemanticGraph dependencies = sentence.get(EntityAnnotator.EntityAnnotations.class);
 
-            SortedMap<Integer, Action> indices = new TreeMap<>();
             Set<TaggedWord> processedObjects = new HashSet<>();
             Map<TaggedWord, Integer> candidateObjects = new HashMap<>();
+            Map<TaggedWord, Role> candidateObjectRoles = new HashMap<>();
             //Map<Features.Role, Set<TaggedWord>> buckets = new HashMap<>();
             //for(Features.Role key : buckets.keySet()) buckets.put(key, new HashSet<>());
 
@@ -124,16 +127,17 @@ public class CoreNLPVisualiser extends Visualiser {
 
                 if (role == Role.DOBJECT || role == Role.IOBJECT) {
                     candidateObjects.put(token, id);
+                    candidateObjectRoles.put(token, role);
                 } else if (role == Role.ACTION) {
-                    List<TaggedWord> dependentObjects = dependencies.outgoingEdgesOf(token)
+                    /*List<TaggedWord> dependentObjects = dependencies.outgoingEdgesOf(token)
                             .stream()
                             .map(dependencies::getEdgeTarget)
                             .filter(TaggedWord::isTypedEntity)
                             .collect(Collectors.toList());
 
-                    processedObjects.addAll(dependentObjects);
+                    processedObjects.addAll(dependentObjects);*/
 
-                    Action action = new Action(id, token, dependentObjects);
+                    Action action = new Action(id, token, new LinkedList<>(), new LinkedList<>());
 
                     indices.put(id, action);
                     flow.addVertex(action);
@@ -148,14 +152,65 @@ public class CoreNLPVisualiser extends Visualiser {
             for (TaggedWord candidateObject : candidateObjects.keySet()) {
                 if (!processedObjects.contains(candidateObject)) {
                     int index = candidateObjects.get(candidateObject);
-                    if (indices.containsKey(index - 1)) indices.get(index - 1).addObject(candidateObject);
-                    else if (indices.containsKey(index)) indices.get(index).addObject(candidateObject);
+                    if (indices.containsKey(index - 1)) indices.get(index - 1).addObject(candidateObject, candidateObjectRoles.get(candidateObject));
+                    else if (indices.containsKey(index)) indices.get(index).addObject(candidateObject, candidateObjectRoles.get(candidateObject));
                 }
             }
 
-            for (Action action : indices.values()) {
-                addDependencies(action, flow);
+        }
+
+        for(Action action : indices.values()) {
+            final List<TaggedWord> toRemove = new LinkedList<>();
+            final List<TaggedWord> toAdd = new LinkedList<>();
+            if(action.getDObjects().size() == 1) {
+                for (TaggedWord word : action.getDObjects()) {
+                    if (!word.isTypedEntity()) {
+                        if (indices.containsKey(action.getID() - 1)) {
+                            indices.get(action.getID() - 1).getDObjects().stream().findFirst().ifPresent(newWord -> {
+                                toAdd.add(newWord);
+                                toRemove.add(word);
+                            });
+                        }
+                    }
+                }
             }
+            for(TaggedWord word : toRemove) {
+                action.remove(word, Role.DOBJECT);
+            }
+            for(TaggedWord word : toAdd) {
+                action.addObject(word, Role.DOBJECT);
+            }
+
+            toRemove.clear();
+            toAdd.clear();
+            if(action.getIObjects().size() == 1) {
+                for (TaggedWord word : action.getIObjects()) {
+                    if (!word.isTypedEntity()) {
+                        if (indices.containsKey(action.getID() - 1)) {
+                            indices.get(action.getID() - 1).getDObjects().stream().findFirst().ifPresent(newWord -> {
+                                toAdd.add(newWord);
+                                toRemove.add(word);
+                            });
+                        }
+                    }
+                }
+            }
+            for(TaggedWord word : toRemove) {
+                action.remove(word, Role.IOBJECT);
+            }
+            for(TaggedWord word : toAdd) {
+                action.addObject(word, Role.IOBJECT);
+            }
+        }
+
+        for(Action action : indices.values()) {
+            if(action.getDObjects().isEmpty()) {
+                if(indices.containsKey(action.getID() - 1)) indices.get(action.getID() - 1).getDObjects().forEach(object -> action.addObject(object, Role.DOBJECT));
+            }
+        }
+
+        for (Action action : indices.values()) {
+            addDependencies(action, flow);
         }
 
         flow.vertexSet()
