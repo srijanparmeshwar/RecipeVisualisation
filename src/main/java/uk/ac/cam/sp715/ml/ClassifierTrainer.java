@@ -3,6 +3,7 @@ package uk.ac.cam.sp715.ml;
 
 import edu.stanford.nlp.classify.*;
 import uk.ac.cam.sp715.flows.Role;
+import uk.ac.cam.sp715.util.IOToolsException;
 
 /**
  * Created by Srijan on 18/12/2015.

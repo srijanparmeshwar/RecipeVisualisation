@@ -18,22 +18,19 @@ public class Pipeline extends StanfordCoreNLP {
     public Pipeline(Properties properties) {
         super(properties);
     }
-    public static Pipeline getMainPipeline() {
-        Properties mainProps = new Properties();
-        mainProps.setProperty("customAnnotatorClass.entities", "uk.ac.cam.sp715.recognition.EntityAnnotator");
-        mainProps.setProperty("annotators",
-                "tokenize, ssplit, pos, lemma, ner, depparse, entities");
-        return new Pipeline(mainProps);
-    }
-    public static Pipeline getLemmaPipeline() {
-        return getPipeline("tokenize, ssplit, pos, lemma");
-    }
     public static Pipeline getPipeline(String annotators) {
         Properties props = new Properties();
+        props.setProperty("customAnnotatorClass.lowercase", "uk.ac.cam.sp715.recognition.LowerCaseAnnotator");
+        props.setProperty("customAnnotatorClass.entities", "uk.ac.cam.sp715.recognition.EntityAnnotator");
         props.setProperty("annotators", annotators);
         return new Pipeline(props);
     }
-
+    public static Pipeline getMainPipeline() {
+        return getPipeline("tokenize, ssplit, lowercase, pos, lemma, ner, depparse, entities");
+    }
+    public static Pipeline getLemmaPipeline() {
+        return getPipeline("tokenize, ssplit, lowercase, pos, lemma");
+    }
     /**
      * Run the pipeline on an input annotation. The annotation is modified in place.
      * @param recipe Recipe to be annotated.

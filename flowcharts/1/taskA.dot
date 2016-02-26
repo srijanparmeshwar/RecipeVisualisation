@@ -1,0 +1,19 @@
+digraph {
+    0 [label="Frost rim of cocktail glass"];
+    1 [label="Pour grenadine into shallow bowl"];
+    2 [label="Put sugar on plate"];
+    3 [label="Dip rim of glass in grenadine"];
+    4 [label="Coat with sugar"];
+    5 [label="Put all ingredients in cocktail shaker and shake"];
+    6 [label="Put ice in glass"];
+    7 [label="Pour cocktail over ice"];
+    8 [label="Decorate with chilli and grapefruit"];
+    0 -> 3;
+    1 -> 3;
+    2 -> 4;
+    3 -> 4;
+    4 -> 6;
+    5 -> 7;
+    6 -> 7;
+    7 -> 8;
+}

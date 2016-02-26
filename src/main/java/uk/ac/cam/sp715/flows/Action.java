@@ -2,6 +2,7 @@ package uk.ac.cam.sp715.flows;
 
 import uk.ac.cam.sp715.recognition.TaggedWord;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -11,12 +12,12 @@ import java.util.List;
  * from the visualiser.
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
-public class Action {
+public class Action implements Serializable {
     private final int id;
     private final TaggedWord description;
     private final List<TaggedWord> dObjects;
     private final List<TaggedWord> iObjects;
-    public Action(int id, TaggedWord description, List<TaggedWord> iObjects, List<TaggedWord> dObjects) {
+    public Action(int id, TaggedWord description, List<TaggedWord> dObjects, List<TaggedWord> iObjects) {
         this.id = id;
         this.description = description;
         this.dObjects = dObjects;

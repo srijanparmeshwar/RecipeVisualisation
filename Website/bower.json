@@ -34,7 +34,14 @@
   "dependencies": {
     "neon-animation": "PolymerElements/neon-animation#~1.0.8",
     "paper-elements": "PolymerElements/paper-elements#~1.0.6",
-    "polymer": "Polymer/polymer#~1.2.0"
+    "polymer": "Polymer/polymer#~1.2.0",
+    "dagre-d3": "~0.4.17",
+    "graphlib-dot": "~0.6.2",
+    "lodash": "~4.2.1",
+    "vis": "~4.14.0"
   },
-  "private": true
+  "private": true,
+  "resolutions": {
+    "lodash": "^2.4.1"
+  }
 }

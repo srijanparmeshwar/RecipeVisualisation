@@ -224,5 +224,6 @@ target/
 *nlp/
 
 */bower_components/
+*/node_modules/
 cache/
 Website/docs

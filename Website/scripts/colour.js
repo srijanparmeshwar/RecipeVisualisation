@@ -2,14 +2,8 @@ function Colour(r, g, b, a) {
     this.r = r;
     this.g = g;
     this.b = b;
-    this.a = a;
-}
-
-function Colour(r, g, b) {
-    this.r = r;
-    this.g = g;
-    this.b = b;
-    this.a = 1;
+    if(a) this.a = a;
+    else this.a = 1;
 }
 
 Colour.prototype = {

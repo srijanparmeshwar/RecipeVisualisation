@@ -6,13 +6,12 @@ import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
-import uk.ac.cam.sp715.ml.DataHandler;
+import uk.ac.cam.sp715.ml.SRLDataHandler;
 import uk.ac.cam.sp715.recipes.Recipe;
 import uk.ac.cam.sp715.recognition.EntityAnnotator;
 import uk.ac.cam.sp715.recognition.EntityAnnotator.AugmentedSemanticGraph;
 import uk.ac.cam.sp715.recognition.TaggedWord;
 import uk.ac.cam.sp715.util.*;
-import uk.ac.cam.sp715.wordnet.Taxonomy.TaxonomyType;
 
 import java.util.*;
 import java.util.function.Predicate;
@@ -36,7 +35,7 @@ public class CoreNLPVisualiser extends Visualiser {
     public CoreNLPVisualiser(Pipeline pipeline) {
         try {
             this.pipeline = pipeline;
-            this.classifier = DataHandler.getClassifier();
+            this.classifier = SRLDataHandler.getClassifier(4);
             this.frontiers = new HashMap<>();
         } catch(IOToolsException iote) {
             throw new RuntimeException();
@@ -88,6 +87,7 @@ public class CoreNLPVisualiser extends Visualiser {
     }
 
     private Action lastAction;
+    private static final String[] discMarkers = new String[] {"then", "and"};
 
     @Override
     /**
@@ -111,9 +111,9 @@ public class CoreNLPVisualiser extends Visualiser {
         for (CoreMap sentence : sentences) {
             AugmentedSemanticGraph dependencies = sentence.get(EntityAnnotator.EntityAnnotations.class);
 
-            Set<TaggedWord> processedObjects = new HashSet<>();
             Map<TaggedWord, Integer> candidateObjects = new HashMap<>();
             Map<TaggedWord, Role> candidateObjectRoles = new HashMap<>();
+            Set<TaggedWord> processedObjects = new HashSet<>();
             //Map<Features.Role, Set<TaggedWord>> buckets = new HashMap<>();
             //for(Features.Role key : buckets.keySet()) buckets.put(key, new HashSet<>());
 
@@ -129,15 +129,22 @@ public class CoreNLPVisualiser extends Visualiser {
                     candidateObjects.put(token, id);
                     candidateObjectRoles.put(token, role);
                 } else if (role == Role.ACTION) {
-                    /*List<TaggedWord> dependentObjects = dependencies.outgoingEdgesOf(token)
+                    List<TaggedWord> dependentObjects = dependencies.outgoingEdgesOf(token)
                             .stream()
+                            .filter(name -> name.getShortName().equals("dobj"))
                             .map(dependencies::getEdgeTarget)
-                            .filter(TaggedWord::isTypedEntity)
                             .collect(Collectors.toList());
 
-                    processedObjects.addAll(dependentObjects);*/
+                    List<TaggedWord> indirectObjects = dependencies.outgoingEdgesOf(token)
+                            .stream()
+                            .filter(name -> name.getShortName().equals("iobj"))
+                            .map(dependencies::getEdgeTarget)
+                            .collect(Collectors.toList());
 
-                    Action action = new Action(id, token, new LinkedList<>(), new LinkedList<>());
+                    processedObjects.addAll(dependentObjects);
+                    processedObjects.addAll(indirectObjects);
+
+                    Action action = new Action(id, token, dependentObjects, indirectObjects);
 
                     indices.put(id, action);
                     flow.addVertex(action);
@@ -150,10 +157,12 @@ public class CoreNLPVisualiser extends Visualiser {
             }
 
             for (TaggedWord candidateObject : candidateObjects.keySet()) {
-                if (!processedObjects.contains(candidateObject)) {
+                if(!processedObjects.contains(candidateObject)) {
                     int index = candidateObjects.get(candidateObject);
-                    if (indices.containsKey(index - 1)) indices.get(index - 1).addObject(candidateObject, candidateObjectRoles.get(candidateObject));
-                    else if (indices.containsKey(index)) indices.get(index).addObject(candidateObject, candidateObjectRoles.get(candidateObject));
+                    if (indices.containsKey(index - 1) && indices.get(index - 1).sentIndex() == candidateObject.sentIndex())
+                        indices.get(index - 1).addObject(candidateObject, candidateObjectRoles.get(candidateObject));
+                    else if (indices.containsKey(index) && indices.get(index).sentIndex() == candidateObject.sentIndex())
+                        indices.get(index).addObject(candidateObject, candidateObjectRoles.get(candidateObject));
                 }
             }
 
@@ -164,7 +173,7 @@ public class CoreNLPVisualiser extends Visualiser {
             final List<TaggedWord> toAdd = new LinkedList<>();
             if(action.getDObjects().size() == 1) {
                 for (TaggedWord word : action.getDObjects()) {
-                    if (!word.isTypedEntity()) {
+                    if (!word.isTypedEntity() || word.toString().contains("mixture")) {
                         if (indices.containsKey(action.getID() - 1)) {
                             indices.get(action.getID() - 1).getDObjects().stream().findFirst().ifPresent(newWord -> {
                                 toAdd.add(newWord);
@@ -174,6 +183,7 @@ public class CoreNLPVisualiser extends Visualiser {
                     }
                 }
             }
+
             for(TaggedWord word : toRemove) {
                 action.remove(word, Role.DOBJECT);
             }
@@ -185,7 +195,7 @@ public class CoreNLPVisualiser extends Visualiser {
             toAdd.clear();
             if(action.getIObjects().size() == 1) {
                 for (TaggedWord word : action.getIObjects()) {
-                    if (!word.isTypedEntity()) {
+                    if (!word.isTypedEntity() || word.toString().contains("mixture")) {
                         if (indices.containsKey(action.getID() - 1)) {
                             indices.get(action.getID() - 1).getDObjects().stream().findFirst().ifPresent(newWord -> {
                                 toAdd.add(newWord);
@@ -205,7 +215,16 @@ public class CoreNLPVisualiser extends Visualiser {
 
         for(Action action : indices.values()) {
             if(action.getDObjects().isEmpty()) {
-                if(indices.containsKey(action.getID() - 1)) indices.get(action.getID() - 1).getDObjects().forEach(object -> action.addObject(object, Role.DOBJECT));
+                if(action.getIObjects().size() > 2) {
+                    List<TaggedWord> iObjects = action.getIObjects();
+                    while(iObjects.size() > 2) {
+                        action.addObject(iObjects.remove(0), Role.DOBJECT);
+                    }
+                } else if(indices.containsKey(action.getID() - 1)) indices.get(action.getID() - 1).getDObjects().forEach(object -> action.addObject(object, Role.DOBJECT));
+            }
+
+            if(action.getIObjects().isEmpty() && !(action.description().equals("preheat") || action.description().equals("pre-heat") || action.description().equals("grease"))) {
+                if(indices.containsKey(action.getID() - 1)) indices.get(action.getID() - 1).getDObjects().forEach(object -> action.addObject(object, Role.IOBJECT));
             }
         }
 

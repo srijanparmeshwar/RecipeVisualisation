@@ -1,7 +1,12 @@
 var fs = require('fs');
 var http = require('http');
 var express = require("express");
+var bodyParser = require("body-parser");
 var app = express();
+
+app.use(bodyParser.text({type: 'text/html'}));
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 app.get("/", function (req, res) {
     console.log('File request: ' + "index");
@@ -67,6 +72,43 @@ app.get("/api/recipes/:id", function (req, res) {
         res.status(400);
         res.send("");
     });
+    request.end();
+});
+
+app.post("/api/upload", function (req, res) {
+    console.log('Upload request.');
+    var options = {
+        host: 'localhost',
+        path: '/upload',
+        port: '4567',
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    };
+
+    function handler(response) {
+        var result = '';
+
+        response.on('data', function (chunk) {
+            result += chunk;
+        });
+
+        response.on('end', function () {
+            if(response.statusCode != 200) res.status(400);
+            res.send(result);
+        });
+    };
+
+    console.log('Forwarding to Java server.');
+    var request = http.request(options, handler);
+    request.on("error", function() {
+        console.log("Error occurred processing upload.");
+        res.status(400);
+        res.send("");
+    });
+
+    request.write(JSON.stringify(req.body));
     request.end();
 });
 

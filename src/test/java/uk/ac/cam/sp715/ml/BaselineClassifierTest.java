@@ -20,12 +20,8 @@ public class BaselineClassifierTest {
     @BeforeClass
     public static void setup() {
         try {
-            dataSet = DataHandler.loadTrainingData();
-            dataSet.randomize(10);
-            Pair<GeneralDataset<Role, String>, GeneralDataset<Role, String>> pair = dataSet.split(0.5);
-
-            testSet = pair.second();
-            testSet.summaryStatistics();
+            dataSet = SRLDataHandler.loadTrainingData(4);
+            testSet = dataSet;
             classifier = new BaselineClassifier();
         } catch (IOToolsException e) {
             e.printStackTrace();

@@ -57,7 +57,7 @@ public class EntityAnnotatorTest {
             Pipeline pipeline = Pipeline.getMainPipeline();
             Annotation annotation = pipeline.annotate(recipe);
             List<CoreMap> sentences = annotation.get(CoreAnnotations.SentencesAnnotation.class);
-            for(int i = 0; i<sentences.size() && i<expectedLists.length; i++) {
+            for(int i = 0; i < sentences.size() && i < expectedLists.length; i++) {
                 List<TaxonomyType> expected = expectedLists[i];
                 CoreMap sentence = sentences.get(i);
                 assertNull(sentence.get(SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation.class));

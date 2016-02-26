@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta name="author" content="Srijan Parmeshwar">
         <meta name="description" content="Search for recipes and see them visualised in a flow chart style.">
@@ -20,6 +21,7 @@
         <link rel="import" href="bower_components/paper-styles/paper-styles.html">
         <link rel="import" href="bower_components/paper-progress/paper-progress.html">
         <link rel="import" href="bower_components/paper-input/paper-input.html">
+        <link rel="import" href="bower_components/paper-input/paper-textarea.html">
         <link rel="import" href="bower_components/paper-menu/paper-menu.html">
         <link rel="import" href="bower_components/paper-card/paper-card.html">
         <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
@@ -30,7 +32,15 @@
         <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
         <link rel="import" href="bower_components/paper-button/paper-button.html">
         <link rel="import" href="bower_components/paper-dialog/paper-dialog.html">
+        <link rel="import" href="bower_components/paper-fab/paper-fab.html">
         <link rel="import" href="bower_components/neon-animation/neon-animations.html">
+
+        <script src="bower_components/lodash/dist/lodash.min.js"></script>
+        <script src="bower_components/d3/d3.min.js"></script>
+        <script src="bower_components/graphlib/dist/graphlib.core.min.js"></script>
+        <script src="bower_components/graphlib-dot/dist/graphlib-dot.core.min.js"></script>
+        <script src="bower_components/dagre/dist/dagre.core.min.js"></script>
+        <script src="bower_components/dagre-d3/dist/dagre-d3.core.min.js"></script>
 
         <style is="custom-style">
             html, body {
@@ -45,9 +55,6 @@
                 -o-background-size: cover;
                 background-size: cover;
                 transition: 0.2s;
-            }
-            .app-header {
-                @apply(--shadow-elevation-2dp);
             }
             #title {
                 display: block;
@@ -76,9 +83,10 @@
 
             paper-dialog {
                 padding: 2em;
+                min-width: 80%;
             }
 
-            paper-input {
+            #query {
                 /* Label and underline color when the input is focused */
                 width: 50%;
 
@@ -96,10 +104,10 @@
                 -o-transition: all 0.2s;
                 transition: all 0.2s;
             }
-            paper-input[focused] {
+            #query[focused] {
                 background: #F77669;
             }
-            paper-input-container {
+            #query paper-input-container {
                 padding: 0;
             }
             paper-toolbar {
@@ -127,14 +135,6 @@
                 text-align: center;
                 text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
                 transition: 0.2s;
-
-                /*
-                background: rgba(30, 30, 30, 0.3);
-                padding: 0.7em 1em;
-                border: solid transparent;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                border-radius: 10px;*/
             }
             @media screen and (max-width: 640px) {
                 .central-text {
@@ -151,16 +151,16 @@
                 --paper-progress-active-color: #03A9F4;
             }
             .emphasize {
-                color: darkgrey;
+                color: #F44336;
                 cursor: pointer;
-                -webkit-transition: all 0.25s;
-                -moz-transition: all 0.25s;
-                -ms-transition: all 0.25s;
-                -o-transition: all 0.25s;
-                transition: all 0.25s;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                transition: all 0.2s;
             }
             .emphasize:hover {
-                color: #F44336;
+                color: #F66558;
             }
             .footer {
                 position: fixed;
@@ -179,6 +179,72 @@
             .footer > a {
                 color: #F44336;
                 text-decoration: underline;
+            }
+            #upload {
+                position: fixed;
+                right: 3em;
+                bottom: 3em;
+                width: 84px;
+                height: 84px;
+                --paper-fab-background: #FFC107;
+                --paper-fab-iron-icon: {
+                    fill: white;
+                }
+            }
+            .hide {
+                width: 0;
+                height: 0;
+            }
+            .form-button {
+                margin-top: 1em;
+                padding: 0.7em 0.57em;
+                left: 50%;
+                -webkit-transform: translate(-50%, 0);
+                -moz-transform: translate(-50%, 0);
+                -ms-transform: translate(-50%, 0);
+                -o-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
+
+                background-color: #FFC107;
+                color: white;
+            }
+            .form-input {
+                border: 1px solid black;
+                padding: 0.5em 0.5em;
+            }
+            .form-textarea {
+                border: 1px solid black;
+                padding: 1em 1em;
+            }
+        </style>
+        <style>
+            .node {
+                white-space: nowrap;
+            }
+            .node rect,
+            .node circle,
+            .node ellipse {
+                stroke: #333;
+                fill: #fff;
+                stroke-width: 1.5px;
+            }
+            .cluster rect {
+                stroke: #333;
+                fill: #000;
+                fill-opacity: 0.1;
+                stroke-width: 1.5px;
+            }
+            .edgePath path.path {
+                stroke: #333;
+                stroke-width: 1.5px;
+                fill: none;
+            }
+            .label {
+                margin-top: 1em;
+                display: block;
+            }
+            #graph-container {
+                padding: 0;
             }
         </style>
     </head>
@@ -201,16 +267,23 @@
                         <ul id="dialog-ingredients"></ul>
                         <p class="heading">Instructions</p>
                         <ol id="dialog-instructions"></ol>
-                        <paper-dialog-scrollable id="canvas-holder"></paper-dialog-scrollable>
+                        <div id="graph-container" class="hide">
+                            <svg id="graph-svg" width="100%" height="800px">
+                                <g/>
+                            </svg>
+                        </div>
                     </paper-dialog>
                 </div>
+                <paper-fab id="upload" icon="add" onclick="showForm();"></paper-fab>
                 <div class="footer">Recipes are retrieved from <a href="//www.bbc.co.uk/food/">BBC Food</a> and so are copyright of BBC.</div>
             </div>
         </paper-header-panel>
 
+        <script src="scripts/load.js"></script>
         <script src="scripts/colour.js"></script>
         <script src="scripts/card.js"></script>
-        <script src="scripts/index.js"></script>
+        <script src="scripts/search.js"></script>
+        <script src="scripts/render.js"></script>
 
     </body>
 </html>

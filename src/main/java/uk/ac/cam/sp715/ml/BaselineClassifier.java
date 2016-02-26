@@ -22,7 +22,7 @@ import java.util.Map;
 public class BaselineClassifier implements Classifier<Role, String> {
     @Override
     public Role classOf(Datum<Role, String> example) {
-        for(Role role: Role.values()) {
+        for(Role role : Role.values()) {
             if (scoresOf(example).getCount(role) == 1) return role;
         }
         return Role.OTHER;
@@ -51,13 +51,15 @@ public class BaselineClassifier implements Classifier<Role, String> {
             translateFeature("posTag=", feature, baselineFeatures);
             translateFeature("ner=", feature, baselineFeatures);
             translateFeature("atStart", feature, baselineFeatures);
+            translateFeature("inReldobj", feature, baselineFeatures);
+            translateFeature("inReliobj", feature, baselineFeatures);
         }
 
         if(baselineFeatures.containsKey("atStart") || baselineFeatures.get("posTag=").startsWith("V")) {
             return counter(Role.ACTION);
-        } else if(baselineFeatures.get("ner=").equals("INGREDIENTS")) {
+        } else if(baselineFeatures.containsKey("inReldobj") || baselineFeatures.get("ner=").equals("INGREDIENTS")) {
             return counter(Role.DOBJECT);
-        } else if(baselineFeatures.get("ner=").equals("UTENSILS") || baselineFeatures.get("ner=").equals("APPLIANCES")) {
+        } else if(baselineFeatures.containsKey("inReliobj") || baselineFeatures.get("ner=").equals("UTENSILS") || baselineFeatures.get("ner=").equals("APPLIANCES")) {
             return counter(Role.IOBJECT);
         } else if(baselineFeatures.get("posTag=").startsWith("N")) {
             return counter(Role.IOBJECT);

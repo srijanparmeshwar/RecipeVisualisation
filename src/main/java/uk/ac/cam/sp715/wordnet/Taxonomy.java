@@ -131,8 +131,8 @@ public class Taxonomy extends DefaultDirectedGraph<ISynset, DefaultEdge> {
 
         Taxonomy utensils = getNounTaxonomy(explorer, "kitchen utensil");
         Graphs.addGraph(utensils, getNounTaxonomy(explorer, "tableware"));
-        /*Graphs.addGraph(utensils, getNounTaxonomy(explorer, "container"));
-        Graphs.addGraph(utensils, getNounTaxonomy(explorer, "paper"));*/
+        Graphs.addGraph(utensils, getNounTaxonomy(explorer, "container"));
+        Graphs.addGraph(utensils, getNounTaxonomy(explorer, "paper"));
 
         TAXONOMIES.put(TaxonomyType.APPLIANCES, getNounTaxonomy(explorer, "appliance", 1));
         TAXONOMIES.put(TaxonomyType.UTENSILS, utensils);

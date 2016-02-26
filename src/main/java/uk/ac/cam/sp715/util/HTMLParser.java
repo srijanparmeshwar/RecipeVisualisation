@@ -25,7 +25,7 @@ public class HTMLParser {
 
     private static Cache<RecipeKey, Recipe> initializeCache() {
         try {
-            if(!PersistentCache.exists("cache")) return new PersistentCache<>(50);
+            if(!PersistentCache.exists("cache")) return new PersistentCache<>(100);
             else return PersistentCache.read("cache");
         } catch (IOToolsException iote) {
             logger.log(Level.SEVERE, "Could not read recipe cache. Creating in memory cache instead.", iote);
