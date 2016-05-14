@@ -1,0 +1,32 @@
+digraph {
+    0 [label="Take Capons or Partridges"];
+    1 [label="Roast them"];
+    2 [label="Take out Bones"];
+    3 [label="Soak Bread"];
+    4 [label="Lay it on flesh or bed of almond broth"];
+    5 [label="Boil well"];
+    6 [label="Mince brawn small"];
+    7 [label="Break bones and seethe them with broth in pot with bundle of herbs"];
+    8 [label="Strain them through linnen cloth"];
+    9 [label="Take three eggs with any broth"];
+    10 [label="Beat them well together"];
+    11 [label="Fill it by degrees and garnish with Pinnions"];
+    12 [label="Pour eggs over Potage"];
+    13 [label="Hold fire shovel over it"];
+    14 [label="Serve it"];
+    0 -> 1;
+    1 -> 2;
+    2 -> 6;
+    2 -> 7;
+    3 -> 4;
+    4 -> 5;
+    5 -> 11;
+    6 -> 11;
+    7 -> 8;
+    8 -> 11;
+    9 -> 10;
+    10 -> 12;
+    11 -> 12;
+    12 -> 13;
+    13 -> 14;
+}

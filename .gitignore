@@ -230,4 +230,5 @@ Website/docs
 data-old/
 screenshots/
 *.eps
-flowcharts/
+flowcharts/*.csv
+flowcharts/*.tex

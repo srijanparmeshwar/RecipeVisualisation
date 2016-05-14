@@ -1,0 +1,29 @@
+digraph {
+    0 [label="Preheat oven"];
+    1 [label="Line sandwich tins"];
+    2 [label="Put sugar and cocoa into bowl"];
+    3 [label="Butter sides of tins"];
+    4 [label="Pour boiling water"];
+    5 [label="Whisk to mix"];
+    6 [label="Set aside"];
+    7 [label="Cream butter and sugar"];
+    8 [label="Dribble vanilla"];
+    9 [label="Mix"];
+    10 [label="Stir flour, baking powder and soda"];
+    11 [label="Crack egg"];
+    12 [label="Crack egg"];
+    13 [label="Flour mixture"];
+    14 [label="Mix"];
+    15 [label="Set aside"];
+    1 -> 3;
+    2 -> 4;
+    4 -> 5;
+    5 -> 6;
+    7 -> 8;
+    8 -> 9;
+    9 -> 13;
+    10 -> 15;
+    11 -> 13;
+    12 -> 13;
+    13 -> 14;
+}

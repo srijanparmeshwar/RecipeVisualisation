@@ -1,3 +1,34 @@
 digraph {
-    0 [label="Mix cocoa and sugar in bowl"];
+    0 [label="Mix cocoa, sugar, boiling water"];
+    1 [label="Sift flour, baking powder, bicarbonate soda"];
+    2 [label="Cream butter and sugar and vanilla"];
+    3 [label="Add egg"];
+    4 [label="Add cup of flour mix"];
+    5 [label="Add egg"];
+    6 [label="Add cup of flour mix"];
+    7 [label="Add and mix remaining ingredients"];
+    8 [label="Line and grease 2 x 8 inch tins"];
+    9 [label="Preheat oven to 180 degrees C/350 degrees F/Gas Mark 4"];
+    10 [label="Water, sugar and butter in pan and melt"];
+    11 [label="Put in tins"];
+    12 [label="When bubbling, take off heat and add chocolate"];
+    13 [label="Put in oven for 30 minutes"];
+    14 [label="Leave to cool"];
+    15 [label="Smother cake in sauce"];
+    0 -> 7;
+    1 -> 4;
+    1 -> 7;
+    2 -> 3;
+    3 -> 4;
+    4 -> 5;
+    5 -> 6;
+    6 -> 7;
+    7 -> 11;
+    8 -> 11;
+    9 -> 13;
+    10 -> 12;
+    11 -> 13;
+    12 -> 14;
+    13 -> 14;
+    14 -> 15;
 }

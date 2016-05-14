@@ -1,3 +1,32 @@
 digraph {
-    0 [label="Mix cocoa and sugar in bowl"];
+    0 [label="Roast Capons or Partridges"];
+    1 [label="Take out bones"];
+    2 [label="Mince brawn small"];
+    3 [label="Break bones"];
+    4 [label="Seethe in pot with herbs"];
+    5 [label="Strain through linnen cloth"];
+    6 [label="Soak bread"];
+    7 [label="Lay on bed of flesh or if you will instead thereof a bed of Almond broth"];
+    8 [label="Boil well"];
+    9 [label="Fill it by degrees"];
+    10 [label="Garnish with pinnions"];
+    11 [label="Beat eggs with almond broth"];
+    12 [label="Pour on potage"];
+    13 [label="Hold the fire-shovel over it"];
+    14 [label="Serve"];
+    0 -> 1;
+    1 -> 2;
+    1 -> 3;
+    2 -> 7;
+    3 -> 4;
+    4 -> 5;
+    5 -> 6;
+    6 -> 7;
+    7 -> 8;
+    8 -> 9;
+    9 -> 10;
+    10 -> 12;
+    11 -> 12;
+    12 -> 13;
+    13 -> 14;
 }

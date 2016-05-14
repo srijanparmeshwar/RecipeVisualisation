@@ -1,3 +1,15 @@
 digraph {
-    0 [label="Mix cocoa and sugar in bowl"];
+    0 [label="Roast capon or partridge whole"];
+    1 [label="Remove bones and giblets and boil with herbs to make stock"];
+    2 [label="Soak bread in stock"];
+    3 [label="Layer bread and meat"];
+    4 [label="Beat eggs into Almond broth"];
+    5 [label="Cover with sauce"];
+    6 [label="Grill"];
+    0 -> 1;
+    1 -> 2;
+    2 -> 3;
+    3 -> 5;
+    4 -> 5;
+    5 -> 6;
 }
