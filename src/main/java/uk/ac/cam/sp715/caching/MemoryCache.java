@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 /**
- * In memory priority queue cache.
+ * In-memory priority queue cache.
  * @param <K> The key type.
  * @param <V> The value type.
  * @author Srijan Parmeshwar <sp715@cam.ac.uk>
@@ -38,7 +38,7 @@ public class MemoryCache<K extends Comparable<K>, V>  implements Cache<K, V>, It
     }
     @Override
     public synchronized void add(K key, V value) {
-        if(entries.size()<maxSize) {
+        if(entries.size() < maxSize) {
             keys.add(key);
             entries.put(key, value);
         } else {

@@ -5,27 +5,28 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
 import org.jgrapht.DirectedGraph;
+import org.jgrapht.alg.DijkstraShortestPath;
 import org.jgrapht.graph.DefaultDirectedGraph;
 import org.jgrapht.graph.DefaultEdge;
-import uk.ac.cam.sp715.flows.CoreNLPVisualiser;
-import uk.ac.cam.sp715.flows.Flow;
-import uk.ac.cam.sp715.flows.HybridVisualiser;
-import uk.ac.cam.sp715.recipes.Recipe;
-import uk.ac.cam.sp715.util.IOTools;
-import uk.ac.cam.sp715.util.IOToolsException;
+import org.w3c.dom.Node;
 import uk.ac.cam.sp715.util.Pipeline;
 
-import java.io.IOException;
-import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.Collectors;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * Created by Srijan on 20/02/2016.
+ * Provides a graph kernel implementation for unweighted DAGs with
+ * strings as vertices. The similarity index is calculated
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class FlowchartComparisons {
 
     private static class NodeBag extends HashMap<String, Integer> {
+        private static AtomicLong currentID = new AtomicLong(0);
+        private final long id;
+        public NodeBag() {
+            id = currentID.getAndIncrement();
+        }
         public void put(String lemma) {
             if(containsKey(lemma)) put(lemma, get(lemma) + 1);
             else put(lemma, 1);
@@ -34,10 +35,29 @@ public class FlowchartComparisons {
             if(containsKey(lemma)) return super.get(lemma);
             else return 0;
         }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            if (!super.equals(o)) return false;
+
+            NodeBag nodeBag = (NodeBag) o;
+
+            return id == nodeBag.id;
+        }
+
+        @Override
+        public int hashCode() {
+            int result = super.hashCode();
+            result = 31 * result + (int) (id ^ (id >>> 32));
+            return result;
+        }
     }
 
     private static final Pipeline pipeline = Pipeline.getLemmaPipeline();
     private final Map<NodeBag, NodeBag> correspondences;
+    private final Map<NodeBag, NodeBag> inverseCorrespondences;
     private final double nodeScore;
     private final double edgeScore;
 
@@ -45,6 +65,7 @@ public class FlowchartComparisons {
         DirectedGraph<NodeBag, DefaultEdge> cgraphA = convertGraph(graphA);
         DirectedGraph<NodeBag, DefaultEdge> cgraphB = convertGraph(graphB);
         correspondences = new HashMap<>();
+        inverseCorrespondences = new HashMap<>();
         nodeScore = nodeScore(cgraphA, cgraphB);
         edgeScore = edgeScore(cgraphA, cgraphB);
     }
@@ -53,9 +74,11 @@ public class FlowchartComparisons {
         double intersection = 0;
         List<NodeBag> setA = new LinkedList<>(graphA.vertexSet());
         List<NodeBag> setB = new LinkedList<>(graphB.vertexSet());
+        //System.out.print("(" + setA.size() +  ", " + setB.size() + ", " + ((double) Math.min(setA.size(), setB.size()) / (double) Math.max(setA.size(), setB.size())) + ")");
 
         double[][] scores = new double[setA.size()][setB.size()];
         double[][] costs = new double[setA.size()][setB.size()];
+
         for(int i = 0; i < setA.size(); i++) {
             NodeBag bagA = setA.get(i);
             for(int j = 0; j < setB.size(); j++) {
@@ -73,9 +96,10 @@ public class FlowchartComparisons {
                 NodeBag bagA = setA.get(i);
                 NodeBag bagB = setB.get(assignment);
                 double score = scores[i][assignment];
-                if(score > 0) {
+                if(score > 0.05) {
                     correspondences.put(bagA, bagB);
-                    intersection += score;
+                    inverseCorrespondences.put(bagB, bagA);
+                    intersection += 1;
                 }
             }
         }
@@ -88,26 +112,21 @@ public class FlowchartComparisons {
     }
 
     public double pathLength(DirectedGraph<NodeBag, DefaultEdge> graph, NodeBag source, NodeBag target) {
-        if(graph.containsEdge(source, target)) return 1;
-        else {
-            double min = Double.POSITIVE_INFINITY;
-            for(NodeBag bag : graph.outgoingEdgesOf(source)
-                    .stream()
-                    .map(graph::getEdgeTarget)
-                    .collect(Collectors.toSet())) {
-                double pathLength = pathLength(graph, bag, target);
-                if(pathLength < min && Double.isFinite(pathLength) && pathLength > 0) min = pathLength;
-            }
-            return min + 1;
-        }
+        List<DefaultEdge> shortestPath = DijkstraShortestPath.findPathBetween(graph, source, target);
+        if(shortestPath != null) return shortestPath.size();
+        else return Double.POSITIVE_INFINITY;
     }
 
+    /*
     private static String collect(NodeBag c) {
         return c.keySet().stream().collect(Collectors.joining(" "));
-    }
+    }*/
 
-    private double edgeScore(DirectedGraph<NodeBag, DefaultEdge> graphA, DirectedGraph<NodeBag, DefaultEdge> graphB) {
+    private double asymmetricEdgeScore(DirectedGraph<NodeBag, DefaultEdge> graphA, DirectedGraph<NodeBag, DefaultEdge> graphB, Map<NodeBag, NodeBag> correspondences) {
         double intersection = 0;
+        double i = 0;
+        double u = 0;
+        /*
         for(NodeBag A1 : graphA.vertexSet()) {
             if(correspondences.containsKey(A1)) {
                 for(DefaultEdge edge : graphA.outgoingEdgesOf(A1)) {
@@ -116,15 +135,38 @@ public class FlowchartComparisons {
                         NodeBag B1 = correspondences.get(A1);
                         NodeBag B2 = correspondences.get(A2);
                         double pathLength = pathLength(graphB, B1, B2);
-                        double norm = Math.exp(1.0 - 1.0 * pathLength);
+                        double norm = norm(pathLength);
                         intersection += norm;
+                        i += norm;
                         //System.out.println("(" + collect(A1) + ", " + collect(A2) + ") ~ " + pathLength + " ~ " + norm + " ~ (" + collect(B1) + ", " + collect(B2) + ")");
                         //if(pathExists(graph, correspondences.get(A1), correspondences.get(A2))) intersection++;
                     }
+                    u++;
                 }
             }
         }
-        return intersection / (graphA.edgeSet().size() + graphB.edgeSet().size() - intersection);
+        return i / Math.max(u, 1);*/
+        for(NodeBag key : correspondences.keySet()) {
+            NodeBag value = correspondences.get(key);
+            for(DefaultEdge edge : graphA.outgoingEdgesOf(key)) {
+                NodeBag keyTarget = graphA.getEdgeTarget(edge);
+                double norm = 0;
+                if(correspondences.containsKey(keyTarget)) {
+                    NodeBag valueTarget = correspondences.get(keyTarget);
+                    double pathLength = pathLength(graphB, value, valueTarget);
+                    norm = norm(pathLength);
+                }
+                i += norm;
+                u++;
+            }
+        }
+
+        return i / Math.max(1, u);
+        //return intersection / (graphA.edgeSet().size() + graphB.edgeSet().size() - intersection);
+    }
+
+    private double edgeScore(DirectedGraph<NodeBag, DefaultEdge> graphA, DirectedGraph<NodeBag, DefaultEdge> graphB) {
+        return (asymmetricEdgeScore(graphA, graphB, correspondences) + asymmetricEdgeScore(graphB, graphA, inverseCorrespondences)) / 2;
     }
 
     public double getEdgeScore() {
@@ -157,7 +199,9 @@ public class FlowchartComparisons {
     }
 
     /**
-     * Jacccard similarity index extended to multiset i.e. similarity(A, B) = |intersection(A, B)| / (|A| + |B| - |intersection(A, B)|)
+     * Modified Jaccard similarity index, extended to multiset i.e.
+     * similarity(A, B) = |intersection(A, B)| / (|A| + |B| - |intersection(A, B)|)
+     * Sum of minimum of counts divided by sum of maximum of counts.
      * @param A set A.
      * @param B set B.
      * @return {@link Double} Similarity index
@@ -167,7 +211,10 @@ public class FlowchartComparisons {
         else {
             double intersection = 0;
             double union = 0;
-            for(String string : A.keySet()) {
+            Set<String> keys = new HashSet<>();
+            keys.addAll(A.keySet());
+            keys.addAll(B.keySet());
+            for(String string : keys) {
                 int ACount = A.get(string);
                 int BCount = B.get(string);
                 intersection += Math.min(ACount, BCount);
@@ -177,15 +224,17 @@ public class FlowchartComparisons {
         }
     }
 
-    public static void saveSystemOutput() throws IOException, IOToolsException {
-        Map<String, Recipe> recipes = IOTools.read(Paths.get("flowcharts/testrecipes.ser").toString());
-        HybridVisualiser visualiser = new HybridVisualiser(new CoreNLPVisualiser(Pipeline.getMainPipeline()));
-        HashMap<Task, Flow> recipeFlows = new HashMap<>();
-        for(Task task : Task.values()) {
-            Flow flow = visualiser.parse(recipes.get(task.toString()));
-            recipeFlows.put(task, flow);
+    private static double norm(double x) {
+        double alpha = 2;
+        double shift = 3;
+        double correction = Math.exp(alpha * (1 - shift));
+        return 1 / (1 - correction + Math.exp(alpha * (x - shift)));
+    }
+
+    public static void main(String[] args) {
+        for(double x : new double[] {1, 2, 3, 4}) {
+            System.out.println(norm(x));
         }
-        IOTools.save(recipeFlows, Paths.get("flowcharts/testflows.ser").toString());
     }
 
 }

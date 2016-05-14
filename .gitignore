@@ -227,3 +227,7 @@ target/
 */node_modules/
 cache/
 Website/docs
+data-old/
+screenshots/
+*.eps
+flowcharts/

@@ -67,6 +67,49 @@ public class FlowchartComparisonsTest {
     }
 
     @Test
+    public void testSymmetry() {
+        DirectedGraph<Vertex, DefaultEdge> flowchartA = new DefaultDirectedGraph<>(DefaultEdge.class);
+        Vertex u0 = new Vertex(0, "Mix the chocolate and milk together.");
+        Vertex u1 = new Vertex(1, "Put in pan.");
+        Vertex u2 = new Vertex(2, "Line bowl with 5cm of paper.");
+        Vertex u3 = new Vertex(3, "Add to the mixture.");
+        Vertex u4 = new Vertex(4, "Serve.");
+
+        flowchartA.addVertex(u0);
+        flowchartA.addVertex(u1);
+        flowchartA.addVertex(u2);
+        flowchartA.addVertex(u3);
+        flowchartA.addVertex(u4);
+
+        flowchartA.addEdge(u0, u4);
+        flowchartA.addEdge(u2, u4);
+
+        DirectedGraph<Vertex, DefaultEdge> flowchartB = new DefaultDirectedGraph<>(DefaultEdge.class);
+        Vertex v0 = new Vertex(0, "Mix the chocolate and milk.");
+        Vertex v1 = new Vertex(1, "Put in pan above water.");
+        Vertex v2 = new Vertex(2, "Line bowl 5cm of paper.");
+        Vertex v3 = new Vertex(3, "Add to the mixture.");
+        Vertex v4 = new Vertex(4, "Serve on a plate.");
+
+        flowchartB.addVertex(v0);
+        flowchartB.addVertex(v1);
+        flowchartB.addVertex(v2);
+        flowchartB.addVertex(v3);
+        flowchartB.addVertex(v4);
+
+        flowchartB.addEdge(v0, v1);
+        flowchartB.addEdge(v1, v2);
+        flowchartB.addEdge(v2, v3);
+        flowchartB.addEdge(v3, v4);
+        flowchartB.addEdge(v2, v4);
+
+        FlowchartComparisons comparisonsAB = new FlowchartComparisons(flowchartA, flowchartB);
+        FlowchartComparisons comparisonsBA = new FlowchartComparisons(flowchartB, flowchartA);
+        assertTrue(comparisonsAB.getNodeScore() == comparisonsBA.getNodeScore());
+        assertTrue(comparisonsAB.getEdgeScore() == comparisonsBA.getEdgeScore());
+    }
+
+    @Test
     public void testDisjointFlowcharts() {
         DirectedGraph<Vertex, DefaultEdge> flowchartA = new DefaultDirectedGraph<>(DefaultEdge.class);
         Vertex u0 = new Vertex(0, "Mix the chocolate and milk together.");

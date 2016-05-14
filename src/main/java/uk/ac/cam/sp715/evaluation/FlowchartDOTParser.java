@@ -15,10 +15,28 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 /**
- * Created by Srijan on 20/02/2016.
+ * Parses DOT format digraphs which have labels for nodes and
+ * unlabelled edges.
+ * @author Srijan Parmeshwar <sp715@cam.ac.uk>
  */
 public class FlowchartDOTParser {
 
+    /**
+     * Parse DOT format string which should be of the format:
+     *  digraph name {
+     *      // Nodes
+     *      node [label="..."];
+     *      node [label="..."];
+     *      ...
+     *      // Edges
+     *      node -> node;
+     *      node -> node;
+     *      ...
+     *  }
+     * Comments are not allowed.
+     * @param graph Digraph in restricted DOT format.
+     * @return DirectedGraph with vertices and default edges.
+     */
     public DirectedGraph<Vertex, DefaultEdge> parse(String graph) {
         String[] split = graph.split("\\{");
         if(split.length < 2) throw new ParseException();
@@ -82,22 +100,4 @@ public class FlowchartDOTParser {
             return result;
         } else throw new ParseException();
     }
-
-    public static void main(String[] args) throws IOException {
-        FlowchartDOTParser parser = new FlowchartDOTParser();
-        String graphString = Files.readAllLines(Paths.get("flowcharts/1/taskB.dot")).stream().collect(Collectors.joining(""));
-        DirectedGraph<Vertex, DefaultEdge> graph = parser.parse(graphString);
-        DOTExporter<Vertex, DefaultEdge> exporter = new DOTExporter<>(Vertex -> Integer.toString(Vertex.getID()), Vertex::getLabel, defaultEdge -> "");
-        StringWriter writer = new StringWriter();
-        exporter.export(writer, graph);
-        writer.flush();
-        System.out.println(writer.toString());
-        try {
-            writer.close();
-        } catch (IOException e) {
-            throw new RuntimeException();
-        }
-
-    }
-
 }

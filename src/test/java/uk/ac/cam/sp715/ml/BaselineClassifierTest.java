@@ -35,7 +35,9 @@ public class BaselineClassifierTest {
 
     private static void testPR(Role role) {
         Pair<Double, Double> PR = classifier.evaluatePrecisionAndRecall(testSet, role);
-        System.out.println("Role: " + role + ", Precision: " + PR.first() + ", Recall: " + PR.second());
+        double precision = PR.first();
+        double recall = PR.second();
+        System.out.println("Role: " + role + ", Precision: " + precision + ", Recall: " + recall + ", F1: " + (2 * precision * recall / (precision + recall)));
     }
 
     @Test

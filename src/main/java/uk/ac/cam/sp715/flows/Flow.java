@@ -134,6 +134,7 @@ public class Flow extends DefaultDirectedGraph<Action, DefaultEdge> implements S
             other.outgoingEdgesOf(endNode)
                     .stream()
                     .map(other::getEdgeTarget)
+                    .filter(this::containsVertex)
                     .forEach(target -> this.addEdge(endNode, target));
         }
 
@@ -154,11 +155,8 @@ public class Flow extends DefaultDirectedGraph<Action, DefaultEdge> implements S
             }).forEach(target -> this.addEdge(endNode, target));
         }
 
-        /*Set<Action> endNodes = this
-                .vertexSet()
-                .stream()
-                .filter(action -> outDegreeOf(action) == 0 && inDegreeOf(action) > 0)
-                .collect(Collectors.toSet());
+        /*
+        Set<Action> endNodes =  getLeaves();
 
         int count = 0;
         while(endNodes.size() > 1 && count < 2) {

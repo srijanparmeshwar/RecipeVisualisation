@@ -60,6 +60,7 @@ public class ClassifierTest {
     public void testCrossValidation() {
         try {
             GeneralDataset<Role, String> dataSet = SRLDataHandler.loadTrainingData(4);
+            dataSet.summaryStatistics();
             int nfolds = 10;
 
             Evaluator evaluator = new Evaluator();

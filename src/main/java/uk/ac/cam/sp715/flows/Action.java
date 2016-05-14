@@ -28,12 +28,12 @@ public class Action implements Serializable {
         for(TaggedWord token : getObjects()) {
             if(token.start()<min) min = token.start();
         }
-        return min;
+        return description.start();
     }
     public int end() {
         int max = description.end();
         for(TaggedWord token : getObjects()) {
-            if(token.end()<max) max = token.end();
+            if(token.end()>max) max = token.end();
         }
         return max;
     }

@@ -98,7 +98,7 @@ public class SRLDataHandler {
         }).collect(Collectors.toList());
 
         try {
-            Files.write(getPath("srl-train2.txt"), lines);
+            Files.write(getPath("srl-train-new.txt"), lines);
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException();
@@ -114,7 +114,7 @@ public class SRLDataHandler {
     }
 
     public static GeneralDataset<Role, String> loadTrainingData(int version) throws IOToolsException {
-        return IOTools.read(getPath("srl-train-en" + version + ".ser").toString());
+        return IOTools.read(getPath("srl-train-en.ser").toString());
     }
 
     private static void serializeAnnotations() throws IOToolsException {
@@ -126,12 +126,12 @@ public class SRLDataHandler {
             annotations.add(pipeline.annotate(recipe));
         }
 
-        IOTools.save(annotations, getPath("annotations2.ser").toString());
+        IOTools.save(annotations, getPath("annotations.ser").toString());
     }
 
     public static Map<Integer, List<String>> getFeatureMap() throws IOToolsException {
         Map<Integer, List<String>> featureMap = new HashMap<>();
-        List<Annotation> annotations = IOTools.read(getPath("annotations2.ser").toString());
+        List<Annotation> annotations = IOTools.read(getPath("annotations.ser").toString());
         int index = 0;
 
         for (Annotation annotation : annotations) {
@@ -152,9 +152,8 @@ public class SRLDataHandler {
 
     private static void serializeTrainingData() throws IOToolsException {
         //LinkedList<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
-        GeneralDataset<Role, String> dataset = constructDataset(loadLabels("srl-train3.txt"), getFeatureMap());
-        dataset.printSparseFeatureMatrix();
-        IOTools.save(dataset, getPath("srl-train-en4.ser").toString());
+        GeneralDataset<Role, String> dataset = constructDataset(loadLabels("srl-train.txt"), getFeatureMap());
+        IOTools.save(dataset, getPath("srl-train-en-new.ser").toString());
     }
 
     private static void runPreparation() throws HTMLParseException, IOToolsException {
@@ -254,6 +253,6 @@ public class SRLDataHandler {
     }
 
     public static void main(String[] args) throws HTMLParseException, IOToolsException, IOException {
-        serializeTrainingData();
+        //serializeTrainingData();
     }
 }

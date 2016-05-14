@@ -59,9 +59,7 @@ public class BaselineClassifier implements Classifier<Role, String> {
             return counter(Role.ACTION);
         } else if(baselineFeatures.containsKey("inReldobj") || baselineFeatures.get("ner=").equals("INGREDIENTS")) {
             return counter(Role.DOBJECT);
-        } else if(baselineFeatures.containsKey("inReliobj") || baselineFeatures.get("ner=").equals("UTENSILS") || baselineFeatures.get("ner=").equals("APPLIANCES")) {
-            return counter(Role.IOBJECT);
-        } else if(baselineFeatures.get("posTag=").startsWith("N")) {
+        } else if(baselineFeatures.containsKey("inReliobj") || baselineFeatures.get("ner=").equals("UTENSILS") || baselineFeatures.get("ner=").equals("APPLIANCES") || baselineFeatures.get("posTag=").startsWith("N")) {
             return counter(Role.IOBJECT);
         } else return counter(Role.OTHER);
     }

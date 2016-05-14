@@ -50,8 +50,8 @@ public class DataHandler {
 
     public static Classifier<Boolean, String> getDependencyClassifier() throws IOException, IOToolsException {
         GeneralDataset<Boolean, String> dataset = new Dataset<>();
-        List<String> lines = Files.lines(getPath("action-dep2.txt")).collect(Collectors.toList());
-        List<Annotation> annotations = IOTools.read(getPath("annotations2.ser").toString());
+        List<String> lines = Files.lines(getPath("action-dep.txt")).collect(Collectors.toList());
+        List<Annotation> annotations = IOTools.read(getPath("annotations.ser").toString());
         List<Recipe> recipes = IOTools.read(getPath("recipes.ser").toString());
         List<Flow> flows = IOTools.read(getPath("heuristic-flows.ser").toString());
 
@@ -123,13 +123,14 @@ public class DataHandler {
         }
 
         dataset.summaryStatistics();
+        //dataset.printSparseFeatureMatrix();
         LogisticClassifierFactory<Boolean, String> factory = new LogisticClassifierFactory<>();
         return factory.trainClassifier(dataset);
     }
 
     private static void runDepTrainingPrep() throws IOToolsException {
-        List<Annotation> annotations = IOTools.read(getPath("annotations2.ser").toString());
-        Classifier<Role, String> classifier = SRLDataHandler.getClassifier(3);
+        List<Annotation> annotations = IOTools.read(getPath("annotations.ser").toString());
+        Classifier<Role, String> classifier = SRLDataHandler.getClassifier(4);
         int index = 0;
 
         List<String> lines = new LinkedList<>();
@@ -153,7 +154,7 @@ public class DataHandler {
             }
             lines.add("------------------");
         }
-        IOTools.save(lines, getPath("action-dep3.txt"));
+        IOTools.save(lines, getPath("action-dep-new.txt"));
     }
 
     public static void main(String[] args) throws HTMLParseException, IOToolsException, IOException {
@@ -185,6 +186,7 @@ public class DataHandler {
             }
             System.out.println(sentence);
         }*/
-        serializeFlows();
+        //serializeFlows();
+        getDependencyClassifier();
     }
 }

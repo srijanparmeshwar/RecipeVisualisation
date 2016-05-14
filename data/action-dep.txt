@@ -1,852 +1,852 @@
-<Grease:0:> four ramekins with butter .
-<Set:1:0> aside .
-For the chocolate crumb puddings , <bring:2:> a little water to the boil in a pan , then <reduce:3:2> the heat until the water is simmering .
-<Suspend:4:3> a heatproof bowl over the water .
-<Do:5:> not <allow:6:> the base of the bowl to <touch:7:> the water .
-<Add:8:4> the 50g/2oz of chocolate and <stir:9:8> until melted .
-<Remove:10:9> from the heat and <set:11:10> aside to <cool:12:11> slightly .
-In a separate bowl , <cream:13:> together the butter -LRB- or margarine -RRB- and the sugar until pale and fluffy .
-<Beat:14:12,13> the cooled melted chocolate , egg yolk and vanilla into the creamed butter and sugar until well combined .
-<Mix:15:> the breadcrumbs and flour together .
-Fold <half:16:> of the breadcrumb mixture into the chocolate mixture , then carefully <stir:17:14,15> in 1-2 tablespoons of milk .
-<Fold:18:17> the remaining breadcrumb mixture into the chocolate mixture , then <fold:19:18> in the remaining milk , as necessary , to <loosen:20:19> the mixture .
+<grease:0:> four ramekins with butter .
+<set:1:0> aside .
+for the chocolate crumb puddings , <bring:2:> a little water to the boil in a pan , then <reduce:3:2> the heat until the water is simmering .
+<suspend:4:3> a heatproof bowl over the water .
+<do:5:> not <allow:6:> the base of the bowl to <touch:7:> the water .
+<add:8:4> the 50g/2oz of chocolate and <stir:9:8> until melted .
+<remove:10:9> from the heat and <set:11:10> aside to <cool:12:11> slightly .
+in a separate bowl , <cream:13:> together the butter -LRB- or margarine -RRB- and the sugar until pale and fluffy .
+<beat:14:12,13> the cooled melted chocolate , egg yolk and vanilla into the creamed butter and sugar until well combined .
+<mix:15:> the breadcrumbs and flour together .
+fold <half:16:> of the breadcrumb mixture into the chocolate mixture , then carefully <stir:17:14,15> in 1-2 tablespoons of milk .
+<fold:18:17> the remaining breadcrumb mixture into the chocolate mixture , then <fold:19:18> in the remaining milk , as necessary , to <loosen:20:19> the mixture .
 -LRB- The mixture should <be:21:> of dropping consistency . -RRB-
-<Whisk:22:> the egg whites until stiff peaks form when the whisk is removed .
-Carefully <fold:23:20,22> the whisked egg whites into the chocolate mixture until just combined .
-<Divide:24:1,23> half of the pudding mixture among the prepared ramekins .
-<Put:25:24> two squares of dark chocolate on top of each portion , then <cover:26:25> each with the remaining chocolate pudding mixture .
-<Cover:27:26> each ramekin with aluminium foil .
-<Prepare:28:> a steamer with 2.5 cm/1in of boiling water .
-<Add:29:27,28> the covered ramekins and <steam:30:29> for 20-25 minutes , <or:31:> until cooked through .
-Meanwhile , for the white chocolate sauce , <bring:32:> a little water to the boil in a pan , then <reduce:33:32> the heat until the water is simmering .
-<Suspend:34:33> a heatproof bowl over the water -LRB- <do:35:> not <allow:36:> the base of the bowl to <touch:37:> the water -RRB- .
-<Add:38:34> the white chocolate and cream and <stir:39:38> until smooth , melted and well combined .
+<whisk:22:> the egg whites until stiff peaks form when the whisk is removed .
+carefully <fold:23:20,22> the whisked egg whites into the chocolate mixture until just combined .
+<divide:24:1,23> half of the pudding mixture among the prepared ramekins .
+<put:25:24> two squares of dark chocolate on top of each portion , then <cover:26:25> each with the remaining chocolate pudding mixture .
+<cover:27:26> each ramekin with aluminium foil .
+<prepare:28:> a steamer with 2.5 cm/1in of boiling water .
+<add:29:27,28> the covered ramekins and <steam:30:29> for 20-25 minutes , <or:31:> until cooked through .
+meanwhile , for the white chocolate sauce , <bring:32:> a little water to the boil in a pan , then <reduce:33:32> the heat until the water is simmering .
+<suspend:34:33> a heatproof bowl over the water -LRB- <do:35:> not <allow:36:> the base of the bowl to <touch:37:> the water -RRB- .
+<add:38:34> the white chocolate and cream and <stir:39:38> until smooth , melted and well combined .
 -LRB- Do not <allow:40:> the mixture to boil -RRB- .
-<Remove:41:39> from the heat and <set:42:41> aside to <cool:43:42> slightly .
-<Keep:44:43> warm .
+<remove:41:39> from the heat and <set:42:41> aside to <cool:43:42> slightly .
+<keep:44:43> warm .
 To <serve:45:30> , <turn:46:45> out the chocolate crumb puddings onto serving plates .
-<Drizzle:47:44,46> over the white chocolate sauce .
+<drizzle:47:44,46> over the white chocolate sauce .
 ------------------
-<Line:48:> eight baking trays with greaseproof paper .
-<Preheat:49:> the oven to 170C/325F/Gas 3 .
-To <make:50:> the shells , <place:51:> the icing sugar , ground almonds and cocoa powder in a food processor and <pulse:52:51> for about 30 seconds to <make:53:52> a fine powder .
-<Sift:54:53> the powder into a clean bowl , <discarding:55:54> any lumps left in the sieve .
-<Weigh:56:> the egg whites - you should <have:57:56> about 300g/10 .5 oz in total .
-<Stir:58:55,57> half the egg whites into the icing sugar and almond mixture to <make:59:58> a smooth paste .
-<Place:60:57> the remaining egg whites into the bowl of a mixer with a whisk attachment .
-<Whisk:61:60> the egg whites in the mixer until they form soft peaks .
-<Place:62:> the caster sugar and water in a small pan , <heat:63:62> gently until the sugar has dissolved then <turn:64:63> the heat up until the syrup reaches 115C/235F -LRB- <use:65:> a sugar thermometer to <check:66:> this -RRB- .
-<Turn:67:60,64> on the mixer and <continue:68:67> whisking the egg whites on a low speed , <pouring:69:68> in the syrup in a steady stream .
-<Increase:70:69> the mixer to a medium speed for two minutes then <turn:71:70> it down again and <continue:72:71> <whisking:73:72> for five minutes , or until stiff peaks form when the whisk is removed .
-<Fold:74:54,59,73> the icing sugar , <almond:75:> and egg white paste into the whisked egg whites .
-<Spoon:76:74> the mixture into a large piping bag fitted with a 5mm / .25 in plain nozzle .
-<Pipe:77:48,76> 4cm/1 .5 in circles onto the baking trays .
-<Using:78:> a toothpick , <burst:79:77> any air bubbles that appear on the surface of the shells .
-The macaroons must <stand:80:79> for at least 20 minutes before going into the oven as it helps to <form:81:80> a skin .
-<Bake:82:49,81> the shells for 12 minutes or until they no longer <wobble:83:> when you shake the baking tray .
--LRB- You may <need:84:> to <do:85:> this in batches , <but:86:> the macaroons can <rest:87:> for 1-2 hours . -RRB-
-<Remove:88:82> from the oven and <set:89:88> aside to cool .
-Carefully <peel:90:89> the macaroons off the greaseproof paper .
-To <make:91:> the milk chocolate centres , <heat:92:> the cream in a small saucepan until just boiling then <take:93:92> the pan off the heat and <whisk:94:93> in the chocolate pieces .
-<Transfer:95:94> to a small bowl and <place:96:95> it in the fridge .
-To <make:97:> the chocolate orange filling , <heat:98:> the cream in a small saucepan until just boiling then <take:99:98> the pan off the heat and <whisk:100:99> in the chocolate pieces , orange colouring and flavouring .
-<Transfer:101:100> to a small bowl and <place:102:101> it in the fridge .
-To <make:103:> the mint chocolate filling , <heat:104:> the cream in a small saucepan with the peppermint essence until just boiling .
-<Take:105:104> the pan off the heat then <whisk:106:105> in the white chocolate and green colouring .
-<Transfer:107:106> to a bowl and <place:108:107> it in the fridge To <make:109:> the caramel , <heat:110:> the cream in a small saucepan until just boiling then <remove:111:110> the pan from the heat and <set:112:111> aside .
-<Heat:113:> the sugar in a clean pan , <stirring:114:113> with a wooden spoon , until it turns dark brown .
-<Pour:115:112,114> onto the cream , <taking:116:> care as it will be very hot , and <whisk:117:115> until smooth .
-<Add:118:117> the butter , <whisk:119:118> thoroughly then <transfer:120:119> to a bowl and <set:121:120> aside .
-To <assemble:122:90> the macaroons , <pair:123:122> up the macaroon shells with the flat sides uppermost and <place:124:123> them on baking trays lined with greaseproof paper .
--LRB- You should <have:125:> about 120 macaroon shells . -RRB-
-<Spoon:126:102> the chocolate orange filling into a piping bag fitted with a 5mm/1 .25 in plain nozzle and <pipe:127:124,126> a circle around the edge of 20 of the macaroon shells .
-<Repeat:128:108,121,124> with the mint chocolate and caramel fillings .
-<Spoon:129:96> the mixture for the milk chocolate centres into into a piping bag fitted with a 5mm/1 .25 in plain nozzle and <pipe:130:127,128,129> small dots into the middle of the circles of filling , then carefully <sandwich:131:130> together with the remaining shells .
-For each of the dips , <melt:132:> the chocolate in a microwave , or in a bowl suspended over a pan of barely simmering water , <stirring:133:132> in the colouring if using .
-<Pour:134:133> into squeezy bottles or <piping:135:> bags fitted with very small nozzles and <pipe:136:131> swirls onto the appropriate macaroons .
-<Transfer:137:136> the finished macaroons to the fridge to <set:138:137> for at least 30 minutes , preferably <overnight:139:> , before serving .
+<line:48:> eight baking trays with greaseproof paper .
+<preheat:49:> the oven to 170C/325F/Gas 3 .
+to <make:50:> the shells , <place:51:> the icing sugar , ground almonds and cocoa powder in a food processor and <pulse:52:51> for about 30 seconds to <make:53:52> a fine powder .
+<sift:54:53> the powder into a clean bowl , <discarding:55:54> any lumps left in the sieve .
+<weigh:56:> the egg whites - you should <have:57:56> about 300g/10 .5 oz in total .
+<stir:58:55,57> half the egg whites into the icing sugar and almond mixture to make a smooth paste .
+<place:59:57> the remaining egg whites into the bowl of a mixer with a whisk attachment .
+<whisk:60:59> the egg whites in the mixer until they form soft peaks .
+<place:61:> the caster sugar and water in a small pan , <heat:62:61> gently until the sugar has dissolved then <turn:63:62> the heat up until the syrup reaches 115C/235F -LRB- <use:64:> a sugar thermometer to <check:65:> this -RRB- .
+<turn:66:60,63> on the mixer and <continue:67:66> <whisking:68:67> the egg whites on a low speed , <pouring:69:68> in the syrup in a steady stream .
+<increase:70:69> the mixer to a medium speed for two minutes then <turn:71:70> it down again and <continue:72:71> <whisking:73:72> for five minutes , or until stiff peaks form when the whisk is removed .
+<fold:74:58,73> the icing sugar , <almond:75:> and egg white paste into the whisked egg whites .
+<spoon:76:74> the mixture into a large piping bag fitted with a 5mm / .25 in plain nozzle .
+<pipe:77:48,76> 4cm/1 .5 in circles onto the baking trays .
+<using:78:> a toothpick , <burst:79:77> any air bubbles that appear on the surface of the shells .
+the macaroons must <stand:80:79> for at least 20 minutes before going into the oven as it helps to <form:81:80> a skin .
+<bake:82:49,81> the shells for 12 minutes or until they no longer <wobble:83:> when you shake the baking tray .
+-LRB- You may <need:84:> to <do:85:> this in batches , but the macaroons can <rest:86:> for 1-2 hours . -RRB-
+<remove:87:82> from the oven and <set:88:87> aside to cool .
+carefully <peel:89:88> the macaroons off the greaseproof paper .
+to <make:90:> the milk chocolate centres , <heat:91:> the cream in a small saucepan until just boiling then <take:92:91> the pan off the heat and <whisk:93:92> in the chocolate pieces .
+<transfer:94:93> to a small bowl and <place:95:94> it in the fridge .
+to <make:96:> the chocolate orange filling , <heat:97:> the cream in a small saucepan until just boiling then <take:98:97> the pan off the heat and <whisk:99:98> in the chocolate pieces , orange colouring and flavouring .
+<transfer:100:99> to a small bowl and <place:101:100> it in the fridge .
+to <make:102:> the mint chocolate filling , <heat:103:> the cream in a small saucepan with the peppermint essence until just boiling .
+<take:104:103> the pan off the heat then <whisk:105:104> in the white chocolate and green colouring .
+<transfer:106:105> to a bowl and <place:107:106> it in the fridge To <make:108:> the caramel , <heat:109:> the cream in a small saucepan until just boiling then <remove:110:109> the pan from the heat and <set:111:110> aside .
+<heat:112:> the sugar in a clean pan , <stirring:113:112> with a wooden spoon , until it turns dark brown .
+<pour:114:111,113> onto the cream , <taking:115:> care as it will be very hot , and <whisk:116:114> until smooth .
+<add:117:116> the butter , <whisk:118:117> thoroughly then <transfer:119:118> to a bowl and <set:120:119> aside .
+to <assemble:121:89> the macaroons , <pair:122:121> up the macaroon shells with the flat sides uppermost and <place:123:122> them on baking trays lined with greaseproof paper .
+-LRB- You should <have:124:> about 120 macaroon shells . -RRB-
+<spoon:125:101> the chocolate orange filling into a piping bag fitted with a 5mm/1 .25 in plain nozzle and <pipe:126:123,125> a circle around the edge of 20 of the macaroon shells .
+<repeat:127:107,120,123> with the mint chocolate and caramel fillings .
+<spoon:128:95> the mixture for the milk chocolate centres into into a piping bag fitted with a 5mm/1 .25 in plain nozzle and <pipe:129:126,127,128> small dots into the middle of the circles of filling , then carefully <sandwich:130:129> together with the remaining shells .
+for each of the dips , <melt:131:> the chocolate in a microwave , or in a bowl suspended over a pan of barely simmering water , <stirring:132:131> in the colouring if using .
+<pour:133:132> into squeezy bottles or piping bags fitted with very small nozzles and <pipe:134:130,133> swirls onto the appropriate macaroons .
+<transfer:135:134> the finished macaroons to the fridge to <set:136:135> for at least 30 minutes , preferably <overnight:137:> , before serving .
 ------------------
-<Melt:140:> half the chocolate in a bowl set over a pan of gently simmering water , then <leave:141:> to cool slightly .
-In a bowl , <whip:142:> the cream to soft peaks and <fold:143:> in the melted chocolate to <make:144:> a marbled effect .
-To serve , <place:145:> the sliced oranges into the base of a glass serving dish , <spoon:146:> over the chocolate mousse and <pour:147:> over the rest of the melted chocolate .
+<melt:138:> half the chocolate in a bowl set over a pan of gently simmering water , then <leave:139:138> to cool slightly .
+in a bowl , <whip:140:> the cream to soft peaks and <fold:141:140> in the melted chocolate to <make:142:141> a marbled effect .
+to serve , <place:143:> the sliced oranges into the base of a glass serving dish , <spoon:144:142,143> over the chocolate mousse and <pour:145:139,144> over the rest of the melted chocolate .
 ------------------
-<Cream:148:> the butter and sugar together in a mixing bowl until pale and fluffy .
-Gradually <mix:149:> in the beaten egg , then the milk and finally the flour .
-<Grease:150:> a microwaveable bowl with butter .
-<Place:151:> the fudge and chocolate into the bowl .
-<Spoon:152:> the sponge mixture on top and <microwave:153:> for about 4-5 minutes on full power .
-Meanwhile , for the chocolate sauce , <heat:154:> the chocolate and <cream:155:> together in a pan over a low heat , <stirring:156:> continuously until combined .
-<Turn:157:> the sponge pudding out onto a plate and <serve:158:> drizzled with the hot chocolate sauce .
+<cream:146:> the butter and sugar together in a mixing bowl until pale and fluffy .
+gradually <mix:147:146> in the beaten egg , then the milk and finally the flour .
+<grease:148:> a microwaveable bowl with butter .
+<place:149:147,148> the fudge and chocolate into the bowl .
+<spoon:150:149> the sponge mixture on top and <microwave:151:150> for about 4-5 minutes on full power .
+meanwhile , for the chocolate sauce , <heat:152:> the chocolate and <cream:153:> together in a pan over a low heat , <stirring:154:152> continuously until combined .
+<turn:155:151> the sponge pudding out onto a plate and <serve:156:154,155> drizzled with the hot chocolate sauce .
 ------------------
-For the chocolate and raspberry cheesecake , lightly <grease:159:> a 5cm/2in chefs ' ring and <place:160:> it onto a serving plate .
-<Place:161:> half of the oats into the ring , then <top:162:> with half the raspberries .
-<Place:163:> the cream cheese , cream and sugar into a bowl and <mix:164:> well .
-<Spoon:165:> this mixture on top of the raspberries , then <top:166:> with the remaining oats and the grated chocolate .
-<Heat:167:> the outside of the chefs ' ring with a mini-blowtorch to <loosen:168:> it , then carefully <slide:169:> it off .
-<Place:170:> the remaining raspberries on top of the cheesecake and <garnish:171:> with a sprig of mint .
-For the chocolate sauce , <place:172:> all the chocolate sauce ingredients into a small saucepan and <heat:173:> gently , stirring until the chocolate has melted and the sauce has thickened .
-To <serve:174:> , <drizzle:175:> the chocolate sauce over the cheesecake .
+for the chocolate and raspberry cheesecake , lightly <grease:157:> a 5cm/2in chefs ' ring and <place:158:157> it onto a serving plate .
+<place:159:158> half of the oats into the ring , then <top:160:159> with half the raspberries .
+<place:161:> the cream cheese , cream and sugar into a bowl and <mix:162:161> well .
+<spoon:163:160,162> this mixture on top of the raspberries , then <top:164:163> with the remaining oats and the grated chocolate .
+<heat:165:164> the outside of the chefs ' ring with a mini-blowtorch to <loosen:166:165> it , then carefully slide it off .
+<place:167:166> the remaining raspberries on top of the cheesecake and <garnish:168:167> with a sprig of mint .
+for the chocolate sauce , <place:169:> all the chocolate sauce ingredients into a small saucepan and <heat:170:169> gently , stirring until the chocolate has melted and the sauce has thickened .
+to <serve:171:> , <drizzle:172:170,171> the chocolate sauce over the cheesecake .
 ------------------
-<Preheat:176:> the oven to 180C/350F/Gas 4 .
-<Line:177:> a baking tray with greaseproof paper .
-For the mousse , <melt:178:> the chocolate in a glass bowl set over simmering water .
--LRB- Do not <let:179:> the base of the bowl touch the water . -RRB-
-In a separate bowl , <beat:180:> the egg yolks and <brandy:181:> together until well combined .
-<Beat:182:> the mixture into the melted chocolate .
-<Whisk:183:> the egg whites in a separate bowl until stiff peaks form when the whisk is removed .
-<Fold:184:> the egg whites into the chocolate mixture .
-<Spoon:185:> the mixture into small jars or glasses and chill in the fridge for 1-2 hours , or until set Meanwhile for the cookies , <cream:186:> the butter and sugar together in a bowl , then <beat:187:> in the eggs until well combined .
-<Stir:188:> in the flour , bicarbonate of soda , nuts and chocolate .
-<Place:189:> walnut-sized balls of the mixture onto a baking sheet , about 5cm/2in apart .
-<Bake:190:> for 8-10 minutes , then <remove:191:> from the oven and <set:192:> aside to cool .
-<Serve:193:> the cookies alongside the chocolate mousse .
+<preheat:173:> the oven to 180C/350F/Gas 4 .
+<line:174:> a baking tray with greaseproof paper .
+for the mousse , <melt:175:> the chocolate in a glass bowl set over simmering water .
+-LRB- Do not <let:176:> the base of the bowl touch the water . -RRB-
+in a separate bowl , <beat:177:> the egg yolks and <brandy:178:> together until well combined .
+<beat:179:175,177> the mixture into the melted chocolate .
+<whisk:180:> the egg whites in a separate bowl until stiff peaks form when the whisk is removed .
+<fold:181:179,180> the egg whites into the chocolate mixture .
+<spoon:182:181> the mixture into small jars or glasses and chill in the fridge for 1-2 hours , or until set Meanwhile for the cookies , <cream:183:> the butter and sugar together in a bowl , then <beat:184:183> in the eggs until well combined .
+<stir:185:182,184> in the flour , bicarbonate of soda , nuts and chocolate .
+<place:186:174,185> walnut-sized balls of the mixture onto a baking sheet , about 5cm/2in apart .
+<bake:187:173,186> for 8-10 minutes , then <remove:188:187> from the oven and <set:189:188> aside to cool .
+<serve:190:189> the cookies alongside the chocolate mousse .
 ------------------
-<Preheat:194:> the oven to 180C/360F/Gas 4 .
-<Line:195:> a 30 x 20 x 3.5 cm -LRB- 12 x 8 x 1.5 in -RRB- tin with lightly buttered greaseproof paper or foil .
-<Put:196:> the plain chocolate and butter in a large bowl , <place:197:> over a pan of simmering water and <allow:198:> to melt .
-<Sieve:199:> the flour and baking powder into a bowl and <set:200:> aside .
-<Remove:201:> the melted chocolate from the heat and <stir:202:> in the sugar .
-<Add:203:> the eggs and vanilla essence .
-<Fold:204:> in the flour , the chocolate chunks and the nuts .
-<Pour:205:> the chocolate mixture into the prepared cake tin .
-<Place:206:> in the oven and <bake:207:> for around 25 minutes .
-When cooked , the top should be firm but the inside should <feel:208:> soft .
-<Allow:209:> to <cool:210:> in the tin .
-<Remove:211:> the brownies from the tin and <cut:212:> into squares to serve .
+<preheat:191:> the oven to 180C/360F/Gas 4 .
+<line:192:> a 30 x 20 x 3.5 cm -LRB- 12 x 8 x 1.5 in -RRB- tin with lightly buttered greaseproof paper or foil .
+<put:193:> the plain chocolate and butter in a large bowl , <place:194:193> over a pan of simmering water and <allow:195:194> to melt .
+<sieve:196:> the flour and baking powder into a bowl and <set:197:196> aside .
+<remove:198:195> the melted chocolate from the heat and <stir:199:198> in the sugar .
+<add:200:199> the eggs and vanilla essence .
+<fold:201:197,200> in the flour , the chocolate chunks and the nuts .
+<pour:202:192,201> the chocolate mixture into the prepared cake tin .
+<place:203:191,202> in the oven and <bake:204:203> for around 25 minutes .
+when cooked , the top should be firm but the inside should feel soft .
+<allow:205:204> to <cool:206:205> in the tin .
+<remove:207:206> the brownies from the tin and <cut:208:207> into squares to serve .
 ------------------
-<Preheat:213:> the oven to 180C/350F/Gas 4 .
-<Grease:214:> and <line:215:> a 23cm/9in square tray with parchment paper .
-For the brownie , <whisk:216:> the eggs and sugar in a large bowl until pale and thickened .
-<Melt:217:> the milk chocolate , dark chocolate and butter in a large heatproof bowl , <set:218:> over a pan of simmering water -LRB- do not <allow:219:> the bottom of the bowl to <touch:220:> the water -RRB- .
-Once melted <set:221:> aside to cool for a few minutes .
-<Stir:222:> the melted chocolate into the egg mixture to combine .
-Carefully <fold:223:> in the sifted flour , spices , baking powder and cocoa powder , if using , into the mixture .
-<Spoon:224:> the brownie mixture into the prepared tin , <smoothing:225:> the top with a palette knife .
-<Bake:226:> in the oven for 20-25 minutes , or until the center is just set and the top springy to the touch and <beginning:227:> to crack .
-<Set:228:> aside to <cool:229:> in the tin .
-For the chocolate sauce , <heat:230:> the cream gently in a pan .
-<Place:231:> the milk chocolate in a large bowl and <pour:232:> the hot cream over , whisking to combine .
-For the mint cream , <whip:233:> the double cream and <icing sugar:234:> together in a large bowl until soft peaks form when the whisk is removed .
-<Fold:235:> in the shredded mint .
-When the brownie is completely cool , <cut:236:> into squares and <place:237:> in serving bowls .
-<Drizzle:238:> with the chocolate sauce and <top:239:> with a spoonful of whipped mint cream .
-<Sprinkle:240:> over the crushed honeycomb to serve .
+<preheat:209:> the oven to 180C/350F/Gas 4 .
+<grease:210:> and <line:211:210> a 23cm/9in square tray with parchment paper .
+for the brownie , <whisk:212:> the eggs and sugar in a large bowl until pale and thickened .
+<melt:213:> the milk chocolate , dark chocolate and butter in a large heatproof bowl , <set:214:213> over a pan of simmering water -LRB- do not <allow:215:> the bottom of the bowl to <touch:216:> the water -RRB- .
+once melted <set:217:214> aside to <cool:218:217> for a few minutes .
+<stir:219:212,218> the melted chocolate into the egg mixture to combine .
+carefully <fold:220:219> in the sifted flour , spices , baking powder and cocoa powder , if using , into the mixture .
+<spoon:221:211,220> the brownie mixture into the prepared tin , <smoothing:222:221> the top with a palette knife .
+<bake:223:209,222> in the oven for 20-25 minutes , or until the center is just set and the top springy to the touch and <beginning:224:> to crack .
+<set:225:223> aside to <cool:226:225> in the tin .
+for the chocolate sauce , <heat:227:> the cream gently in a pan .
+<place:228:> the milk chocolate in a large bowl and <pour:229:227,228> the hot cream over , whisking to combine .
+for the mint cream , <whip:230:> the double cream and <icing sugar:231:> together in a large bowl until soft peaks form when the whisk is removed .
+<fold:232:230> in the shredded mint .
+when the brownie is completely <cool:233:223> , <cut:234:233> into squares and <place:235:234> in serving bowls .
+<drizzle:236:229,235> with the chocolate sauce and <top:237:232,236> with a spoonful of whipped mint cream .
+<sprinkle:238:237> over the crushed honeycomb to serve .
 ------------------
-For the chocolate and tropical fruit ice cream bombe , lightly <oil:241:> a small glass bowl and <line:242:> with cling film .
-<Line:243:> the bowl with the slices of chocolate cake .
-<Half-fill:244:> the bowl with ice cream , then <top:245:> with the fruit .
-<Cover:246:> with the rest of the chocolate cake to <seal:247:> in the fruit and ice cream .
-<Push:248:> firmly or <weigh:249:> down to <set:250:> the shape of the bombe .
-<Refreeze:251:> for five minutes to <prevent:252:> the ice cream from melting while you prepare the almond brittle and chocolate sauce .
-For the almond brittle , <place:253:> a frying pan on a medium heat , <add:254:> the sugar and <cook:255:> until it melts and <turns:256:> a pale caramel colour .
-<Stir:257:> in the flaked almonds and then <pour:258:> onto a non-stick mat or lightly greased baking tray and <leave:259:> to cool .
-When cooled and <solidified:260:> , <break:261:> into pieces .
-For the chocolate sauce , <put:262:> the syrup , cocoa powder , cream , water and orange liqueur into a small saucepan and <warm:263:> gently on a low heat .
-<Remove:264:> the ice cream bombe from the freezer , <turn:265:> out and <remove:266:> the cling film .
-<Pour:267:> the chocolate sauce over the top .
-To <serve:268:> , <decorate:269:> the ice cream bombe with shards of the almond brittle .
+for the chocolate and tropical fruit ice cream bombe , lightly <oil:239:> a small glass bowl and <line:240:239> with cling film .
+<line:241:240> the bowl with the slices of chocolate cake .
+<half-fill:242:241> the bowl with ice cream , then <top:243:242> with the fruit .
+<cover:244:243> with the rest of the chocolate cake to <seal:245:244> in the fruit and ice cream .
+<push:246:245> firmly or <weigh:247:245> down to <set:248:247> the shape of the bombe .
+<refreeze:249:248> for five minutes to <prevent:250:249> the ice cream from melting while you prepare the almond brittle and chocolate sauce .
+for the almond brittle , <place:251:> a frying pan on a medium heat , <add:252:251> the sugar and <cook:253:252> until it melts and <turns:254:253> a pale caramel colour .
+<stir:255:254> in the flaked almonds and then <pour:256:255> onto a non-stick mat or lightly greased baking tray and <leave:257:256> to cool .
+when cooled and <solidified:258:257> , <break:259:258> into pieces .
+for the chocolate sauce , <put:260:> the syrup , cocoa powder , cream , water and orange liqueur into a small saucepan and <warm:261:260> gently on a low heat .
+<remove:262:250> the ice cream bombe from the freezer , <turn:263:262> out and <remove:264:263> the cling film .
+<pour:265:261,264> the chocolate sauce over the top .
+to <serve:266:> , <decorate:267:256,265> the ice cream bombe with shards of the almond brittle .
 ------------------
-<Preheat:270:> the oven to 200C/400F/Gas 6 .
-<Mix:271:> together the cake ingredients in a food processor and <spoon:272:> even portions into a six-hole , non-stick muffin tin .
-<Place:273:> in the oven and <bake:274:> for 10 minutes .
-For the chocolate sauce , <melt:275:> the chocolate and chilli flakes in a heat-proof bowl set over boiling water .
-To <serve:276:> , <turn:277:> out the cakes onto plates and dust with icing sugar .
-<Pour:278:> the chocolate sauce over each muffin and <drizzle:279:> with cream .
+<preheat:268:> the oven to 200C/400F/Gas 6 .
+<mix:269:> together the cake ingredients in a food processor and <spoon:270:> even portions into a six-hole , non-stick muffin tin .
+<place:271:> in the oven and <bake:272:> for 10 minutes .
+for the chocolate sauce , <melt:273:> the chocolate and chilli flakes in a heat-proof bowl set over boiling water .
+to <serve:274:> , <turn:275:> out the cakes onto plates and dust with icing sugar .
+<pour:276:> the chocolate sauce over each muffin and <drizzle:277:> with cream .
 ------------------
-To <make:280:> the sponge pudding put the butter and sugar in a food processor and <blend:281:> .
-<Add:282:> the eggs , flour and vanilla essence and <blend:283:> again .
-<Butter:284:> a small pudding dish and <add:285:> the crumbled chocolate , cookies and then <top:286:> with the pudding mixture .
-<Cover:287:> with cling film and <cook:288:> on high in the microwave for four minutes .
-To <make:289:> the chocolate sauce , <put:290:> the water in a small pan , <add:291:> the cocoa powder and sugar and <reduce:292:> to thicken it .
-To <serve:293:> , <place:294:> the pudding upside and <turn:295:> out .
-<Drizzle:296:> the sauce over and <serve:297:> with ice cream .
+to <make:278:> the sponge pudding put the butter and sugar in a food processor and <blend:279:> .
+<add:280:> the eggs , flour and vanilla essence and <blend:281:> again .
+<butter:282:> a small pudding dish and <add:283:> the crumbled chocolate , cookies and then <top:284:> with the pudding mixture .
+<cover:285:> with cling film and <cook:286:> on high in the microwave for four minutes .
+to <make:287:> the chocolate sauce , <put:288:> the water in a small pan , <add:289:> the cocoa powder and sugar and <reduce:290:> to thicken it .
+to <serve:291:> , <place:292:> the pudding upside and <turn:293:> out .
+<drizzle:294:> the sauce over and <serve:295:> with ice cream .
 ------------------
-<Preheat:298:> the oven to 200C/400F/Gas 6 .
-For the cake , <place:299:> the butter and sugar into a food processor and <blend:300:> until light and fluffy .
-<Add:301:> the flour , eggs and chillies and <blend:302:> again to <make:303:> a thick , smooth batter .
-Lightly <grease:304:> a 20cm/8in cake tin and <pour:305:> the batter into the tin .
-<Sprinkle:306:> over the chocolate , then <transfer:307:> to the oven and <bake:308:> for 10-12 minutes , or until risen but still slightly <soft:309:> in the middle .
-Meanwhile , for the chocolate drizzle , <place:310:> the cream , milk and ginger into a pan and <simmer:311:> gently for 4-5 minutes .
-<Add:312:> the chocolate and <stir:313:> until melted to <make:314:> a smooth sauce .
-To <serve:315:> , carefully <turn:316:> the cake out onto a serving plate and <pour:317:> over the sauce .
+<preheat:296:> the oven to 200C/400F/Gas 6 .
+for the cake , <place:297:> the butter and sugar into a food processor and <blend:298:> until light and fluffy .
+<add:299:> the flour , eggs and chillies and <blend:300:> again to <make:301:> a thick , smooth batter .
+lightly <grease:302:> a 20cm/8in cake tin and <pour:303:> the batter into the tin .
+<sprinkle:304:> over the chocolate , then <transfer:305:> to the oven and <bake:306:> for 10-12 minutes , or until risen but still slightly <soft:307:> in the middle .
+meanwhile , for the chocolate drizzle , <place:308:> the cream , milk and ginger into a pan and <simmer:309:> gently for 4-5 minutes .
+<add:310:> the chocolate and <stir:311:> until melted to <make:312:> a smooth sauce .
+to <serve:313:> , carefully <turn:314:> the cake out onto a serving plate and <pour:315:> over the sauce .
 ------------------
-For chocolate bar ice cream , <warm:318:> the milk in a saucepan until it reaches 80C/175F on a cook 's thermometer .
-<Put:319:> the caster sugar and egg yolks into a bowl and <whisk:320:> together , then <pour:321:> the warm milk onto them , whisking all the time .
-<Return:322:> the mixture to the saucepan and <cook:323:> until it reaches 83C/180F and <thickens:324:> slightly .
-<Remove:325:> from the heat and <whisk:326:> in the double cream .
-<Set:327:> aside to <cool:328:> to 60C/140F , then <stir:329:> in the chocolate bars and <allow:330:> to melt .
-<Transfer:331:> to an ice cream maker and <churn:332:> according to the manufacturer 's instructions until frozen .
-For the poached cherries , <place:333:> the cherries , 200ml/7fl oz water and sugar in a large saucepan and <cook:334:> for 6-8 minutes .
-The cherries should be soft but retain their shape .
-<Allow:335:> to <cool:336:> before serving .
-For the chocolate fondant , <preheat:337:> the oven to 220C/200C fan/Gas 7 and grease 8 dariole moulds with softened butter , <using:338:> a pastry brush .
-<Melt:339:> the butter and chocolate together in a heatproof bowl sat over a pan of gently simmering water .
-In a separate bowl , <beat:340:> the eggs and sugar for 2 minutes , or until they reach the ribbon stage -LRB- this is when the mixture leaves a trail on the surface the whisk is removed -RRB- .
-<Fold:341:> the chocolate mixture into the egg mixture then <fold:342:> in the flour , <divide:343:> the mixture between the prepared moulds .
-<Place:344:> on a baking sheet and <cook:345:> for 8 minutes .
-To garnish , <paint:346:> a line of melted white chocolate across the centre of each serving plate and dust with icing sugar .
-<Turn:347:> out the hot fondants into the centre of each plate -LRB- on top of the white chocolate -RRB- and <add:348:> some poached cherries .
-<Place:349:> a quenelle of ice cream on the side and <garnish:350:> with the chopped hazelnuts and chocolate mint .
+for chocolate bar ice cream , <warm:316:> the milk in a saucepan until it reaches 80C/175F on a cook 's thermometer .
+<put:317:> the caster sugar and egg yolks into a bowl and <whisk:318:> together , then <pour:319:> the warm milk onto them , whisking all the time .
+<return:320:> the mixture to the saucepan and <cook:321:> until it reaches 83C/180F and <thickens:322:> slightly .
+<remove:323:> from the heat and <whisk:324:> in the double cream .
+<set:325:> aside to <cool:326:> to 60C/140F , then <stir:327:> in the chocolate bars and <allow:328:> to melt .
+<transfer:329:> to an ice cream maker and <churn:330:> according to the manufacturer 's instructions until frozen .
+for the poached cherries , <place:331:> the cherries , 200ml/7fl oz water and sugar in a large saucepan and <cook:332:> for 6-8 minutes .
+the cherries should be soft but retain their shape .
+<allow:333:> to <cool:334:> before serving .
+for the chocolate fondant , <preheat:335:> the oven to 220C/200C fan/Gas 7 and <grease:336:> 8 dariole moulds with softened butter , <using:337:> a pastry brush .
+<melt:338:> the butter and chocolate together in a heatproof bowl sat over a pan of gently simmering water .
+in a separate bowl , <beat:339:> the eggs and sugar for 2 minutes , or until they reach the ribbon stage -LRB- this is when the mixture leaves a trail on the surface the whisk is removed -RRB- .
+<fold:340:> the chocolate mixture into the egg mixture then <fold:341:> in the flour , <divide:342:> the mixture between the prepared moulds .
+<place:343:> on a baking sheet and <cook:344:> for 8 minutes .
+to garnish , <paint:345:> a line of melted white chocolate across the centre of each serving plate and dust with icing sugar .
+<turn:346:> out the hot fondants into the centre of each plate -LRB- on <top:347:> of the white chocolate -RRB- and <add:348:> some poached cherries .
+<place:349:> a quenelle of ice cream on the side and <garnish:350:> with the chopped hazelnuts and chocolate mint .
 ------------------
-For the cheesecake , <place:351:> the crushed biscuits into a large bowl with the melted butter and <mix:352:> well .
-<Press:353:> the mixture into the base of a chefs ' ring on a serving plate .
-<Place:354:> the whipped cream , mascarpone , honey and lemon juice into a large bowl and <mix:355:> well .
-<Place:356:> this mixture on top of the biscuit base , then <place:357:> the cheesecake into the fridge to set .
-For the chocolate sauce , <place:358:> the chocolate and cream into a heatproof bowl set over a pan of barely simmering water and heat , <stirring:359:> frequently , until melted and combined to <make:360:> a smooth sauce .
-<Heat:361:> the sides of the chefs ' ring with a mini-blowtorch to <loosen:362:> the cheesecake and carefully <slide:363:> the ring off .
-To <serve:364:> , <place:365:> the cherries and pistachios on top of the cheesecake and <pour:366:> over the chocolate sauce .
+for the cheesecake , <place:351:> the crushed biscuits into a large bowl with the melted butter and <mix:352:> well .
+<press:353:> the mixture into the base of a chefs ' ring on a serving plate .
+<place:354:> the whipped cream , mascarpone , honey and lemon juice into a large bowl and <mix:355:> well .
+<place:356:> this mixture on top of the biscuit base , then <place:357:> the cheesecake into the fridge to set .
+for the chocolate sauce , <place:358:> the chocolate and cream into a heatproof bowl set over a pan of barely simmering water and <heat:359:> , <stirring:360:> frequently , until melted and combined to <make:361:> a smooth sauce .
+<heat:362:> the sides of the chefs ' ring with a mini-blowtorch to <loosen:363:> the cheesecake and carefully <slide:364:> the ring off .
+to <serve:365:> , <place:366:> the cherries and pistachios on top of the cheesecake and <pour:367:> over the chocolate sauce .
 ------------------
-<Preheat:367:> the oven to 180C/350F/Gas 4 .
-<Grease:368:> the insides of two ramekin dishes .
-For the soufflé , <melt:369:> the butter in a small pan and <stir:370:> in the flour to <make:371:> a roux .
-<Place:372:> the chocolate into a bowl set over a pan of simmering water -LRB- make sure the bottom of the bowl does n't touch the water surface -RRB- and <leave:373:> to melt , about 4-5 minutes , <stirring:374:> occasionally .
-<Remove:375:> from the heat and <allow:376:> to cool slightly .
-<Whip:377:> the egg whites in a bowl until soft peaks form when the whisk is removed .
-Gently <fold:378:> the chocolate into the egg whites , <followed:379:> by the roux .
-<Spoon:380:> the soufflé mixture into the buttered ramekins and <place:381:> onto a baking sheet .
-<Bake:382:> in the oven for 6-8 minutes , or until well-risen .
-<Dust:383:> the soufflé with icing sugar and <drizzle:384:> over the melted chocolate .
-<Serve:385:> immediately .
+<preheat:368:> the oven to 180C/350F/Gas 4 .
+<grease:369:> the insides of two ramekin dishes .
+for the soufflé , <melt:370:> the butter in a small pan and <stir:371:> in the flour to <make:372:> a roux .
+<place:373:> the chocolate into a bowl set over a pan of simmering water -LRB- make sure the bottom of the bowl does n't touch the water surface -RRB- and <leave:374:> to melt , about 4-5 minutes , <stirring:375:> occasionally .
+<remove:376:> from the heat and <allow:377:> to cool slightly .
+<whip:378:> the egg whites in a bowl until soft peaks form when the whisk is removed .
+gently <fold:379:> the chocolate into the egg whites , <followed:380:> by the roux .
+<spoon:381:> the soufflé mixture into the buttered ramekins and <place:382:> onto a baking sheet .
+<bake:383:> in the oven for 6-8 minutes , or until well-risen .
+<dust:384:> the soufflé with icing sugar and <drizzle:385:> over the melted chocolate .
+<serve:386:> immediately .
 ------------------
-<Pour:386:> all of the ingredients into a large glass bowl and <mix:387:> until well combined .
-<Drape:388:> the gummi worms over the edge of the bowl .
+<pour:387:> all of the ingredients into a large glass bowl and <mix:388:> until well combined .
+<drape:389:> the gummi worms over the edge of the bowl .
 ------------------
-<Preheat:389:> the oven to 190C/375F/Gas 5 .
-<Line:390:> a baking tray with greaseproof paper .
-<Beat:391:> the butter and sugar together in a bowl until combined .
-<Beat:392:> in the egg and vanilla extract , a little at a time , until well combined .
-<Stir:393:> in the flour until the mixture comes together as a dough .
-<Roll:394:> the dough out on a lightly floured work surface to a thickness of 1cm / .5 in .
-Using Halloween-style biscuit cutters , <cut:395:> biscuits out of the dough and carefully <place:396:> onto the baking tray .
-<Bake:397:> the biscuits for 8-10 minutes , or until pale golden-brown .
-<Set:398:> aside to <harden:399:> for 5 minutes , then <cool:400:> on a wire rack .
-For the icing , <sift:401:> the icing sugar into a large mixing bowl and <stir:402:> in enough water to <create:403:> a smooth mixture .
-<Stir:404:> in the food colouring .
-Carefully <spread:405:> the icing onto the biscuits using a knife and <set:406:> aside until the icing hardens .
+<preheat:390:> the oven to 190C/375F/Gas 5 .
+<line:391:> a baking tray with greaseproof paper .
+<beat:392:> the butter and sugar together in a bowl until combined .
+<beat:393:> in the egg and vanilla extract , a little at a time , until well combined .
+<stir:394:> in the flour until the mixture comes together as a dough .
+<roll:395:> the dough out on a lightly floured work surface to a thickness of 1cm / <.5:396:> in .
+Using Halloween-style biscuit cutters , <cut:397:> biscuits out of the dough and carefully <place:398:> onto the baking tray .
+<bake:399:> the biscuits for 8-10 minutes , or until pale golden-brown .
+<set:400:> aside to <harden:401:> for 5 minutes , then <cool:402:> on a wire rack .
+for the icing , <sift:403:> the icing sugar into a large mixing bowl and <stir:404:> in enough water to <create:405:> a smooth mixture .
+<stir:406:> in the food colouring .
+carefully <spread:407:> the icing onto the biscuits using a knife and <set:408:> aside until the icing hardens .
 ------------------
-<Beat:407:> together the butter and sugar in a large bowl , preferably using an electric mixer , until the mixture is light and fluffy .
-<Beat:408:> in the eggs and vanilla extract .
--LRB- If the mixture looks a little curdled , <add:409:> a spoonful of the flour . -RRB-
-If you 're using food colouring , <add:410:> a few drops to the mixture .
-<Sift:411:> together the flour and baking powder in a separate bowl .
-<Stir:412:> the flour into the butter mixture and <work:413:> into a dough using floured hands .
-<Turn:414:> onto a floured work surface and <knead:415:> into a ball -LRB- the dough will be quite wet -RRB- .
-<Divide:416:> the dough into two portions , <wrap:417:> in cling film and <leave:418:> to chill in the fridge for at least one hour .
-<Preheat:419:> the oven to 170C/325F/Gas 3 .
-<Line:420:> two baking trays with greaseproof paper .
-<Roll:421:> the dough out to a 0.5 cm / .25 in thickness on lightly floured work surface .
--LRB- It 's best to <roll:422:> out one portion of the dough at a time , <leaving:423:> the remainder in the fridge . -RRB-
-<Cut:424:> <shapes:425:> out with the Halloween cutters .
-<Take:426:> a few limbs and <heads:427:> off the gingerbread man for added gore .
-<Place:428:> the cookies onto the baking tray , <leaving:429:> a gap between them in case they spread a little .
-<Bake:430:> for 12-15 minutes , <leave:431:> on the tray for 10 minutes and then <move:432:> to a wire rack to finish cooling .
-Once cool , <let:433:> your imagination run wild .
-<Use:434:> the red writing icing along the edges of the missing limbs and <heads:435:> as blood .
-For the skeletons and <mummies:436:> , <roll:437:> the fondant icing out to a 0.5 cm / .25 in thickness on a work surface dusted with icing sugar and <cut:438:> out shapes using the same cutters as the cookies .
-<Brush:439:> the cookies with the warmed apricot jam and <stick:440:> the icing onto the cookies .
-<Decorate:441:> with the white and black writing icing .
+<beat:409:> together the butter and sugar in a large bowl , preferably using an electric mixer , until the mixture is light and fluffy .
+<beat:410:> in the eggs and vanilla extract .
+-LRB- If the mixture looks a little curdled , <add:411:> a spoonful of the flour . -RRB-
+if you 're using food colouring , <add:412:> a few drops to the mixture .
+<sift:413:> together the flour and baking powder in a separate bowl .
+<stir:414:> the flour into the butter mixture and <work:415:> into a dough using floured hands .
+<turn:416:> onto a floured work surface and knead into a ball -LRB- the dough will be quite wet -RRB- .
+<divide:417:> the dough into two portions , <wrap:418:> in cling film and <leave:419:> to chill in the fridge for at least one hour .
+<preheat:420:> the oven to 170C/325F/Gas 3 .
+<line:421:> two baking trays with greaseproof paper .
+<roll:422:> the dough out to a 0.5 cm / .25 in thickness on lightly floured work surface .
+-LRB- It 's <best:423:> to <roll:424:> out one portion of the dough at a time , <leaving:425:> the remainder in the fridge . -RRB-
+<cut shapes:426:> out with the Halloween cutters .
+<take:427:> a few limbs and <heads:428:> off the gingerbread man for added gore .
+<place:429:> the cookies onto the baking tray , <leaving:430:> a gap between them in case they spread a little .
+<bake:431:> for 12-15 minutes , <leave:432:> on the tray for 10 minutes and then <move:433:> to a wire rack to finish cooling .
+once cool , <let:434:> your imagination run wild .
+<use:435:> the red writing icing along the edges of the missing limbs and <heads:436:> as blood .
+for the skeletons and <mummies:437:> , <roll:438:> the fondant icing out to a 0.5 cm / .25 in thickness on a work surface dusted with icing sugar and <cut:439:> out shapes using the same cutters as the cookies .
+<brush:440:> the cookies with the warmed apricot jam and <stick:441:> the icing onto the cookies .
+<decorate:442:> with the white and black writing icing .
 ------------------
-<Preheat:442:> the oven to 180C/350F/Gas 4 .
-<Grease:443:> and <line:444:> a 20x30cm/8x12in rectangular cake tin with baking parchment .
-<Beat:445:> together the butter and sugar with a hand-held mixer until the mixture is pale and fluffy .
-<Add:446:> the eggs a little at a time , <beating:447:> well between each addition , <adding:448:> the vanilla extract with the last of the egg .
-<Sift:449:> together the flour and the cocoa powder into a bowl .
-<Fold:450:> the flour mixture into the butter mixture until fully incorporated .
-<Spoon:451:> the cake batter into the prepared tin and <smooth:452:> the surface with the back of a spoon .
-<Bake:453:> for 30 minutes until firm to the touch -LRB- a wooden skewer inserted in the centre should come out clean -RRB- .
-<Leave:454:> to <cool:455:> for 10 minutes in the tin before turning out onto a wire rack to <cool:456:> completely .
-For the ginger biscuit tombstones , <place:457:> the flour , ginger and bicarbonate of soda into a mixing bowl .
-<Rub:458:> the butter in with your fingertips until the mixture resembles fine breadcrumbs .
-<Add:459:> the sugar , syrup and egg and <mix:460:> together until it forms a soft dough .
-<Wrap:461:> in cling film and <chill:462:> in the fridge for 30 minutes .
-<Pre-heat:463:> the oven to 180C/350F/gas 4 .
-Roll out the dough on a lightly floured surface and <cut:464:> out your shapes -- you will only <need:465:> a few for the cake so cut out some other Halloween shapes for extra biscuits .
-<Place:466:> the shapes on to greased baking sheets and <bake:467:> in the oven for 10-12 minutes .
-<Remove:468:> from the sheets with a palette knife and <place:469:> onto a wire rack to <cool:470:> completely before decorating with white icing .
-For the buttercream , <beat:471:> the butter in a large bowl with a hand held mixer until creamy then <add:472:> the icing sugar a spoonful at a time beating well between each addition .
-<Add:473:> the cocoa powder and milk and <beat:474:> again for a further five minutes until light and fluffy .
-<Blend:475:> the Oreo or bourbon biscuits to fine crumbs in a food processor .
-<Spread:476:> the buttercream over the cooled cake , <covering:477:> the top and sides -- do n't <worry:478:> if it 's not smooth - a few lumps and bumps will make it more mud-like .
-<Break:479:> the chocolate sticks in half unevenly , then <stick:480:> around the sides of the cake to <form:481:> the fence .
-<Sprinkle:482:> the biscuit soil over the surface before sticking in the tombstones and <decorating:483:> with spooky sweets .
+<preheat:443:> the oven to 180C/350F/Gas 4 .
+<grease:444:> and <line:445:> a 20x30cm/8x12in rectangular cake tin with baking parchment .
+<beat:446:> together the butter and sugar with a hand-held mixer until the mixture is pale and fluffy .
+<add:447:> the eggs a little at a time , <beating:448:> well between each addition , <adding:449:> the vanilla extract with the last of the egg .
+<sift:450:> together the flour and the cocoa powder into a bowl .
+<fold:451:> the flour mixture into the butter mixture until fully incorporated .
+<spoon:452:> the cake batter into the prepared tin and <smooth:453:> the surface with the back of a spoon .
+<bake:454:> for 30 minutes until firm to the touch -LRB- a wooden skewer inserted in the centre should come out clean -RRB- .
+<leave:455:> to <cool:456:> for 10 minutes in the tin before turning out onto a wire rack to <cool:457:> completely .
+for the ginger biscuit tombstones , <place:458:> the flour , ginger and bicarbonate of soda into a mixing bowl .
+<rub:459:> the butter in with your fingertips until the mixture resembles fine breadcrumbs .
+<add:460:> the sugar , syrup and egg and <mix:461:> together until it forms a soft dough .
+<wrap:462:> in cling film and <chill:463:> in the fridge for 30 minutes .
+<pre-heat:464:> the oven to 180C/350F/gas 4 .
+roll out the dough on a lightly floured surface and <cut:465:> out your shapes -- you will only <need:466:> a few for the cake so cut out some other Halloween shapes for extra biscuits .
+<place:467:> the shapes on to greased baking sheets and <bake:468:> in the oven for 10-12 minutes .
+<remove:469:> from the sheets with a palette knife and <place:470:> onto a wire rack to <cool:471:> completely before decorating with white icing .
+for the buttercream , <beat:472:> the butter in a large bowl with a hand held mixer until creamy then <add:473:> the icing sugar a spoonful at a time beating well between each addition .
+<add:474:> the cocoa powder and milk and <beat:475:> again for a further five minutes until light and fluffy .
+<blend:476:> the Oreo or bourbon biscuits to fine crumbs in a food processor .
+<spread:477:> the buttercream over the cooled cake , <covering:478:> the top and sides -- do n't <worry:479:> if it 's not smooth - a few lumps and bumps will make it more mud-like .
+<break:480:> the chocolate sticks in half unevenly , then <stick:481:> around the sides of the cake to <form:482:> the fence .
+<sprinkle:483:> the biscuit soil over the surface before sticking in the tombstones and <decorating:484:> with spooky sweets .
 ------------------
-<Preheat:484:> the oven to 180C/350F/Gas 4 .
-<Line:485:> a muffin tray with 9 paper cases .
-<Sift:486:> the flour , cocoa powder and baking powder into a bowl .
-<Add:487:> the sugar and butter and <beat:488:> the mixture together until well combined .
-<Whisk:489:> in the egg and milk until the mixture is thick and smooth .
-<Divide:490:> the mixture between the paper case and <bake:491:> in the oven oven for 20-25 minutes , or until springy to the touch and <skewer:492:> inserted into the middle of one of the cakes comes out clean .
-<Set:493:> aside to <cool:494:> on a wire rack .
-For the cream cheese icing , <beat:495:> the cream cheese and <butter:496:> together in a bowl until well combined .
-<Beat:497:> in the icing sugar and vanilla .
-<Spoon:498:> the icing onto the cupcakes , <leaving:499:> a small border around the edge .
-For the chocolate icing , <sift:500:> the icing sugar and cocoa powder into a bowl .
-<Stir:501:> in 2 tablespoons of water to <form:502:> a smooth , thick icing .
-<Transfer:503:> the mixture to a piping bag with a fine nozzle .
--LRB- Alternatively , <spoon:504:> the mixture into the corner of a sandwich bag and <snip:505:> off the corner , to form a small hole . -RRB-
-Carefully pipe 3 concentric circles onto each cupcake .
-<Run:506:> a toothpick from the centre to the edge of the cake , through each circle of icing , at 2cm/1in intervals to <create:507:> a cobweb effect .
-<Set:508:> aside for 20 minutes to <allow:509:> the icing to harden .
+<preheat:485:> the oven to 180C/350F/Gas 4 .
+<line:486:> a muffin tray with 9 paper cases .
+<sift:487:> the flour , cocoa powder and baking powder into a bowl .
+<add:488:> the sugar and butter and <beat:489:> the mixture together until well combined .
+<whisk:490:> in the egg and milk until the mixture is thick and smooth .
+<divide:491:> the mixture between the paper case and <bake:492:> in the oven oven for 20-25 minutes , or until springy to the touch and <skewer:493:> inserted into the middle of one of the cakes comes out clean .
+<set:494:> aside to <cool:495:> on a wire rack .
+for the cream cheese icing , <beat:496:> the cream cheese and <butter:497:> together in a bowl until well combined .
+<beat:498:> in the icing sugar and vanilla .
+<spoon:499:> the icing onto the cupcakes , <leaving:500:> a small border around the edge .
+for the chocolate icing , <sift:501:> the icing sugar and cocoa powder into a bowl .
+<stir:502:> in 2 tablespoons of water to <form:503:> a smooth , thick icing .
+<transfer:504:> the mixture to a piping bag with a fine nozzle .
+-LRB- Alternatively , <spoon:505:> the mixture into the corner of a sandwich bag and <snip:506:> off the corner , to form a small hole . -RRB-
+carefully <pipe:507:> 3 concentric circles onto each cupcake .
+<run:508:> a toothpick from the centre to the edge of the cake , through each circle of icing , at 2cm/1in intervals to <create:509:> a cobweb effect .
+<set:510:> aside for 20 minutes to <allow:511:> the icing to harden .
 ------------------
-<Preheat:510:> the oven to 180C/350F/Gas 4 .
-<Line:511:> twelve muffin tins with muffin cases .
-For the cakes , <beat:512:> together the butter and sugar with a hand-held mixer until very light and fluffy .
-<Add:513:> the eggs a little at a time beating well after each addition .
-<Add:514:> the vanilla extract with the last of the egg .
-<Sift:515:> together the flours , bicarbonate of soda and cocoa into a large mixing bowl .
-Gently <fold:516:> the flour mix into the butter mixture along with the buttermilk until completely combined and <smooth:517:> .
-<Place:518:> a dessertspoonful of the batter into each muffin case then <bake:519:> in the oven for 20 minutes until firm to the touch .
-<Place:520:> on a wire rack to cool .
-For the icing , <place:521:> the sugar , golden syrup and four tablespoons of water into a large saucepan .
-<Heat:522:> gently , stirring until the sugar has dissolved .
-<Bring:523:> the sugar syrup to the boil and <cook:524:> for about 5-6 minutes until the syrup reaches 115C/239F when measured with a sugar thermometer .
-<Remove:525:> the pan from the heat .
-While the syrup is boiling , in a large bowl <whisk:526:> the egg whites with a hand-held mixer until soft peaks form when the whisk is removed .
-Then , with the mixer on a low speed , <pour:527:> in the sugar syrup in a thin steady stream - be careful not to <pour:528:> the syrup onto the beaters as it may splash onto your hands .
-Once all the syrup has been added increase the speed of the mixer and <mix:529:> for about 10 minutes until the icing is completely cool , <thick:530:> and glossy .
-<Do:531:> not <skimp:532:> on the whipping or your icing will be too soft and your ghosts will sag .
-<Place:533:> the icing into a piping bag fitted with a large plain nozzle .
-<Pipe:534:> a circle of icing onto each cupcake .
-Then , <holding:535:> the bag upright over the centre of the cake , <pipe:536:> a tall mound of icing , then quickly <pull:537:> the tip away to form a small peak on the top .
-<Add:538:> chocolate sugar strands for eyes or any decoration you fancy .
-The meringue icing will <keep:539:> out of the fridge -LRB- the sugar syrup will have pasteurised the egg white -RRB- , but <make:540:> sure they do n't get too hot or the meringue will melt .
+<preheat:512:> the oven to 180C/350F/Gas 4 .
+<line:513:> twelve muffin tins with muffin cases .
+for the cakes , <beat:514:> together the butter and sugar with a hand-held mixer until very light and fluffy .
+<add:515:> the eggs a little at a time beating well after each addition .
+<add:516:> the vanilla extract with the last of the egg .
+<sift:517:> together the flours , bicarbonate of soda and cocoa into a large mixing bowl .
+gently <fold:518:> the flour mix into the butter mixture along with the buttermilk until completely combined and <smooth:519:> .
+<place:520:> a dessertspoonful of the batter into each muffin case then <bake:521:> in the oven for 20 minutes until firm to the touch .
+<place:522:> on a wire rack to cool .
+for the icing , <place:523:> the sugar , golden syrup and four tablespoons of water into a large saucepan .
+<heat:524:> gently , stirring until the sugar has dissolved .
+<bring:525:> the sugar syrup to the boil and <cook:526:> for about 5-6 minutes until the syrup reaches 115C/239F when measured with a sugar thermometer .
+<remove:527:> the pan from the heat .
+while the syrup is boiling , in a large bowl <whisk:528:> the egg whites with a hand-held mixer until soft peaks form when the whisk is removed .
+then , with the mixer on a low speed , <pour:529:> in the sugar syrup in a thin steady stream - be careful not to <pour:530:> the syrup onto the beaters as it may splash onto your hands .
+once all the syrup has been added increase the speed of the mixer and mix for about 10 minutes until the icing is completely cool , <thick:531:> and glossy .
+<do:532:> not <skimp:533:> on the whipping or your icing will be too soft and your ghosts will sag .
+<place:534:> the icing into a piping bag fitted with a large plain nozzle .
+<pipe:535:> a <circle:536:> of icing onto each cupcake .
+then , <holding:537:> the bag upright over the centre of the cake , <pipe:538:> a tall mound of icing , then quickly <pull:539:> the tip away to form a small peak on the top .
+<add:540:> chocolate sugar strands for eyes or any decoration you fancy .
+the meringue icing will <keep:541:> out of the fridge -LRB- the sugar syrup will have pasteurised the egg white -RRB- , but <make:542:> sure they do n't get too hot or the meringue will melt .
 ------------------
-For the spiced pumpkin purée , <bring:541:> a small amount of water to a simmer in a pan .
-<Suspend:542:> a steaming basket above the water -LRB- <do:543:> not <allow:544:> the base of the basket to <touch:545:> the water -RRB- .
-<Add:546:> the chopped pumpkin and <steam:547:> for 15-20 minutes , or until tender .
-<Remove:548:> from the steaming basket and <set:549:> aside to cool .
-When the pumpkin has cooled , <transfer:550:> it to the bowl of a food processor .
-<Add:551:> the orange juice , allspice and honey and <blend:552:> until smooth and well combined .
-For the cocktail , <mix:553:> together the pumpkin purée , pineapple juice , grenadine and crushed ice in a large jug until well combined .
-<Chill:554:> in the fridge for at least one hour .
-To <serve:555:> , <pour:556:> the mixture into a large bowl -LRB- preferably skull-shaped -RRB- .
-The mixture should <half-fill:557:> the bowl .
-<Top:558:> up with the lemonade .
-<Mix:559:> well .
-<Ladle:560:> into cups and garnish with Halloween jellies .
+for the spiced pumpkin purée , <bring:543:> a small amount of water to a simmer in a pan .
+<suspend:544:> a steaming basket above the water -LRB- <do:545:> not <allow:546:> the base of the basket to <touch:547:> the water -RRB- .
+<add:548:> the chopped pumpkin and <steam:549:> for 15-20 minutes , or until tender .
+<remove:550:> from the steaming basket and <set:551:> aside to cool .
+when the pumpkin has cooled , <transfer:552:> it to the bowl of a food processor .
+<add:553:> the orange juice , allspice and honey and <blend:554:> until smooth and well combined .
+for the cocktail , <mix:555:> together the pumpkin purée , pineapple juice , grenadine and crushed ice in a large jug until well combined .
+<chill:556:> in the fridge for at least one hour .
+to <serve:557:> , <pour:558:> the mixture into a large bowl -LRB- preferably skull-shaped -RRB- .
+the mixture should <half-fill:559:> the bowl .
+<top:560:> up with the lemonade .
+<mix:561:> well .
+<ladle:562:> into cups and garnish with Halloween jellies .
 ------------------
-<Place:561:> the vodka , lemon juice , vanilla syrup , blackberry liqueur and apple juice into a cocktail shaker filled with ice and <shake:562:> well .
-<Pour:563:> into a cocktail glass .
-To <garnish:564:> , <cut:565:> a small hole into the lychee .
-<Fill:566:> with strawberry jam , then <stick:567:> the blueberry into the jam to <create:568:> an ` eyeball ' .
-<Float:569:> the ` eyeball ' in the cocktail and <serve:570:> .
+<place:563:> the vodka , lemon juice , vanilla syrup , blackberry liqueur and apple juice into a cocktail shaker filled with ice and <shake:564:> well .
+<pour:565:> into a cocktail glass .
+to <garnish:566:> , <cut:567:> a small hole into the lychee .
+<fill:568:> with strawberry jam , then <stick:569:> the blueberry into the jam to <create:570:> an ` eyeball ' .
+<float:571:> the ` eyeball ' in the cocktail and <serve:572:> .
 ------------------
-<Push:571:> the wooden sticks halfway into the apples at the stalk end .
-<Dissolve:572:> the sugar and water in a thick-bottomed pan over a gentle heat .
-<Add:573:> the butter and syrup to the mixture and <bring:574:> to the boil .
-<Continue:575:> to boil , without stirring , until the toffee reaches 140C/275F -LRB- <use:576:> a sugar thermometer to <measure:577:> this -RRB- .
-<Remove:578:> the pan from the heat and gently <stir:579:> in the nuts .
-Carefully <dip:580:> each apple into the toffee , making sure each apple is well coated , and <set:581:> aside to <harden:582:> on a baking try lined with non-stick parchment .
+<push:573:> the wooden sticks halfway into the apples at the stalk end .
+<dissolve:574:> the sugar and water in a thick-bottomed pan over a gentle heat .
+<add:575:> the butter and syrup to the mixture and <bring:576:> to the boil .
+<continue:577:> to boil , without stirring , until the toffee reaches 140C/275F -LRB- <use:578:> a sugar thermometer to <measure:579:> this -RRB- .
+<remove:580:> the pan from the heat and gently <stir:581:> in the nuts .
+carefully <dip:582:> each apple into the toffee , making sure each apple is well coated , and <set:583:> aside to <harden:584:> on a baking try lined with non-stick parchment .
 ------------------
-For the spiced pumpkin purée , <bring:583:> a small amount of water to a simmer in a pan .
-<Suspend:584:> a steaming basket above the water -LRB- <do:585:> not <allow:586:> the base of the basket to <touch:587:> the water -RRB- .
-<Add:588:> the chopped pumpkin and <steam:589:> for 15-20 minutes , or until tender .
-<Remove:590:> from the steaming basket and <set:591:> aside to cool .
-When the pumpkin has cooled , <transfer:592:> it to the bowl of a food processor .
-<Add:593:> the orange juice , allspice and honey and <blend:594:> until smooth and well combined .
-For the cocktail , <pour:595:> the bourbon , sour cherry liqueur , herb liqueur and pumpkin purée into a cocktail shaker .
-<Add:596:> ice and <shake:597:> well .
-To serve , <strain:598:> the mixture into a flute glass .
-<Garnish:599:> the surface of the cocktail with a few toasted pumpkin seeds .
-<Dust:600:> with a little freshly grated nutmeg .
+for the spiced pumpkin purée , <bring:585:> a small amount of water to a simmer in a pan .
+<suspend:586:> a steaming basket above the water -LRB- <do:587:> not <allow:588:> the base of the basket to <touch:589:> the water -RRB- .
+<add:590:> the chopped pumpkin and <steam:591:> for 15-20 minutes , or until tender .
+<remove:592:> from the steaming basket and <set:593:> aside to cool .
+when the pumpkin has cooled , <transfer:594:> it to the bowl of a food processor .
+<add:595:> the orange juice , allspice and honey and <blend:596:> until smooth and well combined .
+for the cocktail , <pour:597:> the bourbon , sour cherry liqueur , herb liqueur and pumpkin purée into a cocktail shaker .
+<add:598:> ice and <shake:599:> well .
+to <serve:600:> , <strain:601:> the mixture into a flute glass .
+<garnish:602:> the surface of the cocktail with a few toasted pumpkin seeds .
+<dust:603:> with a little freshly grated nutmeg .
 ------------------
-<Heat:601:> the oven to 200C/400F/Gas 6 .
-<Using:602:> a small , sharp knife , <cut:603:> a cross into the skin of each nut .
-<Put:604:> in a roasting tin and <bake:605:> until the skins open and the insides are <tender:606:> , about 30 minutes .
-<Serve:607:> in paper bags , if you like .
-To <eat:608:> , <peel:609:> away the tough outer skin and the pithy white inner skin to <get:610:> to the sweet kernel .
+<heat:604:> the oven to 200C/400F/Gas 6 .
+<using:605:> a small , sharp <knife:606:> , <cut:607:> a cross into the skin of each nut .
+<put:608:> in a roasting tin and <bake:609:> until the skins open and the insides are <tender:610:> , about 30 minutes .
+<serve:611:> in paper bags , if you like .
+to <eat:612:> , <peel:613:> away the tough outer skin and the pithy white inner skin to <get:614:> to the sweet kernel .
 ------------------
-For the parkin , <preheat:611:> the oven to 140C/275F/Gas 1 and <butter:612:> a 20cm/8in square cake tin .
-<Sieve:613:> the flour , salt , ginger , nutmeg and mixed spice together into a large bowl .
-<Mix:614:> in the oat flakes .
-<Put:615:> the syrup , treacle , butter and sugar into a small saucepan and <melt:616:> over a gentle heat .
-<Bring:617:> up to a simmer but do not boil .
-When the butter and sugar have melted , <pour:618:> into the flour mixture and <stir:619:> to combine .
-<Mix:620:> in the beaten egg and milk to <create:621:> a soft , almost pouring consistency batter .
-<Pour:622:> into the buttered tin and <bake:623:> for 50 minutes , <or:624:> until firm in the centre .
-<Remove:625:> from the oven and <leave:626:> to <cool:627:> in the tin for 5-10 minutes before turning out and <cutting:628:> into squares .
-For the sauce , <place:629:> all the ingredients in a saucepan , <bring:630:> to the boil and <simmer:631:> until a syrup consistency is formed .
-<Serve:632:> a square of parkin on each plate , then <spoon:633:> over the syrup .
-<Finish:634:> with a scoop of ice cream .
+for the parkin , <preheat:615:> the oven to 140C/275F/Gas 1 and butter a 20cm/8in square cake tin .
+<sieve:616:> the flour , salt , ginger , nutmeg and mixed spice together into a large bowl .
+<mix:617:> in the oat flakes .
+<put:618:> the syrup , treacle , butter and sugar into a small saucepan and <melt:619:> over a gentle heat .
+<bring:620:> up to a simmer but do not boil .
+when the butter and sugar have melted , <pour:621:> into the flour mixture and <stir:622:> to combine .
+<mix:623:> in the beaten egg and milk to <create:624:> a soft , almost pouring consistency batter .
+<pour:625:> into the buttered tin and <bake:626:> for 50 minutes , <or:627:> until firm in the centre .
+<remove:628:> from the oven and <leave:629:> to <cool:630:> in the tin for 5-10 minutes before turning out and <cutting:631:> into squares .
+for the sauce , <place:632:> all the ingredients in a saucepan , <bring:633:> to the boil and <simmer:634:> until a syrup consistency is formed .
+<serve:635:> a square of parkin on each plate , then <spoon:636:> over the syrup .
+<finish:637:> with a scoop of ice cream .
 ------------------
-<Fill:635:> a highball glass with ice .
-<Pour:636:> in the gin , lemon juice and sugar syrup and <stir:637:> well .
-<Top:638:> up with cream soda .
-<Garnish:639:> with a blackberry and a sprig of mint .
-<Serve:640:> .
+<fill:638:> a highball glass with ice .
+<pour:639:> in the gin , lemon juice and sugar syrup and <stir:640:> well .
+<top:641:> up with cream soda .
+<garnish:642:> with a blackberry and a sprig of mint .
+<serve:643:> .
 ------------------
-<Brush:641:> a frying pan with a very small amount of oil and <place:642:> over a medium heat .
-<Add:643:> the pumpkin seeds , <stirring:644:> frequently .
-They will expand and brown fairly quickly , and when this is done , <place:645:> them in a bowl and <add:646:> the salt , celery salt , freshly ground black pepper and paprika .
-This is <delicious:647:> if the pumpkin seeds are reasonably fresh .
+<brush:644:> a frying pan with a very small amount of oil and <place:645:> over a medium heat .
+<add:646:> the pumpkin seeds , <stirring:647:> frequently .
+they will expand and brown fairly quickly , and when this is done , <place:648:> them in a bowl and <add:649:> the salt , celery salt , freshly ground black pepper and paprika .
+this is <delicious:650:> if the pumpkin seeds are reasonably fresh .
 ------------------
-<Heat:648:> the sugar and water in a saucepan until the sugar melts and the mixture resembles a syrup .
-<Melt:649:> the chocolate in a heatproof bowl set over a pan of simmering water .
--LRB- Do not <lot:650:> the base of the bowl touch the water . -RRB-
-<Stir:651:> in the golden syrup and enough sugar syrup to <form:652:> a smooth sauce .
--LRB- <Caution:653:> : the chocolate mixture will be very hot , <allow:654:> to <cool:655:> a little before serving . -RRB-
-<Serve:656:> with the platter of fruit .
+<heat:651:> the sugar and water in a saucepan until the sugar melts and the mixture resembles a syrup .
+<melt:652:> the chocolate in a heatproof bowl set over a pan of simmering water .
+-LRB- Do not <lot:653:> the base of the bowl touch the water . -RRB-
+<stir:654:> in the golden syrup and enough sugar syrup to <form:655:> a smooth sauce .
+-LRB- <Caution:656:> : the chocolate mixture will be very hot , <allow:657:> to <cool:658:> a little before serving . -RRB-
+<serve:659:> with the platter of fruit .
 ------------------
-<Preheat:657:> the oven to 220C/450F/Gas 7 .
-<Line:658:> a baking tray with baking parchment .
-<Rub:659:> the flour and <butter:660:> together in a bowl using your fingertips until the mixture resembles breadcrumbs .
-Gradually <stir:661:> in the milk using a fork , <pulling:662:> the dry ingredients into the milk until the mixture comes together as a dough -LRB- you may not <need:663:> all of the milk -RRB- .
-<Shape:664:> the dough into a ball .
-Roll out the dough onto a lightly floured work surface to <create:665:> a round pizza base , then <transfer:666:> the pizza base to the prepared baking tray .
-<Spread:667:> the chopped tomatoes onto the pizza base .
-<Sprinkle:668:> over the rosemary leaves and <season:669:> with freshly ground black pepper .
-<Dot:670:> the pizza with the grapes , then <sprinkle:671:> over the grated cheese .
-<Bake:672:> the pizza in the oven for 10 -- 15 minutes , or until the cheese has melted and the dough has crisped up .
-<Serve:673:> with salad .
+<preheat:660:> the oven to 220C/450F/Gas 7 .
+<line:661:> a baking tray with baking parchment .
+<rub:662:> the flour and <butter:663:> together in a bowl using your fingertips until the mixture resembles breadcrumbs .
+gradually <stir:664:> in the milk using a fork , <pulling:665:> the dry ingredients into the milk until the mixture comes together as a dough -LRB- you may not <need:666:> all of the milk -RRB- .
+<shape:667:> the dough into a ball .
+<roll:668:> out the dough onto a lightly floured work surface to <create:669:> a round pizza base , then <transfer:670:> the pizza base to the prepared baking tray .
+<spread:671:> the chopped tomatoes onto the pizza base .
+<sprinkle:672:> over the rosemary leaves and <season:673:> with freshly ground black pepper .
+<dot:674:> the pizza with the grapes , then <sprinkle:675:> over the grated cheese .
+<bake:676:> the pizza in the oven for 10 -- 15 minutes , or until the cheese has melted and the dough has crisped up .
+<serve:677:> with salad .
 ------------------
-<Preheat:674:> the oven to 170C/190C fan/350F/Gas 4 .
-<Line:675:> a baking tray with baking parchment and lightly <grease:676:> with butter , ghee or coconut oil .
-<Grate:677:> the cauliflower into rice-sized pieces using a hand grater or food processor .
-<Put:678:> all the pizza base ingredients in a bowl and <mix:679:> well with a spoon , or <add:680:> to the food processor and <blend:681:> , to form a sticky dough .
-<Using:682:> the back of a spoon , <spread:683:> the dough out onto the greased parchment on the tray , <shaping:684:> it into a circle 30cm/12in wide .
-<Bake:685:> in the oven for about five minutes , then <flip:686:> it over and <return:687:> to the oven for another two minutes .
-<Pull:688:> the mozzarella ball apart into small pieces and <arrange:689:> over the base of the pizza .
-<Slice:690:> the tomatoes into 1cm / .5 in thick slices and <arrange:691:> over the pizza .
-<Add:692:> the chilli flakes , if desired .
-<Bake:693:> the pizza for 10-15 minutes more until the mozzarella is melted and bubbling .
-<Sprinkle:694:> the basil over the top of the pizza before serving and drizzle with olive oil .
+<preheat:678:> the oven to 170C/190C fan/350F/Gas 4 .
+<line:679:> a baking tray with baking parchment and lightly <grease:680:> with butter , ghee or coconut oil .
+<grate:681:> the cauliflower into rice-sized pieces using a hand grater or food processor .
+<put:682:> all the pizza base ingredients in a bowl and <mix:683:> well with a spoon , or <add:684:> to the food processor and <blend:685:> , to form a sticky dough .
+<using:686:> the back of a spoon , <spread:687:> the dough out onto the greased parchment on the tray , <shaping:688:> it into a circle 30cm/12in wide .
+<bake:689:> in the oven for about five minutes , then <flip:690:> it over and <return:691:> to the oven for another two minutes .
+<pull:692:> the mozzarella ball apart into small pieces and <arrange:693:> over the base of the pizza .
+<slice:694:> the tomatoes into 1cm / .5 in thick slices and <arrange:695:> over the pizza .
+<add:696:> the chilli flakes , if desired .
+<bake:697:> the pizza for 10-15 minutes more until the mozzarella is melted and <bubbling:698:> .
+<sprinkle:699:> the basil over the top of the pizza before serving and drizzle with olive oil .
 ------------------
-In a large mixing bowl , <stir:695:> together the flour , semolina and salt .
-<Stir:696:> in the dried yeast -LRB- or <crumble:697:> in the fresh yeast , whichever you are using -RRB- .
-<Make:698:> a well in the centre of the flour mixture .
-<Pour:699:> most of the water into the well along with the olive oil and <bring:700:> the dough together with your hands or a wooden spoon .
-As the flour is incorporated the dough will <start:701:> to take shape .
-<Add:702:> the remaining water if the dough feels tight or hard .
-<Turn:703:> the dough out onto a clean surface and <knead:704:> for 10 minutes or until the dough is smooth and elastic .
-<Cut:705:> off a small piece of the dough and stretch part of it as thinly as you can .
-If you can <see:706:> the shadow of your fingers through the dough - the light should <shine:707:> through the dough like a window pane - without the dough tearing , it is ready to prove .
-<Knead:708:> the cut piece back into the dough and <shape:709:> the dough into an even ball .
-<Place:710:> in an oiled bowl , <cover:711:> with a damp tea towel and <allow:712:> to prove in a warm <place:713:> for about 1-1 .5 hours , or until it has doubled in size -LRB- the temperature of your kitchen can <affect:714:> the timing of this -RRB- .
-When the dough has risen , <take:715:> it out of the bowl and <knock:716:> the air out .
-<Divide:717:> the dough into two equal portions , and <shape:718:> each portion into a ball .
-<Cover:719:> the dough with a damp cloth and <allow:720:> to <prove:721:> again for about 15 minutes .
-<Place:722:> a pizza stone or an upturned baking tray into the oven and <preheat:723:> to its highest setting .
-<Dust:724:> the work surface liberally with semolina .
-<Roll:725:> out one piece of the dough to <form:726:> a circle that will fit on your pizza stone or baking tray .
-<Transfer:727:> the pizza base onto a plastic chopping board -LRB- or another upturned baking tray -RRB- <dusted:728:> with semolina .
-The tray will be used to <slide:729:> the pizza base directly onto the pizza stone .
-<Cover:730:> the surface with half of the tomato sauce and toppings of your choice .
-When ready to bake , <slide:731:> the pizza directly onto the pizza stone and <cook:732:> for 8-10 minutes , or until the base is golden-brown and the toppings are bubbling .
-<Repeat:733:> with the remaining dough , tomato sauce and toppings .
+in a large mixing bowl , <stir:700:> together the flour , semolina and salt .
+<stir:701:> in the dried yeast -LRB- or <crumble:702:> in the fresh yeast , whichever you are using -RRB- .
+<make:703:> a well in the centre of the flour mixture .
+<pour:704:> most of the water into the well along with the olive oil and <bring:705:> the dough together with your hands or a wooden spoon .
+as the flour is incorporated the dough will <start:706:> to take shape .
+<add:707:> the remaining water if the dough feels tight or hard .
+<turn:708:> the dough out onto a clean surface and <knead:709:> for 10 minutes or until the dough is smooth and elastic .
+<cut:710:> off a small piece of the dough and <stretch:711:> part of it as thinly as you can .
+if you can <see:712:> the shadow of your fingers through the dough - the light should <shine:713:> through the dough like a window pane - without the dough tearing , it is ready to prove .
+<knead:714:> the cut piece back into the dough and <shape:715:> the dough into an even ball .
+<place:716:> in an oiled bowl , <cover:717:> with a damp tea towel and <allow:718:> to <prove:719:> in a warm <place:720:> for about 1-1 .5 hours , or until it has doubled in size -LRB- the temperature of your kitchen can <affect:721:> the timing of this -RRB- .
+when the dough has risen , <take:722:> it out of the bowl and <knock:723:> the air out .
+<divide:724:> the dough into two equal portions , and <shape:725:> each portion into a ball .
+<cover:726:> the dough with a damp cloth and <allow:727:> to <prove:728:> again for about 15 minutes .
+<place:729:> a pizza stone or an upturned baking tray into the oven and <preheat:730:> to its highest setting .
+<dust:731:> the work surface liberally with semolina .
+<roll:732:> out one piece of the dough to <form:733:> a circle that will fit on your pizza stone or baking tray .
+<transfer:734:> the pizza base onto a plastic chopping board -LRB- or another upturned baking tray -RRB- <dusted:735:> with semolina .
+the tray will be used to <slide:736:> the pizza base directly onto the pizza stone .
+<cover:737:> the surface with half of the tomato sauce and toppings of your choice .
+when ready to bake , <slide:738:> the pizza directly onto the pizza stone and <cook:739:> for 8-10 minutes , or until the base is golden-brown and the toppings are bubbling .
+<repeat:740:> with the remaining dough , tomato sauce and toppings .
 ------------------
-<Preheat:734:> the oven to 240C/220 Fan/Gas 9 .
-For the pizza dough , <place:735:> the flour , yeast and salt into a large mixing bowl and <stir:736:> to combine .
-<Make:737:> a well in the centre of the dry ingredients and <pour:738:> in the warm water and oil .
-<Mix:739:> the wet ingredients into the dry ingredients using first a wooden spoon , then your hands , until the mixture comes together as a soft ball of dough .
-<Turn:740:> out the dough onto a lightly floured work surface and <knead:741:> it thoroughly for 8-10 minutes , or until the dough has become smooth and springy to the touch and is no longer sticky .
-<Use:742:> a floured finger to <make:743:> an indent in the surface of the dough ; it should spring back when the dough is ready .
-<Dust:744:> the work surface again with a little more flour , then roll out the pizza dough , <moving:745:> it around on the work surface as you roll to <keep:746:> the shape circular and <prevent:747:> the dough from sticking , until you have a large , thin disc .
-<Press:748:> your fingertips down into the dough all over the pizza base .
-This <prevents:749:> it from <rising:750:> too much during cooking .
-For the topping , <spread:751:> the passata over the pizza base , <leaving:752:> a 2cm/1in gap around the edge .
-<Season:753:> , to <taste:754:> , with salt and freshly ground black pepper .
-<Scatter:755:> over the roasted pepper slices , pepperoni slices and pieces of mozzarella .
-<Bake:756:> the pizza in the oven for 10-15 mins , or until the base is crisp and <starting:757:> to <char:758:> around the edges .
-Before serving , drizzle over a little olive oil , garnish with the basil sprigs , and <season:759:> again with a grinding of black pepper .
+<preheat:741:> the oven to 240C/220 Fan/Gas 9 .
+for the pizza dough , <place:742:> the flour , yeast and salt into a large mixing bowl and <stir:743:> to combine .
+<make:744:> a well in the centre of the dry ingredients and <pour:745:> in the warm water and oil .
+<mix:746:> the wet ingredients into the dry ingredients using first a wooden spoon , then your hands , until the mixture comes together as a soft ball of dough .
+<turn:747:> out the dough onto a lightly floured work surface and <knead:748:> it thoroughly for 8-10 minutes , or until the dough has become smooth and springy to the touch and is no longer sticky .
+<use:749:> a floured finger to <make:750:> an indent in the surface of the dough ; it should <spring:751:> back when the dough is ready .
+<dust:752:> the work surface again with a little more flour , then roll out the pizza dough , <moving:753:> it around on the work surface as you roll to <keep:754:> the shape circular and <prevent:755:> the dough from sticking , until you have a large , thin disc .
+<press:756:> your <fingertips:757:> down into the dough all over the pizza base .
+this <prevents:758:> it from <rising:759:> too much during cooking .
+for the topping , <spread:760:> the passata over the pizza base , <leaving:761:> a 2cm/1in gap around the edge .
+<season:762:> , to <taste:763:> , with salt and freshly ground black pepper .
+<scatter:764:> over the roasted pepper slices , pepperoni slices and pieces of mozzarella .
+<bake:765:> the pizza in the oven for 10-15 mins , or until the base is crisp and <starting:766:> to <char:767:> around the edges .
+before serving , drizzle over a little olive oil , garnish with the basil sprigs , and <season:768:> again with a grinding of black pepper .
 ------------------
-<Preheat:760:> the oven to 170C/325F/Gas 3 .
-<Use:761:> a 7cm/2 .75 in cookie cutter to <cut:762:> six small circles out of the wrap and <place:763:> on a baking tray .
-<Spoon:764:> a teaspoon of passata onto each circle and <spread:765:> it to the edge .
-<Sprinkle:766:> over some toppings and <top:767:> with some grated cheese .
-<Bake:768:> in the oven for 10-15 minutes or until the cheese is melted and golden-brown .
+<preheat:769:> the oven to 170C/325F/Gas 3 .
+<use:770:> a 7cm/2 .75 in cookie cutter to <cut:771:> six small circles out of the wrap and <place:772:> on a baking tray .
+<spoon:773:> a teaspoon of passata onto each circle and <spread:774:> it to the edge .
+<sprinkle:775:> over some toppings and <top:776:> with some grated cheese .
+<bake:777:> in the oven for 10-15 minutes or until the cheese is melted and golden-brown .
 ------------------
-For the pizza dough , <combine:769:> the flour , salt and yeast in a large bowl .
-Gradually <add:770:> the water , <mixing:771:> well with your hands to <obtain:772:> a dough .
-If you find the dough too <sticky:773:> , simply <add:774:> a little more flour .
-<Shape:775:> into a ball , <cover:776:> with a cloth and <leave:777:> to <rest:778:> for five minutes .
-<Knead:779:> the dough for about 10 minutes and <split:780:> it in half .
-<Sprinkle:781:> some flour on a clean kitchen cloth and <place:782:> the pieces of dough on it .
-<Cover:783:> with a slightly damp cloth and <leave:784:> to <rise:785:> for at least 30 minutes in a warm place .
-<Preheat:786:> the oven to 240C/475F/Gas 9 .
-Meanwhile , for the topping , <combine:787:> the gruyère and crème fraîche in a bowl , <adding:788:> some salt and pepper to taste .
-<Set:789:> aside .
-Once the dough has risen , <sprinkle:790:> some flour on a clean work surface and <spread:791:> one dough ball into a circle about 30cm/12in in diameter , making it as thin as possible -LRB- without <tearing:792:> it -RRB- , with the border slightly thicker .
-<Repeat:793:> with the other dough ball .
-<Sprinkle:794:> two flat baking trays with breadcrumbs or semolina and <place:795:> the pizza bases on them .
-<Spread:796:> the crème fraîche mixture over each base .
-<Top:797:> with the onions and salami .
-<Bake:798:> in the hot oven for 10 minutes .
-<Remove:799:> from the oven , <sprinkle:800:> with the marjoram and <serve:801:> .
+for the pizza dough , <combine:778:> the flour , salt and yeast in a large bowl .
+gradually <add:779:> the water , <mixing:780:> well with your hands to <obtain:781:> a dough .
+if you find the dough too <sticky:782:> , simply <add:783:> a little more flour .
+<shape:784:> into a ball , <cover:785:> with a cloth and <leave:786:> to <rest:787:> for five minutes .
+<knead:788:> the dough for about 10 minutes and <split:789:> it in half .
+<sprinkle:790:> some flour on a clean kitchen cloth and <place:791:> the pieces of dough on it .
+<cover:792:> with a slightly damp cloth and <leave:793:> to <rise:794:> for at least 30 minutes in a warm place .
+<preheat:795:> the oven to 240C/475F/Gas 9 .
+meanwhile , for the topping , <combine:796:> the gruyère and crème fraîche in a bowl , <adding:797:> some salt and pepper to taste .
+<set:798:> aside .
+once the dough has risen , <sprinkle:799:> some flour on a clean work surface and spread one dough ball into a circle about 30cm/12in in diameter , making it as thin as possible -LRB- without <tearing:800:> it -RRB- , with the border slightly thicker .
+<repeat:801:> with the other dough ball .
+<sprinkle:802:> two flat baking trays with breadcrumbs or semolina and <place:803:> the pizza bases on them .
+<spread:804:> the crème fraîche mixture over each base .
+<top:805:> with the onions and salami .
+<bake:806:> in the hot oven for 10 minutes .
+<remove:807:> from the oven , <sprinkle:808:> with the marjoram and <serve:809:> .
 ------------------
-For the pizza dough , <mix:802:> the flour , salt , olive oil , yeast and water together in a bowl .
-<Turn:803:> the dough out onto an oiled work surface and <knead:804:> for 5-10 minutes , or until the dough is smooth and elastic .
-<Cut:805:> off a small piece of the dough and stretch <part:806:> of it as thinly as you can .
-If you can <see:807:> the shadow of your fingers through the dough - the light should <shine:808:> through the dough like a window pane - without the dough tearing , it is ready to prove .
-<Shape:809:> the dough into a ball and <tip:810:> into a bowl .
-<Cover:811:> with a damp tea towel and <leave:812:> to <rise:813:> for an hour .
-<Divide:814:> the mix into three balls .
-<Roll:815:> out on a floured surface into circles .
-<Place:816:> each circle on a flat baking tray or a plastic chopping board dusted with semolina -LRB- so the pizza can be easily <transferred:817:> to the oven later -RRB- .
-<Place:818:> a pizza stone or an upturned baking tray into the oven and <heat:819:> the oven to <220C/425F/Gas:820:> 7 -LRB- in a non-fan oven -RRB- .
-For the topping , <cover:821:> the bases with the onion slices and <sprinkle:822:> on the crumbled gorgonzola .
-<Lay:823:> the ham and fig quarters on top and dust with the pecorino .
-<Drizzle:824:> over a little olive oil and a sprinkle of balsamic vinegar .
-<Season:825:> with salt and freshly ground black pepper .
-When ready to bake , <slide:826:> the pizza directly onto the hot pizza stone or baking tray and <bake:827:> in the oven for 8-10 minutes , or until the base is golden-brown and the topping is bubbling .
-<Serve:828:> with rocket leaves on top .
+for the pizza dough , <mix:810:> the flour , salt , olive oil , yeast and water together in a bowl .
+<turn:811:> the dough out onto an oiled work surface and <knead:812:> for 5-10 minutes , or until the dough is smooth and elastic .
+<cut:813:> off a small piece of the dough and <stretch:814:> part of it as thinly as you can .
+if you can <see:815:> the shadow of your fingers through the dough - the light should <shine:816:> through the dough like a window pane - without the dough tearing , it is ready to prove .
+<shape:817:> the dough into a ball and <tip:818:> into a bowl .
+<cover:819:> with a damp tea towel and <leave:820:> to <rise:821:> for an hour .
+<divide:822:> the mix into three balls .
+<roll:823:> out on a floured surface into circles .
+<place:824:> each circle on a flat baking tray or a plastic chopping board dusted with semolina -LRB- so the pizza can be easily <transferred:825:> to the oven later -RRB- .
+<place:826:> a pizza stone or an upturned baking tray into the oven and <heat:827:> the oven to 220C/425F/Gas 7 -LRB- in a non-fan oven -RRB- .
+for the topping , <cover:828:> the bases with the onion slices and <sprinkle:829:> on the crumbled gorgonzola .
+<lay:830:> the ham and fig quarters on top and dust with the pecorino .
+<drizzle:831:> over a little olive oil and a sprinkle of balsamic vinegar .
+<season:832:> with salt and freshly ground black pepper .
+when ready to bake , <slide:833:> the pizza directly onto the hot pizza stone or baking tray and <bake:834:> in the oven for 8-10 minutes , or until the base is golden-brown and the topping is bubbling .
+<serve:835:> with rocket leaves on top .
 ------------------
-<Preheat:829:> the oven to 220C/200C Fan/Gas 7 and put two baking trays in to heat .
-To <make:830:> the sauce , <put:831:> the tomatoes , mixed herbs and sugar in a saucepan .
-Peel and finely <grate:832:> the garlic , <add:833:> it to the pan and <set:834:> over a medium heat .
-<Simmer:835:> gently for 10 minutes until thickened then <remove:836:> from the heat and <season:837:> with salt and pepper .
-<Leave:838:> to cool .
-To <make:839:> the dough , <combine:840:> the flour , baking powder and salt in a bowl and <make:841:> a well in the middle .
-<Pour:842:> in the yoghurt the stir with a fork to combine .
-When the mixture <forms:843:> a rough dough , <turn:844:> out onto a lightly floured work surface and <knead:845:> to form a smooth ball .
-<Divide:846:> the dough into 4 equal pieces and <roll:847:> out into thin circles .
-Carefully <remove:848:> the hot baking trays from the oven and <lay:849:> the pizza bases on top .
-<Bake:850:> for 3-4 minutes until beginning to <rise:851:> then <remove:852:> from the oven .
-<Turn:853:> the pizza bases over and top with the sauce .
-<Scatter:854:> the mozzarella over the top .
-<Season:855:> with black pepper , <sprinkle:856:> over a pinch of herbs then <return:857:> to the oven .
-<Bake:858:> for 5 minutes until the bases are crisp and the cheese is bubbling .
+<preheat:836:> the oven to 220C/200C Fan/Gas 7 and put two baking trays in to heat .
+to <make:837:> the sauce , <put:838:> the tomatoes , mixed herbs and sugar in a saucepan .
+<peel:839:> and finely <grate:840:> the garlic , <add:841:> it to the pan and <set:842:> over a medium heat .
+<simmer:843:> gently for 10 minutes until thickened then <remove:844:> from the heat and <season:845:> with salt and pepper .
+<leave:846:> to cool .
+to <make:847:> the dough , <combine:848:> the flour , baking powder and salt in a bowl and <make:849:> a well in the middle .
+<pour:850:> in the yoghurt the stir with a fork to combine .
+when the mixture <forms:851:> a rough dough , <turn:852:> out onto a lightly floured work surface and <knead:853:> to form a smooth ball .
+<divide:854:> the dough into 4 equal pieces and <roll:855:> out into thin circles .
+carefully <remove:856:> the hot baking trays from the oven and <lay:857:> the pizza bases on top .
+<bake:858:> for 3-4 minutes until beginning to <rise:859:> then <remove:860:> from the oven .
+<turn:861:> the pizza bases over and top with the sauce .
+<scatter:862:> the mozzarella over the top .
+<season:863:> with black pepper , <sprinkle:864:> over a pinch of herbs then <return:865:> to the oven .
+<bake:866:> for 5 minutes until the bases are crisp and the cheese is bubbling .
 ------------------
-<Make:859:> the dough : <mix:860:> the flour , yeast and salt together in a large mixing bowl and <stir:861:> in the olive oil and milk .
-Gradually <add:862:> the water , <mixing:863:> well to <form:864:> a soft dough .
-<Turn:865:> the dough out on to a floured work surface and <knead:866:> for about five minutes , until smooth and elastic .
-<Transfer:867:> to a clean bowl , <cover:868:> with a damp tea towel and <leave:869:> to <rise:870:> for about 1.5 hours , until doubled in size .
-When the dough has risen , <knock:871:> it back , then knead again until smooth , roll into a ball and <set:872:> aside for 30 minutes to 1 hour until risen again .
-<Preheat:873:> the oven to its highest setting .
-<Divide:874:> the dough into six balls and <roll:875:> each out onto a lightly floured work surface until 20cm/8in in diameter .
-<Spread:876:> a little passata -LRB- or homemade tomato sauce -RRB- over each pizza base and <top:877:> with your favourite toppings .
-<Bake:878:> the pizzas in the oven until the bases are crisp and <golden-brown:879:> around the edges and any cheese on the topping has melted .
+<make:867:> the dough : <mix:868:> the flour , yeast and salt together in a large mixing bowl and <stir:869:> in the olive oil and milk .
+gradually <add:870:> the water , <mixing:871:> well to <form:872:> a soft dough .
+<turn:873:> the dough out on to a floured work surface and <knead:874:> for about five minutes , until smooth and elastic .
+<transfer:875:> to a clean bowl , <cover:876:> with a damp tea towel and <leave:877:> to <rise:878:> for about 1.5 hours , until doubled in size .
+when the dough has risen , <knock:879:> it back , then knead again until smooth , <roll:880:> into a ball and <set:881:> aside for 30 minutes to 1 hour until risen again .
+<preheat:882:> the oven to its highest setting .
+<divide:883:> the dough into six balls and <roll:884:> each out onto a lightly floured work surface until 20cm/8in in diameter .
+<spread:885:> a little passata -LRB- or homemade tomato sauce -RRB- over each pizza base and <top:886:> with your favourite toppings .
+<bake:887:> the pizzas in the oven until the bases are crisp and <golden-brown:888:> around the edges and any cheese on the topping has melted .
 ------------------
-For the pizza dough , <place:880:> the flour , salt and yeast into a large bowl , <add:881:> 300ml/10 .5 fl oz warm water and the olive oil and <mix:882:> together to form a dough .
-<Knead:883:> the dough for at least five minutes , until elastic .
-<Cover:884:> the dough with cling film , then <set:885:> aside and <allow:886:> to <prove:887:> for one hour .
-<Divide:888:> the dough into four equal pieces and <roll:889:> each piece into a ball , then <roll:890:> out onto a floured work surface until about 5mm / .25 in thick .
-<Place:891:> onto a floured baking tray and <set:892:> aside to <prove:893:> for 30 minutes .
-<Meanwhile:894:> , for the topping , <heat:895:> a frying pan until hot , and then <add:896:> the oil , shallots and garlic and <fry:897:> for 3-4 minutes .
-<Add:898:> the tomatoes , sugar and the chopped basil and <bring:899:> to the boil .
-<Reduce:900:> the heat and <simmer:901:> for 20 minutes , or until the sauce has thickened .
-<Season:902:> to <taste:903:> with salt and freshly ground black pepper and <set:904:> aside to cool .
-<Preheat:905:> the oven to 220C/425F/Gas 7 .
-<Place:906:> a heavy baking tray or a pizza stone into the oven to preheat .
-<Spoon:907:> the cooled tomato sauce thinly over the pizza .
-<Scatter:908:> the mozzarella and piquillo peppers over the top .
-Carefully <transfer:909:> the pizza into the oven , <pushing:910:> the pizzs from the floured tray onto the hot tray or pizza stone .
-<Cook:911:> for 8-10 minutes , or until the base is crisp and the topping is <cooked:912:> through .
-<Remove:913:> the pizza from the oven and <arrange:914:> the pata negra on top .
-<Scatter:915:> over the rocket and basil leaves .
-For the salad , <heat:916:> a frying pan until hot , <add:917:> one tablespoon of the olive oil , the malden salt and padron peppers and <fry:918:> for 2-3 minutes until golden-brown .
-<Remove:919:> the peppers from the pan and <set:920:> aside to <drain:921:> on kitchen paper .
-<Serve:922:> the pizza with the peppers alongside .
+for the pizza dough , <place:889:> the flour , salt and yeast into a large bowl , <add:890:> 300ml/10 .5 fl oz warm water and the olive oil and <mix:891:> together to form a dough .
+<knead:892:> the dough for at least five minutes , until elastic .
+<cover:893:> the dough with cling film , then <set:894:> aside and <allow:895:> to <prove:896:> for one hour .
+<divide:897:> the dough into four equal pieces and <roll:898:> each piece into a ball , then <roll:899:> out onto a floured work surface until about 5mm / .25 in thick .
+<place:900:> onto a floured baking tray and <set:901:> aside to <prove:902:> for 30 minutes .
+<meanwhile:903:> , for the topping , <heat:904:> a frying pan until hot , and then <add:905:> the oil , shallots and garlic and <fry:906:> for 3-4 minutes .
+<add:907:> the tomatoes , sugar and the chopped basil and <bring:908:> to the boil .
+<reduce:909:> the heat and <simmer:910:> for 20 minutes , or until the sauce has thickened .
+<season:911:> to <taste:912:> with salt and freshly ground black pepper and <set:913:> aside to cool .
+<preheat:914:> the oven to 220C/425F/Gas 7 .
+<place:915:> a heavy baking tray or a pizza stone into the oven to preheat .
+<spoon:916:> the cooled tomato sauce thinly over the pizza .
+<scatter:917:> the mozzarella and piquillo peppers over the top .
+carefully <transfer:918:> the pizza into the oven , <pushing:919:> the pizzs from the floured tray onto the hot tray or pizza stone .
+<cook:920:> for 8-10 minutes , or until the base is crisp and the topping is <cooked:921:> through .
+<remove:922:> the pizza from the oven and <arrange:923:> the pata negra on top .
+<scatter:924:> over the rocket and basil leaves .
+for the salad , <heat:925:> a frying pan until hot , <add:926:> one tablespoon of the olive oil , the malden salt and padron peppers and <fry:927:> for 2-3 minutes until golden-brown .
+<remove:928:> the peppers from the pan and <set:929:> aside to <drain:930:> on kitchen paper .
+<serve:931:> the pizza with the peppers alongside .
 ------------------
-For the dough , <dissolve:923:> the yeast in 125ml/4fl oz water along with the sugar .
-<Mix:924:> the flour and salt in a separate bowl and then slowly <add:925:> the liquid to the dry ingredients .
-<Add:926:> a drizzle of olive oil and <knead:927:> for 5-10 minutes .
-<Allow:928:> to <prove:929:> for half an hour in a warm place .
-When ready to <cook:930:> the pizzas , <preheat:931:> the oven to 220C/425F/Gas 7 .
-<Place:932:> two baking trays in the oven to heat .
-<Divide:933:> the dough into two pieces and <roll:934:> out flat .
-Each will <make:935:> one pizza big enough to <serve:936:> two people , depending on the size of their appetites .
--LRB- You can <make:937:> just one pizza now and <freeze:938:> the other pizza base for next time .
-<Defrost:939:> it before baking . -RRB-
-Spread with the cooked spinach , anchovies , taleggio , freshly ground black pepper and drizzle with garlic and chilli oil , if using .
-Finally <crack:940:> an egg in the centre .
-<Place:941:> on the hot baking trays and <bake:942:> in the oven for 5-10 minutes .
-<Finish:943:> with another optional drizzle of garlic oil and chilli oil .
-For the salad , <combine:944:> the olive oil , Dijon mustard , vinegar , salt and pepper for the dressing .
-<Place:945:> the chicory leaves on a serving plate , <scatter:946:> over the lemon zest and <toss:947:> with the dressing just before serving .
-<Serve:948:> with slices of pizza .
+for the dough , <dissolve:932:> the yeast in 125ml/4fl oz water along with the sugar .
+<mix:933:> the flour and salt in a separate bowl and then slowly <add:934:> the liquid to the dry ingredients .
+<add:935:> a drizzle of olive oil and <knead:936:> for 5-10 minutes .
+<allow:937:> to <prove:938:> for half an hour in a warm place .
+when ready to <cook:939:> the pizzas , <preheat:940:> the oven to 220C/425F/Gas 7 .
+<place:941:> two baking trays in the oven to heat .
+<divide:942:> the dough into two pieces and <roll:943:> out flat .
+each will <make:944:> one pizza big enough to <serve:945:> two people , depending on the size of their appetites .
+-LRB- You can <make:946:> just one pizza now and <freeze:947:> the other pizza base for next time .
+<defrost:948:> it before baking . -RRB-
+<spread:949:> with the cooked spinach , anchovies , taleggio , freshly ground black pepper and drizzle with garlic and chilli oil , if using .
+finally <crack:950:> an egg in the centre .
+<place:951:> on the hot baking trays and <bake:952:> in the oven for 5-10 minutes .
+<finish:953:> with another optional drizzle of garlic oil and chilli oil .
+for the salad , <combine:954:> the olive oil , Dijon mustard , vinegar , salt and pepper for the dressing .
+<place:955:> the chicory leaves on a serving plate , <scatter:956:> over the lemon zest and <toss:957:> with the dressing just before serving .
+<serve:958:> with slices of pizza .
 ------------------
-<Mix:949:> the flour , salt and yeast together in a large bowl and <make:950:> a well in the middle .
-In a jug , <mix:951:> the water and oil together , then <pour:952:> the liquid into the well of the flour mixture and mix to make a soft but not sticky dough .
-<Knead:953:> for 10 minutes by hand on a lightly floured work surface or for five minutes in an electric mixer fitted with a dough hook .
-<Bring:954:> the dough together to a smooth flat ball and <place:955:> on a large , lightly floured baking tray .
-<Cover:956:> the pizza dough loosely with oiled clingfilm , making sure it is airtight .
-<Leave:957:> in a warm but not hot <place:958:> for 30 -- 40 minutes .
-<Preheat:959:> the oven to 220C/425F/Gas 7 .
-<Remove:960:> the clingfilm from the dough and roll out to a 30cm/12in circle to <knock:961:> some air out , then <prick:962:> holes all over the dough with a fork .
-<Spread:963:> over the tomato purée , <leaving:964:> a 2.5 cm/1in border , <followed:965:> by the mozzarella , prosciutto and <half:966:> of the figs .
-<Drizzle:967:> with oil and <season:968:> with salt and freshly ground black pepper .
-<Bake:969:> in the oven for 15 -- 20 minutes , or until the bread is crisp and golden-brown and the cheese has melted .
-Scatter basil over the top and <arrange:970:> the remaining figs on the pizza .
-<Drizzle:971:> with oil .
-<Serve:972:> at the centre of the table so everyone can rip off their piece of Italian gold .
+<mix:959:> the flour , salt and yeast together in a large bowl and <make:960:> a well in the middle .
+in a jug , <mix:961:> the water and oil together , then <pour:962:> the liquid into the well of the flour mixture and mix to make a soft but not sticky dough .
+<knead:963:> for 10 minutes by hand on a lightly floured work surface or for five minutes in an electric mixer fitted with a dough hook .
+<bring:964:> the dough together to a smooth flat ball and <place:965:> on a large , lightly floured baking tray .
+<cover:966:> the pizza dough loosely with oiled clingfilm , making sure it is airtight .
+<leave:967:> in a warm but not hot <place:968:> for 30 -- 40 minutes .
+<preheat:969:> the oven to 220C/425F/Gas 7 .
+<remove:970:> the clingfilm from the dough and roll out to a 30cm/12in circle to <knock:971:> some air out , then <prick:972:> holes all over the dough with a fork .
+<spread:973:> over the tomato purée , <leaving:974:> a 2.5 cm/1in border , <followed:975:> by the mozzarella , prosciutto and <half:976:> of the figs .
+<drizzle:977:> with oil and <season:978:> with salt and freshly ground black pepper .
+<bake:979:> in the oven for 15 -- 20 minutes , or until the bread is crisp and golden-brown and the cheese has melted .
+<scatter basil:980:> over the top and <arrange:981:> the remaining figs on the pizza .
+<drizzle:982:> with oil .
+<serve:983:> at the centre of the table so everyone can rip off their piece of Italian gold .
 ------------------
-To <make:973:> the dough , <place:974:> the flours , salt , sugar and yeast into a large bowl and <stir:975:> .
-<Make:976:> a well in the centre of the flour and <pour:977:> in the water , gradually mixing in the flour to <form:978:> a soft dough .
-<Tip:979:> out and knead on an oiled work surface for about 10 minutes or until the dough is smooth and elastic .
-<Place:980:> it into a bowl , cover and <leave:981:> to <rise:982:> for 24 hours .
-<Preheat:983:> the oven to its highest temperature .
-<Place:984:> a heavy baking tray or pizza stone in the oven and <allow:985:> it to heat .
-<Remove:986:> the dough from the bowl and <knead:987:> for a couple of minutes , then <divide:988:> into four pieces .
-<Allow:989:> to <rest:990:> for five minutes , then <stretch:991:> each piece over your hands to <form:992:> a disc about 5mm / .25 in thick .
-<Place:993:> the circles of dough onto upturned floured baking trays or a pizza peel if you have one .
-<Place:994:> the tinned tomatoes into a food processor and <blend:995:> to a purée .
-<Spoon:996:> the tomato purée thinly over the pizzas , <scatter:997:> over the grated mozzarella , then drizzle over the oils .
-<Season:998:> with sea salt and freshly ground black pepper .
-<Slide:999:> each pizza off the baking tray directly onto the heated baking tray or pizza stone in the oven and <cook:1000:> for 5 -10 minutes , or until golden-brown and crisp .
-To <serve:1001:> , <scatter:1002:> the basil leaves , rocket and prosciuto -LRB- if using -RRB- over the pizza and drizzle with a little more peanut oil .
+to <make:984:> the dough , <place:985:> the flours , salt , sugar and yeast into a large bowl and <stir:986:> .
+<make:987:> a well in the centre of the flour and <pour:988:> in the water , gradually mixing in the flour to <form:989:> a soft dough .
+<tip:990:> out and knead on an oiled work surface for about 10 minutes or until the dough is smooth and elastic .
+<place:991:> it into a bowl , cover and <leave:992:> to <rise:993:> for 24 hours .
+<preheat:994:> the oven to its highest temperature .
+<place:995:> a heavy baking tray or pizza stone in the oven and <allow:996:> it to heat .
+<remove:997:> the dough from the bowl and <knead:998:> for a couple of minutes , then <divide:999:> into four pieces .
+<allow:1000:> to <rest:1001:> for five minutes , then <stretch:1002:> each piece over your hands to <form:1003:> a disc about 5mm / .25 in thick .
+<place:1004:> the circles of dough onto upturned floured baking trays or a pizza peel if you have one .
+<place:1005:> the tinned tomatoes into a food processor and <blend:1006:> to a purée .
+<spoon:1007:> the tomato purée thinly over the pizzas , <scatter:1008:> over the grated mozzarella , then drizzle over the oils .
+<season:1009:> with sea salt and freshly ground black pepper .
+<slide:1010:> each pizza off the baking tray directly onto the heated baking tray or pizza stone in the oven and <cook:1011:> for 5 -10 minutes , or until golden-brown and crisp .
+to <serve:1012:> , <scatter:1013:> the basil leaves , rocket and prosciuto -LRB- if using -RRB- over the pizza and drizzle with a little more peanut oil .
 ------------------
-<Sift:1003:> the flour into a large bowl with the salt , then <stir:1004:> in the yeast .
-<Make:1005:> a well in the centre of the flour .
-<Stir:1006:> together the warm water and olive oil , then <stir:1007:> the liquid in to the flour and <mix:1008:> to <make:1009:> a soft , moist dough -LRB- you may need to <add:1010:> a bit more water or olive oil -RRB- .
-<Place:1011:> the dough onto a clean , lightly floured surface and , with floured hands , <knead:1012:> for 5-10 minutes , until it 's smooth and elastic .
-<Place:1013:> the dough into a large , warmed , lightly oiled bowl .
-<Cover:1014:> with cling film and <leave:1015:> to rise in a warm place for about one hour , until the dough has doubled in size .
-<Preheat:1016:> the oven to 220C/430F/Gas 7 .
-When the dough has risen , <place:1017:> it onto a clean floured surface and <knead:1018:> again to ` knock it back ' .
-Gradually <incorporate:1019:> the chopped garlic .
-<Roll:1020:> the dough out into a large circle .
-<Place:1021:> it onto a lightly floured baking sheet or pizza stone and <use:1022:> your hands to <push:1023:> it out towards the edges of the stone or sheet .
-<Slice:1024:> the tomatoes and <arrange:1025:> them on top of the pizza and <sprinkle:1026:> over the sugar .
-<Season:1027:> with salt and freshly ground black pepper and <finish:1028:> with a generous drizzle of extra virgin olive oil .
-<Bake:1029:> for about 15-20 minutes , or until the pizza is crisp and the tomatoes have begun to brown .
-When the pizza is cooked , <remove:1030:> it from the oven , <place:1031:> onto a large plate or chopping board and <add:1032:> the toppings .
-<Tear:1033:> the Parma ham slices and the mozzarella balls and <scatter:1034:> over the pizza with the rocket and capers .
-<Drizzle:1035:> over some extra olive oil and <serve:1036:> .
+<sift:1014:> the flour into a large bowl with the salt , then <stir:1015:> in the yeast .
+<make:1016:> a well in the centre of the flour .
+<stir:1017:> together the warm water and olive oil , then <stir:1018:> the liquid in to the flour and <mix:1019:> to <make:1020:> a soft , moist dough -LRB- you may need to <add:1021:> a bit more water or olive oil -RRB- .
+<place:1022:> the dough onto a clean , lightly floured surface and , with floured hands , <knead:1023:> for 5-10 minutes , until it 's smooth and elastic .
+<place:1024:> the dough into a large , warmed , lightly oiled bowl .
+<cover:1025:> with cling film and <leave:1026:> to <rise:1027:> in a warm place for about one hour , until the dough has doubled in size .
+<preheat:1028:> the oven to 220C/430F/Gas 7 .
+when the dough has risen , <place:1029:> it onto a clean floured surface and <knead:1030:> again to ` knock it back ' .
+gradually <incorporate:1031:> the chopped garlic .
+<roll:1032:> the dough out into a large circle .
+<place:1033:> it onto a lightly floured baking sheet or pizza stone and <use:1034:> your hands to <push:1035:> it out towards the edges of the stone or sheet .
+<slice:1036:> the tomatoes and <arrange:1037:> them on top of the pizza and <sprinkle:1038:> over the sugar .
+<season:1039:> with salt and freshly ground black pepper and <finish:1040:> with a generous drizzle of extra virgin olive oil .
+<bake:1041:> for about 15-20 minutes , or until the pizza is crisp and the tomatoes have begun to brown .
+when the pizza is cooked , <remove:1042:> it from the oven , <place:1043:> onto a large plate or chopping board and <add:1044:> the toppings .
+<tear:1045:> the Parma ham slices and the mozzarella balls and <scatter:1046:> over the pizza with the rocket and capers .
+<drizzle:1047:> over some extra olive oil and <serve:1048:> .
 ------------------
-For the pizza dough , <place:1037:> the flours , salt , sugar and yeast into a large bowl and <stir:1038:> .
-<Make:1039:> a well in the centre of the flour and gradually pour in 650ml/22fl oz water , gradually mixing in the flour to <form:1040:> a soft dough .
-<Tip:1041:> out and <knead:1042:> the dough on a work surface until smooth and elastic .
-<Divide:1043:> into four and roll into balls , then <place:1044:> in a tray , cover and <leave:1045:> to <rise:1046:> for 24 hours .
-When you 're ready to <cook:1047:> the pizzas , <preheat:1048:> the oven to 240C/475F/Gas 9 -LRB- or as <high:1049:> as it will go -RRB- .
-<Place:1050:> a heavy baking tray or pizza stone in the oven to heat .
-<Roll:1051:> out the dough pieces until about 5mm thick then <place:1052:> onto an upturned , floured tray .
-<Place:1053:> the tinned tomatoes into a food processor and <blend:1054:> to a purée .
-<Spoon:1055:> the tomato purée thinly over two of the pizzas , just to the edges .
-<Scatter:1056:> over half the mozzarella and pecorino .
-<Scatter:1057:> over the chilli , then drizzle over half the peanut oil .
-<Finish:1058:> with a few basil leaves and <season:1059:> with salt and black pepper .
-<Transfer:1060:> to the oven , <pushing:1061:> the pizza onto the heated pizza tray or <stone:1062:> and <cook:1063:> for 5-8 minutes , <or:1064:> until cooked through and bubbling .
-For the calzone , cover half of each of the other two pizza bases with the tomato sauce , then <top:1065:> with the pieces of lobster and the rest of the mozzarella and pecorino .
-<Drizzle:1066:> over the mango chilli sauce and the rest of the peanut oil along with a scattering of basil and <season:1067:> with salt and black pepper .
-<Fold:1068:> the other half of the pizza over the top then <crimp:1069:> the edges and <place:1070:> on the heated pizza stone or tray .
-<Cook:1071:> for 5-10 minutes until golden-brown and crisp .
-<Serve:1072:> immediately .
+for the pizza dough , <place:1049:> the flours , salt , sugar and yeast into a large bowl and <stir:1050:> .
+<make:1051:> a well in the centre of the flour and gradually pour in 650ml/22fl oz water , gradually mixing in the flour to <form:1052:> a soft dough .
+<tip:1053:> out and <knead:1054:> the dough on a work surface until smooth and elastic .
+<divide:1055:> into four and roll into balls , then <place:1056:> in a tray , <cover:1057:> and <leave:1058:> to <rise:1059:> for 24 hours .
+when you 're ready to <cook:1060:> the pizzas , <preheat:1061:> the oven to 240C/475F/Gas 9 -LRB- or as <high:1062:> as it will go -RRB- .
+<place:1063:> a heavy baking tray or pizza stone in the oven to heat .
+<roll:1064:> out the dough pieces until about 5mm thick then <place:1065:> onto an upturned , floured tray .
+<place:1066:> the tinned tomatoes into a food processor and <blend:1067:> to a purée .
+<spoon:1068:> the tomato purée thinly over two of the pizzas , just to the edges .
+<scatter:1069:> over half the mozzarella and pecorino .
+<scatter:1070:> over the chilli , then drizzle over half the peanut oil .
+<finish:1071:> with a few basil leaves and <season:1072:> with salt and black pepper .
+<transfer:1073:> to the oven , <pushing:1074:> the pizza onto the heated pizza tray or <stone:1075:> and <cook:1076:> for 5-8 minutes , <or:1077:> until cooked through and bubbling .
+for the calzone , cover half of each of the other two pizza bases with the tomato sauce , then <top:1078:> with the pieces of lobster and the rest of the mozzarella and pecorino .
+<drizzle:1079:> over the mango chilli sauce and the rest of the peanut oil along with a scattering of basil and <season:1080:> with salt and black pepper .
+<fold:1081:> the other half of the pizza over the top then <crimp:1082:> the edges and <place:1083:> on the heated pizza stone or tray .
+<cook:1084:> for 5-10 minutes until golden-brown and crisp .
+<serve:1085:> immediately .
 ------------------
-<Preheat:1073:> the oven to 180C/350F/Gas 4 .
-<Grease:1074:> a loaf tin with vegetable oil .
-<Place:1075:> the dried fruit into a large mixing bowl and <pour:1076:> over the warm tea .
-<Stir:1077:> in the honey .
-<Beat:1078:> the egg and <whisk:1079:> it into the tea mixture using a fork .
--LRB- <Make:1080:> sure that the tea is not too <hot:1081:> so that the egg does n't curdle . -RRB-
-In a separate bowl , <mix:1082:> together the flour , baking powder and mixed spice .
-<Add:1083:> the dry ingredients to the wet ingredients and <beat:1084:> until the mixture is thick , sticky and well combined .
-<Pour:1085:> the cake mixture into the prepared loaf tin and <place:1086:> the tin onto a baking tray .
-<Bake:1087:> the tea loaf in the oven for 20-25 minutes , or until a skewer inserted into the centre comes out clean .
-<Set:1088:> the tea loaf aside to <cool:1089:> in the tin , then <cut:1090:> into thick slices .
+<preheat:1086:> the oven to 180C/350F/Gas 4 .
+<grease:1087:> a loaf tin with vegetable oil .
+<place:1088:> the dried fruit into a large mixing bowl and <pour:1089:> over the warm tea .
+<stir:1090:> in the honey .
+<beat:1091:> the egg and <whisk:1092:> it into the tea mixture using a fork .
+-LRB- <Make:1093:> sure that the tea is not too <hot:1094:> so that the egg does n't curdle . -RRB-
+in a separate bowl , <mix:1095:> together the flour , baking powder and mixed spice .
+<add:1096:> the dry ingredients to the wet ingredients and <beat:1097:> until the mixture is thick , sticky and well combined .
+<pour:1098:> the cake mixture into the prepared loaf tin and <place:1099:> the tin onto a baking tray .
+<bake:1100:> the tea loaf in the oven for 20-25 minutes , or until a skewer inserted into the centre comes out clean .
+<set:1101:> the tea loaf aside to <cool:1102:> in the tin , then cut into thick slices .
 ------------------
-<Pour:1091:> the Scotch into a mixing jug with a handful of ice .
-<Dip:1092:> the teabag in for about 20 seconds to <infuse:1093:> , <remove:1094:> and <add:1095:> the remaining ingredients .
-<Stir:1096:> until well combined , then <strain:1097:> the cocktail into a tumbler filled with ice .
-<Garnish:1098:> with the lemon twist .
+<pour:1103:> the Scotch into a mixing jug with a handful of ice .
+<dip:1104:> the teabag in for about 20 seconds to <infuse:1105:> , <remove:1106:> and <add:1107:> the remaining ingredients .
+<stir:1108:> until well combined , then <strain:1109:> the cocktail into a tumbler filled with ice .
+<garnish:1110:> with the lemon twist .
 ------------------
-<Place:1099:> the sugar and lime juice into a highball glass and <stir:1100:> until dissolved .
-<Wipe:1101:> the mint leaves around the rim of the glass , then <tear:1102:> them in two and <drop:1103:> them into the glass .
-<Crush:1104:> the mint leaves lightly with the back of a teaspoon .
-<Fill:1105:> the glass with crushed ice .
-<Add:1106:> the gin and chilled green tea and <stir:1107:> well .
-To <serve:1108:> , <garnish:1109:> the glass with a sprig of mint .
+<place:1111:> the sugar and lime juice into a highball glass and <stir:1112:> until dissolved .
+<wipe:1113:> the mint leaves around the rim of the glass , then <tear:1114:> them in two and <drop:1115:> them into the glass .
+<crush:1116:> the mint leaves lightly with the back of a teaspoon .
+<fill:1117:> the glass with crushed ice .
+<add:1118:> the gin and chilled green tea and <stir:1119:> well .
+to <serve:1120:> , <garnish:1121:> the glass with a sprig of mint .
 ------------------
-<Place:1110:> the tea bags in a bowl and <add:1111:> 200ml/7fl oz hot water , the brandy , rosewater , honey and dried fruit .
-Cover and soak overnight , or until the fruit is plump .
--LRB- If you are short of time , you can <cheat:1112:> a little by warming the ingredients gently to speed up the process -RRB- .
-<Preheat:1113:> the oven to 180C/350F/Gas 4 and <line:1114:> a 450g/1lb loaf tin with baking paper .
-When the fruit is plump , <strain:1115:> it and <discard:1116:> the liquid and tea bags .
-<Sift:1117:> the flour , baking powder , cinnamon and nutmeg into a large bowl .
-<Add:1118:> the marmalade and brown sugar .
-<Stir:1119:> in the egg and melted butter and <combine:1120:> to <form:1121:> a soft dough .
-<Add:1122:> the fruit and thoroughly <mix:1123:> together .
-<Transfer:1124:> the mixture to the prepared loaf tin and <bake:1125:> for 50-60 minutes , or until a wooden skewer comes out clean .
-<Remove:1126:> from the oven and <leave:1127:> in the tin for 10 minutes .
-<Turn:1128:> out and <cool:1129:> on wire rack .
-To <decorate:1130:> the cake , <brush:1131:> the cake with marmalade .
-<Cut:1132:> the marzipan fruits in half and <place:1133:> on top of the cake .
-<Use:1134:> the gold leaf to gilt the marzipan fruits .
+<place:1122:> the tea bags in a bowl and <add:1123:> 200ml/7fl oz hot water , the brandy , rosewater , honey and dried fruit .
+cover and <soak:1124:> overnight , or until the fruit is plump .
+-LRB- If you are short of time , you can <cheat:1125:> a little by warming the ingredients gently to speed up the process -RRB- .
+<preheat:1126:> the oven to 180C/350F/Gas 4 and <line:1127:> a 450g/1lb loaf tin with baking paper .
+when the fruit is plump , <strain:1128:> it and <discard:1129:> the liquid and tea bags .
+<sift:1130:> the flour , baking powder , cinnamon and nutmeg into a large bowl .
+<add:1131:> the marmalade and brown sugar .
+<stir:1132:> in the egg and melted butter and <combine:1133:> to <form:1134:> a soft dough .
+<add:1135:> the fruit and thoroughly <mix:1136:> together .
+<transfer:1137:> the mixture to the prepared loaf tin and <bake:1138:> for 50-60 minutes , or until a wooden skewer comes out clean .
+<remove:1139:> from the oven and <leave:1140:> in the tin for 10 minutes .
+<turn:1141:> out and <cool:1142:> on wire rack .
+to <decorate:1143:> the cake , <brush:1144:> the cake with marmalade .
+<cut:1145:> the marzipan fruits in half and <place:1146:> on top of the cake .
+<use:1147:> the gold leaf to gilt the marzipan fruits .
 ------------------
-For the prawns , in a bowl , mix together the egg <white:1135:> , cornflour , sherry and salt and freshly ground white pepper .
-<Add:1136:> the prawns , <stir:1137:> to coat and <set:1138:> aside for 30 minutes to marinade .
-<Suspend:1139:> a steaming basket over a pan of simmering water .
-<Add:1140:> the marinated prawns , <cover:1141:> and <steam:1142:> for 6-7 minutes , or until pink .
-For the oolong tea sauce , <place:1143:> all of the oolong tea sauce ingredients into a pan and <bring:1144:> to the boil , <stirring:1145:> well .
-<Season:1146:> , to <taste:1147:> , with salt and freshly ground black pepper .
-<Boil:1148:> for one minute , then <remove:1149:> from the heat .
-To <serve:1150:> , <mix:1151:> together the cooked rice and peas and <divide:1152:> the mixture equally among four serving bowls .
-<Place:1153:> a few prawns on top of each portion .
-<Spoon:1154:> over the oolong tea sauce and garnish with the chopped mint leaves .
+for the prawns , in a bowl , mix together the egg white , cornflour , sherry and salt and freshly ground white pepper .
+<add:1148:> the prawns , <stir:1149:> to coat and <set:1150:> aside for 30 minutes to marinade .
+<suspend:1151:> a steaming basket over a pan of simmering water .
+<add:1152:> the marinated prawns , <cover:1153:> and <steam:1154:> for 6-7 minutes , or until pink .
+for the oolong tea sauce , <place:1155:> all of the oolong tea sauce ingredients into a pan and <bring:1156:> to the boil , <stirring:1157:> well .
+<season:1158:> , to <taste:1159:> , with salt and freshly ground black pepper .
+<boil:1160:> for one minute , then <remove:1161:> from the heat .
+to <serve:1162:> , <mix:1163:> together the cooked rice and peas and <divide:1164:> the mixture equally among four serving bowls .
+<place:1165:> a few prawns on top of each portion .
+<spoon:1166:> over the oolong tea sauce and garnish with the chopped mint leaves .
 ------------------
-<Heat:1155:> the water and milk in a pan with the spices and ginger until it comes to the boil .
-<Turn:1156:> the heat down and <cook:1157:> over a low to medium heat for 15 minutes .
-Be careful as the milk can easily rise and <boil:1158:> over .
-Once the volume is reduced to a large cupful , <add:1159:> the teabag and <let:1160:> it <brew:1161:> for one minute , or longer if you like strong tea .
-To <serve:1162:> , <strain:1163:> into a cup and <add:1164:> sugar or salt if using , to taste .
+<heat:1167:> the water and milk in a pan with the spices and ginger until it comes to the boil .
+<turn:1168:> the heat down and <cook:1169:> over a low to medium heat for 15 minutes .
+be <careful:1170:> as the milk can easily rise and <boil:1171:> over .
+once the volume is <reduced:1172:> to a large cupful , <add:1173:> the teabag and <let:1174:> it <brew:1175:> for one minute , or <longer:1176:> if you like strong tea .
+to <serve:1177:> , <strain:1178:> into a cup and <add:1179:> sugar or salt if using , to taste .
 ------------------
-<Put:1165:> the flour , salt , sugar , butter , yeast , milk and 120ml/4fl oz of water into a bowl and <mix:1166:> together with your hands .
-When all the flour has been incorporated , <tip:1167:> the dough onto a lightly floured work surface and knead until smooth and pliable .
-<Return:1168:> the dough to the bowl , <cover:1169:> with cling film and <set:1170:> aside to <rest:1171:> for an hour .
-<Add:1172:> the sultanas , cherries , cinnamon and orange zest to the dough and , using an electric mixer or your hands , <work:1173:> it in well .
-<Shape:1174:> the dough into a sausage shape by flattening out the dough and <rolling:1175:> it up .
-<Put:1176:> the dough on a greased baking tray .
-<Slide:1177:> the baking tray inside a plastic bag , to <protect:1178:> the dough from drafts , taking <care:1179:> not to <allow:1180:> the plastic bag to <touch:1181:> the top of the loaf .
-<Leave:1182:> to <rise:1183:> for an hour .
-<Preheat:1184:> the oven to 220C/425F/Gas 7 .
-<Bake:1185:> the dough for 25-30 minutes , then <transfer:1186:> to a wire rack to cool .
-While the loaf is cooling , <make:1187:> the water icing .
-<Tip:1188:> the icing sugar into a bowl , <add:1189:> a little water and <mix:1190:> well to form a paste .
-Gradually <add:1191:> more water until the icing is just thick enough to <coat:1192:> the back of a spoon .
-Drizzle or <spread:1193:> the icing over the top of the tea loaf .
-<Cut:1194:> into slices and <eat:1195:> with lashings of butter .
+<put:1180:> the flour , salt , sugar , butter , yeast , milk and 120ml/4fl oz of water into a bowl and <mix:1181:> together with your hands .
+when all the flour has been incorporated , <tip:1182:> the dough onto a lightly floured work surface and <knead:1183:> until smooth and pliable .
+<return:1184:> the dough to the bowl , <cover:1185:> with cling film and <set:1186:> aside to <rest:1187:> for an hour .
+<add:1188:> the sultanas , cherries , cinnamon and orange zest to the dough and , using an electric mixer or your hands , <work:1189:> it in well .
+<shape:1190:> the dough into a sausage shape by flattening out the dough and <rolling:1191:> it up .
+<put:1192:> the dough on a greased baking tray .
+<slide:1193:> the baking tray inside a plastic bag , to <protect:1194:> the dough from drafts , taking <care:1195:> not to <allow:1196:> the plastic bag to <touch:1197:> the top of the loaf .
+<leave:1198:> to <rise:1199:> for an hour .
+<preheat:1200:> the oven to 220C/425F/Gas 7 .
+<bake:1201:> the dough for 25-30 minutes , then <transfer:1202:> to a wire rack to cool .
+while the loaf is cooling , <make:1203:> the water icing .
+<tip:1204:> the icing sugar into a bowl , <add:1205:> a little water and <mix:1206:> well to form a paste .
+gradually <add:1207:> more water until the icing is just thick enough to <coat:1208:> the back of a spoon .
+drizzle or <spread:1209:> the icing over the top of the tea loaf .
+<cut:1210:> into slices and <eat:1211:> with lashings of butter .
 ------------------
-<Preheat:1196:> the oven to 190C/375F/Gas 5 .
-In a mixing bowl , <cream:1197:> the butter with a handheld electric mixer until soft and creamy .
-<Add:1198:> the sugar in a bit at a time until well mixed .
-<Sift:1199:> the flour , ground rice and salt into another bowl .
-<Stir:1200:> the lavender and Lady Grey tea leaves into the flour mixture .
-Lightly <work:1201:> the lavender flour into the creamed butter with fingers until the dough just comes together .
-<Shape:1202:> the dough into a ball and <cover:1203:> with clingfilm .
-<Set:1204:> aside in the fridge for 15 minutes .
-When the dough is chilled , <remove:1205:> the clingfilm and and <roll:1206:> out onto a floured surface to a thickness of approximately .75 cm / .25 in .
-<Cut:1207:> out heart-shaped biscuits with a cutter .
-<Place:1208:> the biscuits onto a baking tray and <place:1209:> in the fridge for 30 minutes .
-<Bake:1210:> the biscuits in the oven for 20 minutes or until a very pale gold colour .
-<Allow:1211:> to <cool:1212:> on the tray for ten minutes before transferring to a wire rack to <cool:1213:> completely .
+<preheat:1212:> the oven to 190C/375F/Gas 5 .
+in a mixing bowl , <cream:1213:> the butter with a handheld electric mixer until soft and creamy .
+<add:1214:> the sugar in a bit at a time until well mixed .
+<sift:1215:> the flour , ground rice and salt into another bowl .
+<stir:1216:> the lavender and Lady Grey tea leaves into the flour mixture .
+lightly <work:1217:> the lavender flour into the creamed butter with fingers until the dough just comes together .
+<shape:1218:> the dough into a ball and <cover:1219:> with clingfilm .
+<set:1220:> aside in the fridge for 15 minutes .
+when the dough is chilled , <remove:1221:> the clingfilm and and <roll:1222:> out onto a floured surface to a thickness of approximately .75 cm / .25 in .
+<cut:1223:> out heart-shaped biscuits with a cutter .
+<place:1224:> the biscuits onto a baking tray and <place:1225:> in the fridge for 30 minutes .
+<bake:1226:> the biscuits in the oven for 20 minutes or until a very pale gold colour .
+<allow:1227:> to <cool:1228:> on the tray for ten minutes before transferring to a wire rack to <cool:1229:> completely .
 ------------------
-<Heat:1214:> a large frying pan or <wok:1215:> lined with foil .
-<Pour:1216:> the tea leaves in with the sugar .
-<Season:1217:> the duck fillet with salt and pepper .
-<Place:1218:> the duck on a rack and <then:1219:> into the pan .
-<Place:1220:> the lid on and smoke for 20-25 minutes .
-<Bring:1221:> a pan of water to the boil and <blanch:1222:> the baby carrots and leeks for 2-3 minutes .
-<Drain:1223:> .
-<Heat:1224:> a little oil in a non-stick pan and <sauté:1225:> the vegetables with the seasoning for a few minutes to braise .
-<Remove:1226:> the duck from the heat and <allow:1227:> to rest .
-<Slice:1228:> on the diagonal and <serve:1229:> the baby vegetables alongside .
+<heat:1230:> a large frying pan or <wok:1231:> lined with foil .
+<pour:1232:> the tea leaves in with the sugar .
+<season:1233:> the duck fillet with salt and pepper .
+<place:1234:> the duck on a rack and <then:1235:> into the pan .
+<place:1236:> the lid on and <smoke:1237:> for 20-25 minutes .
+<bring:1238:> a pan of water to the boil and <blanch:1239:> the baby carrots and leeks for 2-3 minutes .
+<drain:1240:> .
+<heat:1241:> a little oil in a non-stick pan and <sauté:1242:> the vegetables with the seasoning for a few minutes to braise .
+<remove:1243:> the duck from the heat and <allow:1244:> to rest .
+<slice:1245:> on the diagonal and <serve:1246:> the baby vegetables alongside .
 ------------------
-For the haddock , <mix:1230:> together the tea , sugar and rice in a bowl .
-<Line:1231:> a large , wide , deep <saucepan:1232:> with foil and <add:1233:> the rice mixture .
-<Place:1234:> another <sheet:1235:> of foil over the tea mixture and <place:1236:> the fish on top .
-<Put:1237:> a lid on the saucepan .
-<Place:1238:> on a high heat and <cook:1239:> for ten minutes , until cooked through .
-<NB:1240:> : Tea-smoking gnerates a lot of smoke .
-Be sure that you open the windows and <get:1241:> as much ventilation as you can .
-For the gnocchi , <place:1242:> the butter and water into a saucepan and <bring:1243:> to the boil , then <add:1244:> the flour , <beating:1245:> with a wooden spoon until smooth , then <remove:1246:> from the heat .
-<Transfer:1247:> the gnocchi mixture to a clean bowl and <add:1248:> the eggs , herbs and beans , <stiring:1249:> throughly to <combine:1250:> .
-<Spoon:1251:> the gnocchi mixture into a piping bag and <pipe:1252:> out onto a clean , floured surface into a long sausage .
-Then <cut:1253:> into 5cm/2in pieces .
+for the haddock , <mix:1247:> together the tea , sugar and rice in a bowl .
+<line:1248:> a large , wide , deep <saucepan:1249:> with foil and <add:1250:> the rice mixture .
+<place:1251:> another sheet of foil over the tea mixture and <place:1252:> the fish on top .
+<put:1253:> a lid on the saucepan .
+<place:1254:> on a high heat and <cook:1255:> for ten minutes , until cooked through .
+<nb:1256:> : Tea-smoking gnerates a lot of smoke .
+be sure that you open the windows and <get:1257:> as much ventilation as you can .
+for the gnocchi , <place:1258:> the butter and water into a saucepan and <bring:1259:> to the boil , then <add:1260:> the flour , <beating:1261:> with a wooden spoon until smooth , then <remove:1262:> from the heat .
+<transfer:1263:> the gnocchi mixture to a clean bowl and <add:1264:> the eggs , herbs and beans , <stiring:1265:> throughly to <combine:1266:> .
+<spoon:1267:> the gnocchi mixture into a piping bag and <pipe:1268:> out onto a clean , floured surface into a long sausage .
+then <cut:1269:> into 5cm/2in pieces .
 .
-<Fill:1254:> a saucepan with boiling water and <add:1255:> some salt .
-Once the water is boiling <add:1256:> the gnocchi and <cook:1257:> for five minutes , or until it is <floating:1258:> on the surface , then <remove:1259:> with a slotted spoon , and drain on kitchen paper .
-Meanwhile , for the sauce , <mix:1260:> the stock and cream together in a saucepan and simmer till the liquid has reduced by half .
-<Add:1261:> the chopped beans and diced tomato to the sauce , to taste , and <season:1262:> with salt and freshly ground black pepper .
-To <serve:1263:> , <stir:1264:> the gnocchi into the sauce and <pour:1265:> onto a serving plate .
-Carefully <remove:1266:> the haddock and <place:1267:> on top .
+<fill:1270:> a saucepan with boiling water and <add:1271:> some salt .
+once the water is boiling <add:1272:> the gnocchi and <cook:1273:> for five minutes , or until it is <floating:1274:> on the surface , then <remove:1275:> with a slotted spoon , and <drain:1276:> on kitchen paper .
+meanwhile , for the sauce , <mix:1277:> the stock and cream together in a saucepan and simmer till the liquid has reduced by half .
+<add:1278:> the chopped beans and diced tomato to the sauce , to taste , and <season:1279:> with salt and freshly ground black pepper .
+to <serve:1280:> , <stir:1281:> the gnocchi into the sauce and <pour:1282:> onto a serving plate .
+carefully <remove:1283:> the haddock and <place:1284:> on top .
 ------------------
-<Mix:1268:> the demerara sugar , rice and tea together .
-<Cover:1269:> the bottom of a large frying pan with aluminium foil and <spread:1270:> the tea mixture over .
-<Cover:1271:> with more foil and <lay:1272:> the duck breasts on top .
-<Season:1273:> with salt and pepper , <cover:1274:> the pan with foil -LRB- or a tight fitting lid -RRB- and <cook:1275:> for 10 minutes .
-Meanwhile to <make:1276:> the bigarade sauce , <squeeze:1277:> the juice from the whole orange and <julienne:1278:> the zest .
-In a large pan , <melt:1279:> the sugar until a golden-brown caramel forms .
-<Add:1280:> the orange juice , <zest:1281:> , vinegar and stock .
-<Stir:1282:> to break up any lumps of caramel and then <simmer:1283:> until the volume of liquid has <reduced:1284:> by half .
-<Add:1285:> half the butter and the orange segments .
-<Season:1286:> to <taste:1287:> with salt and pepper and <warm:1288:> through the orange segments .
-<Fry:1289:> the potatoes in melted butter until hot and golden-brown .
-To <serve:1290:> , <divide:1291:> the potatoes between serving plates , <slice:1292:> the duck breasts and <lay:1293:> alongside .
-<Spoon:1294:> over the sauce .
+<mix:1285:> the demerara sugar , rice and tea together .
+<cover:1286:> the bottom of a large frying pan with aluminium foil and <spread:1287:> the tea mixture over .
+<cover:1288:> with more foil and <lay:1289:> the duck breasts on top .
+<season:1290:> with salt and pepper , <cover:1291:> the pan with foil -LRB- or a tight fitting lid -RRB- and <cook:1292:> for 10 minutes .
+meanwhile to <make:1293:> the bigarade sauce , <squeeze:1294:> the juice from the whole orange and <julienne:1295:> the zest .
+in a large pan , <melt:1296:> the sugar until a golden-brown caramel forms .
+<add:1297:> the orange juice , <zest:1298:> , vinegar and stock .
+<stir:1299:> to break up any lumps of caramel and then <simmer:1300:> until the volume of liquid has <reduced:1301:> by half .
+<add:1302:> half the butter and the orange segments .
+<season:1303:> to <taste:1304:> with salt and pepper and <warm:1305:> through the orange segments .
+<fry:1306:> the potatoes in melted butter until hot and golden-brown .
+to <serve:1307:> , <divide:1308:> the potatoes between serving plates , <slice:1309:> the duck breasts and <lay:1310:> alongside .
+<spoon:1311:> over the sauce .
 ------------------
-For the lapsang souchong biscuits , in a large mixing bowl , <cream:1295:> the butter and sugar with the tea using a wooden spoon .
-<Add:1296:> the egg and <beat:1297:> in until well combined .
-<Add:1298:> the flour and <mix:1299:> in to make a dough .
-<Using:1300:> your hands , <gather:1301:> the dough together into a ball , then <wrap:1302:> it in cling film and <leave:1303:> in the fridge to chill for an hour .
--LRB- While the dough is chilling you can <cut:1304:> out templates for all the square biscuits -- it 's best to <make:1305:> these using sheets of squared paper . -RRB-
-<Preheat:1306:> the oven to 175C/350F/Gas 4 .
-On a floured work surface , roll out the dough to an even <thickness:1307:> of 4-5mm / .25 in and then cut eight 9cm/3 .5 in square biscuits .
--LRB- <Save:1308:> any spare dough , <rewrap:1309:> and pop back in the fridge -- you can make extra biscuits later if you like . -RRB-
-<Transfer:1310:> to greased and lined baking trays and <bake:1311:> for about 12 minutes , <or:1312:> until visibly evenly baked and starting to tinge golden-brown at the edges .
-<Slide:1313:> the sheets of baking parchment -LRB- with biscuits on top -RRB- from the trays to wire racks .
-<Allow:1314:> the biscuits to <cool:1315:> before attempting to <remove:1316:> them from the baking parchment .
-For the Earl Grey biscuits , <follow:1317:> the same method as for the lapsang souchong biscuits , but <cream:1318:> the butter and sugar with bergamot zest or Earl Grey tea .
-<Cut:1319:> into 8 x 7.5 cm/3in square biscuits -LRB- you can <cut:1320:> more than eight if you have enough dough -RRB- .
-<Bake:1321:> for about 10 minutes and <cool:1322:> on wire racks .
-For the rose pouchong biscuits , <follow:1323:> the same method as before , but <cream:1324:> the butter and sugar with a few drops of rosewater .
-<Cut:1325:> into 6cm/2 .5 in square biscuits .
-<Bake:1326:> for about eight minutes .
-For the green tea biscuits , <follow:1327:> the same method as before , but <cream:1328:> the butter and sugar with the green tea powder .
-<Cut:1329:> out the following : 1 x 15cm/6in square , 1 x 13cm/5in square , 1 x 11cm/4 .25 in square , 2 x 7cm/2 .75 in squares , 2 x 5cm/2in squares ; 2 x 3cm/1 .25 in squares , 4 x curlicues made with 4cm/1 .5 in and <2cm:1330:> / .75 in circle cutters , 5 x 2cm / .75 in circles , 4 x 1.5 cm / .625 in circles .
-<Take:1331:> the three largest squares of dough -LRB- these are the curled roof sections -RRB- .
-<Cut:1332:> similar size squares of baking parchment and <attach:1333:> each one to the underside of a corresponding round cake tin with a smidge of butter -LRB- so the 15cm/6in square goes over the base of a 15cm/6in round cake tin , and so on -RRB- .
-<Place:1334:> the dough on top so that its four corners hang over the sides .
-<Bake:1335:> for 10-15 minutes depending on size .
-<Leave:1336:> the biscuits to <cool:1337:> on the tins before attempting to remove .
-<Bake:1338:> the rest of the shapes of dough on flat <baking:1339:> trays for 4-9 minutes , depending on size .
-<Slide:1340:> the sheets of baking parchment -LRB- with biscuits on top -RRB- from the trays to the wire cooling racks .
-<Allow:1341:> the biscuits to <cool:1342:> before attempting to <remove:1343:> them from the baking parchment .
-For the royal icing , <put:1344:> the egg whites in a large mixing bowl and <whisk:1345:> them for about 30 seconds using an electric hand whisk .
-Gradually <add:1346:> the icing sugar , a bit at a time , beating continuously .
-<Add:1347:> the lemon juice and <scrape:1348:> down the sides of the bowl with a spatula .
-<Keep:1349:> <beating:1350:> for about five minutes , or until the icing holds its shape .
-<Mix:1351:> in the blue and green food colours to <make:1352:> a light turquoise coloured icing .
-<Cover:1353:> with cling film until needed .
-To assemble , <put:1354:> the icing into a piping bag fitted with a small plain nozzle .
-<Working:1355:> on the board you 're using to <serve:1356:> the cake or a plate , <stack:1357:> the eight lapsang souchong biscuits , <sandwiching:1358:> each layer with royal icing .
-<Stack:1359:> each biscuit at a 45-degree angle to the last , so the first biscuit has a flat side towards you , the second <has:1360:> a point towards you , and so on .
-<Take:1361:> the largest green tea roof and <stick:1362:> this on top with more icing .
-<Stack:1363:> the eight Earl Grey biscuits as before , <sandwiching:1364:> each layer with royal icing and <checking:1365:> the levels throughout .
-<Stick:1366:> the medium-sized green tea roof on top .
-<Stack:1367:> the eight rose pouchong biscuits as before .
-<Stick:1368:> the small green tea roof on top .
-<Take:1369:> the remaining square green tea biscuits and <stack:1370:> them in descending order to <form:1371:> a pyramid roof .
-<Put:1372:> a blob of icing on the back of the four curlicues and <place:1373:> one on each of the four sides of the roof .
-<Using:1374:> the icing , separately <stack:1375:> four of the 2cm / .75 in circles and then the 1.5 cm / .625 in circles to <form:1376:> a finial for the top of the roof , <add:1377:> another 2cm / .75 in circle on its edge on top of the finial and then <put:1378:> aside to set .
-<Decorate:1379:> the architectural features with the icing .
-<Hold:1380:> your breath and <attach:1381:> the finial .
+for the lapsang souchong biscuits , in a large mixing bowl , <cream:1312:> the butter and sugar with the tea using a wooden spoon .
+<add:1313:> the egg and <beat:1314:> in until well combined .
+<add:1315:> the flour and <mix:1316:> in to make a dough .
+<using:1317:> your hands , <gather:1318:> the dough together into a ball , then wrap it in cling film and <leave:1319:> in the fridge to chill for an hour .
+-LRB- While the dough is chilling you can <cut:1320:> out templates for all the square biscuits -- it 's best to <make:1321:> these using sheets of squared paper . -RRB-
+<preheat:1322:> the oven to 175C/350F/Gas 4 .
+on a floured work surface , roll out the dough to an even <thickness:1323:> of 4-5mm / .25 in and then cut eight 9cm/3 .5 in square biscuits .
+-LRB- <Save:1324:> any spare dough , <rewrap:1325:> and <pop:1326:> back in the fridge -- you can make extra biscuits later if you like . -RRB-
+<transfer:1327:> to greased and lined baking trays and <bake:1328:> for about 12 minutes , <or:1329:> until visibly evenly baked and starting to tinge golden-brown at the edges .
+<slide:1330:> the sheets of baking parchment -LRB- with biscuits on top -RRB- from the trays to wire racks .
+<allow:1331:> the biscuits to <cool:1332:> before attempting to <remove:1333:> them from the baking parchment .
+for the Earl Grey biscuits , <follow:1334:> the same method as for the lapsang souchong biscuits , but <cream:1335:> the butter and sugar with bergamot zest or Earl Grey tea .
+<cut:1336:> into 8 x 7.5 cm/3in square biscuits -LRB- you can <cut:1337:> more than eight if you have enough dough -RRB- .
+<bake:1338:> for about 10 minutes and <cool:1339:> on wire racks .
+for the rose pouchong biscuits , <follow:1340:> the same method as before , but <cream:1341:> the butter and sugar with a few drops of rosewater .
+<cut:1342:> into 6cm/2 .5 in square biscuits .
+<bake:1343:> for about eight minutes .
+for the green tea biscuits , <follow:1344:> the same method as before , but <cream:1345:> the butter and sugar with the green tea powder .
+<cut:1346:> out the following : 1 x 15cm/6in square , 1 x 13cm/5in square , <1:1347:> x 11cm/4 .25 in square , 2 x 7cm/2 .75 in squares , 2 x 5cm/2in squares ; 2 x 3cm/1 .25 in squares , 4 x curlicues made with 4cm/1 .5 in and <2cm:1348:> / .75 in circle cutters , 5 x 2cm / .75 in circles , 4 x 1.5 cm / .625 in circles .
+<take:1349:> the three largest squares of dough -LRB- these are the curled roof sections -RRB- .
+<cut:1350:> similar size squares of baking parchment and <attach:1351:> each one to the underside of a corresponding round cake tin with a smidge of butter -LRB- so the 15cm/6in square goes over the base of a 15cm/6in round cake tin , and so on -RRB- .
+<place:1352:> the dough on top so that its four corners hang over the sides .
+<bake:1353:> for 10-15 minutes depending on size .
+<leave:1354:> the biscuits to <cool:1355:> on the tins before attempting to remove .
+<bake:1356:> the rest of the shapes of dough on flat <baking:1357:> trays for 4-9 minutes , depending on size .
+<slide:1358:> the sheets of baking parchment -LRB- with biscuits on top -RRB- from the trays to the wire cooling racks .
+<allow:1359:> the biscuits to <cool:1360:> before attempting to <remove:1361:> them from the baking parchment .
+for the royal icing , <put:1362:> the egg whites in a large mixing bowl and <whisk:1363:> them for about 30 seconds using an electric hand whisk .
+gradually <add:1364:> the icing sugar , a bit at a time , beating continuously .
+<add:1365:> the lemon juice and <scrape:1366:> down the sides of the bowl with a spatula .
+<keep:1367:> <beating:1368:> for about five minutes , or until the icing holds its shape .
+<mix:1369:> in the blue and green food colours to <make:1370:> a light turquoise coloured icing .
+<cover:1371:> with cling film until needed .
+to <assemble:1372:> , <put:1373:> the icing into a piping bag fitted with a small plain nozzle .
+<working:1374:> on the board you 're using to <serve:1375:> the cake or a plate , <stack:1376:> the eight lapsang souchong biscuits , <sandwiching:1377:> each layer with royal icing .
+<stack:1378:> each biscuit at a 45-degree angle to the last , so the first biscuit has a flat side towards you , the second has a point towards you , and so on .
+<take:1379:> the largest green tea roof and <stick:1380:> this on top with more icing .
+<stack:1381:> the eight Earl Grey biscuits as before , <sandwiching:1382:> each layer with royal icing and <checking:1383:> the levels throughout .
+<stick:1384:> the medium-sized green tea roof on top .
+<stack:1385:> the eight rose pouchong biscuits as before .
+<stick:1386:> the small green tea roof on top .
+<take:1387:> the remaining square green tea biscuits and <stack:1388:> them in descending order to <form:1389:> a pyramid roof .
+<put:1390:> a blob of icing on the back of the four curlicues and <place:1391:> one on each of the four sides of the roof .
+<using:1392:> the icing , separately stack four of the 2cm / .75 in circles and then the 1.5 cm / .625 in circles to <form:1393:> a finial for the top of the roof , <add:1394:> another 2cm / .75 in circle on its edge on top of the finial and then <put:1395:> aside to set .
+<decorate:1396:> the architectural features with the icing .
+<hold:1397:> your breath and <attach:1398:> the finial .
 ------------------
-For the jelly , <put:1382:> the apples and sugar in a pan and <pour:1383:> in enough water to cover .
-<Bring:1384:> to a boil and <cook:1385:> until the apples are soft and <falling:1386:> apart .
-<Strain:1387:> the cooked apples through a sieve and <pour:1388:> the strained liquid into a measuring jug .
-For every 500ml/18fl oz of liquid you will <need:1389:> two leaves of gelatine .
-<Add:1390:> the gelatine to the liquid while it is still hot , <stir:1391:> to dissolve , strain again then <chill:1392:> the jelly in the fridge .
-For the smoking mixture , <mix:1393:> together the rice , demerara sugar and tea leaves in a bowl .
-<Line:1394:> a deep pan or <wok:1395:> with aluminium foil , <place:1396:> over a high heat and <add:1397:> the smoking mixture .
-<Season:1398:> the mackerel with salt and freshly ground black pepper .
-<Grease:1399:> a cooling rack with a little oil and <place:1400:> the mackerel on the rack , <skin side:1401:> down .
-When the mixture begins to smoke , <place:1402:> the rack on top of the pan or wok and <cover:1403:> with aluminium foil .
-<Turn:1404:> off the heat and <let:1405:> the mackerel cook slowly as it cools .
-When cooked , <place:1406:> the mackerel fillets onto serving plates and <serve:1407:> with the crab apple jelly .
+for the jelly , <put:1399:> the apples and sugar in a pan and <pour:1400:> in enough water to cover .
+<bring:1401:> to a boil and <cook:1402:> until the apples are soft and <falling:1403:> apart .
+<strain:1404:> the cooked apples through a sieve and <pour:1405:> the strained liquid into a measuring jug .
+for every 500ml/18fl oz of liquid you will <need:1406:> two leaves of gelatine .
+<add:1407:> the gelatine to the liquid while it is still hot , <stir:1408:> to dissolve , <strain:1409:> again then <chill:1410:> the jelly in the fridge .
+for the smoking mixture , <mix:1411:> together the rice , demerara sugar and tea leaves in a bowl .
+<line:1412:> a deep pan or <wok:1413:> with aluminium foil , <place:1414:> over a high heat and <add:1415:> the smoking mixture .
+<season:1416:> the mackerel with salt and freshly ground black pepper .
+<grease:1417:> a cooling rack with a little oil and <place:1418:> the mackerel on the rack , <skin side:1419:> down .
+when the mixture begins to smoke , <place:1420:> the rack on top of the pan or wok and <cover:1421:> with aluminium foil .
+<turn:1422:> off the heat and <let:1423:> the mackerel cook slowly as it cools .
+when cooked , <place:1424:> the mackerel fillets onto serving plates and <serve:1425:> with the crab apple jelly .
 ------------------
-For the tea-smoked trout , <place:1408:> a piece of foil in the bottom of a wok .
-<Place:1409:> the rice , tea and sugar onto the foil and cover with a lid .
-<Place:1410:> over a medium heat for 3-4 minutes , or until the tea starts to smoke -LRB- CAUTION : tea-smoking generates a lot of smoke .
-<Cook:1411:> in a well ventilated area . -RRB-
-<Place:1412:> the trout fillets onto an oiled piece of foil in a steamer and <set:1413:> in the wok .
-<Place:1414:> a lid on the steamer and <cook:1415:> for 4-5 minutes , or until the trout is just <cooked:1416:> through and smoked .
-Meanwhile , for the bashed chive potatoes , <place:1417:> the potatoes into a pan , <cover:1418:> with water and <bring:1419:> to the boil .
-<Simmer:1420:> for ten minutes , or until just tender .
-<Drain:1421:> and <return:1422:> to the pan with the butter .
-<Crush:1423:> lightly with the back of a fork , <season:1424:> with salt and freshly ground black pepper and <stir:1425:> in the chives .
-For the tomato salsa , gently <heat:1426:> half the olive oil , the shallot , garlic and tomatoes in a pan for 1-2 minutes , <or:1427:> until just warmed through .
-<Remove:1428:> from the heat and <add:1429:> the remaining olive oil , the lemon juice , chives and tarragon .
-For the rocket salad , <place:1430:> the rocket and parsley into a bowl .
-<Drizzle:1431:> over the olive oil , <season:1432:> with salt and freshly ground black pepper and <mix:1433:> well .
-To <serve:1434:> , <place:1435:> two trout fillets onto each of two serving plates with the bashed chive potatoes and rocket salad .
-<Drizzle:1436:> over the tomato salsa .
+for the tea-smoked trout , <place:1426:> a piece of foil in the bottom of a wok .
+<place:1427:> the rice , tea and sugar onto the foil and <cover:1428:> with a lid .
+<place:1429:> over a medium heat for 3-4 minutes , or until the tea starts to <smoke:1430:> -LRB- CAUTION : tea-smoking generates a lot of smoke .
+<cook:1431:> in a well ventilated area . -RRB-
+<place:1432:> the trout fillets onto an oiled piece of foil in a steamer and <set:1433:> in the wok .
+<place:1434:> a lid on the steamer and <cook:1435:> for 4-5 minutes , or until the trout is just <cooked:1436:> through and smoked .
+meanwhile , for the bashed chive potatoes , <place:1437:> the potatoes into a pan , <cover:1438:> with water and <bring:1439:> to the boil .
+<simmer:1440:> for ten minutes , or until just tender .
+<drain:1441:> and <return:1442:> to the pan with the butter .
+<crush:1443:> lightly with the back of a fork , <season:1444:> with salt and freshly ground black pepper and <stir:1445:> in the chives .
+for the tomato salsa , gently <heat:1446:> half the olive oil , the shallot , garlic and tomatoes in a pan for 1-2 minutes , <or:1447:> until just warmed through .
+<remove:1448:> from the heat and <add:1449:> the remaining olive oil , the lemon juice , chives and tarragon .
+for the rocket salad , <place:1450:> the rocket and parsley into a bowl .
+<drizzle:1451:> over the olive oil , <season:1452:> with salt and freshly ground black pepper and <mix:1453:> well .
+to <serve:1454:> , <place:1455:> two trout fillets onto each of two serving plates with the bashed chive potatoes and rocket salad .
+<drizzle:1456:> over the tomato salsa .
 ------------------
-For the tea-smoked salmon , <place:1437:> a large double piece of aluminium foil into the base of a wok .
-<Tear:1438:> <open:1439:> the tea bag and <pour:1440:> the leaves onto the foil , along with the oregano , rice , cumin , cardamom , coriander seeds and garlic .
-<Cover:1441:> with a lid , <place:1442:> over a low heat and <leave:1443:> to <smoke:1444:> for five minutes .
--LRB- <CAUTION:1445:> : tea-smoking generates a lot of smoke .
-<Cook:1446:> in a well-ventilated area . -RRB-
-<Remove:1447:> the lid and <place:1448:> a steamer into the wok .
-<Place:1449:> the salmon into the steamer , cover and <smoke:1450:> for eight minutes .
-<Heat:1451:> the olive oil in a frying pan , <add:1452:> the chopped lemon and the smoked salmon fillet , <skin-side:1453:> down , and <fry:1454:> for 1-2 minutes on each side , <or:1455:> until cooked through .
-<Add:1456:> the butter and <stir:1457:> until melted .
-For the spinach , <place:1458:> the spinach into a pan and <add:1459:> the water , nutmeg , lemon juice and zest .
-<Season:1460:> , to <taste:1461:> , with salt and freshly ground black pepper and <leave:1462:> to <wilt:1463:> for 1-2 minutes .
-<Drain:1464:> off the excess water and <set:1465:> aside .
-For the glazed carrots , <heat:1466:> the butter in a saucepan and <add:1467:> the sugar , carrots and fish stock .
-<Bring:1468:> to the boil and <cook:1469:> for eight minutes , or until the carrots are just <tender:1470:> and glazed .
-For the red pepper coulis , <heat:1471:> the olive oil in a saucepan , <add:1472:> the onion and red pepper and <fry:1473:> over a gentle heat until softened .
-<Add:1474:> the milk , garlic , salt and freshly ground black pepper and <boil:1475:> for six minutes , or until the red pepper is tender .
-<Allow:1476:> to cool slightly , then <pour:1477:> into a blender and <blend:1478:> until smooth .
-To <serve:1479:> , <spoon:1480:> the spinach onto a serving plate and <top:1481:> with the salmon and the carrots .
-<Spoon:1482:> over the red pepper coulis and drizzle over the lemon butter juices from the salmon .
+for the tea-smoked salmon , <place:1457:> a large double piece of aluminium foil into the base of a wok .
+<tear:1458:> <open:1459:> the tea bag and <pour:1460:> the leaves onto the foil , along with the oregano , rice , cumin , cardamom , coriander seeds and garlic .
+<cover:1461:> with a lid , <place:1462:> over a low heat and <leave:1463:> to <smoke:1464:> for five minutes .
+-LRB- <CAUTION:1465:> : tea-smoking generates a lot of smoke .
+<cook:1466:> in a well-ventilated area . -RRB-
+<remove:1467:> the lid and <place:1468:> a steamer into the wok .
+<place:1469:> the salmon into the steamer , <cover:1470:> and <smoke:1471:> for eight minutes .
+<heat:1472:> the olive oil in a frying pan , <add:1473:> the chopped lemon and the smoked salmon fillet , <skin-side:1474:> down , and <fry:1475:> for 1-2 minutes on each side , <or:1476:> until cooked through .
+<add:1477:> the butter and <stir:1478:> until melted .
+for the spinach , <place:1479:> the spinach into a pan and <add:1480:> the water , nutmeg , lemon juice and zest .
+<season:1481:> , to <taste:1482:> , with salt and freshly ground black pepper and <leave:1483:> to <wilt:1484:> for 1-2 minutes .
+<drain:1485:> off the excess water and <set:1486:> aside .
+for the glazed carrots , <heat:1487:> the butter in a saucepan and <add:1488:> the sugar , carrots and fish stock .
+<bring:1489:> to the boil and <cook:1490:> for eight minutes , or until the carrots are just tender and glazed .
+for the red pepper coulis , <heat:1491:> the olive oil in a saucepan , <add:1492:> the onion and red pepper and <fry:1493:> over a gentle heat until softened .
+<add:1494:> the milk , garlic , salt and freshly ground black pepper and <boil:1495:> for six minutes , or until the red pepper is tender .
+<allow:1496:> to cool slightly , then <pour:1497:> into a blender and <blend:1498:> until smooth .
+to <serve:1499:> , <spoon:1500:> the spinach onto a serving plate and <top:1501:> with the salmon and the carrots .
+<spoon:1502:> over the red pepper coulis and drizzle over the lemon butter juices from the salmon .
 ------------------

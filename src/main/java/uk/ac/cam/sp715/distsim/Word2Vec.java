@@ -15,7 +15,7 @@ import java.util.*;
 import static uk.ac.cam.sp715.recognition.EntityAnnotator.*;
 
 public class Word2Vec {
-    private static final int maxDistance = 5;
+    private static final int maxDistance = 3;
     private static List<String> getRightNeighbours(String word, List<TaggedWord> tokens, int position) {
         List<String> rightNeighbours = new ArrayList<>();
         for(int k = position + 1; k<tokens.size() && rightNeighbours.size()<maxDistance; k++) {
@@ -67,7 +67,7 @@ public class Word2Vec {
                 else counts.put(tword, 1);
                 count++;
 
-                if(token.isTypedEntity()) {
+                if(true) {
                     String word = token.toString().toLowerCase();
                     List<String> leftNeighbours = getLeftNeighbours(word, tokens, i);
                     List<String> rightNeighbours = getRightNeighbours(word, tokens, i);
@@ -93,6 +93,7 @@ public class Word2Vec {
             vectors.put(key, vectors.get(key).pmi(dictionary, counts, count, key));
         }
 
+        /*
         Map<Taxonomy.TaxonomyType, Vector> averages = new HashMap<>();
 
         for(Taxonomy.TaxonomyType type : new Taxonomy.TaxonomyType[] {Taxonomy.TaxonomyType.APPLIANCES, Taxonomy.TaxonomyType.UTENSILS, Taxonomy.TaxonomyType.INGREDIENTS}) {
@@ -105,7 +106,7 @@ public class Word2Vec {
             averages.put(type, v.divide(n));
         }
 
-        /*
+
         for(Taxonomy.TaxonomyType type1 : new Taxonomy.TaxonomyType[] {Taxonomy.TaxonomyType.APPLIANCES, Taxonomy.TaxonomyType.UTENSILS, Taxonomy.TaxonomyType.INGREDIENTS}) {
             for(Taxonomy.TaxonomyType type2 : new Taxonomy.TaxonomyType[] {Taxonomy.TaxonomyType.APPLIANCES, Taxonomy.TaxonomyType.UTENSILS, Taxonomy.TaxonomyType.INGREDIENTS}) {
                 Vector v1 = averages.get(type1);
@@ -115,12 +116,12 @@ public class Word2Vec {
                 //nom/denom is cosine similarity as cos(t) = v1*v2/(length(v1)*length(v2)).
                 System.out.println(type1 + " ~ " + type2 + ": " + nom/denom);
             }
-        }
+        }*/
 
-        for(Taxonomy.TaxonomyType type1 : new Taxonomy.TaxonomyType[] {Taxonomy.TaxonomyType.APPLIANCES, Taxonomy.TaxonomyType.UTENSILS, Taxonomy.TaxonomyType.INGREDIENTS}) {
+        for(Taxonomy.TaxonomyType type1 : new Taxonomy.TaxonomyType[] {Taxonomy.TaxonomyType.APPLIANCES, Taxonomy.TaxonomyType.UTENSILS, Taxonomy.TaxonomyType.INGREDIENTS, Taxonomy.TaxonomyType.OTHER}) {
             System.out.println();
             System.out.println();
-            for(Taxonomy.TaxonomyType type2 : new Taxonomy.TaxonomyType[] {Taxonomy.TaxonomyType.APPLIANCES, Taxonomy.TaxonomyType.UTENSILS, Taxonomy.TaxonomyType.INGREDIENTS}) {
+            for(Taxonomy.TaxonomyType type2 : new Taxonomy.TaxonomyType[] {Taxonomy.TaxonomyType.APPLIANCES, Taxonomy.TaxonomyType.UTENSILS, Taxonomy.TaxonomyType.INGREDIENTS, Taxonomy.TaxonomyType.OTHER}) {
                 System.out.println();
                 System.out.println(type1 + " ~ " + type2);
                 System.out.println();
@@ -133,19 +134,20 @@ public class Word2Vec {
                         Vector v1 = vectors.get(key1);
                         Vector v2 = vectors.get(key2);
                         double num = v1.dot(v2);
-                        double denom = v1.length()*v2.length();
+                        double denom = v1.length() * v2.length();
                         //num/denom is cosine similarity as cos(t) = v1*v2/(length(v1)*length(v2)).
-                        sum += num/denom;
+                        sum += num / denom;
                         i++;
                     }
 
                     typeSum += sum;
                     j += i;
                 }
-                System.out.println(typeSum/j);
+                System.out.println(typeSum / j);
             }
-        }*/
+        }
 
+        /*
         for(Taxonomy.TaxonomyType type1 : new Taxonomy.TaxonomyType[] {Taxonomy.TaxonomyType.APPLIANCES, Taxonomy.TaxonomyType.UTENSILS, Taxonomy.TaxonomyType.INGREDIENTS}) {
             System.out.println();
             System.out.println();
@@ -162,7 +164,7 @@ public class Word2Vec {
                     Vector v2 = averages.get(type2);
                     double num = v1.dot(v2);
                     double denom = v1.length()*v2.length();
-                    sum = num/denom;
+                    sum = num / denom;
                     i++;
 
                     typeSum += sum;
@@ -170,7 +172,7 @@ public class Word2Vec {
                 }
                 System.out.println(typeSum/j);
             }
-        }
+        }*/
     }
     public static void main(String[] args) throws IOToolsException, HTMLParseException {
         evaluate();

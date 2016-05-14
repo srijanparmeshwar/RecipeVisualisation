@@ -64,10 +64,10 @@ public class FeatureVectors {
         List<String> features = intermediateFeatures(pos, position, irelations, orelations, type);
         features.add("word=" + token.toString().toLowerCase());
 
-        if(dependencies.orderedTokens().size()>position + 1) features.add("posTagRight=" + tokens.get(position + 1).tag());
+        if(dependencies.orderedTokens().size() > position + 1) features.add("posTagRight=" + tokens.get(position + 1).tag());
         if(position > 0) features.add("posTagLeft=" + tokens.get(position - 1).tag());
 
-        if(dependencies.orderedTokens().size()>position + 2) features.add("posTagRight2=" + tokens.get(position + 2).tag());
+        if(dependencies.orderedTokens().size() > position + 2) features.add("posTagRight2=" + tokens.get(position + 2).tag());
         if(position > 1) features.add("posTagLeft2=" + tokens.get(position - 2).tag());
 
         /*if(dependencies.orderedTokens().size()>position + 3) features.add("posTagRight3=" + tokens.get(position + 3).tag());
@@ -164,9 +164,9 @@ public class FeatureVectors {
         if(iobjDobjMatches>0) features.add("iobjDobjMatch");
         if(dobjDobjMatches == 0 && dobjIobjMatches == 0 && iobjDobjMatches == 0 && iobjIobjMatches == 0) features.add("noMatch");
         if(dst.getID() - src.getID() < 2) features.add("adjacent");
-        //else features.add("distant");
+        else features.add("distant");
         if(dst.sentIndex() - src.sentIndex() == 0) features.add("sameSent");
-        //else features.add("diffSent");
+        else features.add("diffSent");
         if(flow.containsEdge(src, dst)) features.add("heuristicEdge");
         else features.add("noHeuristicEdge");
         return features;

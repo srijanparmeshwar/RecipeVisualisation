@@ -26,7 +26,9 @@ public interface Cache<K extends Comparable<K>, V> {
     V get(K key) throws CacheException;
 
     /**
-     * Adds an entry for this (key, value) pair if the cache is not full.
+     * Adds an entry for this (key, value) pair if the cache is not
+     * full, or if the key has a higher priority than the current
+     * minimum priority key in the queue.
      * @param key Key.
      * @param value Value.
      * @throws CacheException Thrown if error occurs accessing the cache.
